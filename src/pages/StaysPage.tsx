@@ -53,19 +53,27 @@ export const StaysPage: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-1.5 flex-wrap">
-          {categories.map(cat => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`text-xs px-3.5 py-1.5 rounded-full border transition-all ${
-                selectedCategory === cat
-                  ? 'bg-[#2E2A26] text-white border-[#2E2A26]'
-                  : 'bg-[#FAF7F2] text-[#544C42] border-[#E2D6C5] hover:bg-[#EFE8DC]'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+          {categories.map(cat => {
+            const count = cat === 'All' ? STAYS.length : STAYS.filter(s => s.category === cat).length;
+            return (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`text-xs px-3.5 py-1.5 rounded-full border transition-all flex items-center gap-1.5 ${
+                  selectedCategory === cat
+                    ? 'bg-[#2E2A26] text-white border-[#2E2A26] shadow-xs'
+                    : 'bg-[#FAF7F2] text-[#544C42] border-[#E2D6C5] hover:bg-[#EFE8DC]'
+                }`}
+              >
+                <span>{cat}</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                  selectedCategory === cat ? 'bg-white/20 text-white' : 'bg-[#EAE2D5] text-[#6E6457]'
+                }`}>
+                  {count}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
 

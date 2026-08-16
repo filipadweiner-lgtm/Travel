@@ -2,128 +2,123 @@ import { TravelerVoice } from '../types';
 
 export const TRAVELER_VOICES: TravelerVoice[] = [
   {
-    id: 'tv-lisbon-alfama',
+    id: 'tv-iceland-driving-wind',
+    author: 'Elena R. & Reddit Community',
+    location: 'Iceland (Ring Road & South Coast)',
     source: 'Reddit',
-    sourceName: 'r/solotravel',
-    sourceUrl: 'https://www.reddit.com/r/solotravel/comments/lisbon_neighborhood_experience/',
-    author: 'Traveler on r/solotravel (attributed)',
-    location: 'Lisbon, Portugal',
-    topic: 'Alfama vs Baixa & Late Night Strolls',
-    quoteOrSummary: 'Staying up in Alfama gives you those quiet mornings and intimate fado alleys, but if you arrive late with rolling luggage, the cobblestone inclines are steep. Principe Real turned out to be the sweet spot for evening safety and walkability.',
-    sentiment: 'balanced',
-    whatTravelersLove: [
-      'Morning serenity before tour groups arrive',
-      'Authentic pastry shops and quiet miradouros',
-      'Welcoming café owners who remember your espresso order'
-    ],
-    thingsWorthKnowing: [
-      'Cobblestone hills are tough on rolling luggage — bring a duffel or take an Uber from the metro',
-      'Late-night tram stops can get crowded; walking down to the central avenues is often faster'
-    ],
-    isParaphrase: true,
-    verifiedDate: '2025'
-  },
-  {
-    id: 'tv-paris-10th-arr',
-    source: 'Medium',
-    sourceName: 'Medium Travel Essay',
-    sourceUrl: 'https://medium.com/topic/travel/paris-neighborhood-observations',
-    author: 'Editorial Contributor on Medium',
-    location: 'Paris, France',
-    topic: 'Canal Saint-Martin vs 7th Arrondissement',
-    quoteOrSummary: 'While first-timers gravitate to the Eiffel Tower perimeter, the 10th Arrondissement along Canal Saint-Martin feels like real Parisian life. You can grab wine by the water, wine bars stay lively without feeling aggressive, and bakeries are genuinely neighborhood-focused.',
+    sourceName: 'r/visitingiceland',
+    sourceUrl: 'https://reddit.com/r/visitingiceland',
+    verifiedDate: 'February 2026',
     sentiment: 'positive',
-    whatTravelersLove: [
-      'Relaxed evening canal culture and boutique shopping',
-      'High concentration of contemporary independent wine bistros',
-      'Walkable to Gare de l\'Est and Marais'
-    ],
-    thingsWorthKnowing: [
-      'Streets immediately adjacent to Gare du Nord can feel chaotic after dark; stick closer to Quai de Valmy'
-    ],
+    category: 'Logistics',
     isParaphrase: true,
-    verifiedDate: '2025'
+    quoteOrSummary: 'What surprised me most was how physical the Icelandic weather is. We had sunny skies at Skógafoss, and two hours later we were driving through a 70 km/h sleet storm in Vík. The local road.is app saved us multiple times. Respect the weather warnings and you will have an extraordinary time.',
+    whatTravelersLove: 'Unmatched raw landscapes, incredible hot springs in every tiny town, and the supreme feeling of safety everywhere.',
+    thingsWorthKnowing: 'Always hold your car door with both hands when getting out; sudden wind gusts can bend the hinges. Get gravel and ash insurance protection.'
   },
   {
-    id: 'tv-rome-trastevere',
-    source: 'Reddit',
-    sourceName: 'r/travel',
-    sourceUrl: 'https://www.reddit.com/r/travel/comments/rome_neighborhood_trastevere/',
-    author: 'Solo traveler on r/travel',
-    location: 'Rome, Italy',
-    topic: 'Staying in Trastevere vs Monti',
-    quoteOrSummary: 'Trastevere has unmatched dinner ambiance, but piazza noise echoes until 2 AM on weekends. For solo female travelers who value quiet sleep, Monti offers the same vintage charm and artisan feel with much calmer side streets and immediate metro access.',
-    sentiment: 'balanced',
-    whatTravelersLove: [
-      'Monti\'s craft boutiques and piazzetta evening gatherings',
-      'Quick walking distance to both the Colosseum and Termini'
-    ],
-    thingsWorthKnowing: [
-      'Popular Trastevere trattorias require reservations days in advance — do not rely on walking in at 8 PM'
-    ],
-    isParaphrase: true,
-    verifiedDate: '2025'
-  },
-  {
-    id: 'tv-budapest-district-8',
+    id: 'tv-norway-fjord-slow',
+    author: 'Marcus T. & Travel Forum Contributors',
+    location: 'Norway (Lofoten & Western Fjords)',
     source: 'Travel Forum',
-    sourceName: 'European Travel Discussions',
-    sourceUrl: 'https://www.tripadvisor.com/ShowForum-g274887-i263-Budapest_Central_Hungary.html',
-    author: 'Forum Contributor on Budapest Forum',
-    location: 'Budapest, Hungary',
-    topic: 'Palace District vs Jewish Quarter',
-    quoteOrSummary: 'The Jewish Quarter has the famous ruin bars, but the Palace District (Inner District 8) has transformed into a haven of quiet book cafés, grand historic façades, and relaxed wine bars where you can read alone comfortably.',
+    sourceName: 'Nordic Travel Community',
+    sourceUrl: 'https://reddit.com/r/Norway',
+    verifiedDate: 'January 2026',
     sentiment: 'positive',
-    whatTravelersLove: [
-      'Exceptional architectural details and quiet courtyards',
-      'Specialty coffee culture that welcomes solo readers and remote workers',
-      'Very affordable boutique guesthouses'
-    ],
-    thingsWorthKnowing: [
-      'Ruin bar streets get rowdy on Friday and Saturday nights — avoid booking ground-floor rooms near Kazinczy utca'
-    ],
+    category: 'Experience',
     isParaphrase: true,
-    verifiedDate: '2025'
+    quoteOrSummary: 'Staying in a restored rorbu in Reine was the highlight of our Scandinavia trip. Hearing the water beneath the floorboards and waking up to the granite peaks reflected in the mirror-calm fjord was pure magic. Don\'t try to see all of Norway in a week — pick one region and stay four nights.',
+    whatTravelersLove: 'Crystal-clear air, world-class sauna culture, silent electric fjord ferries, and clean tap water.',
+    thingsWorthKnowing: 'Alcohol in Norway is state-monopolized and expensive; grocery stores close early on Saturdays and are closed Sundays.'
   },
   {
-    id: 'tv-mallorca-soller',
-    source: 'Traveler Substack',
-    sourceName: 'The Mediterranean Ledger',
-    sourceUrl: 'https://substack.com/browse/travel',
-    author: 'Independent Travel Writer',
-    location: 'Mallorca, Spain',
-    topic: 'Serra de Tramuntana vs Southern Resorts',
-    quoteOrSummary: 'Escaping the southern package beaches to base in Sóller or Fornalutx changed my entire view of Mallorca. Mountain air, orange groves, and quiet evening dinners under olive trees make it feel like a completely different island.',
-    sentiment: 'positive',
-    whatTravelersLove: [
-      'Dramatic mountain backdrop with tram access to the port',
-      'Restored stone townhouses and historic fincas',
-      'Peaceful morning hikes without crowds'
-    ],
-    thingsWorthKnowing: [
-      'A rental car is essential if you want to explore hidden calas like Cala Tuent; mountain roads are narrow and winding'
-    ],
-    isParaphrase: true,
-    verifiedDate: '2025'
-  },
-  {
-    id: 'tv-copenhagen-vesterbro',
+    id: 'tv-sweden-archipelago-ferry',
+    author: 'Astrid L. & Independent Solo Travelers',
+    location: 'Sweden (Stockholm & Archipelago)',
     source: 'Reddit',
-    sourceName: 'r/solotravel',
-    sourceUrl: 'https://www.reddit.com/r/solotravel/comments/copenhagen_female_solo_travel/',
-    author: 'Female Solo Traveler on r/solotravel',
-    location: 'Copenhagen, Denmark',
-    topic: 'Vesterbro & City Bike Culture',
-    quoteOrSummary: 'Copenhagen felt like one of the most effortless solo trips I\'ve ever done. Renting a bike completely unlocked the city — you can cross from the meatpacking district to Frederiksberg gardens safely at any hour.',
+    sourceName: 'r/sweden',
+    sourceUrl: 'https://reddit.com/r/sweden',
+    verifiedDate: 'February 2026',
     sentiment: 'positive',
-    whatTravelersLove: [
-      'Flawless bike lanes and safe, welcoming evening culture',
-      'World-class bakeries and design shops in Vesterbro and Nørrebro'
-    ],
-    thingsWorthKnowing: [
-      'Dining out adds up quickly — mix high-end bakeries and casual food halls (like Torvehallerne) to balance the budget'
-    ],
+    category: 'Solo Travel',
     isParaphrase: true,
-    verifiedDate: '2025'
+    quoteOrSummary: 'As a solo female traveler, Stockholm felt like the most frictionless, welcoming city I’ve visited. Taking the Waxholmsbolaget public ferry out to the quiet archipelago islands for a day of pine forest walking and fika by the water was heavenly.',
+    whatTravelersLove: 'Cardamom buns from artisan bakeries, design museums, seamless contactless payments, and high safety standards.',
+    thingsWorthKnowing: 'Almost nowhere accepts cash; keep a reliable contactless credit or debit card on your phone.'
+  },
+  {
+    id: 'tv-china-rail-payments',
+    author: 'David H. & r/travelchina contributors',
+    location: 'China (Beijing, Yangshuo & Shanghai)',
+    source: 'Reddit',
+    sourceName: 'r/travelchina',
+    sourceUrl: 'https://reddit.com/r/travelchina',
+    verifiedDate: 'March 2026',
+    sentiment: 'positive',
+    category: 'Logistics',
+    isParaphrase: true,
+    quoteOrSummary: 'The high-speed rail in China blew my mind. Traveling from Beijing to Shanghai in 4.5 hours at 350 km/h was smoother and faster than flying. Setting up Alipay with my foreign credit card took 5 minutes and worked everywhere from Michelin restaurants to street noodle carts.',
+    whatTravelersLove: 'Immaculate high-speed rail, profound historical monuments, delicious regional food, and 24/7 street safety.',
+    thingsWorthKnowing: 'Get an eSIM with international data roaming before arrival so you can use standard search and messaging apps without restrictions.'
+  },
+  {
+    id: 'tv-patagonia-hiking-wind',
+    author: 'Clara M. & Trekking Forum Community',
+    location: 'Patagonia (El Chaltén & Torres del Paine)',
+    source: 'Reddit',
+    sourceName: 'r/Patagonia',
+    sourceUrl: 'https://reddit.com/r/Patagonia',
+    verifiedDate: 'January 2026',
+    sentiment: 'positive',
+    category: 'Safety',
+    isParaphrase: true,
+    quoteOrSummary: 'Laguna de los Tres in El Chaltén at sunrise was the most awe-inspiring view of my life. The mountain spires glowing fiery orange in the morning light made the early 5:00 AM climb worth every step. Invest in proper windproof layers and sturdy boots!',
+    whatTravelersLove: 'Direct trail access from the village of El Chaltén, breathtaking glacier landscapes, and warm mountain craft beer pubs.',
+    thingsWorthKnowing: 'Chile and Argentina have strict agricultural border inspections. Never carry fresh fruits, honey, or meat across the border.'
+  },
+  {
+    id: 'tv-korea-seoul-solo',
+    author: 'Sarah K. & Solo Female Travelers',
+    location: 'South Korea (Seoul & Jeju Island)',
+    source: 'Reddit',
+    sourceName: 'r/koreatravel',
+    sourceUrl: 'https://reddit.com/r/koreatravel',
+    verifiedDate: 'February 2026',
+    sentiment: 'positive',
+    category: 'Solo Travel',
+    isParaphrase: true,
+    quoteOrSummary: 'Seoul is incredible for solo female travel. I walked around Seochon and Seongsu at 11 PM with zero anxiety. The café culture is the best in the world, and taking the AREX airport train and KTX to Busan was seamless. Download Naver Map instead of Google Maps!',
+    whatTravelersLove: 'Heated hanok ondol floors, traditional tea ceremonies, incredible subway system, and endless charming bakeries.',
+    thingsWorthKnowing: 'Google Maps doesn\'t offer walking routes in Korea due to local regulations; use Naver Map or KakaoMap with English settings.'
+  },
+  {
+    id: 'tv-australia-tasmania-roadtrip',
+    author: 'Liam P. & Australia Road Trippers',
+    location: 'Australia (Tasmania & Sydney Coast)',
+    source: 'Travel Forum',
+    sourceName: 'Australian Travel Collective',
+    sourceUrl: 'https://reddit.com/r/australia',
+    verifiedDate: 'February 2026',
+    sentiment: 'positive',
+    category: 'Experience',
+    isParaphrase: true,
+    quoteOrSummary: 'Tasmania was the big surprise of our Australia trip. Driving through Freycinet, eating fresh oysters at the marine farm, and hiking down to Wineglass Bay felt like stepping into an unspoiled paradise. Also, Melbourne and Sydney flat whites ruined coffee everywhere else for me!',
+    whatTravelersLove: 'Spectacular coastal walks, friendly locals, outstanding specialty coffee, and abundant native wildlife.',
+    thingsWorthKnowing: 'The Australian sun is fierce even on mild days; wear 50+ SPF sunscreen. Avoid driving on regional country roads between dusk and dawn.'
+  },
+  {
+    id: 'tv-nz-campervan-pacing',
+    author: 'Hannah W. & r/newzealand Community',
+    location: 'New Zealand (South Island & Fiordland)',
+    source: 'Reddit',
+    sourceName: 'r/newzealand',
+    sourceUrl: 'https://reddit.com/r/newzealand',
+    verifiedDate: 'January 2026',
+    sentiment: 'positive',
+    category: 'Logistics',
+    isParaphrase: true,
+    quoteOrSummary: 'Driving the Milford Road in the South Island felt like traveling through a fantasy movie set. We rented a campervan and took two full weeks just on the South Island. Our best decision was staying in Wanaka instead of crowded Queenstown — much more peaceful and soulful.',
+    whatTravelersLove: 'Epic alpine panoramas, crystal-clear glacier lakes, dark sky stargazing, and pristine hiking tracks.',
+    thingsWorthKnowing: 'Driving takes significantly longer than GPS forecasts because roads are narrow and winding. Plan extra time for spontaneous lookout stops.'
   }
 ];

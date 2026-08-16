@@ -54,18 +54,28 @@ export const WorthKnowing: React.FC<{ content: string; className?: string }> = (
   </div>
 );
 
-export const BestFor: React.FC<{ items: string[]; className?: string }> = ({ items, className = '' }) => (
-  <div className={`flex items-center flex-wrap gap-2 text-xs text-[#5A5A40] ${className}`}>
-    <span className="flex items-center gap-1.5 font-bold text-[#8D8D7E] uppercase tracking-wider text-[11px]">
-      <Users className="w-3.5 h-3.5 text-[#8FA18B]" /> Best For:
-    </span>
-    {items.map((item, idx) => (
-      <span key={idx} className="px-2.5 py-0.5 rounded-full bg-[#F1EDE4] text-[#434338] border border-[#E9E5D9]">
-        {item}
+export const BestFor: React.FC<{ items?: string[] | string; className?: string }> = ({ items, className = '' }) => {
+  const list = Array.isArray(items)
+    ? items
+    : typeof items === 'string'
+    ? items.split(',').map(s => s.trim()).filter(Boolean)
+    : [];
+
+  if (list.length === 0) return null;
+
+  return (
+    <div className={`flex items-center flex-wrap gap-2 text-xs text-[#5A5A40] ${className}`}>
+      <span className="flex items-center gap-1.5 font-bold text-[#8D8D7E] uppercase tracking-wider text-[11px]">
+        <Users className="w-3.5 h-3.5 text-[#8FA18B]" /> Best For:
       </span>
-    ))}
-  </div>
-);
+      {list.map((item, idx) => (
+        <span key={idx} className="px-2.5 py-0.5 rounded-full bg-[#F1EDE4] text-[#434338] border border-[#E9E5D9]">
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+};
 
 export const WouldIGoBack: React.FC<{ verdict: string; className?: string }> = ({ verdict, className = '' }) => (
   <div className={`inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F1EDE4] text-[#434338] text-xs font-bold border border-[#E9E5D9] ${className}`}>

@@ -79,8 +79,15 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
       {/* Hero Visual */}
       <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden bg-[#EAE2D5] border border-[#E0D5C3] shadow-md">
         <img
-          src={story.heroImage}
+          src={story.heroImage || story.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80'}
           alt={story.title}
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget as HTMLImageElement;
+            if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') {
+              target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80';
+            }
+          }}
           className="w-full h-full object-cover"
         />
       </div>
@@ -90,48 +97,84 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
       {/* Story Intro */}
       <div className="prose prose-lg prose-stone max-w-none">
         <p className="text-lg md:text-xl leading-relaxed text-[#38332E] font-serif italic border-l-2 border-[#8C6D58] pl-6 py-1">
-          {story.intro}
+          {story.intro || story.excerpt}
         </p>
       </div>
 
       {/* Visual Sections with Pull Quotes */}
-      <div className="space-y-10">
-        {story.sections.map((sec, idx) => (
-          <section key={idx} className="space-y-4">
-            {sec.heading && (
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#242220] pt-4">
-                {sec.heading}
-              </h2>
-            )}
+      {story.sections && story.sections.length > 0 ? (
+        <div className="space-y-10">
+          {story.sections.map((sec, idx) => (
+            <section key={idx} className="space-y-4">
+              {(sec.heading || sec.title) && (
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#242220] pt-4">
+                  {sec.heading || sec.title}
+                </h2>
+              )}
 
-            {sec.body.map((p, pIdx) => (
-              <p key={pIdx} className="text-base md:text-[17px] text-[#4A423A] leading-relaxed">
-                {p}
-              </p>
-            ))}
-
-            {sec.pullQuote && (
-              <div className="my-8 p-6 md:p-8 rounded-2xl bg-[#F6F2EB] border-y border-[#E2D5C2] text-center">
-                <Quote className="w-6 h-6 text-[#8C6D58] mx-auto mb-2 opacity-60" />
-                <p className="font-serif text-xl md:text-2xl text-[#2C2723] italic leading-snug">
-                  "{sec.pullQuote}"
-                </p>
-              </div>
-            )}
-
-            {sec.image && (
-              <div className="my-6 rounded-2xl overflow-hidden bg-[#EFE9DE] border border-[#E5DAC8]">
-                <img src={sec.image} alt={sec.imageCaption || ''} className="w-full max-h-[420px] object-cover" />
-                {sec.imageCaption && (
-                  <p className="p-3 text-xs text-[#7A736B] italic text-center bg-[#FAF8F5]">
-                    {sec.imageCaption}
+              {Array.isArray(sec.body || sec.content) ? (
+                ((sec.body || sec.content) as string[]).map((p, pIdx) => (
+                  <p key={pIdx} className="text-base md:text-[17px] text-[#4A423A] leading-relaxed">
+                    {p}
                   </p>
-                )}
-              </div>
-            )}
-          </section>
-        ))}
-      </div>
+                ))
+              ) : (
+                <p className="text-base md:text-[17px] text-[#4A423A] leading-relaxed">
+                  {(sec.body || sec.content) as string}
+                </p>
+              )}
+
+              {sec.pullQuote && (
+                <div className="my-8 p-6 md:p-8 rounded-2xl bg-[#F6F2EB] border-y border-[#E2D5C2] text-center">
+                  <Quote className="w-6 h-6 text-[#8C6D58] mx-auto mb-2 opacity-60" />
+                  <p className="font-serif text-xl md:text-2xl text-[#2C2723] italic leading-snug">
+                    "{sec.pullQuote}"
+                  </p>
+                </div>
+              )}
+
+              {sec.image && (
+                <div className="my-6 rounded-2xl overflow-hidden bg-[#EFE9DE] border border-[#E5DAC8]">
+                  <img
+                    src={sec.image}
+                    alt={sec.imageCaption || ''}
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') {
+                        target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80';
+                      }
+                    }}
+                    className="w-full max-h-[420px] object-cover"
+                  />
+                  {sec.imageCaption && (
+                    <p className="p-3 text-xs text-[#7A736B] italic text-center bg-[#FAF8F5]">
+                      {sec.imageCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+            </section>
+          ))}
+        </div>
+      ) : story.content ? (
+        <div className="space-y-6">
+          {story.content.split('\n\n').map((block, idx) => {
+            if (block.startsWith('### ')) {
+              return (
+                <h2 key={idx} className="text-2xl md:text-3xl font-serif font-bold text-[#242220] pt-4">
+                  {block.replace('### ', '')}
+                </h2>
+              );
+            }
+            return (
+              <p key={idx} className="text-base md:text-[17px] text-[#4A423A] leading-relaxed">
+                {block}
+              </p>
+            );
+          })}
+        </div>
+      ) : null}
 
       {/* Relevant Traveler Voices if present */}
       {relevantVoices.length > 0 && (

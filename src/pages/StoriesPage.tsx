@@ -32,8 +32,15 @@ export const StoriesPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto min-h-[340px] bg-[#EAE2D5] overflow-hidden">
             <img
-              src={STORIES[0].heroImage}
+              src={STORIES[0].heroImage || STORIES[0].image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80'}
               alt={STORIES[0].title}
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget as HTMLImageElement;
+                if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') {
+                  target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80';
+                }
+              }}
               className="w-full h-full object-cover"
             />
           </div>
@@ -82,9 +89,16 @@ export const StoriesPage: React.FC = () => {
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-[#EFE9DF]">
                 <img
-                  src={story.heroImage}
+                  src={story.heroImage || story.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'}
                   alt={story.title}
                   loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') {
+                      target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80';
+                    }
+                  }}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>

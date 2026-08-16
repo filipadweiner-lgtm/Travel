@@ -67,8 +67,15 @@ export const StayDetailPage: React.FC<StayDetailPageProps> = ({ id }) => {
       {/* Hero Visual */}
       <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden bg-[#EAE2D5] border border-[#E0D5C3] shadow-md">
         <img
-          src={stay.image}
+          src={stay.image || stay.heroImage || 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80'}
           alt={stay.name}
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget as HTMLImageElement;
+            if (target.src !== 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80') {
+              target.src = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80';
+            }
+          }}
           className="w-full h-full object-cover"
         />
       </div>
@@ -78,9 +85,13 @@ export const StayDetailPage: React.FC<StayDetailPageProps> = ({ id }) => {
       {/* Content Breakdown */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div className="lg:col-span-8 space-y-8">
-          <WhyILikeIt content={stay.whyCaughtAttention} />
+          {(stay.whyCaughtAttention || stay.whyWeChoseIt || stay.description) && (
+            <WhyILikeIt content={stay.whyCaughtAttention || stay.whyWeChoseIt || stay.description || ''} />
+          )}
 
-          <MyTake content={stay.myTake} />
+          {(stay.myTake || stay.description) && (
+            <MyTake content={stay.myTake || stay.description || ''} />
+          )}
 
           {/* Traveler Sentiment & Caveats */}
           <div className="space-y-4 pt-2">
@@ -94,7 +105,7 @@ export const StayDetailPage: React.FC<StayDetailPageProps> = ({ id }) => {
                 <span>What Travelers Love</span>
               </div>
               <p className="text-sm text-[#384F40] leading-relaxed">
-                {stay.whatTravelersSay}
+                {stay.whatTravelersSay || 'Travelers highlight the peaceful ambiance and thoughtful hosting.'}
               </p>
             </div>
 
@@ -104,9 +115,13 @@ export const StayDetailPage: React.FC<StayDetailPageProps> = ({ id }) => {
                 <span>Things Worth Knowing (Honest Caveats)</span>
               </div>
               <ul className="list-disc list-inside space-y-1 text-sm text-[#5E3B33]">
-                {stay.thingsWorthKnowing.map((caveat, idx) => (
-                  <li key={idx}>{caveat}</li>
-                ))}
+                {Array.isArray(stay.thingsWorthKnowing) ? (
+                  stay.thingsWorthKnowing.map((caveat, idx) => (
+                    <li key={idx}>{caveat}</li>
+                  ))
+                ) : (
+                  <li>{stay.thingsWorthKnowing}</li>
+                )}
               </ul>
             </div>
           </div>

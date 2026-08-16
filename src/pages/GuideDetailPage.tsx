@@ -60,8 +60,15 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
       {/* Hero Image */}
       <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-[32px] overflow-hidden bg-[#F1EDE4] border border-[#E9E5D9] shadow-xs">
         <img
-          src={guide.heroImage}
+          src={guide.heroImage || guide.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80'}
           alt={guide.title}
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget as HTMLImageElement;
+            if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80') {
+              target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80';
+            }
+          }}
           className="w-full h-full object-cover"
         />
       </div>
@@ -70,7 +77,7 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
 
       {/* Guide Intro */}
       <div className="p-6 md:p-8 rounded-[28px] bg-white border border-[#E9E5D9] text-[#434338] text-base md:text-[17px] leading-relaxed font-sans shadow-xs">
-        {guide.intro}
+        {guide.intro || guide.excerpt}
       </div>
 
       {/* Guide Sections */}
@@ -78,14 +85,20 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
         {guide.sections.map((sec, idx) => (
           <section key={idx} className="space-y-5">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#434338] pb-2 border-b border-[#E9E5D9]">
-              {sec.title}
+              {sec.title || sec.heading}
             </h2>
 
-            {sec.content.map((p, pIdx) => (
-              <p key={pIdx} className="text-base text-[#434338] leading-relaxed">
-                {p}
+            {Array.isArray(sec.content || sec.body) ? (
+              ((sec.content || sec.body) as string[]).map((p, pIdx) => (
+                <p key={pIdx} className="text-base text-[#434338] leading-relaxed">
+                  {p}
+                </p>
+              ))
+            ) : (
+              <p className="text-base text-[#434338] leading-relaxed">
+                {(sec.content || sec.body) as string}
               </p>
-            ))}
+            )}
 
             {sec.tips && sec.tips.length > 0 && (
               <div className="p-5 rounded-[24px] bg-white border border-[#E9E5D9] space-y-2 shadow-xs">
@@ -100,13 +113,6 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            )}
-
-            {sec.keyTakeaway && (
-              <div className="p-4 rounded-[20px] bg-[#8FA18B]/10 border border-[#8FA18B]/25 text-[#354832] flex items-start gap-2.5 text-sm leading-relaxed">
-                <CheckCircle2 className="w-4 h-4 text-[#8FA18B] shrink-0 mt-0.5" />
-                <span><strong>Takeaway:</strong> {sec.keyTakeaway}</span>
               </div>
             )}
           </section>

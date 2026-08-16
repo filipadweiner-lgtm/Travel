@@ -58,8 +58,15 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
       <section className="relative min-h-[55vh] md:min-h-[65vh] flex items-end bg-[#211E1C] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={destination.heroImage}
+            src={destination.heroImage || destination.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80'}
             alt={destination.name}
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80') {
+                target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80';
+              }
+            }}
             className="w-full h-full object-cover opacity-60 scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1F1D1B] via-black/30 to-black/20" />
@@ -384,9 +391,16 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
                   className="p-4 rounded-2xl bg-white border border-[#E9E1D2] flex gap-4 hover:border-[#C4B29C] transition-all"
                 >
                   <img
-                    src={st.heroImage}
+                    src={st.heroImage || st.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80'}
                     alt={st.title}
-                    className="w-20 h-20 rounded-xl object-cover shrink-0"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80') {
+                        target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80';
+                      }
+                    }}
+                    className="w-20 h-20 rounded-xl object-cover shrink-0 bg-[#EAE2D5]"
                   />
                   <div>
                     <span className="text-[11px] text-[#8C847B]">{st.readTime}</span>
@@ -407,9 +421,16 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
                   className="p-4 rounded-2xl bg-white border border-[#E9E1D2] flex gap-4 hover:border-[#C4B29C] transition-all"
                 >
                   <img
-                    src={g.heroImage}
+                    src={g.heroImage || g.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80'}
                     alt={g.title}
-                    className="w-20 h-20 rounded-xl object-cover shrink-0"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80') {
+                        target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80';
+                      }
+                    }}
+                    className="w-20 h-20 rounded-xl object-cover shrink-0 bg-[#EAE2D5]"
                   />
                   <div>
                     <span className="text-[11px] text-[#8C847B]">{g.readTime}</span>

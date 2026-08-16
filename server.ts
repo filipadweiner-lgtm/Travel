@@ -25,7 +25,12 @@ async function startServer() {
   // Secret recipient email configured securely on server side
   app.post('/api/contact', async (req, res) => {
     try {
-      const { name, email, subject, message } = req.body;
+      const { name, email, subject, message, website } = req.body;
+
+      // Honeypot spam trap
+      if (website) {
+        return res.json({ success: true, message: 'Message sent successfully.' });
+      }
 
       if (!email || !message) {
         return res.status(400).json({ error: 'Email and message are required fields.' });
@@ -55,13 +60,11 @@ async function startServer() {
         return res.json({ success: true, message: 'Message sent successfully.' });
       } else {
         const errText = await response.text();
-        console.warn('FormSubmit provider response:', errText);
-        // Return success to user so user experience is not disrupted
+        console.warn('FormSubmit response:', errText);
         return res.json({ success: true, message: 'Message received by editorial team.' });
       }
     } catch (err) {
       console.error('Error in contact endpoint:', err);
-      // Return success to graceful fallback
       return res.json({ success: true, message: 'Message recorded.' });
     }
   });

@@ -17,7 +17,8 @@ export type HideoutCategory =
   | 'Weekend'
   | 'Affordable'
   | 'Luxury'
-  | 'Hidden Gems';
+  | 'Hidden Gems'
+  | 'Coastal';
 
 export type StayCategory =
   | "Places I'd Stay"
@@ -39,62 +40,80 @@ export type ExperienceCategory =
 
 export interface TravelerVoice {
   id: string;
-  source: 'Reddit' | 'Medium' | 'Travel Forum' | 'Traveler Substack' | 'Local Community';
+  source: 'Reddit' | 'Medium' | 'Travel Forum' | 'Traveler Substack' | 'Local Community' | string;
   sourceName: string;
   sourceUrl: string;
   author: string;
   location: string;
   quoteOrSummary: string;
   sentiment: 'positive' | 'balanced' | 'caveat';
-  topic: string;
-  whatTravelersLove?: string[];
-  thingsWorthKnowing?: string[];
+  topic?: string;
+  category?: string;
+  whatTravelersLove?: string[] | string;
+  thingsWorthKnowing?: string[] | string;
   isParaphrase: boolean;
   verifiedDate?: string;
 }
 
 export interface Hideout {
   id: string;
-  slug: string;
+  slug?: string;
   title: string;
   category: HideoutCategory;
   destinationId: string;
-  destinationName: string;
+  destinationName?: string;
   location: string;
-  image: string;
+  image?: string;
+  heroImage?: string;
+  excerpt?: string;
+  description?: string;
+  highlights?: string[];
+  amenities?: string[];
+  pricePerNight?: string;
+  stay22Url?: string;
+  bookingNote?: string;
   gallery?: string[];
-  summary: string;
-  whySpecial: string;
-  vibe: string;
-  authorTake: string;
-  editorialLabel: EditorialLabel;
-  bestFor: string[];
-  wouldGoBack: 'Yes' | 'Maybe' | 'Not sure' | 'Top of My Wishlist';
-  goodToKnow: string;
-  priceTier: '€' | '€€' | '€€€' | '€€€€';
-  bookingUrlPlaceholder: string;
+  summary?: string;
+  whySpecial?: string;
+  vibe?: string;
+  authorTake?: string;
+  editorialLabel?: EditorialLabel;
+  bestFor?: string[] | string;
+  wouldGoBack?: 'Yes' | 'Maybe' | 'Not sure' | 'Top of My Wishlist';
+  goodToKnow?: string;
+  priceTier?: '€' | '€€' | '€€€' | '€€€€';
+  bookingUrlPlaceholder?: string;
   travelerVoiceId?: string;
   isFeatured?: boolean;
 }
 
 export interface Stay {
   id: string;
-  slug: string;
+  slug?: string;
   name: string;
-  category: StayCategory;
+  category?: StayCategory;
+  tagline?: string;
+  description?: string;
   destinationId: string;
   destinationName: string;
   neighborhood: string;
-  image: string;
+  image?: string;
+  heroImage?: string;
   gallery?: string[];
-  whyCaughtAttention: string;
-  myTake: string;
-  bestFor: string[];
-  whatTravelersSay: string;
-  thingsWorthKnowing: string[];
-  editorialLabel: EditorialLabel;
-  priceIndicator: string;
-  affiliateUrl: string;
+  whyCaughtAttention?: string;
+  whyWeChoseIt?: string;
+  myTake?: string;
+  noiseLevel?: string;
+  soloTravelRating?: string;
+  affiliateUrl?: string;
+  stay22Url?: string;
+  priceRange?: string;
+  keyFeatures?: string[];
+  bestFor?: string[] | string;
+  whatTravelersSay?: string;
+  thingsWorthKnowing?: string[] | string;
+  editorialLabel?: EditorialLabel;
+  priceIndicator?: string;
   femaleTravelNotes?: string;
   isFeatured?: boolean;
 }
@@ -106,6 +125,7 @@ export interface Destination {
   country: string;
   tag: string;
   heroImage: string;
+  image?: string;
   blurb: string;
   openingEditorial: string;
   whereIWouldStay: string;
@@ -149,24 +169,30 @@ export interface Destination {
 
 export interface Story {
   id: string;
-  slug: string;
+  slug?: string;
   title: string;
   subtitle: string;
   heroImage: string;
-  authorName: string;
-  authorRole: string;
+  image?: string;
+  author?: string;
+  authorName?: string;
+  authorRole?: string;
   date: string;
   readTime: string;
   excerpt: string;
-  intro: string;
-  sections: {
+  intro?: string;
+  content?: string;
+  sections?: {
     heading?: string;
+    title?: string;
     subheading?: string;
-    body: string[];
+    body?: string[] | string;
+    content?: string[] | string;
     pullQuote?: string;
     image?: string;
     imageCaption?: string;
   }[];
+  tags?: string[];
   travelerVoiceIds?: string[];
   relatedHideoutIds?: string[];
   relatedDestinationIds?: string[];
@@ -175,20 +201,31 @@ export interface Story {
 
 export interface Guide {
   id: string;
-  slug: string;
+  slug?: string;
   title: string;
   subtitle: string;
   destinationId?: string;
+  destinationName?: string;
   heroImage: string;
-  authorName: string;
-  date: string;
+  image?: string;
+  authorName?: string;
+  date?: string;
   readTime: string;
-  intro: string;
+  excerpt?: string;
+  intro?: string;
   sections: {
-    title: string;
-    content: string[];
+    title?: string;
+    heading?: string;
+    content?: string[] | string;
+    body?: string[] | string;
     tips?: string[];
     keyTakeaway?: string;
+  }[];
+  femaleTravelChecklist?: string[];
+  recommendedStays?: {
+    name: string;
+    reason: string;
+    link: string;
   }[];
   travelerVoiceIds?: string[];
   relatedHideoutIds?: string[];
@@ -202,13 +239,22 @@ export interface ExperienceItem {
   destinationId: string;
   destinationName: string;
   image: string;
+  heroImage?: string;
+  duration?: string;
+  priceEstimate?: string;
   summary: string;
+  description?: string;
   worthDoing: string;
+  whyWorthIt?: string;
   whatToSkip: string;
-  travelersSay: string;
+  whatToExpect?: string;
+  travelersSay?: string;
   goodToKnow: string;
   affiliateUrlPlaceholder: string;
+  affiliateUrl?: string;
 }
+
+export type Experience = ExperienceItem;
 
 export interface FlightRouteInfo {
   id: string;

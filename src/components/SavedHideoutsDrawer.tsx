@@ -81,9 +81,16 @@ export const SavedHideoutsDrawer: React.FC<SavedHideoutsDrawerProps> = ({
                 >
                   <div className="flex items-start gap-3">
                     <img
-                      src={hideout.image}
+                      src={hideout.image || hideout.heroImage || 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80'}
                       alt={hideout.title}
-                      className="w-16 h-16 rounded-xl object-cover shrink-0"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (target.src !== 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80') {
+                          target.src = 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80';
+                        }
+                      }}
+                      className="w-16 h-16 rounded-xl object-cover shrink-0 bg-[#EAE2D5]"
                     />
                     <div className="flex-1 min-w-0">
                       <span className="text-[10px] font-bold text-[#8FA18B] uppercase tracking-wider block mb-0.5">

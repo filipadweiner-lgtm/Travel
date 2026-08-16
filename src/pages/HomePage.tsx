@@ -11,6 +11,8 @@ import { TravelerVoiceSection } from '../components/TravelerVoiceSection';
 import { AuthorNotice } from '../components/AuthorNotice';
 import { SEOHead } from '../components/SEOHead';
 import { AffiliateCTA } from '../components/AffiliateCTA';
+import mileyRochaFounderImg from '../assets/images/miley_eating_berries_1786888166297.jpg';
+import mileyCaveFireLitImg from '../assets/images/miley_cave_fire_lit_1786888821438.jpg';
 import { 
   ArrowRight, 
   Sparkles, 
@@ -50,37 +52,40 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
         description="Curated hideouts, atmospheric boutique stays, honest city guides, and verified traveler community voices. Selected by one experienced female traveler."
       />
 
-      {/* 1. Atmospheric Hero Section */}
-      <section className="relative min-h-[75vh] md:min-h-[82vh] flex items-center justify-center bg-[#2B2F2A] text-white overflow-hidden">
-        {/* Background Image with warm natural grading */}
+      {/* 1. Atmospheric Hero Section with Miley in Cave during Thunderstorm */}
+      <section className="relative min-h-[85vh] sm:min-h-[88vh] md:min-h-[90vh] lg:min-h-[94vh] flex items-center justify-center bg-[#151914] text-white overflow-hidden">
+        {/* Background Image: View from outside of illuminated cave with campfire during rainstorm */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=2000&q=85"
-            alt="Warm sunlit terracotta rooftops and quiet balconies"
-            className="w-full h-full object-cover opacity-50 scale-105 animate-in fade-in duration-1000"
+            src={mileyCaveFireLitImg}
+            alt="Miley sitting inside a warm fire-lit mountain cave during a night rain and thunderstorm"
+            referrerPolicy="no-referrer"
+            className="w-full h-full object-cover object-center scale-100 md:scale-105 animate-in fade-in duration-1000 brightness-105 contrast-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#262A25] via-black/35 to-black/45" />
+          {/* Subtle multi-stop gradient ensuring text legibility while letting the bright fire glow and lightning shine through */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#151914]/90 via-black/25 to-black/35" />
+          <div className="absolute inset-0 bg-radial from-transparent via-black/10 to-black/45 pointer-events-none" />
         </div>
 
-        {/* Hero Content Container */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8 pb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-xs uppercase tracking-widest font-semibold mb-6 animate-in slide-in-from-bottom-3 duration-500">
+        {/* Hero Content Container - Responsive padding and typography */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 pb-16 md:pt-16 md:pb-20">
+          <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-black/40 hover:bg-black/50 backdrop-blur-md border border-white/20 text-[#E2EBDD] text-[11px] sm:text-xs uppercase tracking-widest font-semibold mb-5 sm:mb-6 animate-in slide-in-from-bottom-3 duration-500 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#8FA18B]" />
-            <span>Curated Travel Discovery</span>
+            <span>Adventure &amp; Discovery</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-[#F9F7F2] leading-[1.1] mb-6 italic">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-[#F9F7F2] leading-[1.1] mb-5 sm:mb-6 italic drop-shadow-md">
             Find Your Next Hideout
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-[#EAE6DC] font-light max-w-2xl mx-auto leading-relaxed mb-10 font-sans">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#EAE6DC] font-light max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10 font-sans drop-shadow-sm px-2">
             The places I discover, love, and think are worth knowing about.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto">
             <a
               href="#/hideouts"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#8FA18B] text-white hover:bg-[#7C8E78] text-sm md:text-base font-semibold transition-all shadow-md hover:shadow-lg"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-3.5 rounded-full bg-[#8FA18B] hover:bg-[#7C8E78] active:scale-98 text-white text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               <Compass className="w-4 h-4" />
               <span>Explore Hideouts</span>
@@ -88,7 +93,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
 
             <a
               href="#/destinations"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-[#F9F7F2] backdrop-blur-md border border-white/25 text-sm md:text-base font-medium transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-3.5 rounded-full bg-black/35 hover:bg-black/50 active:scale-98 text-[#F9F7F2] backdrop-blur-md border border-white/30 hover:border-white/50 text-sm md:text-base font-medium transition-all shadow-md"
             >
               <span>Browse Destinations</span>
               <ArrowRight className="w-4 h-4" />
@@ -103,12 +108,13 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4 relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#F1EDE4] border border-[#E9E5D9]">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
-                alt="Founder and travel editor of TravelHideouts"
+                src={mileyRochaFounderImg}
+                alt="Miley Rocha, Founder and Travel Editor of TravelHideouts"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-white text-[11px] text-center font-medium">
-                Founder & Travel Editor
+                Miley Rocha · Founder &amp; Travel Editor
               </div>
             </div>
 
@@ -119,7 +125,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
               </div>
 
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#434338] leading-tight italic">
-                “Hi, I'm the woman behind TravelHideouts.”
+                “Hi, I'm Miley Rocha — Founder of TravelHideouts.”
               </h2>
 
               <p className="text-base md:text-[17px] text-[#434338] leading-relaxed font-sans">
@@ -248,7 +254,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             href="#/destinations"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8FA18B] hover:text-[#434338] hover:underline"
           >
-            <span>All 10 destinations</span>
+            <span>All 8 destinations</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -262,9 +268,16 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-[#F1EDE4]">
                 <img
-                  src={dest.heroImage}
+                  src={dest.heroImage || dest.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80'}
                   alt={dest.name}
                   loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80') {
+                      target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80';
+                    }
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
@@ -352,9 +365,16 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
                 >
                   <div className="flex items-start gap-4">
                     <img
-                      src={story.heroImage}
+                      src={story.heroImage || story.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80'}
                       alt={story.title}
-                      className="w-20 h-20 rounded-2xl object-cover shrink-0"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (target.src !== 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80') {
+                          target.src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80';
+                        }
+                      }}
+                      className="w-20 h-20 rounded-2xl object-cover shrink-0 bg-[#EAE2D5]"
                     />
                     <div>
                       <div className="flex items-center gap-2 text-[11px] text-[#8D8D7E] mb-1">
@@ -400,9 +420,16 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
                 >
                   <div className="flex items-start gap-4">
                     <img
-                      src={guide.heroImage}
+                      src={guide.heroImage || guide.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80'}
                       alt={guide.title}
-                      className="w-20 h-20 rounded-2xl object-cover shrink-0"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80') {
+                          target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=600&q=80';
+                        }
+                      }}
+                      className="w-20 h-20 rounded-2xl object-cover shrink-0 bg-[#EAE2D5]"
                     />
                     <div>
                       <div className="flex items-center gap-2 text-[11px] text-[#8D8D7E] mb-1">

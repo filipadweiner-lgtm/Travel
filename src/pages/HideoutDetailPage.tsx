@@ -95,49 +95,60 @@ export const HideoutDetailPage: React.FC<HideoutDetailPageProps> = ({
         </div>
       </div>
 
-      {/* Hero Visual Banner */}
-      <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden bg-[#EAE2D5] border border-[#E0D5C3] shadow-md">
-        <img
-          src={hideout.image}
-          alt={hideout.title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Author Notice */}
-      <AuthorNotice />
-
-      {/* Editorial Breakdown Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-        {/* Main Content Column */}
-        <div className="lg:col-span-8 space-y-8">
-          <div className="prose prose-stone max-w-none">
-            <h3 className="font-serif text-2xl font-bold text-[#242220] mb-3">
-              The Experience
-            </h3>
-            <p className="text-base md:text-[17px] text-[#423C36] leading-relaxed">
-              {hideout.summary}
-            </p>
+          {/* Hero Visual Banner */}
+          <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden bg-[#EAE2D5] border border-[#E0D5C3] shadow-md">
+            <img
+              src={hideout.image || hideout.heroImage || 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&q=80'}
+              alt={hideout.title}
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget as HTMLImageElement;
+                if (target.src !== 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&q=80') {
+                  target.src = 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&q=80';
+                }
+              }}
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          <MyTake content={hideout.authorTake} />
+          {/* Author Notice */}
+          <AuthorNotice />
 
-          <WhyILikeIt content={hideout.whySpecial} />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <GoodToKnow content={hideout.goodToKnow} />
-            <div className="p-4 rounded-xl bg-[#F6F2EB] border border-[#E2D6C5] flex flex-col justify-between">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#695D4F] mb-1">
-                Vibe & Atmosphere
-              </span>
-              <p className="text-sm italic font-serif text-[#3E3832]">
-                "{hideout.vibe}"
-              </p>
-              <div className="mt-3">
-                <WouldIGoBack verdict={hideout.wouldGoBack} />
+          {/* Editorial Breakdown Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            {/* Main Content Column */}
+            <div className="lg:col-span-8 space-y-8">
+              <div className="prose prose-stone max-w-none">
+                <h3 className="font-serif text-2xl font-bold text-[#242220] mb-3">
+                  The Experience
+                </h3>
+                <p className="text-base md:text-[17px] text-[#423C36] leading-relaxed">
+                  {hideout.summary || hideout.description || hideout.excerpt}
+                </p>
               </div>
-            </div>
-          </div>
+
+              {(hideout.authorTake || hideout.whySpecial) && (
+                <MyTake content={hideout.authorTake || hideout.whySpecial || ''} />
+              )}
+
+              {hideout.whySpecial && (
+                <WhyILikeIt content={hideout.whySpecial} />
+              )}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <GoodToKnow content={hideout.goodToKnow || (hideout.highlights ? hideout.highlights.join(' · ') : 'Authentic regional retreat curated for mindful travelers.')} />
+                <div className="p-4 rounded-xl bg-[#F6F2EB] border border-[#E2D6C5] flex flex-col justify-between">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#695D4F] mb-1">
+                    Vibe & Atmosphere
+                  </span>
+                  <p className="text-sm italic font-serif text-[#3E3832]">
+                    "{hideout.vibe || 'Peaceful, restorative sanctuary'}"
+                  </p>
+                  <div className="mt-3">
+                    <WouldIGoBack verdict={hideout.wouldGoBack || 'Top of My Wishlist'} />
+                  </div>
+                </div>
+              </div>
 
           {/* Traveler Voice Box if present */}
           {travelerVoice && (

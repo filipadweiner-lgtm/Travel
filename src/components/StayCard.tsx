@@ -16,9 +16,16 @@ export const StayCard: React.FC<StayCardProps> = ({ stay, className = '' }) => {
         {/* Left/Top Image Column */}
         <div className="lg:col-span-5 relative aspect-[16/10] lg:aspect-auto min-h-[260px] bg-[#F1EDE4] overflow-hidden">
           <img
-            src={stay.image}
+            src={stay.image || stay.heroImage || 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80'}
             alt={stay.name}
             loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src !== 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80') {
+                target.src = 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80';
+              }
+            }}
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
           />
           <div className="absolute top-3.5 left-3.5 z-10">
@@ -82,7 +89,9 @@ export const StayCard: React.FC<StayCardProps> = ({ stay, className = '' }) => {
                   <AlertCircle className="w-3 h-3 text-[#D48166]" /> Things Worth Knowing:
                 </span>
                 <p className="text-[#6D3823] line-clamp-2 leading-relaxed">
-                  {stay.thingsWorthKnowing[0]}
+                  {Array.isArray(stay.thingsWorthKnowing) 
+                    ? stay.thingsWorthKnowing[0] 
+                    : stay.thingsWorthKnowing || 'Check property policies before arrival.'}
                 </p>
               </div>
             </div>
@@ -90,14 +99,26 @@ export const StayCard: React.FC<StayCardProps> = ({ stay, className = '' }) => {
 
           {/* Action Footer */}
           <div className="pt-4 border-t border-[#E9E5D9] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="flex items-center flex-wrap gap-1.5 text-xs text-[#8D8D7E]">
-              <span className="font-bold text-[10px] uppercase tracking-widest text-[#5A5A40]">Best for:</span>
-              {stay.bestFor.slice(0, 2).map((item, idx) => (
-                <span key={idx} className="px-2.5 py-0.5 rounded-full bg-[#F1EDE4] text-[#5A5A40] text-[11px] border border-[#E9E5D9]">
-                  {item}
-                </span>
-              ))}
-            </div>
+            {(() => {
+              const bestForList = Array.isArray(stay.bestFor)
+                ? stay.bestFor
+                : typeof stay.bestFor === 'string'
+                ? stay.bestFor.split(',').map(s => s.trim()).filter(Boolean)
+                : [];
+
+              if (bestForList.length === 0) return <div />;
+
+              return (
+                <div className="flex items-center flex-wrap gap-1.5 text-xs text-[#8D8D7E]">
+                  <span className="font-bold text-[10px] uppercase tracking-widest text-[#5A5A40]">Best for:</span>
+                  {bestForList.slice(0, 2).map((item, idx) => (
+                    <span key={idx} className="px-2.5 py-0.5 rounded-full bg-[#F1EDE4] text-[#5A5A40] text-[11px] border border-[#E9E5D9]">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              );
+            })()}
 
             <div className="flex items-center gap-2">
               <a

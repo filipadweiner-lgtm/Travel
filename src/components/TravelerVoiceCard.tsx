@@ -65,37 +65,53 @@ export const TravelerVoiceCard: React.FC<TravelerVoiceCardProps> = ({
         </div>
 
         {/* Mixed Sentiment Breakdowns */}
-        {(voice.whatTravelersLove || voice.thingsWorthKnowing) && (
-          <div className="space-y-2 mt-4 text-xs">
-            {voice.whatTravelersLove && voice.whatTravelersLove.length > 0 && (
-              <div className="bg-[#8FA18B]/10 p-3 rounded-2xl border border-[#8FA18B]/25">
-                <div className="flex items-center gap-1.5 font-bold text-[#354832] mb-1">
-                  <ThumbsUp className="w-3 h-3 text-[#8FA18B]" />
-                  <span>What travelers love:</span>
-                </div>
-                <ul className="list-disc list-inside space-y-0.5 text-[#3A4D38] pl-1">
-                  {voice.whatTravelersLove.map((love, idx) => (
-                    <li key={idx}>{love}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+        {(() => {
+          const loveList = Array.isArray(voice.whatTravelersLove)
+            ? voice.whatTravelersLove
+            : typeof voice.whatTravelersLove === 'string'
+            ? [voice.whatTravelersLove]
+            : [];
 
-            {voice.thingsWorthKnowing && voice.thingsWorthKnowing.length > 0 && (
-              <div className="bg-[#D48166]/10 p-3 rounded-2xl border border-[#D48166]/25">
-                <div className="flex items-center gap-1.5 font-bold text-[#733B27] mb-1">
-                  <AlertCircle className="w-3 h-3 text-[#D48166]" />
-                  <span>Things worth knowing:</span>
+          const caveatList = Array.isArray(voice.thingsWorthKnowing)
+            ? voice.thingsWorthKnowing
+            : typeof voice.thingsWorthKnowing === 'string'
+            ? [voice.thingsWorthKnowing]
+            : [];
+
+          if (loveList.length === 0 && caveatList.length === 0) return null;
+
+          return (
+            <div className="space-y-2 mt-4 text-xs">
+              {loveList.length > 0 && (
+                <div className="bg-[#8FA18B]/10 p-3 rounded-2xl border border-[#8FA18B]/25">
+                  <div className="flex items-center gap-1.5 font-bold text-[#354832] mb-1">
+                    <ThumbsUp className="w-3 h-3 text-[#8FA18B]" />
+                    <span>What travelers love:</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 text-[#3A4D38] pl-1">
+                    {loveList.map((love, idx) => (
+                      <li key={idx}>{love}</li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="list-disc list-inside space-y-0.5 text-[#6D3823] pl-1">
-                  {voice.thingsWorthKnowing.map((caveat, idx) => (
-                    <li key={idx}>{caveat}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
+              )}
+
+              {caveatList.length > 0 && (
+                <div className="bg-[#D48166]/10 p-3 rounded-2xl border border-[#D48166]/25">
+                  <div className="flex items-center gap-1.5 font-bold text-[#733B27] mb-1">
+                    <AlertCircle className="w-3 h-3 text-[#D48166]" />
+                    <span>Things worth knowing:</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 text-[#6D3823] pl-1">
+                    {caveatList.map((caveat, idx) => (
+                      <li key={idx}>{caveat}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          );
+        })()}
       </div>
 
       {/* Footer Attribution & Original Link */}

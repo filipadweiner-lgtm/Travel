@@ -135,9 +135,16 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                     className="group p-3 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all flex items-center gap-3.5 shadow-xs"
                   >
                     <img
-                      src={dest.heroImage}
+                      src={dest.heroImage || dest.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80'}
                       alt={dest.name}
-                      className="w-12 h-12 rounded-xl object-cover"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80') {
+                          target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80';
+                        }
+                      }}
+                      className="w-12 h-12 rounded-xl object-cover bg-[#EAE2D5]"
                     />
                     <div className="truncate">
                       <h4 className="font-serif font-bold text-base text-[#434338] group-hover:text-[#8FA18B]">
@@ -167,9 +174,16 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                   >
                     <div className="flex items-center gap-3.5 truncate">
                       <img
-                        src={hideout.image}
+                        src={hideout.image || hideout.heroImage || 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80'}
                         alt={hideout.title}
-                        className="w-12 h-12 rounded-xl object-cover shrink-0"
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget as HTMLImageElement;
+                          if (target.src !== 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80') {
+                            target.src = 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80';
+                          }
+                        }}
+                        className="w-12 h-12 rounded-xl object-cover shrink-0 bg-[#EAE2D5]"
                       />
                       <div className="truncate">
                         <h4 className="font-serif font-bold text-[15px] text-[#434338] group-hover:text-[#8FA18B] truncate">

@@ -41,9 +41,16 @@ export const GuidesPage: React.FC = () => {
               <div>
                 <div className="relative aspect-[16/10] overflow-hidden bg-[#F1EDE4]">
                   <img
-                    src={guide.heroImage}
+                    src={guide.heroImage || guide.image || 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80'}
                     alt={guide.title}
                     loading="lazy"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (target.src !== 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80') {
+                        target.src = 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80';
+                      }
+                    }}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute top-3 left-3">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { SEOHead } from '../components/SEOHead';
 import { AuthorNotice } from '../components/AuthorNotice';
+import mileyRochaFounderImg from '../assets/images/miley_eating_berries_1786888166297.jpg';
 import { 
   Heart, 
   ShieldCheck, 
@@ -42,18 +43,25 @@ export const AboutPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-4 relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#EAE2D5]">
             <img
-              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80"
-              alt="Founder and travel editor of TravelHideouts"
+              src={mileyRochaFounderImg}
+              alt="Miley Rocha, Founder and Travel Editor of TravelHideouts"
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
+            <div className="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/20 text-white text-[11px] text-center font-medium">
+              Miley Rocha · Founder &amp; Travel Editor
+            </div>
           </div>
 
           <div className="md:col-span-8 space-y-4">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#8C6D58] uppercase tracking-wider">
+              <span>Meet Miley Rocha</span>
+            </div>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#242220]">
               The Story Behind the Project
             </h2>
             <p className="text-sm md:text-base text-[#4C453E] leading-relaxed">
-              I spent over a decade traveling through European cities, coastal fishing ports, and mountain valleys. Over time, I noticed a frustrating pattern in modern travel media:
+              I'm Miley Rocha, founder and travel editor of TravelHideouts. I spent over a decade traveling through European cities, coastal fishing ports, and mountain valleys. Over time, I noticed a frustrating pattern in modern travel media:
             </p>
             <p className="text-sm md:text-base text-[#4C453E] leading-relaxed">
               Standard hotel booking engines give you 5,000 options with no human context, while social media feeds show 5-second aesthetic video clips that hide thin walls, tourist congestion, and disappointing locations.

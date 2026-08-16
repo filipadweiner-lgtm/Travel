@@ -2,847 +2,839 @@ import { Destination } from '../types';
 
 export const DESTINATIONS: Destination[] = [
   {
-    id: 'lisbon',
-    slug: 'lisbon',
-    name: 'Lisbon',
-    country: 'Portugal',
-    tag: 'Sun-drenched hills, quiet tile façades & ceramic wine bars',
-    heroImage: 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'A city made for wandering uphill, stopping for warm pastéis de nata, and lingering in sunlit miradouros with a glass of Vinho Verde.',
-    openingEditorial: 'Lisbon is one of those cities where getting slightly lost can be the most rewarding part of the afternoon. The light here has a golden, reflective quality thanks to the Tagus River, bouncing off pastel azulejos and calcada cobblestones.',
-    whereIWouldStay: 'Príncipe Real or upper Estrela. You are a five-minute stroll from lush botanic gardens, small concept boutiques, and natural wine bars, yet comfortably above the dense nightlife rush of Bairro Alto.',
+    id: 'iceland',
+    slug: 'iceland',
+    name: 'Iceland',
+    country: 'Iceland',
+    tag: 'Black volcanic sands, quiet geothermal pools & vast arctic light',
+    heroImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'A landscape of elemental contrast where steaming hot springs cut through glacial plains, dramatic sea cliffs host nesting puffins, and silence stretches for miles.',
+    openingEditorial: 'Iceland is less about visiting individual attractions and more about letting your internal clock adjust to weather, daylight, and sheer geographic scale. Outside Reykjavík, civilization drops away quickly into moss-covered lava fields, cascading waterfalls, and obsidian shorelines.',
+    whereIWouldStay: 'A rural guesthouse along the South Coast near Vík or a secluded fjord cottage in the Snæfellsnes Peninsula. This allows you to witness early morning mist over black sands before tour buses arrive from the capital.',
     neighborhoods: [
       {
-        name: 'Príncipe Real',
-        vibe: 'Sophisticated, leafy, design-conscious and tranquil',
-        bestFor: 'Solo travelers and couples who enjoy chic café mornings and boutique browsing',
-        whyChoose: 'Quiet side streets, elevated gardens with panoramic kiosks, and intimate chef-driven bistros.',
-        avoidIf: 'You are on an ultra-tight budget and want the lowest hostel rates.'
+        name: 'Reykjavík (Vesturbær & Grandi)',
+        vibe: 'Creative, coastal, walkable and intimate',
+        bestFor: 'First arrivals, specialty bakeries, design boutiques, and harbor walks',
+        whyChoose: 'Vesturbær gives you quiet residential streets, neighborhood geothermal pools like Vesturbæjarlaug, and easy walking access to the city center.',
+        avoidIf: 'You want complete wilderness right outside your door.'
       },
       {
-        name: 'Alfama & Graça',
-        vibe: 'Historic, labyrinthine, soulful and village-like',
-        bestFor: 'Atmospheric photography and evening fado intimacy',
-        whyChoose: 'Wake up to the sound of church bells and swallows circling whitewashed walls.',
-        avoidIf: 'You dislike climbing steep flights of stone stairs with heavy luggage.'
+        name: 'South Coast & Vík',
+        vibe: 'Dramatic basalt columns, roaring waterfalls and glacial lagoons',
+        bestFor: 'Photographers, hikers, and travelers exploring the classic southern route',
+        whyChoose: 'Base near Vík or Kirkjubæjarklaustur to be positioned for Jökulsárlón Glacier Lagoon and Diamond Beach at sunrise.',
+        avoidIf: 'You prefer vibrant evening dining and nightlife.'
       },
       {
-        name: 'Santos & Lapa',
-        vibe: 'Design district meets quiet aristocratic mansions',
-        bestFor: 'Longer stays and relaxed specialty coffee hunting',
-        whyChoose: 'Less crowded by day tours; authentic neighborhood tascas side-by-side with modern galleries.',
-        avoidIf: 'You want immediate 3-minute subway access (tram and bus are primary here).'
+        name: 'Snæfellsnes Peninsula',
+        vibe: 'Iceland in miniature: volcanic craters, fishing villages, and glacier views',
+        bestFor: 'Slow road trippers looking for remote beauty without driving the entire Ring Road',
+        whyChoose: 'Uncrowded coastal paths, black pebble beaches at Djúpalónssandur, and quiet family-run farms.',
+        avoidIf: 'You require immediate proximity to international airport links.'
+      },
+      {
+        name: 'Akureyri & Lake Mývatn',
+        vibe: 'Geothermal craters, pseudo-craters, and northern fjord tranquility',
+        bestFor: 'Summer exploration, winter aurora watchers, and geothermal bath lovers',
+        whyChoose: 'Mývatn Nature Baths offer a peaceful alternative to the Blue Lagoon with fewer crowds and stark volcanic views.',
+        avoidIf: 'You only have a short 3-day stopover.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers consistently praise Lisbon for its warm local hospitality, remarkable safety, and affordability compared to Western European capitals. The most frequent caveat is physical fatigue from the hills and slippery limestone pavers when it rains.',
+    whatTravelersSaySummary: 'Travelers consistently describe Iceland as awe-inspiring and visually unmatched. The most common advice centers around respecting shifting weather: winds can be ferocious, waterproof layers are mandatory, and checking road.is before setting out in winter is non-negotiable.',
     whatToSkip: [
-      'Tram 28 at peak midday hours — long queues and pickpocket risks make it far less romantic than a peaceful morning walk through Graça.',
-      'Over-hyped waterfront seafood traps directly adjacent to Praça do Comércio.',
-      'Driving a rental car inside the historic center.'
+      'Over-scheduled single-day Golden Circle express bus marathons where you spend 7 hours in transit and only 20 minutes at each site.',
+      'Relying solely on tourist restaurants on Laugavegur in Reykjavík when neighborhood bakeries and harbor fish shacks offer far fresher fare.',
+      'Underestimating winter driving conditions: avoid driving in blizzard warnings even with a 4x4.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Sunset at Miradouro da Senhora do Monte',
-        description: 'The highest lookout in the city offering unmatched panoramas across São Jorge Castle to the 25 de Abril Bridge.',
-        whyWorthIt: 'Bring a fresh pastry from nearby Pastelaria Batalha and watch the city turn rose-gold without the commercial noise.'
+        title: 'Dawn at Jökulsárlón & Diamond Beach',
+        description: 'Watching translucent iceberg fragments wash ashore on pitch-black volcanic sand as morning light filters through the mist.',
+        whyWorthIt: 'Arriving before 8:30 AM means you hear only the gentle lap of ocean waves and the cracking of ancient glacier ice.'
       },
       {
-        title: 'Morning at the Gulbenkian Garden & Modern Art Pavilions',
-        description: 'A serene brutalist cultural oasis with winding streams, duck ponds, and world-class private art collections.',
-        whyWorthIt: 'A peaceful, meditative contrast to the bustling city center; easily accessible via the blue metro line.'
+        title: 'Local Geothermal Soaking at Vesturbæjarlaug',
+        description: 'Skipping the commercial crowds for Reykjavík’s beloved neighborhood public hot pool.',
+        whyWorthIt: 'Experience genuine Icelandic community culture where locals of all generations gather to converse in 40°C mineral water.'
       },
       {
-        title: 'Ferry across to Cacilhas for Grilled Fish',
-        description: 'A 10-minute public ferry crossing to Ponto Final or Atira-te ao Rio on the southern bank.',
-        whyWorthIt: 'Uninterrupted skyline views of Lisbon across the water at dusk while dining on simply grilled sea bass.'
+        title: 'Hike into the Fjaðrárgljúfur Canyon',
+        description: 'An ancient, winding canyon carved through volcanic rock draped in lush emerald moss.',
+        whyWorthIt: 'The viewing platforms provide breathtaking perspective over the winding glacial stream below.'
       }
     ],
     placesToEat: [
       {
-        name: 'Prado',
-        type: 'Farm-to-table seasonal Portuguese',
-        neighborhood: 'Sé / Alfama',
-        whySpecial: 'Set in a light-filled historic cannery with hanging greenery and exceptional local biodynamic wines.'
+        name: 'Brauð & Co',
+        type: 'Artisan sourdough & warm cinnamon-cardamom rolls',
+        neighborhood: 'Reykjavík Center',
+        whySpecial: 'Watch bakers knead fresh rye loaves through the open window; best enjoyed warm on a crisp arctic morning.'
       },
       {
-        name: 'Copenhagen Coffee Lab & Bakery',
-        type: 'Specialty coffee & sourdough cardamom buns',
-        neighborhood: 'Príncipe Real',
-        whySpecial: 'Perfect peaceful morning spot with clean Scandinavian aesthetics and excellent pour-overs.'
+        name: 'Kaffi Kú',
+        type: 'Farm-to-table café above a modern dairy farm',
+        neighborhood: 'Near Akureyri',
+        whySpecial: 'Enjoy fresh farm waffle treats with homemade cream overlooking the tranquil northern pastures.'
       },
       {
-        name: 'Taberna da Rua das Flores',
-        type: 'Chalkboard daily traditional Portuguese tavern',
-        neighborhood: 'Chiado / Bica',
-        whySpecial: 'Intimate, convivial dining where sharing small plates feels like a secret dinner party.'
+        name: 'Smidjan Brugghus',
+        type: 'Craft brewery & local comfort burgers',
+        neighborhood: 'Vík í Mýrdal',
+        whySpecial: 'A cozy sanctuary after a blustery afternoon exploring the black sand beach at Reynisfjara.'
       }
     ],
     gettingAround: {
-      recommendation: 'Walk as much as your calves allow, and rely on the modern Metro or quick Uber/Bolt rides for uphill returns late at night.',
-      airportTransit: 'The Red Metro line connects directly from Lisbon Humberto Delgado Airport to the city center in 25 minutes for under €2.',
-      eveningWalkingAdvice: 'Streets in Príncipe Real, Chiado, and Baixa are well-lit and vibrant with late diners until midnight. Wear flat rubber-soled shoes for traction on polished cobblestones.'
+      recommendation: 'Rent a reliable 4x4 vehicle with gravel and ash insurance protection for freedom along the Ring Road and coastal fjords.',
+      airportTransit: 'Flybus or Airport Direct coaches connect Keflavík Airport (KEF) to central Reykjavík in 45 minutes with drop-offs near accommodation stops.',
+      eveningWalkingAdvice: 'Reykjavík is rated among the safest cities in the world. Late-night walks around Tjörnin pond or the harbor are calm and peaceful year-round.'
     },
     goodToKnow: [
-      'Always carry a small coin purse: some historic bakeries and kiosks prefer cash for items under €5.',
-      'Dinner service starts later here; kitchens rarely open before 7:30 PM, with peak seating around 8:45 PM.',
-      'Portugal uses standard European Type C and F plugs.'
+      'Last verified: March 2026. Weather conditions change rapidly in all seasons; always check vedur.is and safetravel.is before long drives.',
+      'Iceland is virtually 100% cashless: contactless credit and debit cards are accepted everywhere from parking meters to remote farm stalls.',
+      'Never drive off marked roads: fragile arctic moss takes decades to recover from tire treads and off-roading is strictly illegal.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Extremely welcoming and ranked among the safest capital cities in Europe.',
-      eveningAtmosphere: 'Lively, friendly outdoor terraces with a respectful street culture.',
-      arrivalTips: 'If arriving at Oriente or Santa Apolónia train stations late, call a rideshare directly to your accommodation door.',
-      neighborhoodAdvice: 'Príncipe Real and Estrela offer the most relaxed, peaceful night-time returns.'
+      generalVibe: 'Consistently ranked #1 globally for gender equality and safety; an ideal destination for solo female travelers.',
+      eveningAtmosphere: 'Very respectful and relaxed street culture with zero harassment in public spaces.',
+      arrivalTips: 'If arriving on early morning transatlantic flights at KEF (often 5:00 AM), pre-book airport thermal bath entry or arrange early hotel check-in to rest.',
+      neighborhoodAdvice: 'Vesturbær and the 101 downtown area are flat, safe, and easily walked at any hour.'
     },
-    relatedHideoutIds: ['hideout-lisbon-botanic', 'hideout-lisbon-palacete'],
-    relatedStayIds: ['stay-lisbon-memmo', 'stay-lisbon-casa-do-baro'],
-    relatedStoryIds: ['story-staying-outside-center', 'story-little-hotels'],
-    relatedGuideIds: ['guide-where-to-stay-lisbon']
+    relatedHideoutIds: ['hideout-iceland-south-cabin', 'hideout-iceland-snaefellsnes-retreat'],
+    relatedStayIds: ['stay-iceland-ion-adventure', 'stay-iceland-hotel-rang'],
+    relatedStoryIds: ['story-iceland-road-trip', 'story-iceland-more-than-reykjavik'],
+    relatedGuideIds: ['guide-iceland-road-trip-essentials']
   },
   {
-    id: 'paris',
-    slug: 'paris',
-    name: 'Paris',
-    country: 'France',
-    tag: 'Tree-lined boulevards, tucked-away courtyards & quiet morning bistros',
-    heroImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'Beyond the postcard icons lies a neighborhood city of zinc rooftops, independent bookshops, and leisurely afternoons along the Seine.',
-    openingEditorial: 'Paris is best experienced in the quiet margins: early morning coffee before the boulangerie line spills onto the sidewalk, exploring courtyard passages in the 9th, or watching swans glide past Île Saint-Louis.',
-    whereIWouldStay: 'The 10th Arrondissement near Canal Saint-Martin or the upper 9th near South Pigalle (SoPi). Both offer vibrant artisan food culture and genuine neighborhood charm away from tour bus corridors.',
+    id: 'norway',
+    slug: 'norway',
+    name: 'Norway',
+    country: 'Norway',
+    tag: 'Dramatic sea fjords, arctic fishing cabins & slow mountain railways',
+    heroImage: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'Deep glacial valleys carving through granite peaks, wooden rorbuer cabins perched over mirror-still waters, and quiet coastal journeys on public ferries.',
+    openingEditorial: 'Norway rewards the traveler who slows down. The beauty of this country is not something you rush past; it is best absorbed from the wooden deck of a fjord ferry in early morning, or beside a crackling woodstove in a Lofoten fishing cabin while rain patters on the turf roof.',
+    whereIWouldStay: 'A converted traditional red rorbu cabin in Reine or Henningsvær in the Lofoten Islands, or a quiet fjord-side guesthouse along the Aurlandsfjord near Flåm.',
     neighborhoods: [
       {
-        name: 'Canal Saint-Martin (10th)',
-        vibe: 'Creative, relaxed, water-facing and culinary-forward',
-        bestFor: 'Solo strolls, contemporary natural wine bars, and design boutiques',
-        whyChoose: 'Pedestrian-friendly quays on weekends with a youthful, artistic spirit.',
-        avoidIf: 'You require grand Haussmannian luxury marble palaces.'
+        name: 'Bergen (Nordnes & Sandviken)',
+        vibe: 'Historic cobblestones, wooden wharf houses, and misty fjord gateways',
+        bestFor: 'Starting fjord expeditions, seafood lovers, and scenic funicular walks',
+        whyChoose: 'Nordnes offers quiet residential alleys lined with whitewashed 18th-century timber houses away from the Bryggen crowds.',
+        avoidIf: 'You dislike frequent rainfall (embrace good rain gear as locals do).'
       },
       {
-        name: 'South Pigalle & Nouvelle Athènes (9th)',
-        vibe: 'Neo-classical elegance meets hip gourmet bistros',
-        bestFor: 'Food lovers, boutique hotels, and central metro connections',
-        whyChoose: 'Charming hilly streets leading up to Montmartre with fantastic pastry shops.',
-        avoidIf: 'The lower boulevard near the sex shops can feel noisy on weekend nights.'
+        name: 'Lofoten Islands (Henningsvær & Reine)',
+        vibe: 'Dramatic razor-sharp peaks rising straight out of Arctic waters',
+        bestFor: 'Hikers, photographers, midnight sun, and winter northern lights',
+        whyChoose: 'Authentic working fishing villages with incredible contemporary art galleries and artisan coffee roasters.',
+        avoidIf: 'You do not plan on renting a car or navigating rural bus schedules.'
       },
       {
-        name: 'The Marais & Haut Marais (3rd/4th)',
-        vibe: 'Historic mansions, art galleries, and fashion-forward cafés',
-        bestFor: 'Weekend shopping, museum hopping, and historic atmosphere',
-        whyChoose: 'The quiet residential streets of the 3rd feel like a peaceful 17th-century village.',
-        avoidIf: 'You want to avoid weekend crowds along Rue des Francs-Bourgeois.'
+        name: 'Oslo (Grünerløkka & Frogner)',
+        vibe: 'World-class contemporary architecture, sauna culture, and forest trails',
+        bestFor: 'Design enthusiasts, urban sauna rituals, and coffee culture',
+        whyChoose: 'Grünerløkka is packed with independent vintage shops, riverside parks, and specialty bakeries.',
+        avoidIf: 'You want immediate wilderness on day one.'
+      },
+      {
+        name: 'Tromsø & Senja',
+        vibe: 'Arctic wilderness, whale watching, and high-latitude aurora viewing',
+        bestFor: 'Winter northern lights expeditions and wild coastal trekking',
+        whyChoose: 'Tromsø provides a lively cultural base with cable car views, while nearby Senja offers pristine empty fjords.',
+        avoidIf: 'You are seeking warm summer weather.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers praise Paris\'s incomparable walkability, the beauty of everyday residential architecture, and the high standard of casual neighborhood dining. Key caveats include navigating complex metro transfer stations and booking popular bistros weeks ahead.',
+    whatTravelersSaySummary: 'Travelers praise Norway’s immaculate public transport, unparalleled natural beauty, and clean mountain air. The primary recurring advice is to budget realistically for dining and to book fjord ferries and trains well in advance during peak summer.',
     whatToSkip: [
-      'Midday line for the Eiffel Tower elevators — the view from Parc des Buttes-Chaumont or the Institut du Monde Arabe roof is more peaceful and free.',
-      'Souvenir shops and chain cafés around Saint-Michel fountain.',
-      'Unsolicited street petition signers near major monuments.'
+      'Rushing the Bergen-to-Oslo journey by plane when the Bergen Line and Flåm Railway offer one of the world\'s most magnificent train rides.',
+      'Eating every meal at tourist hotels when local supermarkets (Rema 1000, Meny) offer exceptional smoked salmon, sourdough, and brown goat cheese (Brunost) for scenic picnics.',
+      'Attempting Trolltunga hike without proper mountain boots and alpine layers.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Morning stroll through the covered Passages Couverts',
-        description: 'Glass-roofed 19th-century shopping arcades like Galerie Vivienne and Passage des Panoramas.',
-        whyWorthIt: 'Magnificent mosaic floors, vintage antiquarian bookstalls, and quiet tearooms sheltered from rain.'
+        title: 'Morning Fjord Sauna in Oslo or Flåm',
+        description: 'Wood-fired floating sauna session followed by a refreshing plunge into the crisp, clean fjord water.',
+        whyWorthIt: 'The ultimate Norwegian wellness ritual that energizes body and mind before a day of exploring.'
       },
       {
-        title: 'Musée de la Vie Romantique & Courtyard Tea Garden',
-        description: 'Tucked away in the 9th at the foot of Montmartre in artist Ary Scheffer\'s former studio.',
-        whyWorthIt: 'A hidden greenhouse café surrounded by rosebushes and lilacs where you can read peacefully.'
+        title: 'The Bergen Railway & Nærøyfjord Electric Ferry',
+        description: 'Journeying across the Hardangervidda plateau down to the UNESCO-protected narrow Nærøyfjord on a silent electric catamaran.',
+        whyWorthIt: 'Gliding silently past 1,000-meter waterfalls with zero engine noise is unforgettable.'
       },
       {
-        title: 'Sunset walk along the elevated Coulée Verte René-Dumont',
-        description: 'The world\'s first elevated railway park, planted with lavender, hazel trees, and climbing roses.',
-        whyWorthIt: 'Walk 4.5 km above street level through the 12th arrondissement with zero traffic noise.'
+        title: 'Midnight Sun Hike up Reinebringen',
+        description: 'Ascending the stone Sherpa staircase for a panoramic 360-degree overlook across the Reinefjord at midnight in June.',
+        whyWorthIt: 'The golden arctic light casts a surreal pink glow over jagged mountain peaks and turquoise coves.'
       }
     ],
     placesToEat: [
       {
-        name: 'Ten Belles',
-        type: 'Specialty coffee & artisan sourdough',
-        neighborhood: '10th (Canal Saint-Martin)',
-        whySpecial: 'Tiny mezzanine, great pour-over coffee, and delicious sausage rolls or seasonal tarts.'
+        name: 'Trevarefabrikken',
+        type: 'Oceanfront cultural venue, natural wine & wood-fired pizza',
+        neighborhood: 'Henningsvær, Lofoten',
+        whySpecial: 'A revitalized 1930s cod liver oil factory with ocean-view saunas, local craft beer, and community warmth.'
       },
       {
-        name: 'Septime La Cave',
-        type: 'Intimate natural wine & small charcuterie bar',
-        neighborhood: '11th (Charonne)',
-        whySpecial: 'Standing room only with bottles curated from the most thoughtful organic European vineyards.'
+        name: 'Tim Wendelboe',
+        type: 'World-renowned micro-roastery & espresso bar',
+        neighborhood: 'Grünerløkka, Oslo',
+        whySpecial: 'Uncompromising dedication to single-origin specialty coffees served in tasting flights.'
       },
       {
-        name: 'Chez Janou',
-        type: 'Provençal bistro with unlimited chocolate mousse bowl',
-        neighborhood: '3rd (Haut Marais)',
-        whySpecial: 'Pastis selection, friendly bustling servers, and classic duck magret.'
+        name: '1881 Bryggekanten',
+        type: 'Traditional fresh Arctic cod & fish soup',
+        neighborhood: 'Kabelvåg, Lofoten',
+        whySpecial: 'Set in a historic waterfront warehouse with century-old timber beams and honest local recipes.'
       }
     ],
     gettingAround: {
-      recommendation: 'Use the RATP app or Apple Maps for Metro navigation. Navigo Easy passes or contactless phone taps make transit frictionless.',
-      airportTransit: 'RER B from CDG Airport takes ~40 minutes into Châtelet-Les Halles, or use official airport taxi flat rates (€56-€65 to Paris).',
-      eveningWalkingAdvice: 'Canal banks and residential arrondissements (3rd, 9th, 10th, 11th, 6th) have plenty of foot traffic until late.'
+      recommendation: 'Use the superb Vy rail network for city connections, and rent a car for exploring the remote fjord arms and Lofoten peninsulas.',
+      airportTransit: 'The Flytoget high-speed train connects Oslo Gardermoen (OSL) to Oslo Central Station in just 19 minutes.',
+      eveningWalkingAdvice: 'Norwegian cities and towns are exceptionally safe at all hours. Street lighting is excellent and pedestrian zones are well-maintained.'
     },
     goodToKnow: [
-      'Always start any interaction in shops or bakeries with a soft, clear "Bonjour, Madame" or "Bonjour, Monsieur" — it is the cornerstone of Parisian courtesy.',
-      'Tap water in restaurants is free and of excellent quality; ask for "une carafe d\'eau, s\'il vous plaît".'
+      'Last verified: February 2026. Allemannsretten (Right to Roam) grants the public freedom to walk and camp respectfully in open countryside.',
+      'Norway is almost entirely cashless: credit cards and mobile tap payments are standard even in remote cabins.',
+      'Alcohol above 4.7% ABV is sold exclusively through state-run Vinmonopolet stores with limited weekend opening hours.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Cosmopolitan, cultured, and very easy to navigate independently.',
-      eveningAtmosphere: 'Outdoor café tables are universally welcoming for solo diners with a book or notebook.',
-      arrivalTips: 'If arriving at Gare du Nord late with bags, take the official metered taxi queue right outside rather than walking through the outer plazas.',
-      neighborhoodAdvice: 'Upper 9th and 3rd/4th provide calm, well-lit street corridors for late returns.'
+      generalVibe: 'Extremely safe, progressive, and welcoming for solo female travelers.',
+      eveningAtmosphere: 'Relaxed, civilized, and comfortable for solo dining and late-night walking.',
+      arrivalTips: 'Train stations in Oslo, Bergen, and Trondheim are central and clean; step off the platform directly into central hotels.',
+      neighborhoodAdvice: 'Nordnes in Bergen and Frogner/Majorstuen in Oslo offer quiet, leafy evening walks.'
     },
-    relatedHideoutIds: ['hideout-paris-marais-loft', 'hideout-paris-hotel-amour'],
-    relatedStayIds: ['stay-paris-provence', 'stay-paris-grand-pigalle'],
-    relatedStoryIds: ['story-staying-outside-center', 'story-what-i-look-for'],
-    relatedGuideIds: ['guide-best-areas-paris']
+    relatedHideoutIds: ['hideout-norway-lofoten-rorbu', 'hideout-norway-fjord-cabin'],
+    relatedStayIds: ['stay-norway-henningsvaer-brygge', 'stay-norway-flam-boutique'],
+    relatedStoryIds: ['story-norway-stay-longer', 'story-norway-fjords-or-lofoten'],
+    relatedGuideIds: ['guide-norway-fjord-slow-travel']
   },
   {
-    id: 'rome',
-    slug: 'rome',
-    name: 'Rome',
-    country: 'Italy',
-    tag: 'Warm ochre piazzas, fountain echoes & hidden courtyard trattorias',
-    heroImage: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'An open-air museum where ancient marble meets ivy-draped alleyways and leisurely three-hour lunches under terracotta arches.',
-    openingEditorial: 'Rome requires slowing down. It is not a city to rush through with a checklist; it rewards sitting on a stone fountain ledge, sipping an afternoon espresso al banco, and letting centuries of history envelop you.',
-    whereIWouldStay: 'Rione Monti or the quieter side of the Jewish Ghetto (Sant\'Angelo). Monti is filled with independent jewelry makers, vintage shops, and warm wine bars, all walking distance to both the Forum and Termini.',
+    id: 'sweden',
+    slug: 'sweden',
+    name: 'Sweden',
+    country: 'Sweden',
+    tag: 'Minimalist design, serene archipelago islands & arctic forest retreats',
+    heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'A masterclass in understated elegance: pine forests meeting peaceful archipelagos, candlelit fika rituals in old wooden bakeries, and clean Nordic craftsmanship.',
+    openingEditorial: 'Sweden embodies the philosophy of *lagom* — just the right amount. There is an effortless balance between refined city culture and immediate access to pristine nature. In Stockholm, you can enjoy world-class contemporary galleries in the morning and be kayaking through quiet granite islands by the afternoon.',
+    whereIWouldStay: 'A quiet design hotel in Stockholm’s Södermalm or Skeppsholmen, or a secluded timber cabin in Swedish Lapland near Abisko or Kiruna.',
     neighborhoods: [
       {
-        name: 'Monti',
-        vibe: 'Bohemian, artistic, historic and friendly',
-        bestFor: 'Solo female travelers, couples, and vintage lovers',
-        whyChoose: 'Piazzetta Madonna dei Monti is the ultimate local evening gathering spot.',
-        avoidIf: 'You want ultra-modern glass architecture.'
+        name: 'Stockholm (Södermalm & Gamla Stan)',
+        vibe: 'Creative boutiques, wooden 18th-century cottages, and water views',
+        bestFor: 'Vintage design lovers, café culture, and solo neighborhood wandering',
+        whyChoose: 'Mariatorget and Nytorget in Södermalm offer tree-lined parks, independent ceramics studios, and relaxed natural wine spots.',
+        avoidIf: 'You prefer large commercial chain department stores.'
       },
       {
-        name: 'Trastevere (Quiet Backstreets)',
-        vibe: 'Cobblestone romance, ivy walls, and bustling trattorias',
-        bestFor: 'Atmosphere, photography, and evening dining',
-        whyChoose: 'Wandering through alleys draped in bougainvillea at golden hour is unforgettable.',
-        avoidIf: 'You stay on the main party streets near Piazza Trilussa on Saturday nights.'
+        name: 'Stockholm Archipelago (Sandhamn & Grinda)',
+        vibe: 'Smooth granite rocks, pine air, and timeless wooden sailing docks',
+        bestFor: 'Summer swimming, island-hopping by public Waxholmsbolaget ferry, and sauna retreats',
+        whyChoose: 'Step off the ferry into car-free island calm where nature trails weave through blueberry patches.',
+        avoidIf: 'You need fast-paced urban nightlife.'
       },
       {
-        name: 'Prati',
-        vibe: 'Refined, residential, wide avenues and gourmet markets',
-        bestFor: 'Quiet nights, proximity to the Vatican, and upscale shopping',
-        whyChoose: 'Mercato Trionfale for authentic pecorino and seasonal artichokes.',
-        avoidIf: 'You prefer medieval narrow alleys.'
+        name: 'Swedish Lapland (Kiruna & Abisko)',
+        vibe: 'Pristine sub-arctic tundra, aurora skies, and Sami heritage',
+        bestFor: 'Winter northern lights, snowshoeing, and dog sledding adventures',
+        whyChoose: 'Abisko National Park has one of the world’s most reliable microclimates for viewing the Aurora Borealis.',
+        avoidIf: 'You are unprepared for sub-zero winter temperatures.'
+      },
+      {
+        name: 'Gotland & Visby',
+        vibe: 'Medieval limestone walls, wild beaches, and summer artisan culture',
+        bestFor: 'Romantic summer escapes, cycling through wildflower meadows, and coastal gastronomy',
+        whyChoose: 'Visby’s UNESCO-listed rose-draped cobblestones combined with the raw limestone sea stacks (raukar) of Fårö.',
+        avoidIf: 'Visiting off-season in late November when many island venues close.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers love Rome\'s intoxicating atmosphere, incredible food at modest prices, and sheer historical density. The primary warning is purchasing tickets to the Colosseum and Galleria Borghese well in advance to avoid scalpers.',
+    whatTravelersSaySummary: 'Travelers love Sweden’s relaxed safety, thoughtful design aesthetics, and the universal warmth of the *fika* (coffee & pastry) tradition. The most helpful note is to make use of the inexpensive public ferries to explore the archipelagos.',
     whatToSkip: [
-      'Restaurants with large pictorial menus and greeters stationed outside trying to pull you in.',
-      'Midday visit to the Trevi Fountain — visit at 7:00 AM instead when it is completely deserted and magical.'
+      'Taxis from Arlanda Airport when the Arlanda Express or commuter train reaches Stockholm Central in 18 minutes.',
+      'Staying only on the main commercial pedestrian street (Drottninggatan) in Stockholm.',
+      'Skipping the fika ritual: taking time for coffee and a cardamom bun is a fundamental part of the culture.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Morning in the Villa Borghese Gardens & Pincio Terrace',
-        description: 'Lush parkland overlooking Piazza del Popolo with ancient stone pines and rowboats on the lake.',
-        whyWorthIt: 'One of the most restorative escapes in the city, especially during warm afternoons.'
+        title: 'Morning Cardamom Bun & Coffee at Fabrique or Bageri Petrus',
+        description: 'Savoring a freshly baked sourdough cardamom twist with a pour-over coffee in a cozy candlelit café.',
+        whyWorthIt: 'The aroma of freshly ground green cardamom and caramelized sugar sets the tone for a restorative morning.'
       },
       {
-        title: 'Keyhole View at the Priory of the Knights of Malta',
-        description: 'On the peaceful Aventine Hill, peer through a brass keyhole perfectly framing St. Peter’s dome through garden arches.',
-        whyWorthIt: 'Follow it with a quiet rest in the nearby Giardino degli Aranci (Orange Garden).'
+        title: 'Public Ferry Hop to Sandhamn Island',
+        description: 'Taking the vintage Waxholm ferry through thousands of pine-forested granite islands to the outer archipelago.',
+        whyWorthIt: 'A quintessential Swedish summer journey where you can walk through quiet pine woods to secluded rocky swimming spots.'
+      },
+      {
+        title: 'Aurora Night Sky Observation at Abisko Sky Station',
+        description: 'Riding the open-air chairlift up Mount Nuolja into the dark arctic sky with zero light pollution.',
+        whyWorthIt: 'The clear, dry air creates unmatched visibility for dancing emerald aurora ribbons.'
       }
     ],
     placesToEat: [
       {
-        name: 'Roscioli Salumeria con Cucina',
-        type: 'Legendary deli & artisanal pasta',
-        neighborhood: 'Regola / Campo de\' Fiori',
-        whySpecial: 'Incredible Carbonara and an unmatched wine cellar with thousands of vintage labels.'
+        name: 'Rosendals Trädgård',
+        type: 'Organic greenhouse café & biodynamic garden',
+        neighborhood: 'Djurgården, Stockholm',
+        whySpecial: 'Dine inside light-filled glasshouses surrounded by orchards, rose gardens, and artisan wood-fired bread.'
       },
       {
-        name: 'Fatamorgana Gelato',
-        type: 'Artisanal gluten-free natural gelato',
-        neighborhood: 'Monti (Piazza degli Zingari)',
-        whySpecial: 'Innovative flavors like ricotta, citrus peel, and Madagascan vanilla.'
+        name: 'Woodstockholm',
+        type: 'Creative bistro & custom furniture studio',
+        neighborhood: 'Mosebacke, Södermalm',
+        whySpecial: 'Ever-evolving thematic menu using hyper-seasonal Swedish ingredients in a warm, communal space.'
+      },
+      {
+        name: 'Stora Bageriet',
+        type: 'Historic bakery & artisan breakfast',
+        neighborhood: 'Östermalm, Stockholm',
+        whySpecial: 'Set in a 17th-century former royal bakery with vaulted brick ceilings and stellar pastries.'
       }
     ],
     gettingAround: {
-      recommendation: 'Rome is immensely walkable. The metro (lines A & B) is useful for longer crosstown trips.',
-      airportTransit: 'The Leonardo Express train runs non-stop from Fiumicino (FCO) to Roma Termini in 32 minutes (€14).',
-      eveningWalkingAdvice: 'Monti, Navona, and central areas have steady pedestrian flow and active evening aperitivo culture.'
+      recommendation: 'Stockholm’s SL public transit card covers metro (famous for its underground art), buses, trams, and urban commuter ferries.',
+      airportTransit: 'Arlanda Express train links Arlanda Airport (ARN) to Stockholm Central in 18 minutes; Flygbussarna airport coaches are an economical alternative.',
+      eveningWalkingAdvice: 'Stockholm is clean, exceptionally safe, and pedestrian-friendly. Södermalm and Gamla Stan remain calm well past midnight.'
     },
     goodToKnow: [
-      'Drinking fountains known as "nasoni" provide ice-cold, clean mineral water throughout the city — carry a refillable flask.',
-      'Coffee culture: Cappuccinos are traditionally a morning ritual before 11 AM; espresso (caffè normale) is ordered after meals.'
+      'Last verified: January 2026. Cash is almost non-existent; cards and mobile payments are required at virtually all establishments.',
+      'Tap water in Sweden is among the purest in the world; carry a refillable water bottle everywhere.',
+      'Sunday hours: many neighborhood boutiques and bakeries close earlier on Sundays (around 4:00 PM).'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Warm, expressive, and deeply social.',
-      eveningAtmosphere: 'Families and solo women enjoy evening passeggiatas comfortably.',
-      arrivalTips: 'Keep personal belongings zipped securely when boarding the Metro at Termini.',
-      neighborhoodAdvice: 'Monti and Prati are exceptionally safe and pleasant for nighttime returns.'
+      generalVibe: 'Extremely high standard of safety, personal respect, and gender equality.',
+      eveningAtmosphere: 'Relaxed, well-illuminated streets with casual, welcoming wine bars and cafés.',
+      arrivalTips: 'Stockholm Central Station is easy to navigate with direct underground connections to the T-Bana metro lines.',
+      neighborhoodAdvice: 'Mariatorget and Skeppsholmen are delightful, quiet areas for solo female travelers.'
     },
-    relatedHideoutIds: ['hideout-rome-monti-residence'],
-    relatedStayIds: ['stay-rome-chapter'],
-    relatedStoryIds: ['story-places-travelers-recommend'],
-    relatedGuideIds: ['guide-how-i-choose-hotels']
+    relatedHideoutIds: ['hideout-sweden-archipelago-cabin', 'hideout-sweden-stockholm-loft'],
+    relatedStayIds: ['stay-sweden-ett-hem', 'stay-sweden-treehotel'],
+    relatedStoryIds: ['story-sweden-different-stockholm', 'story-sweden-lapland-list'],
+    relatedGuideIds: ['guide-sweden-archipelago-design']
   },
   {
-    id: 'barcelona',
-    slug: 'barcelona',
-    name: 'Barcelona',
-    country: 'Spain',
-    tag: 'Modernist curves, Mediterranean sea breeze & tapas bars',
-    heroImage: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'Where Gaudí’s architectural fantasies meet golden beach promenades and lively vermouth bars in Gràcia.',
-    openingEditorial: 'Barcelona has an irresistible rhythm. You start with morning coffee in a sun-drenched square, spend midday studying stained glass in the Eixample, and end the evening eating grilled octopus in a corner bodega.',
-    whereIWouldStay: 'Gràcia or the upper Eixample Esquerra. Gràcia has a village atmosphere with small plazas where locals gather without the tourist intensity of Las Ramblas.',
+    id: 'china',
+    slug: 'china',
+    name: 'China',
+    country: 'China',
+    tag: 'Ancient river towns, dramatic karst peaks & high-speed rail journeys',
+    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'A destination of staggering historical depth and natural wonder: from mist-shrouded limestone towers in Yangshuo to tranquil classical gardens in Suzhou and futuristic high-speed rail networks.',
+    openingEditorial: 'Traveling through China today is a mesmerizing contrast of ancient traditions and hyper-modern infrastructure. The high-speed rail network makes gliding past mountain landscapes effortless, while morning walks through traditional courtyard hutongs and riverside tea houses offer glimpses of everyday life that have endured for centuries.',
+    whereIWouldStay: 'A restored Qing-dynasty courtyard hotel in Beijing’s Dongcheng district, or a quiet boutique retreat nestled among bamboo groves and karst mountains along the Yulong River in Yangshuo.',
     neighborhoods: [
       {
-        name: 'Gràcia',
-        vibe: 'Bohemian village feel, pedestrian squares, indie designers',
-        bestFor: 'Relaxed living, café working, and safe evening walks',
-        whyChoose: 'Plaça del Sol and Plaça de la Virreina are lovely for vermut and reading.',
-        avoidIf: 'You want direct beach frontage out your front door.'
+        name: 'Yangshuo & Guilin (Yulong River Valley)',
+        vibe: 'Dramatic limestone karst peaks, bamboo rafts, and emerald river bends',
+        bestFor: 'Nature lovers, cycling through rural villages, and peaceful mountain retreats',
+        whyChoose: 'Staying in the countryside outside Yangshuo town provides profound morning quiet with water buffalo grazing along the riverbanks.',
+        avoidIf: 'You want fast-paced shopping and mega-mall entertainment.'
       },
       {
-        name: 'Eixample (Dreta & Esquerra)',
-        vibe: 'Modernist elegance, grand boulevards, upscale dining',
-        bestFor: 'Architecture enthusiasts and boutique shoppers',
-        whyChoose: 'Wide octagonal intersections, stunning façades, and safe, well-lit avenues.',
-        avoidIf: 'You prefer tiny medieval alleyways.'
+        name: 'Beijing (Dongcheng Hutongs)',
+        vibe: 'Traditional grey-brick alleyways, courtyard homes, and neighborhood street life',
+        bestFor: 'History, tea culture, street food discovery, and Forbidden City proximity',
+        whyChoose: 'Hutongs around Guozijian (Imperial Academy) and Wudaoying are filled with independent coffee bars, vegetarian eateries, and tranquil courtyards.',
+        avoidIf: 'You require American-style suburban hotel layouts.'
       },
       {
-        name: 'El Born (La Ribera)',
-        vibe: 'Trendy, historic, artisan boutiques and cocktail bars',
-        bestFor: 'Nightlife and museum proximity (Picasso Museum, Santa Maria del Mar)',
-        whyChoose: 'Character-rich stone buildings and great tapas.',
-        avoidIf: 'You are sensitive to weekend late-night street noise.'
+        name: 'Shanghai (Former French Concession)',
+        vibe: 'Tree-lined plane tree avenues, Art Deco villas, and stylish bakeries',
+        bestFor: 'Walking tours, boutique shopping, contemporary art galleries, and jazz clubs',
+        whyChoose: 'Shaded sidewalks, restored lane houses (shikumen), and a thriving specialty coffee culture.',
+        avoidIf: 'You are looking for ancient imperial monuments.'
+      },
+      {
+        name: 'Yunnan (Dali & Lijiang Ancient Towns)',
+        vibe: 'Cobblestone canals, mountain breezes, and vibrant ethnic minority heritage',
+        bestFor: 'Slow travel, mountain tea plantations, and artisan craft markets',
+        whyChoose: 'Gentle climate near Erhai Lake with morning farmer markets and slow-paced courtyard living.',
+        avoidIf: 'You only have a 4-day trip.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers adore the beach-meets-city lifestyle and culinary variety. The universal advice from solo travelers is maintaining vigilant awareness of backpacks and phones in dense crowds (metro and Gothic Quarter).',
+    whatTravelersSaySummary: 'Travelers are consistently impressed by the speed and comfort of the high-speed rail system, the remarkable safety of Chinese cities day and night, and the incredible diversity of regional cuisines. The most crucial preparation tip is setting up mobile payment apps (Alipay and WeChat Pay linked to foreign credit cards) before departure.',
     whatToSkip: [
-      'Eating on Las Ramblas — overpriced frozen paellas and aggressive street vendors.',
-      'Unlicensed beach drinks sold by informal hawkers on Barceloneta.'
+      'Badaling section of the Great Wall at midday; choose the more scenic, less commercial Mutianyu or Jinshanling sections instead.',
+      'Relying on cash or foreign plastic cards at local food stalls — almost all transactions require mobile payment QR codes.',
+      'Booking domestic flights for journeys under 4-5 hours when high-speed trains (CRH) are faster, more punctual, and significantly more scenic.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Sunset at the Bunkers del Carmel',
-        description: 'Former anti-aircraft fortifications with 360-degree views across the entire city grid to the Mediterranean.',
-        whyWorthIt: 'A breathtaking vantage point; arrive an hour before dusk with snacks.'
+        title: 'Sunrise Walk Along the Mutianyu Great Wall',
+        description: 'Walking the stone battlements as morning mist lifts over the forested ridges with few other visitors in sight.',
+        whyWorthIt: 'Experiencing the grandeur of the wall in silence gives you a profound appreciation of its historic scale.'
       },
       {
-        title: 'Morning visit to Casa Vicens in Gràcia',
-        description: 'Gaudí\'s first residential masterpiece, clad in brilliant green and white ceramic tiles.',
-        whyWorthIt: 'Far less crowded than Casa Batlló and surrounded by peaceful residential streets.'
+        title: 'Bamboo Raft Drift on the Yulong River at Dawn',
+        description: 'Gliding silently on a traditional non-motorized bamboo raft past reflection ponds and limestone peaks in Yangshuo.',
+        whyWorthIt: 'The soft morning light on the river feels like stepping directly into a classical Chinese watercolor painting.'
+      },
+      {
+        title: 'Tea Tasting in a Historic Hangzhou Pavilion',
+        description: 'Sipping fresh Longjing (Dragon Well) green tea beside the tea terraces of Meijiawu village near West Lake.',
+        whyWorthIt: 'Learn the delicate ritual of water temperature and leaf infusion from local tea masters.'
       }
     ],
     placesToEat: [
       {
-        name: 'Bar Mut',
-        type: 'Classic Catalan tapas with fine-dining precision',
-        neighborhood: 'Eixample',
-        whySpecial: 'Sensational carpaccio of egg and foie gras, fresh seafood, and outstanding local cava.'
+        name: 'King\'s Joy (Jing Zhao Yin)',
+        type: 'Refined plant-based gastronomy & courtyard tea',
+        neighborhood: 'Dongcheng, Beijing',
+        whySpecial: 'Set in a stunning glass-covered courtyard beside the Lama Temple with harp music and seasonal organic ingredients.'
       },
       {
-        name: 'Syra Coffee',
-        type: 'Specialty micro-roastery & flat whites',
-        neighborhood: 'Gràcia',
-        whySpecial: 'Tiny hole-in-the-wall with impeccably roasted beans and oat milk cortados.'
+        name: 'Lost Heaven',
+        type: 'Folk Yunnan cuisine & wild mountain mushroom dishes',
+        neighborhood: 'Former French Concession, Shanghai',
+        whySpecial: 'Atmospheric lantern-lit interiors serving fragrant banana leaf grilled fish and Dali goat cheese.'
+      },
+      {
+        name: 'Sichuan Folk Teahouse & Noodle Bar',
+        type: 'Hand-pulled Dan Dan noodles & jasmine tea',
+        neighborhood: 'People’s Park, Chengdu',
+        whySpecial: 'Experience the relaxed Chengdu teahouse culture with bamboo armchairs and boiling copper kettles.'
       }
     ],
     gettingAround: {
-      recommendation: 'T-Usual or T-Casual metro cards provide smooth transit across the entire metropolitan area.',
-      airportTransit: 'Aerobús runs every 5-10 minutes from BCN Airport directly to Plaça Catalunya in ~30 minutes (€7.25).',
-      eveningWalkingAdvice: 'Gràcia and Eixample feel very comfortable and safe to walk through until late.'
+      recommendation: 'China\'s high-speed train network (12306 official app or Trip.com) is world-class, clean, and punctual. Within cities, extensive subways have clear bilingual signage.',
+      airportTransit: 'Shanghai Maglev train connects Pudong Airport (PVG) to the subway network in 8 minutes at 300+ km/h; Beijing Capital and Daxing airports have dedicated express subways.',
+      eveningWalkingAdvice: 'Chinese cities have some of the lowest violent crime rates globally. Solo evening walks through well-lit streets and bustling night markets are very safe.'
     },
     goodToKnow: [
-      'Catalonia has distinct cultural traditions and language; a polite "Bon dia" or "Gràcies" is warmly appreciated.',
-      'Afternoon "siesta" can mean smaller independent boutiques close between 2:00 PM and 5:00 PM.'
+      'Last verified: March 2026. Visa-free transit and 15/30-day visa-free entry policies apply to citizens of numerous European and Asian nations; always verify current requirements with your local Chinese consulate or official embassy portal.',
+      'Connectivity: download and set up an eSIM with international data roaming (which bypasses local firewall restrictions) before arrival, alongside Alipay and WeChat Pay with your foreign bank card linked.',
+      'Language: install translation apps with offline camera capability (such as Google Translate or Apple Translate) for effortless menu and sign reading.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Energetic, creative, and highly social.',
-      eveningAtmosphere: 'Squares in Gràcia are filled with women, families, and dog-walkers until midnight.',
-      arrivalTips: 'Take the Aerobús into Plaça Catalunya or a licensed taxi directly to your accommodation.',
-      neighborhoodAdvice: 'Gràcia and Eixample are the top choices for calm, secure solo female stays.'
+      generalVibe: 'Extremely safe street environment with virtually zero street harassment.',
+      eveningAtmosphere: 'Public squares remain lively until late with evening dance groups and families dining outdoors.',
+      arrivalTips: 'Download the Didi rideshare app (available in English inside Alipay) for reliable point-to-point transfers from train stations.',
+      neighborhoodAdvice: 'The Former French Concession in Shanghai and Guozijian in Beijing are peaceful, leafy, and exceptionally safe.'
     },
-    relatedHideoutIds: ['hideout-barcelona-gracia-terrace'],
-    relatedStayIds: ['stay-barcelona-cotton-house'],
-    relatedStoryIds: ['story-what-i-look-for'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
+    relatedHideoutIds: ['hideout-china-yangshuo-retreat', 'hideout-china-beijing-courtyard'],
+    relatedStayIds: ['stay-china-yangshuo-mountain', 'stay-china-shanghai-lane-house'],
+    relatedStoryIds: ['story-china-two-weeks-plan', 'story-china-beyond-beijing-shanghai'],
+    relatedGuideIds: ['guide-china-first-timers-practical']
   },
   {
-    id: 'budapest',
-    slug: 'budapest',
-    name: 'Budapest',
-    country: 'Hungary',
-    tag: 'Thermal bath sanctuaries, grand café culture & Danube reflections',
-    heroImage: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'Divided by the shimmering Danube, Budapest marries Austro-Hungarian grandeur with tranquil thermal waters and leafy palace quarters.',
-    openingEditorial: 'Budapest has a quiet grandeur that catches many travelers by surprise. From the steamy natural mineral baths to the high-ceilinged historic coffee houses where writers spent whole decades, it feels romantic and deeply civilized.',
-    whereIWouldStay: 'The Palace District (Inner District VIII) or District V near the Parliament. The Palace District has grand 19th-century courtyards, quiet specialty cafés, and feels delightfully free of rowdy tour groups.',
+    id: 'patagonia',
+    slug: 'patagonia',
+    name: 'Patagonia',
+    country: 'Chile & Argentina',
+    tag: 'Towering granite massifs, sweeping glacial icefields & wild pampa winds',
+    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'A wild, untamed frontier spanning the southernmost reaches of South America: turquoise glacial lakes, roaring katabatic winds, soaring condors, and the iconic granite spires of Fitz Roy and Torres del Paine.',
+    openingEditorial: 'Patagonia is not a place you simply visit — it is a wilderness that tests you, humbles you, and stays in your memory forever. Spanning both Chile and Argentina, this vast southern tip of the continent offers an exhilarating sense of space. Here, the weather is the master artist, shifting from sunshine to mountain snowfall in a matter of hours.',
+    whereIWouldStay: 'An eco-lodge or rustic yurt with panoramic glacier views in Torres del Paine (Chile), or a cozy wooden mountain lodge in El Chaltén (Argentina) where hiking trails start right at your front door.',
     neighborhoods: [
       {
-        name: 'Palace District (District VIII)',
-        vibe: 'Aristocratic architecture, quiet bookshops, university calm',
-        bestFor: 'Solo travelers, writers, and boutique hotel seekers',
-        whyChoose: 'Magnificent neo-Renaissance façades and peaceful evening streets.',
-        avoidIf: 'You want party hostels next door.'
+        name: 'Torres del Paine & Puerto Natales (Chile)',
+        vibe: 'Iconic granite horns, azure glacial lakes, and sustainable eco-lodges',
+        bestFor: 'Multi-day W-Trek trekkers, wildlife photography (guanacos & pumas), and luxury remote lodges',
+        whyChoose: 'Staying inside or on the border of the national park puts you at the foot of the iconic Cuernos del Paine.',
+        avoidIf: 'You dislike hiking in unpredictable mountain winds.'
       },
       {
-        name: 'District V (Belváros & Lipótváros)',
-        vibe: 'Central, grand, riverside elegance',
-        bestFor: 'First-time visitors wanting quick access to both Buda and Pest',
-        whyChoose: 'Immaculate streets, safe walking, and views of St. Stephen’s Basilica.',
-        avoidIf: 'You prefer more alternative, edgy neighborhood vibes.'
+        name: 'El Chaltén & Fitz Roy (Argentina)',
+        vibe: 'Laid-back trekking village, artisan microbreweries, and world-class trailheads',
+        bestFor: 'Independent day hikers, solo travelers, and relaxed mountain atmosphere',
+        whyChoose: 'The National Trekking Capital of Argentina: all major trails to Laguna de los Tres (Fitz Roy) and Laguna Torre start directly from the village edge with zero park fees.',
+        avoidIf: 'You require high-end luxury shopping or airport proximity.'
       },
       {
-        name: 'Buda Castle Quarter (District I)',
-        vibe: 'Historic, elevated, cobblestone serenity',
-        bestFor: 'Romantic getaways and sweeping river views',
-        whyChoose: 'Extremely peaceful in the evenings after daytime tourists leave.',
-        avoidIf: 'You want late-night restaurant variety without crossing the bridge.'
+        name: 'El Calafate & Perito Moreno (Argentina)',
+        vibe: 'Lakeside town, calving glaciers, and gateway to southern icefields',
+        bestFor: 'Witnessing the colossal Perito Moreno Glacier up close and lake navigation',
+        whyChoose: 'Marvel at thunderous glacier calving events from well-designed wooden boardwalk systems.',
+        avoidIf: 'You only want rugged backcountry camping.'
+      },
+      {
+        name: 'Ushuaia & Tierra del Fuego (Argentina)',
+        vibe: 'End of the World maritime charm, Beagle Channel, and sub-antarctic forests',
+        bestFor: 'Beagle Channel boat trips, king crab dining, and southernmost landscapes',
+        whyChoose: 'Fascinating maritime history and boat excursions to see sea lions and Magellanic penguins.',
+        avoidIf: 'You only have time for the northern mountain spires.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers praise Budapest for exceptional value, magnificent spa culture, and stunning nighttime illuminations along the river. The primary tip is to book thermal bath entry tickets in advance during winter months.',
+    whatTravelersSaySummary: 'Hikers and nature lovers describe Patagonia as one of the most magnificent landscapes on earth. The most universal advice: invest in top-tier windproof and waterproof layers, book national park refugios/campsites months ahead, and embrace the legendary Patagonian wind.',
     whatToSkip: [
-      'Currency exchange booths on Váci utca with inflated commissions.',
-      'Unlicensed street taxis; always use the Bolt app or call established taxi companies.'
+      'Trying to cover both deep Chilean and Argentine Patagonia in less than 7 days — border crossings and vast distances require deliberate pacing.',
+      'Wearing lightweight cotton sneakers on mountain scree trails; sturdy ankle-support hiking boots are essential.',
+      'Waiting until arrival to book park permits or catamaran tickets in Torres del Paine during peak season (December–February).'
     ],
     thingsWorthDoing: [
       {
-        title: 'Morning soak at Rudas Thermal Baths or Gellért Baths',
-        description: 'Centuries-old mineral pools beneath an Ottoman dome overlooking the Danube.',
-        whyWorthIt: 'Deeply relaxing and restorative; visit during morning hours for absolute tranquility.'
+        title: 'Sunrise at Laguna de los Tres (Mount Fitz Roy)',
+        description: 'Hiking up to the alpine lagoon as the morning sun turns the granite peak of Fitz Roy brilliant fiery orange.',
+        whyWorthIt: 'One of the most awe-inspiring mountain vistas on earth, made even better by the quiet camaraderie of fellow dawn hikers.'
       },
       {
-        title: 'Afternoon coffee and Dobos Torte at Café Gerbeaud or Central Café',
-        description: 'Gilded ceilings, marble tables, and velvet banquettes from the Golden Age.',
-        whyWorthIt: 'A delightful step back in time with impeccable pastry craftsmanship.'
+        title: 'Ice Trekking on Perito Moreno Glacier',
+        description: 'Strapping on steel crampons to hike across the blue crevasses, ice caves, and meltwater streams of the living glacier.',
+        whyWorthIt: 'Feeling the ancient, dense ice beneath your boots while hearing the glacier groan and calve into Lake Argentino.'
+      },
+      {
+        title: 'Boat Navigation of the Beagle Channel',
+        description: 'Sailing past Les Eclaireurs lighthouse, sea lion colonies, and remote fjord inlets at the southern tip of the Americas.',
+        whyWorthIt: 'The stark, windswept beauty of Tierra del Fuego feels truly like standing at the edge of the known world.'
       }
     ],
     placesToEat: [
       {
-        name: 'Mazel Tov',
-        type: 'Open-air courtyard Middle Eastern & Hungarian fusion',
-        neighborhood: 'Jewish Quarter',
-        whySpecial: 'Stunning hanging garden atmosphere beneath glass canopies with live acoustic music.'
+        name: 'La Cervecería Chaltén',
+        type: 'Artisan mountain craft beer & hearty locro stew',
+        neighborhood: 'El Chaltén, Argentina',
+        whySpecial: 'The perfect warm haven after a 20km hike to warm up with homemade goulash, craft IPAs, and friendly trail stories.'
       },
       {
-        name: 'Espresso Embassy',
-        type: 'Pioneering specialty coffee & pastries',
-        neighborhood: 'District V',
-        whySpecial: 'Historic vaulted brick ceiling, superb flat whites, and quiet reading corners.'
+        name: 'El Asador Patagónico',
+        type: 'Traditional slow-roasted Patagonian cordero (lamb)',
+        neighborhood: 'Puerto Natales, Chile',
+        whySpecial: 'Whole lamb slow-roasted over native lenga wood fires, served with fresh Chilean salads and Carmenère wine.'
+      },
+      {
+        name: 'Volver',
+        type: 'Fresh Beagle Channel king crab (Centolla)',
+        neighborhood: 'Ushuaia, Argentina',
+        whySpecial: 'A quirky historic house filled with maritime relics serving the freshest wild crab in South America.'
       }
     ],
     gettingAround: {
-      recommendation: 'The Budapest public transit network (BKK) is clean, reliable, and includes historic Metro Line 1.',
-      airportTransit: 'The 100E Airport Express bus runs directly from BUD Airport to Deák Ferenc tér in 35 minutes.',
-      eveningWalkingAdvice: 'Danube promenades and District V/VIII are safe, well-lit, and beautiful for nighttime strolls.'
+      recommendation: 'Fly into Punta Arenas (Chile) or El Calafate / Ushuaia (Argentina). Comfortable long-distance buses connect towns and cross international borders smoothly.',
+      airportTransit: 'El Calafate Airport (FTE) and Puerto Natales Airport (PNT) have scheduled shuttle buses matching all incoming flights.',
+      eveningWalkingAdvice: 'El Chaltén, Puerto Natales, and El Calafate are very peaceful mountain communities where hikers walk freely with zero safety concerns.'
     },
     goodToKnow: [
-      'Hungary uses the Hungarian Forint (HUF), not the Euro. Most places accept card, but keep 2,000 HUF in cash for small market stalls.',
-      'Tipping around 10% is customary in restaurants unless a service charge is already included on the bill.'
+      'Last verified: January 2026. Chile and Argentina maintain strict agricultural border inspection rules: do not bring fresh fruit, dairy, or meats between borders.',
+      'Cash & Currency: Argentina uses the Argentine Peso (credit cards now receive the favorable MEP exchange rate); Chile uses Chilean Pesos and is largely card-friendly.',
+      'Weather: November through March provides warmer temperatures (10–18°C) and long daylight, but winds regularly reach 60–80 km/h.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Safe, polite, and welcoming.',
-      eveningAtmosphere: 'Danube embankments are romantic and peaceful with couples and solo strollers.',
-      arrivalTips: 'The 100E express bus drops you right in the center with immediate metro transfers.',
-      neighborhoodAdvice: 'District V and the Palace District offer the calmest, most secure bases.'
+      generalVibe: 'Trekking towns like El Chaltén and Puerto Natales are exceptionally safe and have large solo female traveler communities.',
+      eveningAtmosphere: 'Relaxed, friendly pub culture where hikers share trail notes and transport tips.',
+      arrivalTips: 'Pre-book your airport transfer in advance so you can relax upon landing in remote southern airports.',
+      neighborhoodAdvice: 'El Chaltén is entirely walkable from end to end in 15 minutes.'
     },
-    relatedHideoutIds: ['hideout-budapest-palace-boutique'],
-    relatedStayIds: ['stay-budapest-memories'],
-    relatedStoryIds: ['story-destinations-that-surprised-me'],
-    relatedGuideIds: ['guide-weekend-in-budapest']
+    relatedHideoutIds: ['hideout-patagonia-torres-eco-lodge', 'hideout-patagonia-chalten-cabin'],
+    relatedStayIds: ['stay-patagonia-explora-torres', 'stay-patagonia-el-chalten-lodge'],
+    relatedStoryIds: ['story-patagonia-first-time-approach', 'story-patagonia-chile-or-argentina'],
+    relatedGuideIds: ['guide-patagonia-trekking-first-timers']
   },
   {
-    id: 'prague',
-    slug: 'prague',
-    name: 'Prague',
-    country: 'Czech Republic',
-    tag: 'Spire skylines, cobblestone quiet & hidden terraced gardens',
-    heroImage: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'A storybook capital of Gothic towers, Renaissance gardens, and peaceful residential neighborhoods like Vinohrady.',
-    openingEditorial: 'If you only see Old Town Square at noon, you will miss the real Prague. Wake up at sunrise to cross Charles Bridge in mist, then spend the afternoon in the leafy, Art Nouveau avenues of Vinohrady.',
-    whereIWouldStay: 'Vinohrady or Malá Strana. Vinohrady gives you tree-lined parks, incredible specialty coffee, and local bakeries with zero tourist congestion.',
+    id: 'south-korea',
+    slug: 'south-korea',
+    name: 'South Korea',
+    country: 'South Korea',
+    tag: 'Quiet hanok courtyards, vibrant café alleys & coastal tea mountains',
+    heroImage: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'An alluring blend of heritage and cutting-edge design: restored wooden hanok stays in historic Seoul neighborhoods, scenic volcanic coasts on Jeju Island, and an unmatched café and culinary culture.',
+    openingEditorial: 'South Korea is a country of exquisite detail. Beyond the neon high-rises and buzzing markets lies a world of quiet reflection: centuries-old pine courtyards where tea is poured with mindful grace, misty mountain temples where monks welcome guests, and sunlit neighborhood lanes where independent bakeries craft delicate pastries.',
+    whereIWouldStay: 'A restored traditional Hanok guesthouse in Seoul’s Bukchon or Seochon quarter, or a minimalist oceanfront stone villa on the volcanic southern coast of Jeju Island.',
     neighborhoods: [
       {
-        name: 'Vinohrady',
-        vibe: 'Art Nouveau elegance, specialty cafés, wine hills',
-        bestFor: 'Solo female travelers, digital nomads, and relaxed stays',
-        whyChoose: 'Riegrovy Sady park for sunset picnics overlooking Prague Castle.',
-        avoidIf: 'You want to be 30 seconds from the Astronomical Clock.'
+        name: 'Seoul (Seochon & Samcheong-dong)',
+        vibe: 'Historic hanoks, leafy palace walls, artisan boutiques, and tea houses',
+        bestFor: 'Solo travelers, walkers, design lovers, and peaceful morning strolls',
+        whyChoose: 'Seochon (west of Gyeongbokgung Palace) has escaped mass tour groups and retains an authentic residential artist atmosphere with charming quiet alleys.',
+        avoidIf: 'You want rowdy all-night nightclub districts.'
       },
       {
-        name: 'Malá Strana (Lesser Town)',
-        vibe: 'Baroque palaces, quiet embassies, cobblestone alleys',
-        bestFor: 'Romantic strolls and quiet castle hill access',
-        whyChoose: 'Magical quiet streets in the evening after day-trippers return to hotels.',
-        avoidIf: 'You prefer modern apartment buildings.'
+        name: 'Seoul (Seongsu-dong & Yeonnam-dong)',
+        vibe: 'Industrial red-brick architecture, concept cafés, and green linear parks',
+        bestFor: 'Specialty coffee hunters, contemporary fashion, and relaxed evening dining',
+        whyChoose: 'Known as the Brooklyn of Seoul, Seongsu-dong is packed with innovative pop-ups, natural wine bars, and tranquil Seoul Forest park walks.',
+        avoidIf: 'You are only seeking ancient dynastic palaces.'
+      },
+      {
+        name: 'Jeju Island (Aewol & Gujwa)',
+        vibe: 'Black volcanic rock beaches, emerald waters, and tangerine orchards',
+        bestFor: 'Nature lovers, coastal road trips, fresh seafood, and hiking Mount Hallasan',
+        whyChoose: 'Secluded ocean-facing boutique stays with floor-to-ceiling windows and outdoor stone soaking tubs.',
+        avoidIf: 'You do not plan on renting a car to explore the island.'
+      },
+      {
+        name: 'Gyeongju (Historic Capital)',
+        vibe: 'Ancient grassy burial tumuli, lotus ponds, and stargazing observatories',
+        bestFor: 'History enthusiasts, cycling between monuments, and peaceful evenings',
+        whyChoose: 'Biking through the tumuli park at twilight when the ancient mounds are softly illuminated.',
+        avoidIf: 'You crave big-city energy and mega-skyscrapers.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers love the fairytale architecture and ease of walking. Community voices emphasize venturing outside District 1 into Vinohrady and Karlín for authentic Czech food and modern café culture.',
+    whatTravelersSaySummary: 'Visitors frequently name South Korea one of the easiest, cleanest, and safest countries they have ever traveled in. The subway and KTX rail systems are immaculate, hospitality is warm, and traveling solo as a woman is wonderfully comfortable.',
     whatToSkip: [
-      'Tourist-oriented souvenir shops selling Russian nesting dolls (not Czech).',
-      'Overcrowded trdelník pastry stands on the main bridge corridors (an imported tourist trend).'
+      'Spending all your time shopping in crowded cosmetic malls in Myeongdong when neighborhood alleys in Seochon and Seongsu offer far richer character.',
+      'Using Google Maps for walking directions (due to local mapping laws, Naver Map and KakaoMap are far more accurate and essential for transit).',
+      'Skipping the regional high-speed train (KTX) trips to historic Gyeongju or coastal Busan.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Sunrise Walk across Charles Bridge',
-        description: 'Cross the Vltava River before 7:30 AM when the statues emerge from dawn mist.',
-        whyWorthIt: 'Unforgettable silence and golden reflections on the river.'
+        title: 'Traditional Tea Ceremony in a Seochon Hanok',
+        description: 'Sitting on heated ondol wooden floors while savoring wild Jirisan green tea and traditional rice cakes (tteok).',
+        whyWorthIt: 'A serene sensory experience that offers deep relaxation and insight into Korean tea philosophy.'
       },
       {
-        title: 'Vrtba Garden (Vrtbovská Zahrada)',
-        description: 'A secluded Baroque terraced garden tucked behind an unassuming Malá Strana door.',
-        whyWorthIt: 'Magnificent tiered hedges, classical sculptures, and panoramic castle views.'
+        title: 'Walk the Seoul City Wall Trail at Sunset',
+        description: 'Following the 600-year-old stone fortress wall along Mount Naksan as the city skyline lights up below.',
+        whyWorthIt: 'Spectacular panoramic views of old and new Seoul without the commercial crowds of N Seoul Tower.'
+      },
+      {
+        title: 'Sunrise Walk up Seongsan Ilchulbong (Jeju Island)',
+        description: 'Ascending the dramatic green volcanic tuff cone rising out of the ocean at dawn.',
+        whyWorthIt: 'Watch the sun rise over the East Sea and see the legendary Haenyeo (female free-divers) begin their morning harvest.'
       }
     ],
     placesToEat: [
       {
-        name: 'Café Savoy',
-        type: 'Grand neo-Renaissance café & bakery',
-        neighborhood: 'Malá Strana',
-        whySpecial: 'Detailed ceiling moldings, exquisite French-Czech breakfasts, and fresh brioche.'
+        name: 'Tosokchon Samgyetang',
+        type: 'Traditional ginseng chicken soup in a grand hanok courtyard',
+        neighborhood: 'Seochon, Seoul',
+        whySpecial: 'Nourishing, slow-simmered whole young chicken stuffed with glutinous rice, ginseng, and chestnuts.'
       },
       {
-        name: 'Kavárna co hledá jméno',
-        type: 'Rustic industrial courtyard café',
-        neighborhood: 'Smíchov',
-        whySpecial: 'Sunlit brick courtyard, rotating art exhibits, and exceptional espresso.'
+        name: 'Onion Seongsu',
+        type: 'Industrial chic bakery & specialty coffee',
+        neighborhood: 'Seongsu-dong, Seoul',
+        whySpecial: 'Set in a converted 1970s metal factory with a rooftop terrace and famous Pandoro sugar-dusted bread.'
+      },
+      {
+        name: 'Myeongjin Jeonbok',
+        type: 'Fresh abalone stone pot rice & grilled mackerel',
+        neighborhood: 'Gujwa, Jeju Island',
+        whySpecial: 'Sizzling hot stone pot rice layered with freshly sliced local abalone and rich abalone butter.'
       }
     ],
     gettingAround: {
-      recommendation: 'Prague’s tram network is one of the best in Europe. Tram 22 scenic route climbs through Malá Strana to the Castle.',
-      airportTransit: 'Bus 119 connects PRG Airport to Nádraží Veleslavín metro station in 15 minutes (€1.70).',
-      eveningWalkingAdvice: 'Vinohrady and Malá Strana are peaceful, clean, and safe for solo night strolls.'
+      recommendation: 'Purchase a T-Money transit card at any convenience store for seamless subway and bus rides. High-speed KTX trains connect Seoul to Busan in under 2.5 hours.',
+      airportTransit: 'AREX Express Train connects Incheon International Airport (ICN) non-stop to Seoul Station in 43 minutes.',
+      eveningWalkingAdvice: 'South Korea is extraordinarily safe at all hours. Solo walking at midnight in residential or nightlife districts is completely standard.'
     },
     goodToKnow: [
-      'Czech currency is Czech Koruna (CZK). Card acceptance is virtually universal.',
-      'Check menu prices carefully around the Old Town Square perimeter.'
+      'Last verified: February 2026. Download Naver Map or KakaoMap and Papago (translation app) before arrival for effortless navigation.',
+      'Tipping is not customary and generally not accepted in South Korea.',
+      'Wi-Fi is ubiquitous, but getting an unlimited data eSIM or airport pocket Wi-Fi router ensures continuous translation and map support.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Safe, civilized, and highly walkable.',
-      eveningAtmosphere: 'Parks and residential avenues are peaceful and well-maintained.',
-      arrivalTips: 'Purchase a 24-hour transit pass at the airport terminal for seamless bus-to-metro transfer.',
-      neighborhoodAdvice: 'Vinohrady offers the best balance of local warmth, safety, and foodie culture.'
+      generalVibe: 'Rated among the safest nations on earth with exceptionally low street crime.',
+      eveningAtmosphere: 'Vibrant, safe, and comfortable; solo women dine in cafés and ride public transit late at night with complete peace of mind.',
+      arrivalTips: 'The AREX train from Incheon Airport is spotless, quiet, and connects seamlessly to central metro lines.',
+      neighborhoodAdvice: 'Seochon, Insadong, and Yeonnam-dong are fantastic, welcoming bases for solo travelers.'
     },
-    relatedHideoutIds: ['hideout-prague-vinohrady-haven'],
-    relatedStayIds: ['stay-prague-augustine'],
-    relatedStoryIds: ['story-staying-outside-center'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
+    relatedHideoutIds: ['hideout-korea-seochon-hanok', 'hideout-korea-jeju-stone-villa'],
+    relatedStayIds: ['stay-korea-hanok-boutique', 'stay-korea-jeju-cliff-retreat'],
+    relatedStoryIds: ['story-korea-seoul-beyond-tourist', 'story-korea-jeju-island-add'],
+    relatedGuideIds: ['guide-korea-seoul-neighborhoods-ktx']
   },
   {
-    id: 'athens',
-    slug: 'athens',
-    name: 'Athens',
-    country: 'Greece',
-    tag: 'Ancient Acropolis views, rooftop jasmine & vibrant indie squares',
-    heroImage: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'A city of bold contrasts where 2,500-year-old marble temples rise above dynamic rooftop bars and fragrant orange-tree lined avenues.',
-    openingEditorial: 'Athens is undergoing a cultural renaissance. Beyond its iconic ancient monuments, it is a city of spirited conversations, rooftop jasmine blossoms, and neighborhood tavernas serving olive oil pressed from local Peloponnese groves.',
-    whereIWouldStay: 'Koukaki or Pangrati. Koukaki sits directly beneath the south slope of the Acropolis with pedestrian lanes, small craft galleries, and lovely wine bistros.',
+    id: 'australia',
+    slug: 'australia',
+    name: 'Australia',
+    country: 'Australia',
+    tag: 'Coastal ocean pools, pristine wilderness & laid-back design sanctuaries',
+    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'Epic coastlines, golden surf beaches, ancient eucalyptus forests, world-class café culture, and remote island sanctuaries like Tasmania.',
+    openingEditorial: 'Australia’s travel magic lies in its connection to the outdoors. Life is lived facing the ocean and the sun: early morning swims in ocean tidal pools carved into sandstone cliffs, perfectly poured flat whites in breezy neighborhood cafés, and coastal road trips where wild beaches stretch on for unbroken miles.',
+    whereIWouldStay: 'A sandstone boutique guesthouse in Sydney’s Paddington or Bronte, or a timber architectural pavilion surrounded by coastal forest on Freycinet Peninsula in Tasmania.',
     neighborhoods: [
       {
-        name: 'Koukaki',
-        vibe: 'Leafy, relaxed, creative, adjacent to Acropolis',
-        bestFor: 'Solo travelers, walkers, and intimate dining',
-        whyChoose: 'Drakou pedestrian street is ideal for morning Greek yogurt and evening wine.',
-        avoidIf: 'You want massive luxury resort complexes.'
+        name: 'Sydney (Paddington & Bronte)',
+        vibe: 'Victorian iron-laced terraces, leafy parks, and coastal pool walks',
+        bestFor: 'Solo female travelers, ocean swimmers, and boutique café lovers',
+        whyChoose: 'Paddington offers leafy residential streets, artisan bakeries, and quiet wine bars, just minutes from the Bondi-to-Coogee coastal path.',
+        avoidIf: 'You want high-rise casino nightlife.'
       },
       {
-        name: 'Pangrati',
-        vibe: 'Local residential cool, artistic, lively piazzas',
-        bestFor: 'Authentic local life and contemporary cocktail bars',
-        whyChoose: 'Varnava Square for relaxed open-air dinners under plane trees.',
-        avoidIf: 'You require immediate metro station proximity at your doorstep.'
+        name: 'Melbourne (Fitzroy & Carlton)',
+        vibe: 'Bohemian laneways, Victorian architecture, specialty coffee, and live music',
+        bestFor: 'Foodies, coffee aficionados, vintage shoppers, and art lovers',
+        whyChoose: 'Fitzroy’s Gertrude and Brunswick streets offer the southern hemisphere\'s best concentration of creative bistros and coffee roasteries.',
+        avoidIf: 'You are looking for tropical swimming beaches.'
+      },
+      {
+        name: 'Tasmania (Hobart & Freycinet)',
+        vibe: 'Pristine cool-climate wilderness, MONA art museum, and coastal oyster farms',
+        bestFor: 'Nature lovers, hikers, cool-climate wines, and slow culinary travel',
+        whyChoose: 'Hobart’s historic Battery Point cottages combined with the granite hazards and azure waters of Wineglass Bay.',
+        avoidIf: 'You are seeking warm tropical humidity.'
+      },
+      {
+        name: 'Great Ocean Road & Otways',
+        vibe: 'Dramatic limestone sea stacks, wild southern ocean surf, and rainforests',
+        bestFor: 'Classic road trips, koala spotting in wild eucalyptus trees, and coastal views',
+        whyChoose: 'Spectacular winding coastal drives with peaceful seaside town stays in Lorne and Apollo Bay.',
+        avoidIf: 'You dislike driving on winding coastal roads.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers praise the genuine warmth of Greek hospitality and the magical rooftop dinner views. Community tips emphasize staying south of Syntagma for the most relaxed neighborhood atmosphere.',
+    whatTravelersSaySummary: 'Travelers praise Australia’s high standard of living, remarkable coffee quality, friendly locals, and clean natural spaces. The main tip is not to underestimate domestic travel distances: focus deeply on two or three regions rather than trying to see the entire continent in two weeks.',
     whatToSkip: [
-      'Monastiraki flea market souvenir shops selling mass-produced trinkets.',
-      'Visiting the Acropolis at 1:00 PM in peak summer heat; arrive at 8:00 AM opening instead.'
+      'Spending too much time in commercial shopping strips when neighborhood suburbs and coastal walks showcase the real Australian lifestyle.',
+      'Driving at dusk or night in rural regional areas where native wildlife (kangaroos, wallabies) frequently cross roads.',
+      'Ignoring beach safety: always swim between the red-and-yellow flags on patrolled surf beaches.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Sunset at Philopappos Hill',
-        description: 'A pine-scented hillside park overlooking the Parthenon bathed in evening rose light.',
-        whyWorthIt: 'Peaceful hiking trails, ancient monuments, and cooler sea breezes.'
+        title: 'Sunrise Swim at Bronte or Bondi Icebergs Pool',
+        description: 'Doing morning laps in the saltwater pool as ocean waves crash against the outer concrete wall.',
+        whyWorthIt: 'An invigorating Australian ritual followed by a fresh flat white from a nearby beach kiosk.'
       },
       {
-        title: 'Afternoon at the Goulandris Museum of Contemporary Art',
-        description: 'In Pangrati, housing modern masterworks by Cézanne, Van Gogh, Monet, and Picasso.',
-        whyWorthIt: 'Intimate, uncrowded galleries and a peaceful garden café.'
+        title: 'Freycinet Peninsula Coastal Hike (Tasmania)',
+        description: 'Hiking up to the lookout over the white sand crescent of Wineglass Bay and descending to Hazards Beach.',
+        whyWorthIt: 'Crystal-clear waters, pink granite boulders draped in orange lichen, and pristine quiet.'
+      },
+      {
+        title: 'Lane-Way Coffee & Pastry Crawl in Melbourne',
+        description: 'Exploring the hidden laneways of Melbourne from Degraves Street to Centre Place with a guide or solo.',
+        whyWorthIt: 'Discover why Melbourne is considered the specialty coffee capital of the world.'
       }
     ],
     placesToEat: [
       {
-        name: 'Mani Mani',
-        type: 'Modern regional Peloponnesian cuisine',
-        neighborhood: 'Koukaki',
-        whySpecial: 'Sophisticated handmade pasta, smoked pork, and citrus salads in a neoclassical townhouse.'
+        name: 'Cumulus Inc.',
+        type: 'All-day dining, artisan sourdough & whole roasted lamb shoulder',
+        neighborhood: 'Flinders Lane, Melbourne',
+        whySpecial: 'Clean architectural interior, open kitchen, and exceptional seasonal Victorian produce.'
       },
       {
-        name: 'Underdog Coffee & Roastery',
-        type: 'Award-winning specialty coffee & brunch',
-        neighborhood: 'Thissio',
-        whySpecial: 'Gorgeous courtyard with championship baristas and single-origin pour-overs.'
+        name: 'Saint Peter',
+        type: 'Sustainable whole-fish cookery by Josh Niland',
+        neighborhood: 'Paddington, Sydney',
+        whySpecial: 'Revolutionary nose-to-tail seafood approach in an intimate, elegant dining room.'
+      },
+      {
+        name: 'Agrarian Kitchen Eatery',
+        type: 'Farm-to-table destination dining',
+        neighborhood: 'New Norfolk (near Hobart), Tasmania',
+        whySpecial: 'Set in a converted heritage asylum with expansive vegetable gardens and wood-fired ovens.'
       }
     ],
     gettingAround: {
-      recommendation: 'Athens Metro Line 3 connects airport to center; city center is mostly pedestrian-friendly.',
-      airportTransit: 'Metro Line 3 runs every 36 minutes from ATH Airport directly to Syntagma/Monastiraki (€9).',
-      eveningWalkingAdvice: 'Koukaki, Plaka, and Pangrati are bustling with strollers and outdoor diners until 1 AM.'
+      recommendation: 'Domestic flights link major state capitals efficiently (Qantas, Virgin Australia). Renting a car is best for coastal drives, wine regions, and exploring Tasmania.',
+      airportTransit: 'Sydney Airport Train connects directly to Circular Quay in 20 minutes; Melbourne SkyBus connects Tullamarine (MEL) to Southern Cross Station in 25 minutes.',
+      eveningWalkingAdvice: 'Australian cities and coastal suburbs are safe, well-lit, and relaxed at night. Solo walking in areas like Paddington, Carlton, and South Yarra is very comfortable.'
     },
     goodToKnow: [
-      'Greeks dine late; lunch is around 2:30 PM and dinner starts around 9:00 PM.',
-      'Tap water in Athens is safe to drink.'
+      'Last verified: February 2026. Sun protection: the UV index is exceptionally high; high-SPF sunscreen, sunglasses, and wide-brimmed hats are essential year-round.',
+      'Australia uses Type I electrical plugs and drives on the left-hand side of the road.',
+      'Payment: contactless card tap (Apple Pay / Google Pay / credit cards) is universal.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Warm, hospitable, and lively.',
-      eveningAtmosphere: 'Outdoor terrace culture makes dining solo feel natural and welcomed.',
-      arrivalTips: 'Take Metro Line 3 into Syntagma or pre-book a taxi for late-night flights.',
-      neighborhoodAdvice: 'Koukaki is the safest, most charming neighborhood for female solo travelers.'
+      generalVibe: 'Extremely safe, relaxed, and welcoming for solo female travelers.',
+      eveningAtmosphere: 'Laid-back dining and pub culture with an open, friendly atmosphere.',
+      arrivalTips: 'Airport rail and bus links in Sydney, Melbourne, and Brisbane are reliable and drop you right into central hubs.',
+      neighborhoodAdvice: 'Paddington, Bronte, and Manly in Sydney, and Fitzroy in Melbourne make ideal solo bases.'
     },
-    relatedHideoutIds: ['hideout-athens-koukaki-rooftop'],
-    relatedStayIds: ['stay-athens-shila'],
-    relatedStoryIds: ['story-destinations-that-surprised-me'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
+    relatedHideoutIds: ['hideout-australia-tasmania-pavilion', 'hideout-australia-paddington-sanctuary'],
+    relatedStayIds: ['stay-australia-freycinet-lodge', 'stay-australia-sydney-boutique'],
+    relatedStoryIds: ['story-australia-road-trip', 'story-australia-why-tasmania'],
+    relatedGuideIds: ['guide-australia-east-coast-tasmania']
   },
   {
-    id: 'santorini',
-    slug: 'santorini',
-    name: 'Santorini',
-    country: 'Greece',
-    tag: 'Caldera cliffside solitude, whitewashed arches & Aegean blue',
-    heroImage: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'Dramatic volcanic cliff edges, cave retreats with plunge pools, and secret sunset vistas away from the tour bus throngs.',
-    openingEditorial: 'Santorini can feel overwhelming if you stay strictly on the crowded Oia sunset path. But if you base in Imerovigli or inland medieval villages like Pyrgos, you discover an island of volcanic vineyards, silent marble pathways, and caldera serenity.',
-    whereIWouldStay: 'Imerovigli or Pyrgos. Imerovigli is the highest cliff point—often called the "Balcony to the Aegean"—with breathtaking quiet compared to Oia.',
+    id: 'new-zealand',
+    slug: 'new-zealand',
+    name: 'New Zealand',
+    country: 'New Zealand',
+    tag: 'Alpine fiords, turquoise glacier lakes & quiet campervan routes',
+    heroImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'Majestic Southern Alps, emerald rainforests cascading down to coastal fiords, ancient Maori heritage, and wide-open roads made for unhurried journeys.',
+    openingEditorial: 'New Zealand (Aotearoa) is a sanctuary for the soul. The landscape here has a cinematic grandeur that feels untouched by modern haste. Whether you are driving past turquoise glacial lakes under the shadow of Aoraki / Mount Cook, or listening to native bellbirds in the beech forests of Wanaka, the feeling of freedom is palpable.',
+    whereIWouldStay: 'A secluded eco-cabin overlooking Lake Wanaka with wood-fired cedar hot tubs, or a boutique historic lodge in the Marlborough Sounds accessible only by water taxi.',
     neighborhoods: [
       {
-        name: 'Imerovigli',
-        vibe: 'Quiet, luxurious, cinematic caldera views',
-        bestFor: 'Couples, solo retreats, and uninterrupted sunset tranquility',
-        whyChoose: 'Cliffside cave suites with plunge pools and far fewer day-tripper crowds.',
-        avoidIf: 'You want rowdy beach club parties.'
+        name: 'Wanaka & Central Otago (South Island)',
+        vibe: 'Alpine lake serenity, boutique vineyards, and mountain trailheads',
+        bestFor: 'Relaxed alpine living, day hikes, and avoiding Queenstown\'s busyness',
+        whyChoose: 'Wanaka offers all the mountain beauty of Queenstown with a much calmer, community-minded pace.',
+        avoidIf: 'You want high-energy adventure sports and loud nightlife.'
       },
       {
-        name: 'Pyrgos',
-        vibe: 'Inland medieval village, panoramic vistas, authentic tavernas',
-        bestFor: 'Culture, wine tasting, and local village life',
-        whyChoose: 'Restored stone cave houses, local bakeries, and panoramic island views.',
-        avoidIf: 'You must have cliff-edge infinity pool views of the caldera directly.'
+        name: 'Fiordland & Milford Sound (South Island)',
+        vibe: 'Towering waterfalls, primordial rainforests, and sheer granite peaks',
+        bestFor: 'Cruising, kayaking, scenic flights, and world-class Great Walks (Milford/Routeburn)',
+        whyChoose: 'Base in Te Anau to drive the stunning Milford Road at your own pace before daytime tour buses arrive.',
+        avoidIf: 'You dislike rain (rain brings the thousands of temporary waterfalls to life).'
+      },
+      {
+        name: 'Aoraki / Mount Cook & Lake Tekapo',
+        vibe: 'Glacial turquoise waters, dark sky reserves, and snow-capped peaks',
+        bestFor: 'Stargazing in the Aoraki Mackenzie International Dark Sky Reserve and Hooker Valley hike',
+        whyChoose: 'Unobstructed views of New Zealand’s highest peak and the world’s clearest night skies.',
+        avoidIf: 'You require extensive urban restaurant choices.'
+      },
+      {
+        name: 'Auckland & Waiheke Island (North Island)',
+        vibe: 'Volcanic harbor city meets bohemian island olive groves and wineries',
+        bestFor: 'First arrivals, coastal vineyard lunches, and ferry excursions',
+        whyChoose: 'Take a 35-minute ferry to Waiheke Island for quiet beach walks, sculpture parks, and world-class Syrah wines.',
+        avoidIf: 'You only want alpine snowscapes.'
       }
     ],
-    whatTravelersSaySummary: 'Travelers emphasize that visiting in shoulder season (May or late September/October) provides an incomparably richer, more peaceful experience with comfortable temperatures.',
+    whatTravelersSaySummary: 'Travelers describe New Zealand as life-affirming in its sheer beauty and friendliness. The top recommendations are to allow more driving time than GPS estimates (roads are scenic and winding), and to book campervans or boutique lodges well in advance for summer.',
     whatToSkip: [
-      'Donkey rides up the Fira cliff stairs.',
-      'Fighting thousands of people for a 3-second sunset photo at Oia Castle; watch the sunset from Skaros Rock instead.'
+      'Rushing through the South Island in 5 days — give yourself time to pull over at scenic lookouts and take spontaneous short walks.',
+      'Assuming Queenstown is the only place to stay in the Southern Lakes; neighboring Wanaka offers a much more peaceful experience.',
+      'Underestimating alpine sun and rapidly changing mountain weather conditions.'
     ],
     thingsWorthDoing: [
       {
-        title: 'Hike the Caldera Trail from Fira to Oia',
-        description: 'A 10 km scenic dirt path along the cliff rim with panoramic sea vistas.',
-        whyWorthIt: 'Start at 7:30 AM to beat the sun and take in the dramatic geology in complete quiet.'
+        title: 'Hooker Valley Track at Dawn (Mount Cook)',
+        description: 'Walking the gentle swing bridges across glacial rivers to Hooker Lake with icebergs floating beneath Mount Cook.',
+        whyWorthIt: 'An accessible, deeply scenic alpine walk where early morning light turns the glaciers golden pink.'
       },
       {
-        title: 'Wine Tasting at Sigalas or Venetsanos',
-        description: 'Sample crisp, mineral Assyrtiko wines grown in unique basket-shaped volcanic vines.',
-        whyWorthIt: 'Exceptional dry whites paired with local sun-dried cherry tomatoes and caper leaves.'
+        title: 'Kayaking in Milford Sound / Piopiotahi',
+        description: 'Paddling through the mirror-calm fjord waters past 1,000-meter vertical cliffs and playful fur seals.',
+        whyWorthIt: 'Being at water level allows you to feel the mist of towering waterfalls and the profound quiet of Fiordland.'
+      },
+      {
+        title: 'Stargazing at Lake Tekapo Dark Sky Reserve',
+        description: 'Lying under a blanket near the stone Church of the Good Shepherd admiring the Milky Way in high definition.',
+        whyWorthIt: 'Zero light pollution offers one of the most vivid views of the southern galactic core on earth.'
       }
     ],
     placesToEat: [
       {
-        name: 'Metaxy Mas',
-        type: 'Hidden Cretan-Santorinian hill tavern',
-        neighborhood: 'Exo Gonia',
-        whySpecial: 'Sensational baked feta with honey, slow-roasted lamb, and warm raki by the church terrace.'
+        name: 'Bistro Gentil',
+        type: 'French-inspired dining & Central Otago Pinot Noir',
+        neighborhood: 'Lake Wanaka',
+        whySpecial: 'Panoramic views across Lake Wanaka with dishes crafted from their private kitchen gardens.'
       },
       {
-        name: 'The Athenian House',
-        type: 'Fine dining Greek with caldera sunset vista',
-        neighborhood: 'Imerovigli',
-        whySpecial: 'Vintage porcelain, impeccable seafood, and unmatched sunset elegance.'
+        name: 'The Oyster Inn',
+        type: 'Freshly shucked Te Matuku oysters & crisp white wine',
+        neighborhood: 'Oneroa, Waiheke Island',
+        whySpecial: 'Breezy coastal verandah overlooking Oneroa Bay serving the freshest oysters in the Hauraki Gulf.'
+      },
+      {
+        name: 'Cardrona Hotel Pub',
+        type: 'Historic 1863 tavern, craft beer & roaring fireplace',
+        neighborhood: 'Crown Range Road (between Queenstown and Wanaka)',
+        whySpecial: 'One of the oldest and most iconic historic pubs in New Zealand with a lovely garden courtyard.'
       }
     ],
     gettingAround: {
-      recommendation: 'Local KTEL buses connect Fira to major villages, or rent a small car for exploring southern beaches.',
-      airportTransit: 'JTR Airport is 15 minutes by taxi or public bus to Fira.',
-      eveningWalkingAdvice: 'Cliff paths are well-lit in hotel zones but wear sturdy footwear for uneven stone steps.'
+      recommendation: 'A rental car or self-contained campervan is the ultimate way to travel New Zealand at your own pace. Drive on the left side of the road.',
+      airportTransit: 'Queenstown Airport (ZQN) and Christchurch Airport (CHC) have rental car depots on-site for immediate road trip departure.',
+      eveningWalkingAdvice: 'New Zealand is one of the safest countries in the world. Solo walking around lakes and towns at night is peaceful and common.'
     },
     goodToKnow: [
-      'Plumbing in older island villages cannot handle paper products; use the provided bins.',
-      'Pack sunscreen and wind-resistant layers as caldera winds pick up in the evening.'
+      'Last verified: January 2026. Biosecurity: New Zealand has very strict border biosecurity rules; clean hiking boots and declare all food and outdoor gear on arrival.',
+      'Freedom camping is allowed only in certified self-contained vehicles at designated council sites (check the CamperMate app).',
+      'Currency is New Zealand Dollars (NZD) and card payments are accepted almost everywhere.'
     ],
     femaleTravelNotes: {
-      generalVibe: 'Relaxed, safe, and romantic.',
-      eveningAtmosphere: 'Quiet cliffside walks with peaceful starlit horizons.',
-      arrivalTips: 'Coordinate luggage porter service with your hotel if staying in cliffside cave rooms.',
-      neighborhoodAdvice: 'Imerovigli provides the most serene and upscale sanctuary.'
+      generalVibe: 'Extremely high level of personal safety and helpful, welcoming local culture.',
+      eveningAtmosphere: 'Quiet and relaxed town centers with friendly pubs and wholesome dining.',
+      arrivalTips: 'Arriving in Queenstown by plane offers one of the most spectacular mountain landing views in the world.',
+      neighborhoodAdvice: 'Wanaka and Nelson/Abel Tasman are peaceful, safe, and empowering bases for solo travelers.'
     },
-    relatedHideoutIds: ['hideout-santorini-imerovigli-cave'],
-    relatedStayIds: ['stay-santorini-grace'],
-    relatedStoryIds: ['story-places-i-look-for'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
-  },
-  {
-    id: 'mallorca',
-    slug: 'mallorca',
-    name: 'Mallorca',
-    country: 'Spain',
-    tag: 'Mountain stone fincas, olive groves & secluded turquoise calas',
-    heroImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'Beyond the crowded south lies an island of UNESCO-listed mountain villages, ancient olive groves, and hidden rocky coves.',
-    openingEditorial: 'Mallorca’s Serra de Tramuntana mountains are a revelation. Stone villages like Deià, Valldemossa, and Sóller are shaded by citrus orchards, where days unfold between quiet hiking trails and swims in translucent turquoise water.',
-    whereIWouldStay: 'Sóller or Deià. Sóller allows you to wake up to mountain views, catch the historic wooden tram down to the port for fresh red prawns, and retreat to a restored finca.',
-    neighborhoods: [
-      {
-        name: 'Sóller & Port de Sóller',
-        vibe: 'Citrus valley elegance, historic tram, harbor seafood',
-        bestFor: 'Walkers, culinary lovers, and boutique finca stays',
-        whyChoose: 'Flourishing town square, mountain air, and coastal access.',
-        avoidIf: 'You dislike driving on mountain switchbacks.'
-      },
-      {
-        name: 'Deià',
-        vibe: 'Artist village, cliffside elegance, stone cottages',
-        bestFor: 'Romantic hideouts, privacy, and literary history',
-        whyChoose: 'Sensational coastal walks down to Cala Deià for rocky swims.',
-        avoidIf: 'You require budget accommodations; Deià is quite exclusive.'
-      },
-      {
-        name: 'Palma (Santa Catalina & Old Town)',
-        vibe: 'Sophisticated Mediterranean capital, tapas, designer courtyards',
-        bestFor: 'Short weekend city-meets-sea breaks',
-        whyChoose: 'Outstanding gourmet market at Mercat de Santa Catalina.',
-        avoidIf: 'You want complete mountain solitude.'
-      }
-    ],
-    whatTravelersSaySummary: 'Travelers emphasize renting a car to discover the island\'s northern coast and packing water shoes for stony calas. The beauty of the Tramuntana mountain range leaves a lasting impression.',
-    whatToSkip: [
-      'Mega-resorts in Magaluf and S\'Arenal.',
-      'Peak midday visits to Torrent de Pareis without comfortable walking footwear.'
-    ],
-    thingsWorthDoing: [
-      {
-        title: 'Swim and lunch at Cala Deià',
-        description: 'A rocky pebble cove with crystal-clear water and seaside rustic restaurant Ca\'s Patró March.',
-        whyWorthIt: 'Freshly caught grilled sea bass eaten right at the edge of crashing waves.'
-      },
-      {
-        title: 'Ride the 1912 Wooden Train through the Tramuntana',
-        description: 'A vintage mahogany train journey connecting Palma to Sóller through pine forests and mountain tunnels.',
-        whyWorthIt: 'A wonderfully nostalgic, scenic way to travel across the island.'
-      }
-    ],
-    placesToEat: [
-      {
-        name: 'Ca\'s Patró March',
-        type: 'Cliffside seafood shack over Cala Deià',
-        neighborhood: 'Deià',
-        whySpecial: 'Rustic wooden terrace perched on rocky crags; book weeks in advance.'
-      },
-      {
-        name: 'Bar Nou Sóller',
-        type: 'Traditional Mallorcan tapas & pa amb oli',
-        neighborhood: 'Sóller',
-        whySpecial: 'Authentic local tavern with sobrasada, local cheeses, and crisp Mahou beer.'
-      }
-    ],
-    gettingAround: {
-      recommendation: 'A rental car is the best way to explore northern calas and mountain villages.',
-      airportTransit: 'Palma Airport (PMI) is 15 minutes to central Palma or 35 minutes to Sóller by highway.',
-      eveningWalkingAdvice: 'Village plazas in Sóller and Valldemossa are warm, safe, and family-oriented.'
-    },
-    goodToKnow: [
-      'Pack rubber water shoes for entering rocky calas without slipping.',
-      'Mountain roads are narrow; drive cautiously around cycling pelotons.'
-    ],
-    femaleTravelNotes: {
-      generalVibe: 'Idyllic, restorative, and safe.',
-      eveningAtmosphere: 'Mountain village squares have quiet, relaxed dining atmospheres.',
-      arrivalTips: 'Pick up your rental car directly from the PMI terminal.',
-      neighborhoodAdvice: 'Sóller offers the most convenient blend of amenities, safety, and natural beauty.'
-    },
-    relatedHideoutIds: ['hideout-mallorca-soller-finca'],
-    relatedStayIds: ['stay-mallorca-belmond'],
-    relatedStoryIds: ['story-places-i-look-for'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
-  },
-  {
-    id: 'copenhagen',
-    slug: 'copenhagen',
-    name: 'Copenhagen',
-    country: 'Denmark',
-    tag: 'Nordic design sanctuaries, bakery rituals & harbor dips',
-    heroImage: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'The global capital of design harmony, morning cold-water harbor plunges, and warm cardamom buns at neighborhood bakeries.',
-    openingEditorial: 'Copenhagen operates with an enviable ease. Everything is designed with human happiness and environmental balance in mind. Rent a city bike and within twenty minutes you are gliding past clean harbor baths, quiet botanical gardens, and candlelit wine bars.',
-    whereIWouldStay: 'Vesterbro or Frederiksberg. Vesterbro has transformed into a vibrant hub of indie design, specialty coffee, and contemporary dining, while Frederiksberg offers calm tree-lined boulevards.',
-    neighborhoods: [
-      {
-        name: 'Vesterbro',
-        vibe: 'Creative, culinary, design-led and welcoming',
-        bestFor: 'Solo female travelers, foodies, and design lovers',
-        whyChoose: 'Værnedamsvej street (the "French street of Copenhagen") for flower shops and wine bars.',
-        avoidIf: 'You want historical 17th-century castle quarters.'
-      },
-      {
-        name: 'Nørrebro',
-        vibe: 'Multicultural, vibrant, youthful, independent',
-        bestFor: 'Second-hand shopping, indie coffee, and park strolls',
-        whyChoose: 'Jægersborggade street for artisanal ceramic studios, natural wine, and caramel bakeries.',
-        avoidIf: 'You prefer formal luxury avenues.'
-      },
-      {
-        name: 'Indre By (Old Town)',
-        vibe: 'Historic canals, royal palaces, cobbled lanes',
-        bestFor: 'First-time short stays',
-        whyChoose: 'Walkable to Nyhavn, Torvehallerne food market, and the design museum.',
-        avoidIf: 'You want to avoid standard high-street retail crowds.'
-      }
-    ],
-    whatTravelersSaySummary: 'Travelers rate Copenhagen as one of the safest and most effortless solo destinations worldwide. The primary advice is to rent a bicycle immediately and embrace the local bakery culture.',
-    whatToSkip: [
-      'The Little Mermaid statue at midday — small and swarmed by tour buses; visit the Kastellet fortress nearby instead.',
-      'Taking taxis when the bike lanes and automated metro run 24/7 with zero friction.'
-    ],
-    thingsWorthDoing: [
-      {
-        title: 'Morning Cardamom Bun at Juno the Bakery or Hart Bageri',
-        description: 'World-renowned sourdough and laminated cardamom pastries made with organic stone-ground flour.',
-        whyWorthIt: 'Arrive early, sit on the bench in the morning sun, and experience true Danish hygge.'
-      },
-      {
-        title: 'Harbor Swim at Sandkaj or Islands Brygge',
-        description: 'Crystal-clear seawater harbor baths right in the urban center.',
-        whyWorthIt: 'Join locals for an invigorating swim followed by a warm sauna session.'
-      }
-    ],
-    placesToEat: [
-      {
-        name: 'Apollo Bar & Kantine',
-        type: 'Contemporary Nordic in the Charlottenborg Palace courtyard',
-        neighborhood: 'Nyhavn / Indre By',
-        whySpecial: 'Sleek design, rotating seasonal plates, and natural wines in an art academy courtyard.'
-      },
-      {
-        name: 'TorvehallerneKBH',
-        type: 'Twin glass gourmet market halls',
-        neighborhood: 'Nørreport',
-        whySpecial: 'Smørrebrød (Danish open-faced rye sandwiches) from Hallernes Smørrebrød and fresh oysters.'
-      }
-    ],
-    gettingAround: {
-      recommendation: 'Rent a Donkey Republic bike or rely on the spotless 24/7 Metro network.',
-      airportTransit: 'The Metro runs non-stop from CPH Airport directly into Kongens Nytorv / Nørreport in 13 minutes (€4).',
-      eveningWalkingAdvice: 'Copenhagen is exceptionally safe and brightly lit at night across all central districts.'
-    },
-    goodToKnow: [
-      'Denmark is virtually cashless; all merchants, buses, and market stalls accept contactless cards and Apple Pay.',
-      'Always observe bicycle traffic rules: signal turns with a raised hand or extended arm.'
-    ],
-    femaleTravelNotes: {
-      generalVibe: 'One of the safest, most egalitarian cities in the world.',
-      eveningAtmosphere: 'Effortless night biking and safe returns at any hour.',
-      arrivalTips: 'Metro station is located right inside Terminal 3 of CPH Airport.',
-      neighborhoodAdvice: 'Vesterbro and Frederiksberg offer the most relaxed, charming living experience.'
-    },
-    relatedHideoutIds: ['hideout-copenhagen-vesterbro-loft'],
-    relatedStayIds: ['stay-copenhagen-sanders'],
-    relatedStoryIds: ['story-what-i-look-for'],
-    relatedGuideIds: ['guide-how-to-find-weekend-escape']
+    relatedHideoutIds: ['hideout-nz-wanaka-cabin', 'hideout-nz-fiordland-retreat'],
+    relatedStayIds: ['stay-nz-wanaka-luxury', 'stay-nz-queenstown-boutique'],
+    relatedStoryIds: ['story-nz-south-island-road-trip', 'story-nz-where-to-slow-down'],
+    relatedGuideIds: ['guide-nz-south-island-slow-route']
   }
-];
+].map(d => ({
+  ...d,
+  image: (d as any).image || d.heroImage,
+  heroImage: d.heroImage || (d as any).image
+}));

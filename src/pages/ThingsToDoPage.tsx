@@ -110,9 +110,16 @@ export const ThingsToDoPage: React.FC = () => {
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-[#F1EDE4]">
                 <img
-                  src={exp.image}
+                  src={exp.image || (exp as any).heroImage || 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'}
                   alt={exp.title}
                   loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    if (target.src !== 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80') {
+                      target.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80';
+                    }
+                  }}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute top-3 left-3">

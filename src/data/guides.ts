@@ -2,194 +2,298 @@ import { Guide } from '../types';
 
 export const GUIDES: Guide[] = [
   {
-    id: 'guide-where-to-stay-lisbon',
-    slug: 'where-to-stay-in-lisbon',
-    title: 'Where to Stay in Lisbon: A Neighborhood-by-Neighborhood Guide',
-    subtitle: 'From leafy Príncipe Real to historic Alfama: finding the right quarter for your travel style.',
-    destinationId: 'lisbon',
-    heroImage: 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'August 2025',
+    id: 'guide-iceland-road-trip-essentials',
+    title: 'The Essential Iceland Road Trip & Weather Field Guide',
+    subtitle: 'From sub-arctic wind gear to gravel insurance and hot spring etiquette',
+    destinationId: 'iceland',
+    destinationName: 'Iceland',
     readTime: '8 min read',
-    intro: 'Lisbon’s topography dictates your daily rhythm. The neighborhood you choose changes whether you wake up to birdsong in a private garden terrace or the clanking gears of Tram 28 climbing a cobblestone slope outside your window.',
+    heroImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Everything you need to know before driving Iceland: 4x4 rental choices, weather warning apps, geothermal pool culture, and cashless travel.',
     sections: [
       {
-        title: '1. Príncipe Real: For Design Lovers & Tranquil Evenings',
-        content: [
-          'Príncipe Real sits along the ridge above Bairro Alto. It is characterized by 19th-century aristocratic townhouses, botanical gardens, and independent concept stores like Embaixada.',
-          'It is my top recommendation for solo female travelers and couples who appreciate quiet nights, elevated coffee roasteries, and walking distance to contemporary Portuguese bistros.'
-        ],
-        tips: [
-          'Best for: Quiet, upscale, stylish dining, lovely parks',
-          'Avoid if: You need flat terrain or the lowest budget hostels'
-        ],
-        keyTakeaway: 'Stay here for the best balance of safety, culinary excellence, and peaceful sleep.'
+        heading: '1. Vehicle Selection & Crucial Insurance',
+        body: 'Even during summer, gravel roads and sudden wind storms can test standard sedans. Rent a 4x4 with comprehensive Gravel Protection (GP) and Sand/Ash Protection (SAD). Always inspect door hinge rubber seals upon pickup.'
       },
       {
-        title: '2. Alfama & Graça: For Romantic Cobblestone Soul',
-        content: [
-          'Alfama is the oldest district in Lisbon, having survived the 1755 earthquake. Its labyrinth of narrow alleys, steep staircases, and small fado taverns feels like a timeless village.',
-          'Waking up here to church bells and clotheslines swaying in the breeze is pure poetry, but be prepared for steep stair climbs.'
-        ],
-        tips: [
-          'Pack a backpack or duffel bag rather than heavy four-wheel rolling suitcases.',
-          'Graça (just uphill from Alfama) has cooler breezes and fewer tour groups.'
-        ]
+        heading: '2. The Sacred Rules of Icelandic Geothermal Pools',
+        body: 'Local municipal pools (sundlaugar) are community living rooms. The golden rule is taking a thorough shower with soap before putting on your swimwear. Respect this ritual, and you will be warmly welcomed.'
       },
       {
-        title: '3. Santos & Lapa: For Longer Stays & Artisan Living',
-        content: [
-          'The Santos design district and embassy quarter of Lapa offer wide residential streets and authentic Portuguese tascas where lunch menus cost under €12.',
-          'It is quieter and slightly removed from the tourist center, making it wonderful for a four-to-seven-day stay.'
-        ]
+        heading: '3. Daily Weather & Safety Monitoring',
+        body: 'Bookmark vedur.is (Icelandic Met Office) and safetravel.is. Never drive into areas flagged with yellow or red blizzard/wind warnings, regardless of your vehicle size.'
       }
     ],
-    travelerVoiceIds: ['tv-lisbon-alfama'],
-    relatedHideoutIds: ['hideout-lisbon-botanic'],
-    relatedStayIds: ['stay-lisbon-memmo']
-  },
-  {
-    id: 'guide-best-areas-paris',
-    slug: 'best-areas-to-stay-in-paris',
-    title: 'The Best Areas to Stay in Paris: Beyond the Postcards',
-    subtitle: 'Why the 10th, Haut Marais, and South Pigalle offer a richer Parisian experience than the tourist core.',
-    destinationId: 'paris',
-    heroImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'July 2025',
-    readTime: '9 min read',
-    intro: 'First-time visitors often default to the 7th Arrondissement near the Eiffel Tower or the busy retail streets of the 1st. But the soul of contemporary Paris thrives in its eastern and northern residential quarters, where everyday food culture, natural wine, and neighborhood camaraderie are unmatched.',
-    sections: [
-      {
-        title: '1. Canal Saint-Martin & The 10th Arrondissement',
-        content: [
-          'The 10th Arrondissement along Quai de Valmy is where young Paris gathers. Iron footbridges arch over the water, bookshops host evening readings, and casual bistros serve stellar small plates.',
-          'It is walkable, vibrant without feeling aggressive, and easily connected via République and Gare de l\'Est.'
-        ],
-        tips: [
-          'Sunday pedestrianization turns the canal into a serene walking promenade.',
-          'Try Holybelly for breakfast and Ten Belles for afternoon coffee.'
-        ]
-      },
-      {
-        title: '2. Haut Marais (3rd Arrondissement)',
-        content: [
-          'The northern part of the Marais preserves 17th-century mansions and quiet courtyards with far less foot traffic than the shopping strip along Rue de Rivoli.',
-          'Home to Marché des Enfants Rouges, the oldest covered food market in Paris (dating to 1615).'
-        ]
-      },
-      {
-        title: '3. South Pigalle (9th Arrondissement / SoPi)',
-        content: [
-          'At the foot of Montmartre, SoPi has evolved into a stylish gourmet enclave of boutique hotels, artisan chocolatiers, and intimate bistros along Rue des Martyrs.'
-        ]
-      }
+    femaleTravelChecklist: [
+      'Carry high-quality thermal base layers and a seam-sealed waterproof shell',
+      'Download the 112 Iceland emergency app',
+      'Contactless cards/Apple Pay are accepted for all purchases',
+      'Tap water in Iceland is pure spring water — bring a refillable bottle'
     ],
-    travelerVoiceIds: ['tv-paris-10th-arr'],
-    relatedHideoutIds: ['hideout-paris-marais-loft'],
-    relatedStayIds: ['stay-paris-provence']
+    recommendedStays: [
+      {
+        name: 'ION Adventure Hotel',
+        reason: 'Cantilevered over volcanic rock near Thingvellir with geothermal pool',
+        link: '#/stays'
+      },
+      {
+        name: 'Hotel Rangá',
+        reason: 'Riverside log sanctuary with private stargazing observatory',
+        link: '#/stays'
+      }
+    ]
   },
   {
-    id: 'guide-weekend-in-budapest',
-    slug: 'a-weekend-in-budapest',
-    title: 'A Weekend in Budapest: Thermal Baths, Grand Cafés & River Dusk',
-    subtitle: 'A thoughtful 48-hour itinerary balancing imperial history, thermal mineral soaks, and contemporary dining.',
-    destinationId: 'budapest',
-    heroImage: 'https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'June 2025',
+    id: 'guide-norway-fjord-slow-travel',
+    title: 'The Slow Fjord & Lofoten Transit Guide',
+    subtitle: 'Navigating scenic rail, electric catamarans, and remote rorbu cabins',
+    destinationId: 'norway',
+    destinationName: 'Norway',
     readTime: '7 min read',
-    intro: 'Budapest is one of the most rewarding 48-hour city breaks in Europe. With thermal mineral springs bubbling right under the city foundations and a majestic riverfront that lights up like golden filigree at night, two days feel deeply restorative.',
+    heroImage: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'How to experience Norway\'s fjords using the Bergen Line railway, silent electric ferries, and village buses without tourist rush.',
     sections: [
       {
-        title: 'Day 1: Imperial Pest & Thermal Immersion',
-        content: [
-          'Begin with morning coffee and poppyseed pastries at a historic café, followed by a walk through the quiet Palace District.',
-          'Spend the afternoon soaking in the naturally heated pools of Rudas Baths or Gellért under Art Nouveau glass skylights.'
-        ]
+        heading: '1. The Bergen Railway & Flåm Line',
+        body: 'Book train tickets via Vy.no 90 days in advance for Minipris fares. Sit on the left side traveling west from Oslo for panoramic views across the Hardangervidda plateau.'
       },
       {
-        title: 'Day 2: Castle Hills & Courtyard Dinners',
-        content: [
-          'Cross the Chain Bridge to explore the quiet residential backstreets of Buda Castle Hill before day tours arrive.',
-          'Conclude with dinner in an open-air garden courtyard in the Jewish Quarter.'
-        ]
+        heading: '2. Fjord Ferries vs Big Cruise Ships',
+        body: 'Opt for the modern silent electric catamarans (operated by The Fjords) on the Nærøyfjord between Flåm and Gudvangen. They glide silently past waterfalls without emissions.'
+      },
+      {
+        heading: '3. Living in a Lofoten Rorbu',
+        body: 'Authentic rorbuer in Reine and Henningsvær feature full kitchens. Stock up on fresh fish, sourdough, and local dairy at local markets for leisurely waterfront breakfasts.'
       }
     ],
-    travelerVoiceIds: ['tv-budapest-district-8'],
-    relatedHideoutIds: ['hideout-budapest-palace-boutique'],
-    relatedStayIds: ['stay-budapest-memories']
+    femaleTravelChecklist: [
+      'Norway is exceptionally safe with clean, well-lit train stations',
+      'Download the Vy and En-tur transit apps for seamless train/bus schedules',
+      'Tap-to-pay cards are used everywhere; cash is rarely needed',
+      'Invest in breathable Gore-Tex rain jackets and sturdy walking shoes'
+    ],
+    recommendedStays: [
+      {
+        name: 'Henningsvær Bryggehotell',
+        reason: 'Harbor-front timber haven in Lofoten’s most vibrant artisan village',
+        link: '#/stays'
+      }
+    ]
   },
   {
-    id: 'guide-how-i-choose-hotels',
-    slug: 'how-i-choose-where-to-stay',
-    title: 'How I Choose Where to Stay: An Editorial Framework',
-    subtitle: 'The 7 criteria I use to filter through thousands of listings and find places with soul.',
-    heroImage: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'May 2025',
+    id: 'guide-sweden-archipelago-design',
+    title: 'Stockholm & Archipelago Design Living Guide',
+    subtitle: 'The art of fika, public island ferries, and curated neighborhood wandering',
+    destinationId: 'sweden',
+    destinationName: 'Sweden',
     readTime: '6 min read',
-    intro: 'Finding a memorable place to stay is not about sorting by highest star rating or sorting by price. It is about understanding the DNA of the property and matching it to how you want to feel when you wake up.',
+    heroImage: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Experience Stockholm like a design insider: artisan bakeries in Södermalm, world-class vintage shops, and ferry trips to pine-clad islands.',
     sections: [
       {
-        title: 'The 7 Non-Negotiable Filters',
-        content: [
-          '1. Scale: Under 30 rooms preferred so service remains personal.',
-          '2. Lighting: Natural floor-to-ceiling windows or balconies.',
-          '3. Acoustic Privacy: Quiet side streets away from night clubs.',
-          '4. Neighborhood Integrity: Walking distance to real bakeries and markets.',
-          '5. Walkability: Safe evening returns for solo travelers.',
-          '6. Honest Photography: Clear daytime photos showing bathroom and street context.',
-          '7. Generous Hospitality: Welcoming arrival policies and honest local recommendations.'
-        ]
+        heading: '1. The Södermalm Neighborhood Routine',
+        body: 'Spend mornings exploring the leafy streets around Mariatorget and Nytorget. Pair morning cardamom buns at Bageri Petrus with single-origin coffee at Drop Coffee.'
+      },
+      {
+        heading: '2. Archipelago Hopping by Public Ferry',
+        body: 'Board the classic Waxholmsbolaget passenger ferries from Strömkajen in central Stockholm. In under two hours, you can reach car-free islands like Grinda or Sandhamn for forest trails and sea saunas.'
       }
     ],
-    travelerVoiceIds: ['tv-rome-trastevere', 'tv-copenhagen-vesterbro'],
-    relatedHideoutIds: ['hideout-lisbon-botanic', 'hideout-copenhagen-vesterbro-loft'],
-    relatedStayIds: ['stay-lisbon-memmo', 'stay-copenhagen-sanders']
+    femaleTravelChecklist: [
+      'Completely cashless society — carry your bank card or mobile wallet',
+      'Download the SL app for Stockholm metro, tram, bus, and ferry tickets',
+      'Tap water is among the cleanest in Europe',
+      'Safe, flat, and walkable at all hours'
+    ],
+    recommendedStays: [
+      {
+        name: 'Ett Hem',
+        reason: 'The gold standard in boutique residential hospitality in Stockholm',
+        link: '#/stays'
+      }
+    ]
   },
   {
-    id: 'guide-how-to-find-weekend-escape',
-    slug: 'how-to-find-a-great-weekend-escape',
-    title: 'How to Find a Great Weekend Escape',
-    subtitle: 'How to plan a short 2-3 night recharge that leaves you energized rather than exhausted.',
-    heroImage: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'April 2025',
-    readTime: '6 min read',
-    intro: 'A weekend escape should never require 8 hours of complex multi-leg transit. Learn how to pick destinations with direct flight routes, seamless airport trains, and compact walkable quarters.',
+    id: 'guide-china-first-timers-practical',
+    title: 'The First-Timer’s Practical Guide to Modern China',
+    subtitle: 'Apps, high-speed rail, mobile payments, and cultural navigation',
+    destinationId: 'china',
+    destinationName: 'China',
+    readTime: '9 min read',
+    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Demystifying travel in China today: set up Alipay and WeChat Pay before you fly, master the 350 km/h bullet train system, and navigate ancient cities with ease.',
     sections: [
       {
-        title: 'The Golden Rule of 72-Hour Trips',
-        content: [
-          'Choose cities where the airport transit takes under 30 minutes (like Copenhagen, Lisbon, or Budapest). If airport transfers consume half your day, you lose the restorative benefit of the trip.'
-        ]
+        heading: '1. Setting Up Mobile Payments (Alipay & WeChat Pay)',
+        body: 'Foreign credit cards (Visa/Mastercard) can now be linked directly to Alipay and WeChat Pay with zero transaction fees on purchases under 200 RMB (~$28). Complete this setup and identity verification before departing.'
+      },
+      {
+        heading: '2. High-Speed Rail (CRH) Mastery',
+        body: 'Book train tickets via Trip.com or the official 12306 app. Your ticket is linked directly to your passport number; simply scan your passport at the station gates.'
+      },
+      {
+        heading: '3. Essential Connectivity & Navigation Apps',
+        body: 'Purchase an international roaming eSIM before arrival. Inside Alipay, use the English-language Didi mini-app for hailing metered taxis.'
       }
     ],
-    travelerVoiceIds: ['tv-copenhagen-vesterbro', 'tv-mallorca-soller'],
-    relatedHideoutIds: ['hideout-copenhagen-vesterbro-loft', 'hideout-mallorca-soller-finca'],
-    relatedStayIds: ['stay-copenhagen-sanders']
+    femaleTravelChecklist: [
+      'Extremely high street safety day and night across all major cities',
+      'Install translation apps with offline camera capability (e.g. Google/Apple Translate)',
+      'Subways in Beijing, Shanghai, and Chengdu are clean with clear English signage',
+      'Carry tissue packs as some historic restrooms do not provide paper'
+    ],
+    recommendedStays: [
+      {
+        name: 'Yangshuo Mountain Retreat',
+        reason: 'Serene riverside eco-lodge nestled among limestone karst peaks',
+        link: '#/stays'
+      }
+    ]
   },
   {
-    id: 'guide-what-makes-boutique-worth-booking',
-    slug: 'what-makes-a-boutique-hotel-worth-booking',
-    title: 'What Makes a Boutique Hotel Worth Booking?',
-    subtitle: 'Distinguishing between authentic boutique craft and lazy marketing gimmicks.',
-    heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80',
-    authorName: 'The woman behind TravelHideouts',
-    date: 'March 2025',
-    readTime: '5 min read',
-    intro: 'Every chain hotel now slaps the word "boutique" onto their marketing materials. Here is how to verify if a hotel has authentic craftsmanship, respectful community roots, and genuine hospitality before you put down your card.',
+    id: 'guide-patagonia-trekking-first-timers',
+    title: 'The Complete Patagonia Trekking & Gear Guide',
+    subtitle: 'Choosing between Chile and Argentina, managing wind, and day-hiking logistics',
+    destinationId: 'patagonia',
+    destinationName: 'Patagonia',
+    readTime: '8 min read',
+    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'A practical field manual for hiking Patagonia: layer systems, wind management, day-hiking from El Chaltén, and booking Torres del Paine.',
     sections: [
       {
-        title: 'The Difference Between Styling and Hospitality',
-        content: [
-          'A neon sign in the lobby and an Instagram wall do not make a boutique hotel. Look for owner-operated properties, artisanal breakfast ingredients sourced from local farms, and staff who can tell you where they personally eat on their day off.'
-        ]
+        heading: '1. The 3-Layer Mountain Clothing System',
+        body: 'Base layer: merino wool top and bottom. Mid-layer: breathable fleece or lightweight down. Outer layer: heavy-duty windproof and waterproof Gore-Tex shell.'
+      },
+      {
+        heading: '2. Day-Hiking Paradise: El Chaltén',
+        body: 'Stay in the village of El Chaltén and hike Laguna de los Tres and Laguna Torre without paying park entry fees or carrying heavy camping gear.'
+      },
+      {
+        heading: '3. Border Crossing Biosecurity',
+        body: 'Chilean and Argentine border agents enforce strict quarantine on fresh fruit, meats, and honey. Declare all food items to avoid severe fines.'
       }
     ],
-    travelerVoiceIds: ['tv-budapest-district-8'],
-    relatedHideoutIds: ['hideout-budapest-palace-boutique'],
-    relatedStayIds: ['stay-budapest-memories']
+    femaleTravelChecklist: [
+      'Bring sturdy ankle-support trekking boots broken in before travel',
+      'Trekking poles provide crucial stability in high Patagonian crosswinds',
+      'El Chaltén and Puerto Natales have vibrant, supportive solo hiker communities',
+      'Pack high-SPF sunscreen and polarized sunglasses for glacier glare'
+    ],
+    recommendedStays: [
+      {
+        name: 'Explora Torres del Paine',
+        reason: 'All-inclusive luxury adventure lodge on Lake Pehoé inside the park',
+        link: '#/stays'
+      }
+    ]
+  },
+  {
+    id: 'guide-korea-seoul-neighborhoods-ktx',
+    title: 'Seoul Neighborhoods & KTX High-Speed Rail Guide',
+    subtitle: 'From historic hanok alleyways in Seochon to high-speed rail to Busan and Jeju',
+    destinationId: 'south-korea',
+    destinationName: 'South Korea',
+    readTime: '7 min read',
+    heroImage: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'How to explore Seoul’s creative quarters on foot, master the spotless subway network, and ride KTX bullet trains across the Korean peninsula.',
+    sections: [
+      {
+        heading: '1. Navigating with Naver Map & KakaoMap',
+        body: 'Due to domestic mapping legislation, Google Maps does not support walking routes in South Korea. Download Naver Map or KakaoMap with English interface settings for pinpoint subway and walking directions.'
+      },
+      {
+        heading: '2. The T-Money Transit Card',
+        body: 'Pick up a reloadable T-Money card at Incheon Airport or any convenience store (CU, GS25). Tap on and off all subways, city buses, and taxis.'
+      },
+      {
+        heading: '3. KTX Bullet Trains to Busan & Gyeongju',
+        body: 'Board the KTX at Seoul Station to reach coastal Busan in 2 hours 15 minutes. Train seats are spacious, quiet, and equipped with fast Wi-Fi and power outlets.'
+      }
+    ],
+    femaleTravelChecklist: [
+      'Rated among the safest countries globally for solo female travelers',
+      'Heated ondol floors in hanok guesthouses offer supreme comfort',
+      'Cafés and convenience stores are open late with friendly service',
+      'No tipping is required anywhere in South Korea'
+    ],
+    recommendedStays: [
+      {
+        name: 'Rakkojae Seoul Hanok',
+        reason: '130-year-old traditional hanok with private pine courtyard and yellow-ochre sauna',
+        link: '#/stays'
+      }
+    ]
+  },
+  {
+    id: 'guide-australia-east-coast-tasmania',
+    title: 'The Australian Coastal & Tasmania Road Trip Guide',
+    subtitle: 'Ocean pools, scenic coastal drives, wildlife safety, and coffee culture',
+    destinationId: 'australia',
+    destinationName: 'Australia',
+    readTime: '7 min read',
+    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Plan an unforgettable Australian journey: ocean pool swimming in Sydney, driving the Grand Pacific Route, and exploring Tasmania’s wild east coast.',
+    sections: [
+      {
+        heading: '1. Ocean Pool Culture & Beach Safety',
+        body: 'Sydney’s coastline is dotted with heritage saltwater pools carved into sandstone headlands (Bondi, Bronte, Clovelly). On open surf beaches, always swim strictly between the red-and-yellow patrol flags.'
+      },
+      {
+        heading: '2. Driving in Regional Australia',
+        body: 'Drive on the left side of the road. In regional areas, avoid driving between dusk and dawn when kangaroos and native wildlife are active along road shoulders.'
+      }
+    ],
+    femaleTravelChecklist: [
+      'Australia is extremely safe with relaxed, welcoming locals',
+      'Apply broad-spectrum 50+ SPF sunscreen every 2 hours',
+      'Contactless card tap is standard everywhere',
+      'Melbourne and Sydney have world-class specialty coffee roasteries'
+    ],
+    recommendedStays: [
+      {
+        name: 'Freycinet Coastal Lodge',
+        reason: 'Eco-pavilions inside Freycinet National Park overlooking Great Oyster Bay',
+        link: '#/stays'
+      }
+    ]
+  },
+  {
+    id: 'guide-nz-south-island-slow-route',
+    title: 'The New Zealand South Island Slow Route Guide',
+    subtitle: 'Campervans, alpine passes, fiord cruises, and dark sky reserves',
+    destinationId: 'new-zealand',
+    destinationName: 'New Zealand',
+    readTime: '8 min read',
+    heroImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80',
+    excerpt: 'Your essential South Island travel blueprint: renting self-contained vehicles, driving scenic mountain passes, and discovering serene lake sanctuaries.',
+    sections: [
+      {
+        heading: '1. Pacing Your South Island Drive',
+        body: 'Do not rush. Mountain roads are winding and single-lane with frequent one-lane bridges. Allow 30% more time than GPS estimates to enjoy scenic viewpoints.'
+      },
+      {
+        heading: '2. Dark Sky Stargazing at Lake Tekapo',
+        body: 'The Aoraki Mackenzie International Dark Sky Reserve offers some of the clearest night skies in the world. Stay in Tekapo or Mount Cook Village for mind-blowing galactic views.'
+      }
+    ],
+    femaleTravelChecklist: [
+      'Exceptional personal safety and friendly community culture',
+      'Declare all hiking boots and outdoor gear at customs biosecurity',
+      'Download the CamperMate app for verified campsites and dump stations',
+      'Drive on the left side of the road and give way at one-lane bridges'
+    ],
+    recommendedStays: [
+      {
+        name: 'Mahu Whenua Ridgeline Lodge',
+        reason: 'Eco-sanctuary on 500 sq km of protected alpine country in Wanaka',
+        link: '#/stays'
+      }
+    ]
   }
-];
+].map((g: any): Guide => ({
+  ...g,
+  authorName: g.authorName || 'Miley Rocha',
+  authorRole: g.authorRole || 'Founder & Travel Editor',
+  image: (g as any).image || g.heroImage,
+  heroImage: g.heroImage || (g as any).image
+}));

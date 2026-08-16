@@ -24,9 +24,16 @@ export const HideoutCard: React.FC<HideoutCardProps> = ({
         {/* Image Container */}
         <div className="relative aspect-[4/3] overflow-hidden bg-[#F1EDE4]">
           <img
-            src={hideout.image}
+            src={hideout.image || hideout.heroImage || 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80'}
             alt={hideout.title}
             loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src !== 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80') {
+                target.src = 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80';
+              }
+            }}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           
@@ -88,22 +95,26 @@ export const HideoutCard: React.FC<HideoutCardProps> = ({
             {hideout.summary}
           </p>
 
-          {/* Author's Personal Observation / Why Special */}
-          <div className="bg-[#F1EDE4] p-3.5 rounded-2xl border border-[#E9E5D9] text-xs text-[#434338] mb-4 italic font-serif">
-            <span className="font-sans font-bold not-italic text-[#8FA18B] uppercase tracking-widest text-[10px] block mb-0.5">
-              The Takeaway
-            </span>
-            "{hideout.authorTake}"
-          </div>
-
           {/* Best For Tags */}
-          <div className="flex items-center flex-wrap gap-1.5">
-            {hideout.bestFor.slice(0, 2).map((item, idx) => (
-              <span key={idx} className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#F1EDE4]/80 text-[#5A5A40] border border-[#E9E5D9]">
-                {item}
-              </span>
-            ))}
-          </div>
+          {(() => {
+            const bestForList = Array.isArray(hideout.bestFor)
+              ? hideout.bestFor
+              : typeof hideout.bestFor === 'string'
+              ? hideout.bestFor.split(',').map(s => s.trim()).filter(Boolean)
+              : [];
+
+            if (bestForList.length === 0) return null;
+
+            return (
+              <div className="flex items-center flex-wrap gap-1.5">
+                {bestForList.slice(0, 2).map((item, idx) => (
+                  <span key={idx} className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#F1EDE4]/80 text-[#5A5A40] border border-[#E9E5D9]">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            );
+          })()}
         </div>
       </div>
 
