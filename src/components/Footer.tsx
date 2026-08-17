@@ -18,12 +18,12 @@ export const Footer: React.FC = () => {
             </a>
 
             <p className="text-sm text-[#CDCBC2] leading-relaxed max-w-md font-sans">
-              TravelHideouts is a female-curated travel discovery publication. We filter through thousands of stays, residential quarters, and journeys to surface what is genuinely restorative and worth your time.
+              TravelHideouts is an independent female-curated travel publication. We share curiosity-driven travel stories, hidden places, and mindful travel guides across 9 extraordinary destinations. We do not offer or sell accommodations directly.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-xs text-[#8D8D7E]">
               <ShieldCheck className="w-4 h-4 text-[#8FA18B]" />
-              <span>Independent curation · Real community research · Zero fake reviews</span>
+              <span>Independent editorial curation · Firsthand stories · Honest perspectives</span>
             </div>
           </div>
 
@@ -33,12 +33,12 @@ export const Footer: React.FC = () => {
               Discover
             </h4>
             <ul className="space-y-2 text-sm text-[#CDCBC2]">
-              <li><a href="#/hideouts" className="hover:text-white transition-colors">Hideouts</a></li>
-              <li><a href="#/destinations" className="hover:text-white transition-colors">Destinations</a></li>
-              <li><a href="#/stays" className="hover:text-white transition-colors">Boutique Stays</a></li>
-              <li><a href="#/getting-there" className="hover:text-white transition-colors">Getting There</a></li>
+              <li><a href="#/stories" className="hover:text-white transition-colors">Travel Stories</a></li>
+              <li><a href="#/destinations" className="hover:text-white transition-colors">Countries</a></li>
+              <li><a href="#/hidden-stories" className="hover:text-white transition-colors">Hidden Stories</a></li>
               <li><a href="#/things-to-do" className="hover:text-white transition-colors">Things to Do</a></li>
-              <li><a href="#/deals" className="hover:text-white transition-colors">Worth Booking</a></li>
+              <li><a href="#/guides" className="hover:text-white transition-colors">Travel Guides</a></li>
+              <li><a href="#/getting-there" className="hover:text-white transition-colors">Getting There</a></li>
             </ul>
           </div>
 

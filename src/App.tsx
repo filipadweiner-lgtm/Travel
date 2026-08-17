@@ -99,6 +99,7 @@ export default function App() {
         return <HideoutsPage savedIds={savedIds} onToggleSave={toggleSave} />;
 
       case 'destinations':
+      case 'countries':
         if (id) {
           return <DestinationDetailPage id={id} savedIds={savedIds} onToggleSave={toggleSave} />;
         }
@@ -116,7 +117,11 @@ export default function App() {
         }
         return <StoriesPage />;
 
+      case 'hidden-stories':
+        return <StoriesPage defaultCategory="Hidden Places" />;
+
       case 'guides':
+      case 'travel-tips':
         if (id) {
           return <GuideDetailPage id={id} />;
         }

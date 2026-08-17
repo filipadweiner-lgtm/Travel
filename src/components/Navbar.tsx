@@ -17,20 +17,20 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Hideouts', href: '#/hideouts' },
-    { name: 'Destinations', href: '#/destinations' },
-    { name: 'Stays', href: '#/stays' },
     { name: 'Stories', href: '#/stories' },
-    { name: 'Guides', href: '#/guides' },
-    { name: 'Getting There', href: '#/getting-there' },
+    { name: 'Countries', href: '#/destinations' },
     { name: 'Things to Do', href: '#/things-to-do' },
-    { name: 'Worth Booking', href: '#/deals' },
+    { name: 'Hidden Stories', href: '#/hidden-stories' },
+    { name: 'Travel Tips', href: '#/guides' },
+    { name: 'About', href: '#/about' },
   ];
 
   const isActive = (href: string) => {
+    if (!href) return false;
+    const safePath = currentPath || '/';
     const cleanHref = href.replace('#', '');
-    if (cleanHref === '/' && (currentPath === '/' || currentPath === '')) return true;
-    if (cleanHref !== '/' && currentPath.startsWith(cleanHref)) return true;
+    if (cleanHref === '/' && (safePath === '/' || safePath === '')) return true;
+    if (cleanHref !== '/' && safePath.startsWith(cleanHref)) return true;
     return false;
   };
 
@@ -103,11 +103,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Primary CTA */}
             <a
-              href="#/hideouts"
+              href="#/stories"
               className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-5 py-2.5 rounded-full bg-[#8FA18B] text-white hover:bg-[#7C8E78] shadow-sm transition-all"
             >
               <Compass className="w-3.5 h-3.5" />
-              <span>Find a Hideout</span>
+              <span>Explore Stories</span>
             </a>
 
             {/* Mobile Menu Button */}

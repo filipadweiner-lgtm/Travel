@@ -1,16 +1,19 @@
 import { Destination } from '../types';
+import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
 
 export const DESTINATIONS: Destination[] = [
+  // 1. ICELAND
   {
     id: 'iceland',
     slug: 'iceland',
     name: 'Iceland',
     country: 'Iceland',
     tag: 'Black volcanic sands, quiet geothermal pools & vast arctic light',
+    emotionalStatement: "The country that makes you feel like you've landed on another planet.",
     heroImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'A landscape of elemental contrast where steaming hot springs cut through glacial plains, dramatic sea cliffs host nesting puffins, and silence stretches for miles.',
-    openingEditorial: 'Iceland is less about visiting individual attractions and more about letting your internal clock adjust to weather, daylight, and sheer geographic scale. Outside Reykjavík, civilization drops away quickly into moss-covered lava fields, cascading waterfalls, and obsidian shorelines.',
-    whereIWouldStay: 'A rural guesthouse along the South Coast near Vík or a secluded fjord cottage in the Snæfellsnes Peninsula. This allows you to witness early morning mist over black sands before tour buses arrive from the capital.',
+    blurb: 'A landscape of elemental contrast where steaming hot springs cut through glacial plains, dramatic sea cliffs host nesting puffins, and silence stretches for unbroken miles.',
+    openingEditorial: "Iceland is less about visiting individual attractions and more about letting your internal clock adjust to weather, daylight, and sheer geographic scale. Outside Reykjavík, civilization drops away quickly into moss-covered lava fields, cascading waterfalls, and obsidian shorelines. If I were planning this trip, I'd rent a reliable 4x4, focus deeply on the South Coast and Snæfellsnes, and build afternoons around hot spring soaks as weather rolls across the plains.",
+    whereIWouldStay: 'A secluded timber cabin along the South Coast near Vík or an unhurried fjord guesthouse in the Snæfellsnes Peninsula.',
     neighborhoods: [
       {
         name: 'Reykjavík (Vesturbær & Grandi)',
@@ -22,7 +25,7 @@ export const DESTINATIONS: Destination[] = [
       {
         name: 'South Coast & Vík',
         vibe: 'Dramatic basalt columns, roaring waterfalls and glacial lagoons',
-        bestFor: 'Photographers, hikers, and travelers exploring the classic southern route',
+        bestFor: 'Photographers, hikers, and travelers exploring the southern coastline',
         whyChoose: 'Base near Vík or Kirkjubæjarklaustur to be positioned for Jökulsárlón Glacier Lagoon and Diamond Beach at sunrise.',
         avoidIf: 'You prefer vibrant evening dining and nightlife.'
       },
@@ -94,26 +97,486 @@ export const DESTINATIONS: Destination[] = [
       'Iceland is virtually 100% cashless: contactless credit and debit cards are accepted everywhere from parking meters to remote farm stalls.',
       'Never drive off marked roads: fragile arctic moss takes decades to recover from tire treads and off-roading is strictly illegal.'
     ],
+    didYouKnow: [
+      {
+        fact: "Iceland has almost no natural forests because 9th-century Viking settlers cleared 95% of native birch trees for timber and sheep grazing.",
+        context: "Today, extensive reforestation programs like 'Hekluskógar' are slowly restoring native woodlands across volcanic plains.",
+        source: "Icelandic Forestry Service (Skógræktin)"
+      },
+      {
+        fact: "The black sand on Reynisfjara isn't ordinary sand: it is basalt lava that shattered instantly when molten magma collided with the freezing North Atlantic.",
+        context: "Because there is no quartz or coral to dilute it, the sand remains an obsidian shade of black.",
+        source: "University of Iceland Institute of Earth Sciences"
+      },
+      {
+        fact: "Over 85% of all Icelandic homes are heated directly by geothermal hot water pumped straight from volcanic aquifers.",
+        context: "Even the pavements in central Reykjavík have geothermal pipes underneath to melt snow in winter.",
+        source: "Orkustofnun (National Energy Authority)"
+      },
+      {
+        fact: "The belief in 'Huldufólk' (hidden people / elves) is rooted in an ecological respect for untouched geological formations.",
+        context: "Road constructions have occasionally been rerouted around sacred boulders to preserve natural history and folklore.",
+        source: "National Museum of Iceland"
+      },
+      {
+        fact: "Iceland does not have a standing army, navy, or air force, and has held the #1 spot on the Global Peace Index for over 15 consecutive years.",
+        context: "Police officers do not carry firearms during routine patrols.",
+        source: "Institute for Economics and Peace"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-iceland-turf-houses',
+        title: 'The Strange Story Behind Iceland\'s Turf Houses',
+        teaser: 'Why ancient Icelanders built homes with living grass roofs that insulated against arctic storms for a thousand years.',
+        category: 'Architecture',
+        destinationId: 'iceland',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-iceland-ground-breathes',
+        title: 'Why Iceland Has a Place Where the Ground Seems to Breathe',
+        teaser: 'In the geothermal fissures of Reykjanes, steam vents and subterranean magma pulses create the feeling of a living earth.',
+        category: 'Geology & Wonder',
+        destinationId: 'iceland',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-iceland-hidden-hot-pots',
+        title: 'The Hidden Rock Pools Locals Used Long Before Spas',
+        teaser: 'Tucked into mossy canyons and remote sheep valleys are thermal rock baths built by hand over centuries.',
+        category: 'Local Traditions',
+        destinationId: 'iceland',
+        readTime: '4 min read'
+      }
+    ],
     femaleTravelNotes: {
       generalVibe: 'Consistently ranked #1 globally for gender equality and safety; an ideal destination for solo female travelers.',
       eveningAtmosphere: 'Very respectful and relaxed street culture with zero harassment in public spaces.',
       arrivalTips: 'If arriving on early morning transatlantic flights at KEF (often 5:00 AM), pre-book airport thermal bath entry or arrange early hotel check-in to rest.',
       neighborhoodAdvice: 'Vesturbær and the 101 downtown area are flat, safe, and easily walked at any hour.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Iceland Alone',
+      tips: [
+        {
+          title: 'Choose Guesthouses with Communal Kitchens',
+          advice: 'Rural guesthouses along the South Coast often have shared dining areas where solo travelers exchange road condition tips over tea.'
+        },
+        {
+          title: 'Embrace the Neighborhood Pools (Sundlaugar)',
+          advice: 'Going to the pool in the late afternoon is the easiest, most authentic way to experience local life without feeling like an outsider.'
+        },
+        {
+          title: 'Keep Your Driving Days Under 3.5 Hours',
+          advice: 'Solo driving in high-latitude weather requires focus. Give yourself time for spontaneous short canyon hikes and warm bakery stops.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Hot Springs, Ocean Saunas & Coastal Scenery",
+      ideas: [
+        {
+          title: 'Geothermal Spa Hopping & Snæfellsnes Ocean Cabins',
+          desc: 'Spend mornings hiking black pebble coves, afternoons soaking in mineral pools, and evenings watching auroras from your deck.',
+          tag: 'Wellness & Nature'
+        },
+        {
+          title: 'Reykjavík Design & Food Weekend',
+          desc: 'Explore vintage Nordic wool boutiques, artisan ceramic workshops, natural wine bars, and harbor bakeries.',
+          tag: 'Culture & Dining'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-iceland-south-cabin', 'hideout-iceland-snaefellsnes-retreat'],
     relatedStayIds: ['stay-iceland-ion-adventure', 'stay-iceland-hotel-rang'],
-    relatedStoryIds: ['story-iceland-road-trip', 'story-iceland-more-than-reykjavik'],
+    relatedStoryIds: ['story-iceland-road-trip', 'story-iceland-more-than-reykjavik', 'story-iceland-black-sand', 'story-iceland-turf-houses'],
     relatedGuideIds: ['guide-iceland-road-trip-essentials']
   },
+
+  // 2. LIECHTENSTEIN
+  {
+    id: 'liechtenstein',
+    slug: 'liechtenstein',
+    name: 'Liechtenstein',
+    country: 'Liechtenstein',
+    tag: 'Alpine valleys, storybook castles & border-crossing mountain trails',
+    emotionalStatement: 'The tiny Alpine principality with its own quiet majesty and fairy-tale peaks.',
+    heroImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'Nestled between Switzerland and Austria, Liechtenstein is a micro-state of extraordinary charm: timber-chalet mountain villages, terraced Rhine vineyards, and dramatic hiking ridges.',
+    openingEditorial: "Liechtenstein is often dismissed as a mere transit stamp on a passport, but staying here reveals an intimate Alpine wonderland. High above the Rhine Valley in the mountain village of Malbun, cows graze in wildflower meadows framed by limestone peaks. What I love about Liechtenstein is its unhurried scale: you can cross from quiet vineyards to high mountain trails in under twenty minutes.",
+    whereIWouldStay: 'A traditional family-run Alpine chalet in Malbun or a boutique vineyard guesthouse near Vaduz.',
+    neighborhoods: [
+      {
+        name: 'Vaduz (Capital & Vineyards)',
+        vibe: 'Refined, scenic, overlooked by the Princely Castle',
+        bestFor: 'Art museums (Kunstmuseum), princely wine cellars, and Rhine riverside cycling',
+        whyChoose: 'Walk up the forested hillside trail to Vaduz Castle overlook for sunset across the Swiss Alps.',
+        avoidIf: 'You are looking for bustling big-city nightlife.'
+      },
+      {
+        name: 'Malbun (Alpine Valley)',
+        vibe: 'Crisp mountain air, ski trails, and summer wildflower meadows',
+        bestFor: 'Hikers, solo wellness travelers, and peaceful mountain retreats',
+        whyChoose: 'Car-free village center nestled in an amphitheater of 2,000-meter peaks with direct trailheads.',
+        avoidIf: 'You need quick access to high-speed railway stations.'
+      },
+      {
+        name: 'Balzers & Gutenberg Castle',
+        vibe: 'Historic church spires, medieval fortress hills, and vineyard paths',
+        bestFor: 'Photography, quiet afternoon strolls, and historic exploration',
+        whyChoose: 'Gutenberg Castle rises dramatically on a freestanding rock outcrop with panoramic valley views.',
+        avoidIf: 'You want extensive restaurant variety.'
+      },
+      {
+        name: 'Triesenberg',
+        vibe: 'Walser mountain heritage, panoramic terraces, and wood-paneled inns',
+        bestFor: 'Traditional Alpine gastronomy and dramatic views overlooking the entire Rhine basin',
+        whyChoose: 'Rich cultural roots with Walser dialect traditions dating back to 13th-century settlers.',
+        avoidIf: 'You dislike winding mountain roads.'
+      }
+    ],
+    whatTravelersSaySummary: 'Travelers are frequently surprised by how peaceful and scenic Liechtenstein is once you leave the main street of Vaduz and head into the mountains. The Liechtenstein Trail (Liechtenstein-Weg) is praised as one of Europe’s most delightful multi-day hiking routes.',
+    whatToSkip: [
+      'Treating Liechtenstein as a 30-minute souvenir stamp stop without ascending to the mountain trails of Malbun or Triesenberg.',
+      'Assuming you need a car: the green LIEmobil bus network is punctual, clean, and connects every village seamlessly.',
+      'Expecting shops and bakeries to stay open late on Sundays.'
+    ],
+    thingsWorthDoing: [
+      {
+        title: 'Hike the Fürstensteig Panoramic Trail',
+        description: 'A classic, thrilling mountain path carved into exposed limestone cliffs above the Rhine Valley.',
+        whyWorthIt: 'Sweeping vistas stretching from the Swiss Säntis massif all the way to the Austrian Vorarlberg.'
+      },
+      {
+        title: 'Sample Princely Wines at the Hofkellerei',
+        description: 'Tasting Pinot Noir and Chardonnay grown on the sunny south-facing slopes below Vaduz Castle.',
+        whyWorthIt: 'Liechtenstein’s unique Föhn wind creates a microclimate that yields exceptionally delicate Alpine wines.'
+      },
+      {
+        title: 'Walk the Walser Heritage Path in Triesenberg',
+        description: 'Discovering 700-year-old timber homes and listening to the unique Walser dialect stories.',
+        whyWorthIt: 'A glimpse into centuries of Alpine resilience and folk traditions.'
+      }
+    ],
+    placesToEat: [
+      {
+        name: 'Restaurant Torkel',
+        type: 'Michelin-starred Alpine gastronomy overlooking royal vineyards',
+        neighborhood: 'Vaduz',
+        whySpecial: 'Dine on the terrace directly beside historic Pinot Noir vines with views of the snow-capped Swiss mountains.'
+      },
+      {
+        name: 'Berggasthaus Sareis',
+        type: 'Mountain cheese fondue & hearty Alpine platters',
+        neighborhood: 'Malbun (top of Sareis chairlift)',
+        whySpecial: 'Perched at 2,000 meters; savor homemade cheese dumplings with 360-degree mountain views.'
+      },
+      {
+        name: 'Gasthof Löwen',
+        type: 'Historic 14th-century inn & traditional Walser dishes',
+        neighborhood: 'Vaduz',
+        whySpecial: 'One of the oldest guesthouses in the principality with frescoed timber dining rooms.'
+      }
+    ],
+    gettingAround: {
+      recommendation: 'Use the LIEmobil public bus network (or the Swiss Travel Pass which is valid across all buses). Renting an e-bike is a delightful way to explore the Rhine trails.',
+      airportTransit: 'Nearest major airports are Zurich (ZRH, 1h15m by train/bus via Sargans) and Friedrichshafen (FDH, Germany).',
+      eveningWalkingAdvice: 'Liechtenstein has virtually zero crime. Walking through villages at night under starry mountain skies is exceptionally safe and tranquil.'
+    },
+    goodToKnow: [
+      'Last verified: March 2026. Liechtenstein uses the Swiss Franc (CHF), though Euros are widely accepted.',
+      'There are no border controls between Switzerland and Liechtenstein: you simply cross over a wooden bridge over the Rhine.',
+      'Liechtenstein has no commercial airport and no domestic passenger railway line of its own; access is via Swiss (Sargans/Buchs) or Austrian (Feldkirch) stations.'
+    ],
+    didYouKnow: [
+      {
+        fact: "Liechtenstein is one of only two 'doubly landlocked' countries in the world (surrounded exclusively by countries that are also landlocked).",
+        context: "The other doubly landlocked country is Uzbekistan.",
+        source: "Liechtenstein National Administration"
+      },
+      {
+        fact: "Liechtenstein has no standing military force: it dissolved its 80-man army in 1868 after the Austro-Prussian War to save public funds.",
+        context: "Legend holds that the 80 soldiers returned from their final deployment with 81 men, having befriended an Italian liaison officer on the march home.",
+        source: "Liechtenstein National Museum"
+      },
+      {
+        fact: "You can walk across the entire country in a single weekend: the Liechtenstein Trail spans 75 kilometers from north to south through all 11 municipalities.",
+        context: "The trail has an interactive augmented-reality app (LIstory) sharing local folklore at 147 historic points.",
+        source: "Liechtenstein Marketing"
+      },
+      {
+        fact: "The reigning Prince of Liechtenstein still lives in Vaduz Castle overlooking the capital, and hosts an annual community reception in the castle gardens on National Day (August 15).",
+        context: "Citizens and visitors are invited to share drinks and conversation in the royal rose gardens.",
+        source: "Princely House of Liechtenstein"
+      },
+      {
+        fact: "Liechtenstein is the world's leading producer of precision dental ceramics and false teeth, exporting over 60 million artificial teeth annually.",
+        context: "Headquartered in Schaan, Ivoclar Vivadent is a global leader in dental technology.",
+        source: "Liechtenstein Chamber of Commerce"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-liechtenstein-no-airport',
+        title: 'Why Liechtenstein Has No Airport — And How It Stays Connected',
+        teaser: 'How a micro-state without runways or domestic trains created Europe’s most serene borderless transport model.',
+        category: 'Untold Stories',
+        destinationId: 'liechtenstein',
+        readTime: '4 min read'
+      },
+      {
+        id: 'hs-liechtenstein-castle-vaduz',
+        title: 'The Castle Above Vaduz That Isn\'t Quite What You Think',
+        teaser: 'A 12th-century fortress that remains a private working family home rather than a tourist showroom.',
+        category: 'History & Legends',
+        destinationId: 'liechtenstein',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-liechtenstein-walk-across',
+        title: 'The Country So Small You Can Walk Across It in a Weekend',
+        teaser: 'Following the secret ridge paths of the Walser people through wildflower meadows and hidden Alpine huts.',
+        category: 'Road Trips & Trails',
+        destinationId: 'liechtenstein',
+        readTime: '5 min read'
+      }
+    ],
+    femaleTravelNotes: {
+      generalVibe: 'Extremely safe, tranquil, and welcoming. Ideal for solo women looking for quiet Alpine rejuvenation.',
+      eveningAtmosphere: 'Quiet mountain evenings centered around intimate wine bars and hotel firesides.',
+      arrivalTips: 'Take the train from Zurich to Sargans, then hop on the #11 or #12E bus directly into Vaduz (15 mins).',
+      neighborhoodAdvice: 'Malbun and Triesenberg are peaceful mountain havens with zero street commotion.'
+    },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Liechtenstein Alone',
+      tips: [
+        {
+          title: 'Base in Malbun for Morning Alpine Walks',
+          advice: 'Staying in Malbun lets you step right out of your guesthouse onto high-altitude ridge paths before day hikers arrive.'
+        },
+        {
+          title: 'Rent an E-Bike for the Rhine River Path',
+          advice: 'The flat, paved cycle path along the Rhine is safe, scenic, and lets you glide between Switzerland and Liechtenstein at will.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Alpine Spas, Princely Vineyards & Quiet Trails",
+      ideas: [
+        {
+          title: 'Wine Tasting & Rhine Valley Wellness',
+          desc: 'Afternoons tasting Pinot Noir at the Princely cellars, followed by heated infinity pool sessions overlooking the Alps.',
+          tag: 'Wine & Wellness'
+        }
+      ]
+    },
+    relatedHideoutIds: ['hideout-liechtenstein-malbun-chalet', 'hideout-switzerland-lauterbrunnen-chalet'],
+    relatedStayIds: ['stay-liechtenstein-vaduz-boutique', 'stay-switzerland-zermatt-mountain'],
+    relatedStoryIds: ['story-liechtenstein-walk-across', 'story-liechtenstein-mountain-village', 'story-switzerland-car-free-villages'],
+    relatedGuideIds: ['guide-switzerland-train-journeys']
+  },
+
+  // 3. SWITZERLAND
+  {
+    id: 'switzerland',
+    slug: 'switzerland',
+    name: 'Switzerland',
+    country: 'Switzerland',
+    tag: 'Car-free alpine villages, crystal lakes & panoramic mountain railways',
+    emotionalStatement: 'Where engineering meets alpine poetry and quiet mountain chalets.',
+    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'Towering granite peaks, pristine turquoise lakes, car-free timber villages like Mürren and Zermatt, and the world’s most scenic public railway system.',
+    openingEditorial: "Switzerland is so much more than luxury watches and postcard clichés. Its true magic is found in the quiet moments: the sound of cowbells drifting through misty pine forests in Gimmelwald, the silence of stepping off a mountain train onto crunchy snow at 2,000 meters, and sharing a pot of bubbly Gruyère fondue in a centuries-old timber stube. If I were planning this trip, I'd skip the tour buses, buy a Swiss Travel Pass, and base in car-free mountain villages where the only sound is melting glacier water.",
+    whereIWouldStay: 'A historic wooden chalet in car-free Mürren or a boutique lakefront retreat on Lake Lucerne.',
+    neighborhoods: [
+      {
+        name: 'Bernese Oberland (Mürren & Lauterbrunnen)',
+        vibe: 'Dramatic sheer cliff walls, 72 roaring waterfalls, and car-free tranquility',
+        bestFor: 'Hikers, solo travelers, and lovers of classic wooden chalet architecture',
+        whyChoose: 'Mürren sits perched 800 meters above the valley floor with unobstructed views of the Eiger, Mönch, and Jungfrau.',
+        avoidIf: 'You want car access directly to your front door.'
+      },
+      {
+        name: 'Zermatt & The Matterhorn',
+        vibe: 'Iconic pyramid peak, car-free electric taxis, and alpine mountaineering',
+        bestFor: 'Matterhorn sunrise views, glacier skiing, and historic mountaineer lore',
+        whyChoose: 'The historic Hinterdorf quarter preserved 16th-century larch-wood barns and sheep sheds.',
+        avoidIf: 'You are on a very strict budget.'
+      },
+      {
+        name: 'Lake Lucerne (Vitznau & Weggis)',
+        vibe: 'Mirror-still waters, steamboats, and grand historic lakeside terraces',
+        bestFor: 'Romantic getaways, lake swimming, and riding the world\'s oldest cogwheel train up Mount Rigi',
+        whyChoose: 'Breathtaking contrast of palm trees along the lakeshore against snow-dusted alpine summits.',
+        avoidIf: 'You only want high-altitude backcountry trekking.'
+      },
+      {
+        name: 'Engadin Valley (Sils-Maria & Guarda)',
+        vibe: 'Larch forests turning gold in autumn, sgraffito-decorated stone houses, and deep silence',
+        bestFor: 'Artists, writers, slow travel enthusiasts, and romantic winter cross-country skiing',
+        whyChoose: 'Guarda is considered the best-preserved Romansh village in the Swiss Alps.',
+        avoidIf: 'You want quick 30-minute links to major international airports.'
+      }
+    ],
+    whatTravelersSaySummary: 'Travelers praise Switzerland’s legendary transit punctuality, clean alpine water, and safe, civilized atmosphere. The primary advice is to purchase a Swiss Travel Pass or Half Fare Card, as individual train and cable car tickets add up quickly.',
+    whatToSkip: [
+      'Taking tourist tour buses when the Swiss Federal Railways (SBB) network is cleaner, faster, and allows you to hop off at spontaneous village stops.',
+      'Dining exclusively on commercial tourist promenades when local alpine farm huts (Alpwirtschaft) offer fresh mountain cheeses and fruit tarts.',
+      'Rushing through five cities in four days: pick one mountain valley and let yourself unpack.'
+    ],
+    thingsWorthDoing: [
+      {
+        title: 'Ride the Glacier Express through the Rhine Gorge',
+        description: 'Gliding through the "Swiss Grand Canyon" in a panoramic glass-roof train with unhurried dining.',
+        whyWorthIt: 'An eight-hour cinematic journey across 291 bridges and through 91 tunnels across the spine of the Alps.'
+      },
+      {
+        title: 'Walk the Northface Trail in Mürren at Dawn',
+        description: 'A gentle alpine loop past working dairy farms with uninterrupted views of the Eiger north wall.',
+        whyWorthIt: 'Crisp morning air and the rhythmic chime of copper cowbells with zero tourist crowds.'
+      },
+      {
+        title: 'Lake Lucerne Vintage Paddle Steamer Cruise',
+        description: 'Cruising past historic founding sites of the Swiss Confederation on an authentic 1901 paddle steamer.',
+        whyWorthIt: 'Gently slicing through fjord-like waters with wooden brass interiors and mountain reflections.'
+      }
+    ],
+    placesToEat: [
+      {
+        name: 'Alpstübli Mürren',
+        type: 'Artisan cheese fondue & rosti potatoes',
+        neighborhood: 'Mürren, Bernese Oberland',
+        whySpecial: 'Cozy wood-fired hearth serving fondue made with milk from cows grazing on the slope outside.'
+      },
+      {
+        name: 'Chez Vrony',
+        type: 'Gourmet mountain dining overlooking the Matterhorn',
+        neighborhood: 'Findeln, Zermatt',
+        whySpecial: 'Centuries-old family farmhouse serving organic cured meats and mountain cheese with iconic peak views.'
+      },
+      {
+        name: 'Café de Ville / Einstein-Kaffee',
+        type: 'Historic specialty café & Swiss pastries',
+        neighborhood: 'Old Town, Bern',
+        whySpecial: 'Set along the UNESCO-listed sandstone arcades where Albert Einstein once took his afternoon coffee.'
+      }
+    ],
+    gettingAround: {
+      recommendation: 'The Swiss Travel Pass is the gold standard: unlimited travel on trains, buses, boats, and free entry to 500+ museums.',
+      airportTransit: 'Zurich (ZRH) and Geneva (GVA) airports have direct underground train stations with trains departing every 10–15 minutes.',
+      eveningWalkingAdvice: 'Swiss towns, cities, and alpine villages are among the safest in the world. Evening walks are serene and peaceful.'
+    },
+    goodToKnow: [
+      'Last verified: February 2026. Tap water from public fountains (brunnen) throughout cities and mountain villages is crystal-clear and safe to drink.',
+      'Currency is Swiss Franc (CHF); credit cards and Apple Pay are accepted virtually everywhere.',
+      'Language: Switzerland has four national languages (German, French, Italian, Romansh); English is spoken fluently in tourism and transit hubs.'
+    ],
+    didYouKnow: [
+      {
+        fact: "Switzerland has over 7,000 lakes, and you are never more than 16 kilometers (10 miles) away from a lake anywhere in the country.",
+        context: "The water in Swiss lakes is so clean that locals routinely swim in the river flowing through central Zurich and Bern on their lunch breaks.",
+        source: "Federal Office for the Environment (FOEN)"
+      },
+      {
+        fact: "Swiss cowbells are tuned individually to distinct musical pitches so farmers can identify their specific cows in dense mountain fog.",
+        context: "The bells are crafted from brass alloys with traditional leather straps decorated with regional Edelweiss embroidery.",
+        source: "Swiss National Heritage Archives"
+      },
+      {
+        fact: "Car-free villages like Zermatt, Mürren, and Wengen ban combustion engine vehicles by municipal law to protect air quality and quiet.",
+        context: "Transport is conducted exclusively on foot, by cable car, cogwheel train, or small electric luggage carts.",
+        source: "Valais Tourism Board"
+      },
+      {
+        fact: "The Gotthard Base Tunnel is the world's longest and deepest railway tunnel (57 kilometers long and up to 2.3 kilometers below granite mountain peaks).",
+        context: "It cut transit time through the Alps between Zurich and Milan down to under 3.5 hours.",
+        source: "Swiss Federal Railways (SBB)"
+      },
+      {
+        fact: "Switzerland has enough underground fallout and mountain shelter capacity to house 100% of its population in an emergency.",
+        context: "Building regulations since the Cold War era required nuclear shelters in residential buildings or access to municipal bunker networks.",
+        source: "Federal Office for Civil Protection (FOCP)"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-switzerland-car-free-villages',
+        title: 'The Swiss Village Where Cars Aren\'t Welcome',
+        teaser: 'How Mürren and Zermatt preserved the tranquil rhythm of 19th-century Alpine life in a hyper-connected modern world.',
+        category: 'Untold Stories',
+        destinationId: 'switzerland',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-switzerland-cowbells',
+        title: 'The Strange Story Behind Swiss Cowbells',
+        teaser: 'Why every bell has an acoustic signature tuned to fog, folklore, and centuries of mountain herding.',
+        category: 'Local Traditions',
+        destinationId: 'switzerland',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-switzerland-train-magic',
+        title: 'The Mountain Train Journey I\'d Put on My List',
+        teaser: 'Gliding across ancient stone viaducts and through spiral mountain tunnels on the Bernina Express.',
+        category: 'Road Trips & Rails',
+        destinationId: 'switzerland',
+        readTime: '6 min read'
+      }
+    ],
+    femaleTravelNotes: {
+      generalVibe: 'Exemplary safety, respectful culture, and immaculate public infrastructure.',
+      eveningAtmosphere: 'Calm, civilized, and comfortable for solo dining in hotel bistros and mountain stüblis.',
+      arrivalTips: 'Luggage transfer services (SBB Fly-Rail) let you send your bags straight from Zurich Airport to your mountain hotel.',
+      neighborhoodAdvice: 'Mürren, Lauterbrunnen, and Old Town Lucerne are delightful and empowering for solo female travelers.'
+    },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Switzerland Alone',
+      tips: [
+        {
+          title: 'Buy the Swiss Travel Pass & Use the SBB App',
+          advice: 'The SBB app shows platform numbers, delay minutes (rare), and coach occupancy in real time, making solo transfers stress-free.'
+        },
+        {
+          title: 'Stay in Family-Run Alpine Chalets',
+          advice: 'Small Swiss inns offer warm hospitality, homemade breakfasts with local mountain butter and jams, and insider hiking tips.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Alpine Spas, Lake Ferries & Fondue Evenings",
+      ideas: [
+        {
+          title: 'Lake Lucerne Thermal Baths & Cogwheel Mountain Day',
+          desc: 'Rigi Kaltbad mineral baths with panoramic lake views, followed by a vintage steamboat cruise and sunset wine.',
+          tag: 'Wellness & Views'
+        },
+        {
+          title: 'Zermatt Chalet & Alpine Fondue Retreat',
+          desc: 'Morning walks with Matterhorn reflections, afternoon spa sessions, and cozy evenings beside a crackling wood fire.',
+          tag: 'Mountain Hideout'
+        }
+      ]
+    },
+    relatedHideoutIds: ['hideout-switzerland-lauterbrunnen-chalet', 'hideout-liechtenstein-malbun-chalet'],
+    relatedStayIds: ['stay-switzerland-zermatt-mountain', 'stay-switzerland-lucerne-lakefront'],
+    relatedStoryIds: ['story-switzerland-car-free-villages', 'story-switzerland-cowbells', 'story-switzerland-train-magic'],
+    relatedGuideIds: ['guide-switzerland-train-journeys']
+  },
+
+  // 4. NORWAY
   {
     id: 'norway',
     slug: 'norway',
     name: 'Norway',
     country: 'Norway',
     tag: 'Dramatic sea fjords, arctic fishing cabins & slow mountain railways',
-    heroImage: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1600&q=80',
+    emotionalStatement: 'Where the mountains drop straight into emerald waters and silence heals.',
+    heroImage: norwayWaterfallImg,
+    image: norwayWaterfallImg,
     blurb: 'Deep glacial valleys carving through granite peaks, wooden rorbuer cabins perched over mirror-still waters, and quiet coastal journeys on public ferries.',
-    openingEditorial: 'Norway rewards the traveler who slows down. The beauty of this country is not something you rush past; it is best absorbed from the wooden deck of a fjord ferry in early morning, or beside a crackling woodstove in a Lofoten fishing cabin while rain patters on the turf roof.',
+    openingEditorial: "Norway rewards the traveler who slows down. The beauty of this country is not something you rush past; it is best absorbed from the wooden deck of a fjord ferry in early morning, or beside a crackling woodstove in a Lofoten fishing cabin while rain patters on the turf roof. If I were planning this trip, I'd pick one dramatic fjord region, unpack my bag for four nights, and let the rhythm of the tides and mountains guide the days.",
     whereIWouldStay: 'A converted traditional red rorbu cabin in Reine or Henningsvær in the Lofoten Islands, or a quiet fjord-side guesthouse along the Aurlandsfjord near Flåm.',
     neighborhoods: [
       {
@@ -198,26 +661,110 @@ export const DESTINATIONS: Destination[] = [
       'Norway is almost entirely cashless: credit cards and mobile tap payments are standard even in remote cabins.',
       'Alcohol above 4.7% ABV is sold exclusively through state-run Vinmonopolet stores with limited weekend opening hours.'
     ],
+    didYouKnow: [
+      {
+        fact: "Norway's 'Allemannsretten' (Right to Public Access) is codified in law, granting anyone the constitutional right to hike, forage berries, and camp on uncultivated land.",
+        context: "As long as you stay at least 150 meters away from the nearest inhabited house or cabin and leave no trace.",
+        source: "Norwegian Outdoor Recreation Act"
+      },
+      {
+        fact: "The traditional red paint on Norwegian 'rorbuer' fishing cabins was historically made from cod liver oil mixed with red ochre and animal blood because it was the cheapest weatherproof mixture.",
+        context: "Wealthier merchants painted their homes with expensive white paint, creating the historic visual hierarchy still seen in seaside villages.",
+        source: "Lofoten Museum (Museum Nord)"
+      },
+      {
+        fact: "In the Arctic archipelago of Svalbard (Norway), the sun does not set at all from April 19 to August 23 — over four full months of continuous daylight.",
+        context: "In contrast, winter brings the Polar Night with two and a half months of twilight darkness lit by northern lights.",
+        source: "Norwegian Meteorological Institute"
+      },
+      {
+        fact: "Norway has over 1,190 distinct fjords along its deeply fractured 100,000-kilometer coastline.",
+        context: "If unraveled, Norway's coastline would wrap around the Earth's equator two and a half times.",
+        source: "Kartverket (Norwegian Mapping Authority)"
+      },
+      {
+        fact: "Norwegians consume more coffee per capita than almost any other country on earth (approx. 9.9 kg per person annually), surpassed only by Finland.",
+        context: "The culture emphasizes light-roast, single-origin filtered coffees drunk black without milk or sugar.",
+        source: "International Coffee Organization"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-norway-islands-sea',
+        title: 'The Norwegian Islands Where Mountains Drop Straight Into the Sea',
+        teaser: 'Why the Lofoten archipelago feels like an Arctic kingdom carved from ancient granite and cod fishing lore.',
+        category: 'Hidden Places',
+        destinationId: 'norway',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-norway-hyttekos',
+        title: 'Why Norwegians Love Their Cabins So Much',
+        teaser: 'The cultural philosophy of hyttekos: why stepping away from electricity and Wi-Fi is considered true luxury.',
+        category: 'Local Traditions',
+        destinationId: 'norway',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-norway-silent-ferry',
+        title: 'The Train Journey That Might Be the Best Way to See Norway',
+        teaser: 'Riding the Bergen Line across high mountain plateaus down to silent electric fjord catamarans.',
+        category: 'Road Trips & Rails',
+        destinationId: 'norway',
+        readTime: '6 min read'
+      }
+    ],
     femaleTravelNotes: {
       generalVibe: 'Extremely safe, progressive, and welcoming for solo female travelers.',
       eveningAtmosphere: 'Relaxed, civilized, and comfortable for solo dining and late-night walking.',
       arrivalTips: 'Train stations in Oslo, Bergen, and Trondheim are central and clean; step off the platform directly into central hotels.',
       neighborhoodAdvice: 'Nordnes in Bergen and Frogner/Majorstuen in Oslo offer quiet, leafy evening walks.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Norway Alone',
+      tips: [
+        {
+          title: 'Stay in Restored Rorbuer with Water Views',
+          advice: 'Lofoten rorbuer in Henningsvær offer communal saunas where you can meet creative locals and fellow travelers naturally.'
+        },
+        {
+          title: 'Use Public Electric Ferries Over Mega Cruises',
+          advice: 'The public electric catamarans in the Nærøyfjord are quiet, clean, and allow you to absorb the majestic waterfalls in peace.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Fjord Saunas, Midnight Sun & Coastal Art Hubs",
+      ideas: [
+        {
+          title: 'Lofoten Islands Creative & Wellness Retreat',
+          desc: 'Wood-fired saunas at Trevarefabrikken, midnight sun beach walks in Haukland, and local art galleries in Henningsvær.',
+          tag: 'Wellness & Art'
+        },
+        {
+          title: 'Western Fjords Scenic Rail & Floating Sauna Escape',
+          desc: 'The Flåm Railway journey, electric fjord cruising, and cozy evenings in timber cabins with brown cheese waffles.',
+          tag: 'Fjord Escape'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-norway-lofoten-rorbu', 'hideout-norway-fjord-cabin'],
     relatedStayIds: ['stay-norway-henningsvaer-brygge', 'stay-norway-flam-boutique'],
-    relatedStoryIds: ['story-norway-stay-longer', 'story-norway-fjords-or-lofoten'],
+    relatedStoryIds: ['story-norway-stay-longer', 'story-norway-fjords-or-lofoten', 'story-norway-cabin-appeal', 'story-norway-waterfall-countryside'],
     relatedGuideIds: ['guide-norway-fjord-slow-travel']
   },
+
+  // 5. SWEDEN
   {
     id: 'sweden',
     slug: 'sweden',
     name: 'Sweden',
     country: 'Sweden',
     tag: 'Minimalist design, serene archipelago islands & arctic forest retreats',
+    emotionalStatement: 'Understated Nordic elegance, island calm, and the sacred ritual of fika.',
     heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1600&q=80',
     blurb: 'A masterclass in understated elegance: pine forests meeting peaceful archipelagos, candlelit fika rituals in old wooden bakeries, and clean Nordic craftsmanship.',
-    openingEditorial: 'Sweden embodies the philosophy of *lagom* — just the right amount. There is an effortless balance between refined city culture and immediate access to pristine nature. In Stockholm, you can enjoy world-class contemporary galleries in the morning and be kayaking through quiet granite islands by the afternoon.',
+    openingEditorial: "Sweden embodies the philosophy of *lagom* — just the right amount. There is an effortless balance between refined city culture and immediate access to pristine nature. In Stockholm, you can enjoy world-class contemporary galleries in the morning and be kayaking through quiet granite islands by the afternoon. If I were planning this trip, I'd balance three days exploring Stockholm's bakeries and ceramics studios with an escape to an archipelago cabin or a subarctic forest lodge in Abisko.",
     whereIWouldStay: 'A quiet design hotel in Stockholm’s Södermalm or Skeppsholmen, or a secluded timber cabin in Swedish Lapland near Abisko or Kiruna.',
     neighborhoods: [
       {
@@ -302,26 +849,110 @@ export const DESTINATIONS: Destination[] = [
       'Tap water in Sweden is among the purest in the world; carry a refillable water bottle everywhere.',
       'Sunday hours: many neighborhood boutiques and bakeries close earlier on Sundays (around 4:00 PM).'
     ],
+    didYouKnow: [
+      {
+        fact: "The Stockholm Archipelago contains over 30,000 islands, islets, and rocks, but only around 200 are permanently inhabited.",
+        context: "You can hop between them on vintage wooden commuter ferries with a standard transit pass in summer.",
+        source: "Stockholm Archipelago Foundation"
+      },
+      {
+        fact: "'Fika' is not just a coffee break: it is a protected institutional ritual in Swedish workplaces and daily life.",
+        context: "Sociologists credit daily fika with fostering flat management hierarchies and relaxed workplace communication.",
+        source: "Swedish Institute"
+      },
+      {
+        fact: "The entire Arctic mining town of Kiruna is currently being moved three kilometers east building by building to prevent collapse from underground iron ore mines.",
+        context: "Historic wooden landmarks, including the iconic red 1912 Kiruna Church, are transported whole on giant flatbed haulers.",
+        source: "Kiruna Municipality Urban Transformation"
+      },
+      {
+        fact: "Sweden was the first country in the world to create a national park in Europe (1909), establishing nine parks simultaneously.",
+        context: "Today, Swedish national parks protect over 7,000 square kilometers of pristine wilderness.",
+        source: "Swedish Environmental Protection Agency"
+      },
+      {
+        fact: "The world's original ICEHOTEL in Jukkasjärvi is hand-carved every winter from 2,500 tons of natural ice harvested from the Torne River, only to melt back into the river each spring.",
+        context: "Artists from around the globe apply annually to design unique thematic ice suites.",
+        source: "ICEHOTEL Sweden"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-sweden-islands-ferry',
+        title: 'The Swedish Islands You Can Reach Without a Ferry Tour',
+        teaser: 'How to use local commuter ferries to reach secluded granite swimming bays and pine forest trails.',
+        category: 'Hidden Places',
+        destinationId: 'sweden',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-sweden-fika-culture',
+        title: 'Why Fika Is More Than Just Coffee',
+        teaser: 'The quiet sociology of slowing down, cardamom spices, and conversation in Swedish daily life.',
+        category: 'Food & Culture',
+        destinationId: 'sweden',
+        readTime: '4 min read'
+      },
+      {
+        id: 'hs-sweden-moving-town',
+        title: 'The Arctic Town That Has to Move',
+        teaser: 'The extraordinary story of Kiruna: moving an entire subarctic city building by building.',
+        category: 'Untold Stories',
+        destinationId: 'sweden',
+        readTime: '6 min read'
+      }
+    ],
     femaleTravelNotes: {
       generalVibe: 'Extremely high standard of safety, personal respect, and gender equality.',
       eveningAtmosphere: 'Relaxed, well-illuminated streets with casual, welcoming wine bars and cafés.',
       arrivalTips: 'Stockholm Central Station is easy to navigate with direct underground connections to the T-Bana metro lines.',
       neighborhoodAdvice: 'Mariatorget and Skeppsholmen are delightful, quiet areas for solo female travelers.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Sweden Alone',
+      tips: [
+        {
+          title: 'Base in Södermalm near Mariatorget',
+          advice: 'Walkable tree-lined streets, independent ceramics boutiques, and cozy candlelit bakeries make solo neighborhood wandering a joy.'
+        },
+        {
+          title: 'Take the Public Ferry to Skeppsholmen',
+          advice: 'The 10-minute public ferry hop to the quiet island of Skeppsholmen gives you water views and peaceful sculpture gardens.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Archipelago Hopping, Design Cafés & Midsummer Light",
+      ideas: [
+        {
+          title: 'Stockholm Design, Bakery & Vintage Boutique Weekend',
+          desc: 'Morning cardamom bun tastings in Östermalm, vintage shopping in Södermalm, and evening sauna sessions overlooking the harbor.',
+          tag: 'Design & Gastronomy'
+        },
+        {
+          title: 'Archipelago Summer Cabin & Sauna Escape',
+          desc: 'Renting a wooden cottage on Sandhamn, swimming off warm granite rocks, and enjoying long candlelit Midsummer dinners.',
+          tag: 'Island Nature'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-sweden-archipelago-cabin', 'hideout-sweden-stockholm-loft'],
     relatedStayIds: ['stay-sweden-ett-hem', 'stay-sweden-treehotel'],
-    relatedStoryIds: ['story-sweden-different-stockholm', 'story-sweden-lapland-list'],
+    relatedStoryIds: ['story-sweden-different-stockholm', 'story-sweden-lapland-list', 'story-sweden-fika-culture'],
     relatedGuideIds: ['guide-sweden-archipelago-design']
   },
+
+  // 6. CHINA
   {
     id: 'china',
     slug: 'china',
     name: 'China',
     country: 'China',
     tag: 'Ancient river towns, dramatic karst peaks & high-speed rail journeys',
+    emotionalStatement: 'Where ancient tea traditions meet breathtaking karst mountains and swift high-speed rails.',
     heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80',
     blurb: 'A destination of staggering historical depth and natural wonder: from mist-shrouded limestone towers in Yangshuo to tranquil classical gardens in Suzhou and futuristic high-speed rail networks.',
-    openingEditorial: 'Traveling through China today is a mesmerizing contrast of ancient traditions and hyper-modern infrastructure. The high-speed rail network makes gliding past mountain landscapes effortless, while morning walks through traditional courtyard hutongs and riverside tea houses offer glimpses of everyday life that have endured for centuries.',
+    openingEditorial: "Traveling through China today is a mesmerizing contrast of ancient traditions and hyper-modern infrastructure. The high-speed rail network makes gliding past mountain landscapes effortless, while morning walks through traditional courtyard hutongs and riverside tea houses offer glimpses of everyday life that have endured for centuries. If I were planning this trip, I'd balance the classical hutong lanes of Beijing with a slow bamboo raft drift through the limestone karst peaks of Yangshuo and a visit to the ancient water towns.",
     whereIWouldStay: 'A restored Qing-dynasty courtyard hotel in Beijing’s Dongcheng district, or a quiet boutique retreat nestled among bamboo groves and karst mountains along the Yulong River in Yangshuo.',
     neighborhoods: [
       {
@@ -402,9 +1033,62 @@ export const DESTINATIONS: Destination[] = [
       eveningWalkingAdvice: 'Chinese cities have some of the lowest violent crime rates globally. Solo evening walks through well-lit streets and bustling night markets are very safe.'
     },
     goodToKnow: [
-      'Last verified: March 2026. Visa-free transit and 15/30-day visa-free entry policies apply to citizens of numerous European and Asian nations; always verify current requirements with your local Chinese consulate or official embassy portal.',
-      'Connectivity: download and set up an eSIM with international data roaming (which bypasses local firewall restrictions) before arrival, alongside Alipay and WeChat Pay with your foreign bank card linked.',
-      'Language: install translation apps with offline camera capability (such as Google Translate or Apple Translate) for effortless menu and sign reading.'
+      'Last verified: March 2026. Visa-free entry policies (15/30 days) currently apply to passport holders of numerous European and Asian nations; always verify current requirements with official government portals.',
+      'Connectivity: download and set up an eSIM with international data roaming (which bypasses local firewall restrictions) before arrival, alongside Alipay and WeChat Pay linked to your credit card.',
+      'Language: install translation apps with offline camera capability for effortless menu and street reading.'
+    ],
+    didYouKnow: [
+      {
+        fact: "China's high-speed railway network spans over 45,000 kilometers — longer than all other high-speed rail networks in the world combined.",
+        context: "Trains reach speeds of 350 km/h with silent, smooth magnetic levitation and electric traction.",
+        source: "China State Railway Group"
+      },
+      {
+        fact: "Tea culture originated in China over 4,000 years ago, and different teas require strictly distinct water temperatures: green tea at 80°C to protect delicate amino acids, and aged Pu'erh at boiling 100°C.",
+        context: "In Chengdu and Hangzhou, traditional teahouses remain the primary community gathering spaces for afternoon conversation.",
+        source: "China National Tea Museum (Hangzhou)"
+      },
+      {
+        fact: "The dramatic karst pillars of Zhangjiajie inspired the floating Hallelujah Mountains in James Cameron's Avatar.",
+        context: "Over 3,000 quartz-sandstone pinnacles rise up to 1,000 meters above dense subtropical rainforest mist.",
+        source: "Zhangjiajie National Forest Park"
+      },
+      {
+        fact: "Over 95% of daily retail transactions in China are completely cashless, processed via QR codes on smartphones even at remote village fruit stands.",
+        context: "Foreign travelers can now link Visa, Mastercard, or Amex directly to Alipay and WeChat Pay without needing a Chinese bank account.",
+        source: "People's Bank of China"
+      },
+      {
+        fact: "The Forbidden City in Beijing contains 980 surviving wooden buildings with over 8,700 bays, constructed without a single metal nail using interlocking mortise-and-tenon joints (Dougong).",
+        context: "This ancient architectural engineering allows the wooden palaces to withstand major earthquakes by flexing without collapsing.",
+        source: "Palace Museum Beijing"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-china-karst-mountains',
+        title: 'The Chinese Mountain Landscape That Looks Impossible',
+        teaser: 'How ancient oceans and limestone weathering carved the dreamlike karst pinnacles of Yangshuo and Guilin.',
+        category: 'Nature & Geology',
+        destinationId: 'china',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-china-tea-tradition',
+        title: 'The Strange Story Behind China\'s Tea Traditions',
+        teaser: 'From emperor legends to mountain monks: why tea was once traded ounce-for-ounce with Tibetan war horses.',
+        category: 'Food & Culture',
+        destinationId: 'china',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-china-ancient-water-towns',
+        title: 'The Ancient Towns Hidden Between China\'s Modern Cities',
+        teaser: 'Stone bridges, red lanterns, and morning rowboats in the classical water villages of Tongli and Wuzhen.',
+        category: 'Hidden Places',
+        destinationId: 'china',
+        readTime: '6 min read'
+      }
     ],
     femaleTravelNotes: {
       generalVibe: 'Extremely safe street environment with virtually zero street harassment.',
@@ -412,228 +1096,51 @@ export const DESTINATIONS: Destination[] = [
       arrivalTips: 'Download the Didi rideshare app (available in English inside Alipay) for reliable point-to-point transfers from train stations.',
       neighborhoodAdvice: 'The Former French Concession in Shanghai and Guozijian in Beijing are peaceful, leafy, and exceptionally safe.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to China Alone',
+      tips: [
+        {
+          title: 'Set up Alipay & WeChat Pay Before You Fly',
+          advice: 'Having your payment QR code active makes buying metro tickets, street snacks, and boutique coffees effortless from minute one.'
+        },
+        {
+          title: 'Stay in Courtyard Hotels in the Beijing Hutongs',
+          advice: 'Courtyard boutique hotels in Dongcheng offer English-speaking concierge staff, tranquil courtyards, and immediate access to cozy tea houses.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: River Bamboo Rafts, Silk Towns & Ancient Tea Houses",
+      ideas: [
+        {
+          title: 'Yangshuo Karst Valley & Countryside Cycling Escape',
+          desc: 'Boutique riverfront stays, dawn bamboo rafting, and organic farm-to-table cooking classes among limestone peaks.',
+          tag: 'Nature & Adventure'
+        },
+        {
+          title: 'Shanghai & Hangzhou Boutique Heritage Weekend',
+          desc: 'Art Deco walks in the French Concession, high-speed rail to West Lake, and private tea tastings on historic terraces.',
+          tag: 'Culture & Gastronomy'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-china-yangshuo-retreat', 'hideout-china-beijing-courtyard'],
     relatedStayIds: ['stay-china-yangshuo-mountain', 'stay-china-shanghai-lane-house'],
-    relatedStoryIds: ['story-china-two-weeks-plan', 'story-china-beyond-beijing-shanghai'],
+    relatedStoryIds: ['story-china-two-weeks-plan', 'story-china-beyond-beijing-shanghai', 'story-china-karst-mountains'],
     relatedGuideIds: ['guide-china-first-timers-practical']
   },
-  {
-    id: 'patagonia',
-    slug: 'patagonia',
-    name: 'Patagonia',
-    country: 'Chile & Argentina',
-    tag: 'Towering granite massifs, sweeping glacial icefields & wild pampa winds',
-    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'A wild, untamed frontier spanning the southernmost reaches of South America: turquoise glacial lakes, roaring katabatic winds, soaring condors, and the iconic granite spires of Fitz Roy and Torres del Paine.',
-    openingEditorial: 'Patagonia is not a place you simply visit — it is a wilderness that tests you, humbles you, and stays in your memory forever. Spanning both Chile and Argentina, this vast southern tip of the continent offers an exhilarating sense of space. Here, the weather is the master artist, shifting from sunshine to mountain snowfall in a matter of hours.',
-    whereIWouldStay: 'An eco-lodge or rustic yurt with panoramic glacier views in Torres del Paine (Chile), or a cozy wooden mountain lodge in El Chaltén (Argentina) where hiking trails start right at your front door.',
-    neighborhoods: [
-      {
-        name: 'Torres del Paine & Puerto Natales (Chile)',
-        vibe: 'Iconic granite horns, azure glacial lakes, and sustainable eco-lodges',
-        bestFor: 'Multi-day W-Trek trekkers, wildlife photography (guanacos & pumas), and luxury remote lodges',
-        whyChoose: 'Staying inside or on the border of the national park puts you at the foot of the iconic Cuernos del Paine.',
-        avoidIf: 'You dislike hiking in unpredictable mountain winds.'
-      },
-      {
-        name: 'El Chaltén & Fitz Roy (Argentina)',
-        vibe: 'Laid-back trekking village, artisan microbreweries, and world-class trailheads',
-        bestFor: 'Independent day hikers, solo travelers, and relaxed mountain atmosphere',
-        whyChoose: 'The National Trekking Capital of Argentina: all major trails to Laguna de los Tres (Fitz Roy) and Laguna Torre start directly from the village edge with zero park fees.',
-        avoidIf: 'You require high-end luxury shopping or airport proximity.'
-      },
-      {
-        name: 'El Calafate & Perito Moreno (Argentina)',
-        vibe: 'Lakeside town, calving glaciers, and gateway to southern icefields',
-        bestFor: 'Witnessing the colossal Perito Moreno Glacier up close and lake navigation',
-        whyChoose: 'Marvel at thunderous glacier calving events from well-designed wooden boardwalk systems.',
-        avoidIf: 'You only want rugged backcountry camping.'
-      },
-      {
-        name: 'Ushuaia & Tierra del Fuego (Argentina)',
-        vibe: 'End of the World maritime charm, Beagle Channel, and sub-antarctic forests',
-        bestFor: 'Beagle Channel boat trips, king crab dining, and southernmost landscapes',
-        whyChoose: 'Fascinating maritime history and boat excursions to see sea lions and Magellanic penguins.',
-        avoidIf: 'You only have time for the northern mountain spires.'
-      }
-    ],
-    whatTravelersSaySummary: 'Hikers and nature lovers describe Patagonia as one of the most magnificent landscapes on earth. The most universal advice: invest in top-tier windproof and waterproof layers, book national park refugios/campsites months ahead, and embrace the legendary Patagonian wind.',
-    whatToSkip: [
-      'Trying to cover both deep Chilean and Argentine Patagonia in less than 7 days — border crossings and vast distances require deliberate pacing.',
-      'Wearing lightweight cotton sneakers on mountain scree trails; sturdy ankle-support hiking boots are essential.',
-      'Waiting until arrival to book park permits or catamaran tickets in Torres del Paine during peak season (December–February).'
-    ],
-    thingsWorthDoing: [
-      {
-        title: 'Sunrise at Laguna de los Tres (Mount Fitz Roy)',
-        description: 'Hiking up to the alpine lagoon as the morning sun turns the granite peak of Fitz Roy brilliant fiery orange.',
-        whyWorthIt: 'One of the most awe-inspiring mountain vistas on earth, made even better by the quiet camaraderie of fellow dawn hikers.'
-      },
-      {
-        title: 'Ice Trekking on Perito Moreno Glacier',
-        description: 'Strapping on steel crampons to hike across the blue crevasses, ice caves, and meltwater streams of the living glacier.',
-        whyWorthIt: 'Feeling the ancient, dense ice beneath your boots while hearing the glacier groan and calve into Lake Argentino.'
-      },
-      {
-        title: 'Boat Navigation of the Beagle Channel',
-        description: 'Sailing past Les Eclaireurs lighthouse, sea lion colonies, and remote fjord inlets at the southern tip of the Americas.',
-        whyWorthIt: 'The stark, windswept beauty of Tierra del Fuego feels truly like standing at the edge of the known world.'
-      }
-    ],
-    placesToEat: [
-      {
-        name: 'La Cervecería Chaltén',
-        type: 'Artisan mountain craft beer & hearty locro stew',
-        neighborhood: 'El Chaltén, Argentina',
-        whySpecial: 'The perfect warm haven after a 20km hike to warm up with homemade goulash, craft IPAs, and friendly trail stories.'
-      },
-      {
-        name: 'El Asador Patagónico',
-        type: 'Traditional slow-roasted Patagonian cordero (lamb)',
-        neighborhood: 'Puerto Natales, Chile',
-        whySpecial: 'Whole lamb slow-roasted over native lenga wood fires, served with fresh Chilean salads and Carmenère wine.'
-      },
-      {
-        name: 'Volver',
-        type: 'Fresh Beagle Channel king crab (Centolla)',
-        neighborhood: 'Ushuaia, Argentina',
-        whySpecial: 'A quirky historic house filled with maritime relics serving the freshest wild crab in South America.'
-      }
-    ],
-    gettingAround: {
-      recommendation: 'Fly into Punta Arenas (Chile) or El Calafate / Ushuaia (Argentina). Comfortable long-distance buses connect towns and cross international borders smoothly.',
-      airportTransit: 'El Calafate Airport (FTE) and Puerto Natales Airport (PNT) have scheduled shuttle buses matching all incoming flights.',
-      eveningWalkingAdvice: 'El Chaltén, Puerto Natales, and El Calafate are very peaceful mountain communities where hikers walk freely with zero safety concerns.'
-    },
-    goodToKnow: [
-      'Last verified: January 2026. Chile and Argentina maintain strict agricultural border inspection rules: do not bring fresh fruit, dairy, or meats between borders.',
-      'Cash & Currency: Argentina uses the Argentine Peso (credit cards now receive the favorable MEP exchange rate); Chile uses Chilean Pesos and is largely card-friendly.',
-      'Weather: November through March provides warmer temperatures (10–18°C) and long daylight, but winds regularly reach 60–80 km/h.'
-    ],
-    femaleTravelNotes: {
-      generalVibe: 'Trekking towns like El Chaltén and Puerto Natales are exceptionally safe and have large solo female traveler communities.',
-      eveningAtmosphere: 'Relaxed, friendly pub culture where hikers share trail notes and transport tips.',
-      arrivalTips: 'Pre-book your airport transfer in advance so you can relax upon landing in remote southern airports.',
-      neighborhoodAdvice: 'El Chaltén is entirely walkable from end to end in 15 minutes.'
-    },
-    relatedHideoutIds: ['hideout-patagonia-torres-eco-lodge', 'hideout-patagonia-chalten-cabin'],
-    relatedStayIds: ['stay-patagonia-explora-torres', 'stay-patagonia-el-chalten-lodge'],
-    relatedStoryIds: ['story-patagonia-first-time-approach', 'story-patagonia-chile-or-argentina'],
-    relatedGuideIds: ['guide-patagonia-trekking-first-timers']
-  },
-  {
-    id: 'south-korea',
-    slug: 'south-korea',
-    name: 'South Korea',
-    country: 'South Korea',
-    tag: 'Quiet hanok courtyards, vibrant café alleys & coastal tea mountains',
-    heroImage: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1600&q=80',
-    blurb: 'An alluring blend of heritage and cutting-edge design: restored wooden hanok stays in historic Seoul neighborhoods, scenic volcanic coasts on Jeju Island, and an unmatched café and culinary culture.',
-    openingEditorial: 'South Korea is a country of exquisite detail. Beyond the neon high-rises and buzzing markets lies a world of quiet reflection: centuries-old pine courtyards where tea is poured with mindful grace, misty mountain temples where monks welcome guests, and sunlit neighborhood lanes where independent bakeries craft delicate pastries.',
-    whereIWouldStay: 'A restored traditional Hanok guesthouse in Seoul’s Bukchon or Seochon quarter, or a minimalist oceanfront stone villa on the volcanic southern coast of Jeju Island.',
-    neighborhoods: [
-      {
-        name: 'Seoul (Seochon & Samcheong-dong)',
-        vibe: 'Historic hanoks, leafy palace walls, artisan boutiques, and tea houses',
-        bestFor: 'Solo travelers, walkers, design lovers, and peaceful morning strolls',
-        whyChoose: 'Seochon (west of Gyeongbokgung Palace) has escaped mass tour groups and retains an authentic residential artist atmosphere with charming quiet alleys.',
-        avoidIf: 'You want rowdy all-night nightclub districts.'
-      },
-      {
-        name: 'Seoul (Seongsu-dong & Yeonnam-dong)',
-        vibe: 'Industrial red-brick architecture, concept cafés, and green linear parks',
-        bestFor: 'Specialty coffee hunters, contemporary fashion, and relaxed evening dining',
-        whyChoose: 'Known as the Brooklyn of Seoul, Seongsu-dong is packed with innovative pop-ups, natural wine bars, and tranquil Seoul Forest park walks.',
-        avoidIf: 'You are only seeking ancient dynastic palaces.'
-      },
-      {
-        name: 'Jeju Island (Aewol & Gujwa)',
-        vibe: 'Black volcanic rock beaches, emerald waters, and tangerine orchards',
-        bestFor: 'Nature lovers, coastal road trips, fresh seafood, and hiking Mount Hallasan',
-        whyChoose: 'Secluded ocean-facing boutique stays with floor-to-ceiling windows and outdoor stone soaking tubs.',
-        avoidIf: 'You do not plan on renting a car to explore the island.'
-      },
-      {
-        name: 'Gyeongju (Historic Capital)',
-        vibe: 'Ancient grassy burial tumuli, lotus ponds, and stargazing observatories',
-        bestFor: 'History enthusiasts, cycling between monuments, and peaceful evenings',
-        whyChoose: 'Biking through the tumuli park at twilight when the ancient mounds are softly illuminated.',
-        avoidIf: 'You crave big-city energy and mega-skyscrapers.'
-      }
-    ],
-    whatTravelersSaySummary: 'Visitors frequently name South Korea one of the easiest, cleanest, and safest countries they have ever traveled in. The subway and KTX rail systems are immaculate, hospitality is warm, and traveling solo as a woman is wonderfully comfortable.',
-    whatToSkip: [
-      'Spending all your time shopping in crowded cosmetic malls in Myeongdong when neighborhood alleys in Seochon and Seongsu offer far richer character.',
-      'Using Google Maps for walking directions (due to local mapping laws, Naver Map and KakaoMap are far more accurate and essential for transit).',
-      'Skipping the regional high-speed train (KTX) trips to historic Gyeongju or coastal Busan.'
-    ],
-    thingsWorthDoing: [
-      {
-        title: 'Traditional Tea Ceremony in a Seochon Hanok',
-        description: 'Sitting on heated ondol wooden floors while savoring wild Jirisan green tea and traditional rice cakes (tteok).',
-        whyWorthIt: 'A serene sensory experience that offers deep relaxation and insight into Korean tea philosophy.'
-      },
-      {
-        title: 'Walk the Seoul City Wall Trail at Sunset',
-        description: 'Following the 600-year-old stone fortress wall along Mount Naksan as the city skyline lights up below.',
-        whyWorthIt: 'Spectacular panoramic views of old and new Seoul without the commercial crowds of N Seoul Tower.'
-      },
-      {
-        title: 'Sunrise Walk up Seongsan Ilchulbong (Jeju Island)',
-        description: 'Ascending the dramatic green volcanic tuff cone rising out of the ocean at dawn.',
-        whyWorthIt: 'Watch the sun rise over the East Sea and see the legendary Haenyeo (female free-divers) begin their morning harvest.'
-      }
-    ],
-    placesToEat: [
-      {
-        name: 'Tosokchon Samgyetang',
-        type: 'Traditional ginseng chicken soup in a grand hanok courtyard',
-        neighborhood: 'Seochon, Seoul',
-        whySpecial: 'Nourishing, slow-simmered whole young chicken stuffed with glutinous rice, ginseng, and chestnuts.'
-      },
-      {
-        name: 'Onion Seongsu',
-        type: 'Industrial chic bakery & specialty coffee',
-        neighborhood: 'Seongsu-dong, Seoul',
-        whySpecial: 'Set in a converted 1970s metal factory with a rooftop terrace and famous Pandoro sugar-dusted bread.'
-      },
-      {
-        name: 'Myeongjin Jeonbok',
-        type: 'Fresh abalone stone pot rice & grilled mackerel',
-        neighborhood: 'Gujwa, Jeju Island',
-        whySpecial: 'Sizzling hot stone pot rice layered with freshly sliced local abalone and rich abalone butter.'
-      }
-    ],
-    gettingAround: {
-      recommendation: 'Purchase a T-Money transit card at any convenience store for seamless subway and bus rides. High-speed KTX trains connect Seoul to Busan in under 2.5 hours.',
-      airportTransit: 'AREX Express Train connects Incheon International Airport (ICN) non-stop to Seoul Station in 43 minutes.',
-      eveningWalkingAdvice: 'South Korea is extraordinarily safe at all hours. Solo walking at midnight in residential or nightlife districts is completely standard.'
-    },
-    goodToKnow: [
-      'Last verified: February 2026. Download Naver Map or KakaoMap and Papago (translation app) before arrival for effortless navigation.',
-      'Tipping is not customary and generally not accepted in South Korea.',
-      'Wi-Fi is ubiquitous, but getting an unlimited data eSIM or airport pocket Wi-Fi router ensures continuous translation and map support.'
-    ],
-    femaleTravelNotes: {
-      generalVibe: 'Rated among the safest nations on earth with exceptionally low street crime.',
-      eveningAtmosphere: 'Vibrant, safe, and comfortable; solo women dine in cafés and ride public transit late at night with complete peace of mind.',
-      arrivalTips: 'The AREX train from Incheon Airport is spotless, quiet, and connects seamlessly to central metro lines.',
-      neighborhoodAdvice: 'Seochon, Insadong, and Yeonnam-dong are fantastic, welcoming bases for solo travelers.'
-    },
-    relatedHideoutIds: ['hideout-korea-seochon-hanok', 'hideout-korea-jeju-stone-villa'],
-    relatedStayIds: ['stay-korea-hanok-boutique', 'stay-korea-jeju-cliff-retreat'],
-    relatedStoryIds: ['story-korea-seoul-beyond-tourist', 'story-korea-jeju-island-add'],
-    relatedGuideIds: ['guide-korea-seoul-neighborhoods-ktx']
-  },
+
+  // 7. AUSTRALIA
   {
     id: 'australia',
     slug: 'australia',
     name: 'Australia',
     country: 'Australia',
     tag: 'Coastal ocean pools, pristine wilderness & laid-back design sanctuaries',
+    emotionalStatement: 'Where endless sunlit coastlines meet eucalyptus forests and ocean pools.',
     heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1600&q=80',
     blurb: 'Epic coastlines, golden surf beaches, ancient eucalyptus forests, world-class café culture, and remote island sanctuaries like Tasmania.',
-    openingEditorial: 'Australia’s travel magic lies in its connection to the outdoors. Life is lived facing the ocean and the sun: early morning swims in ocean tidal pools carved into sandstone cliffs, perfectly poured flat whites in breezy neighborhood cafés, and coastal road trips where wild beaches stretch on for unbroken miles.',
+    openingEditorial: "Australia’s travel magic lies in its connection to the outdoors. Life is lived facing the ocean and the sun: early morning swims in ocean tidal pools carved into sandstone cliffs, perfectly poured flat whites in breezy neighborhood cafés, and coastal road trips where wild beaches stretch on for unbroken miles. If I were planning this trip, I'd combine the coastal walks and bakery culture of Sydney and Melbourne with an unhurried road trip across Tasmania's wild East Coast.",
     whereIWouldStay: 'A sandstone boutique guesthouse in Sydney’s Paddington or Bronte, or a timber architectural pavilion surrounded by coastal forest on Freycinet Peninsula in Tasmania.',
     neighborhoods: [
       {
@@ -718,26 +1225,110 @@ export const DESTINATIONS: Destination[] = [
       'Australia uses Type I electrical plugs and drives on the left-hand side of the road.',
       'Payment: contactless card tap (Apple Pay / Google Pay / credit cards) is universal.'
     ],
+    didYouKnow: [
+      {
+        fact: "Over 85% of Australia's population lives within 50 kilometers of the coastline, making ocean pool and beach culture central to daily life.",
+        context: "New South Wales alone has over 100 historic saltwater ocean pools carved directly into coastal sandstone headlands.",
+        source: "Australian Bureau of Statistics"
+      },
+      {
+        fact: "Tasmania has some of the cleanest air on earth, officially measured at the Cape Grim Baseline Air Pollution Station.",
+        context: "Winds blowing across thousands of miles of unbroken Southern Ocean arrive with zero terrestrial pollution.",
+        source: "CSIRO (Commonwealth Scientific and Industrial Research Organisation)"
+      },
+      {
+        fact: "Uluru is estimated to be over 550 million years old and extends over 2.5 kilometers underground, functioning like a giant geological iceberg.",
+        context: "The Anangu traditional owners hold Uluru sacred and ask visitors to walk its base with cultural reverence.",
+        source: "Parks Australia"
+      },
+      {
+        fact: "Australia has over 10,000 distinct beaches: if you visited one new beach every day, it would take you more than 27 years to see them all.",
+        context: "Many remote beaches in Western Australia and Tasmania are completely empty even in peak summer.",
+        source: "Geoscience Australia"
+      },
+      {
+        fact: "Melbourne has the highest concentration of independent specialty coffee cafés per capita in the world, rooted in post-war Italian immigration.",
+        context: "The 'flat white' and Melbourne-style avocado toast revolutionized brunch culture across London, New York, and Tokyo.",
+        source: "Specialty Coffee Association"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-australia-alone-beach',
+        title: 'The Australian Beach Where You Can Feel Completely Alone',
+        teaser: 'Beyond Bondi: finding quiet white-sand crescents and orange-lichen boulders on Tasmania’s Bay of Fires.',
+        category: 'Hidden Places',
+        destinationId: 'australia',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-australia-why-tasmania',
+        title: 'Why Tasmania Feels Like Another Country',
+        teaser: 'Cool-climate rainforests, eccentric art at MONA, and roadside farm stands on the edge of the Southern Ocean.',
+        category: 'Untold Stories',
+        destinationId: 'australia',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-australia-wildlife-different',
+        title: 'Why Australian Wildlife Is So Different From Everywhere Else',
+        teaser: 'How 50 million years of continental isolation created an ecosystem of marsupials, wombats, and ancient flora.',
+        category: 'Nature & Wildlife',
+        destinationId: 'australia',
+        readTime: '5 min read'
+      }
+    ],
     femaleTravelNotes: {
       generalVibe: 'Extremely safe, relaxed, and welcoming for solo female travelers.',
       eveningAtmosphere: 'Laid-back dining and pub culture with an open, friendly atmosphere.',
       arrivalTips: 'Airport rail and bus links in Sydney, Melbourne, and Brisbane are reliable and drop you right into central hubs.',
       neighborhoodAdvice: 'Paddington, Bronte, and Manly in Sydney, and Fitzroy in Melbourne make ideal solo bases.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Australia Alone',
+      tips: [
+        {
+          title: 'Do the Morning Bronte to Bondi Coastal Walk',
+          advice: 'Walk at 6:30 AM alongside local swimmers and runners, stop for a swim at Bronte Baths, and grab a flat white at a beach kiosk.'
+        },
+        {
+          title: 'Rent a Campervan or Small Car in Tasmania',
+          advice: 'Tasmania has empty country roads, friendly farm gate honesty boxes for cherries and oysters, and safe national park cabins.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Ocean Baths, Vineyard Lunches & Coastal Trails",
+      ideas: [
+        {
+          title: 'Sydney Coastal Pool & Paddington Boutique Weekend',
+          desc: 'Morning ocean swims at Bondi Icebergs, boutique shopping on William Street, and seafood dinners in Paddington.',
+          tag: 'Coastal & Chic'
+        },
+        {
+          title: 'Tasmania Wine, Oyster & MONA Art Road Trip',
+          desc: 'Bruny Island cheese and oysters, ferry to MONA museum, and cozy fireside stays in Freycinet National Park.',
+          tag: 'Culinary & Art'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-australia-tasmania-pavilion', 'hideout-australia-paddington-sanctuary'],
     relatedStayIds: ['stay-australia-freycinet-lodge', 'stay-australia-sydney-boutique'],
-    relatedStoryIds: ['story-australia-road-trip', 'story-australia-why-tasmania'],
+    relatedStoryIds: ['story-australia-road-trip', 'story-australia-why-tasmania', 'story-australia-alone-beach'],
     relatedGuideIds: ['guide-australia-east-coast-tasmania']
   },
+
+  // 8. NEW ZEALAND
   {
     id: 'new-zealand',
     slug: 'new-zealand',
     name: 'New Zealand',
     country: 'New Zealand',
     tag: 'Alpine fiords, turquoise glacier lakes & quiet campervan routes',
+    emotionalStatement: 'A pristine sanctuary of glacial lakes, ancient forests, and boundless freedom.',
     heroImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80',
     blurb: 'Majestic Southern Alps, emerald rainforests cascading down to coastal fiords, ancient Maori heritage, and wide-open roads made for unhurried journeys.',
-    openingEditorial: 'New Zealand (Aotearoa) is a sanctuary for the soul. The landscape here has a cinematic grandeur that feels untouched by modern haste. Whether you are driving past turquoise glacial lakes under the shadow of Aoraki / Mount Cook, or listening to native bellbirds in the beech forests of Wanaka, the feeling of freedom is palpable.',
+    openingEditorial: "New Zealand (Aotearoa) is a sanctuary for the soul. The landscape here has a cinematic grandeur that feels untouched by modern haste. Whether you are driving past turquoise glacial lakes under the shadow of Aoraki / Mount Cook, or listening to native bellbirds in the beech forests of Wanaka, the feeling of freedom is palpable. If I were planning this trip, I'd rent a campervan or small SUV, focus on the South Island's alpine valleys, and give myself time to sit by silent lakes at sunrise.",
     whereIWouldStay: 'A secluded eco-cabin overlooking Lake Wanaka with wood-fired cedar hot tubs, or a boutique historic lodge in the Marlborough Sounds accessible only by water taxi.',
     neighborhoods: [
       {
@@ -757,7 +1348,7 @@ export const DESTINATIONS: Destination[] = [
       {
         name: 'Aoraki / Mount Cook & Lake Tekapo',
         vibe: 'Glacial turquoise waters, dark sky reserves, and snow-capped peaks',
-        bestFor: 'Stargazing in the Aoraki Mackenzie International Dark Sky Reserve and Hooker Valley hike',
+        bestFor: 'Stargazing in the Dark Sky Reserve and Hooker Valley hike',
         whyChoose: 'Unobstructed views of New Zealand’s highest peak and the world’s clearest night skies.',
         avoidIf: 'You require extensive urban restaurant choices.'
       },
@@ -822,16 +1413,297 @@ export const DESTINATIONS: Destination[] = [
       'Freedom camping is allowed only in certified self-contained vehicles at designated council sites (check the CamperMate app).',
       'Currency is New Zealand Dollars (NZD) and card payments are accepted almost everywhere.'
     ],
+    didYouKnow: [
+      {
+        fact: "New Zealand was the first self-governing nation in the world where women won the right to vote (1893), led by suffragist Kate Sheppard.",
+        context: "Her portrait is commemorated on the New Zealand 10-dollar banknote.",
+        source: "New Zealand Ministry for Culture and Heritage"
+      },
+      {
+        fact: "Lake Pukaki gets its glowing turquoise-blue color from 'glacial flour' — extremely fine rock particles ground down by glaciers that remain suspended in the water and scatter sunlight.",
+        context: "The color is so vivid that photos often look digitally edited, but the water is pure, unedited glacial melt.",
+        source: "GNS Science New Zealand"
+      },
+      {
+        fact: "The Aoraki Mackenzie International Dark Sky Reserve covers 4,300 square kilometers and is one of the largest protected dark sky reserves in the world.",
+        context: "Strict lighting ordinances allow stargazers to see the Magellanic Clouds and Southern Cross with the naked eye.",
+        source: "International Dark-Sky Association"
+      },
+      {
+        fact: "New Zealand has no native land mammals (with the exception of two species of small bats); birds evolved to fill ecological niches on the forest floor.",
+        context: "This explains why unique native birds like the Kiwi, Takahē, and Kakapo are flightless.",
+        source: "Department of Conservation (DOC)"
+      },
+      {
+        fact: "Māori place names carry rich geographical and ancestral narratives: for example, 'Aotearoa' translates to 'The Land of the Long White Cloud.'",
+        context: "Understanding Māori place names reveals the exact natural landmarks ancient navigators used to navigate island coastlines.",
+        source: "Te Ara Encyclopedia of New Zealand"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-nz-end-of-world-road',
+        title: 'The New Zealand Road That Feels Like the End of the World',
+        teaser: 'Driving the Milford Road through ancient beech forests and mist-covered glacier canyons.',
+        category: 'Road Trips & Trails',
+        destinationId: 'new-zealand',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-nz-color-changing-lake',
+        title: 'The Lake That Changes Color',
+        teaser: 'Why Lake Pukaki and Lake Tekapo radiate an otherworldly turquoise glow under alpine sunlight.',
+        category: 'Nature & Geology',
+        destinationId: 'new-zealand',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-nz-disappear-week',
+        title: 'The Road Trip I\'d Take If I Wanted to Disappear for a Week',
+        teaser: 'A quiet loop through Central Otago vineyards, Lake Hawea, and the rugged West Coast rainforests.',
+        category: 'Slow Travel',
+        destinationId: 'new-zealand',
+        readTime: '7 min read'
+      }
+    ],
     femaleTravelNotes: {
       generalVibe: 'Extremely high level of personal safety and helpful, welcoming local culture.',
       eveningAtmosphere: 'Quiet and relaxed town centers with friendly pubs and wholesome dining.',
       arrivalTips: 'Arriving in Queenstown by plane offers one of the most spectacular mountain landing views in the world.',
       neighborhoodAdvice: 'Wanaka and Nelson/Abel Tasman are peaceful, safe, and empowering bases for solo travelers.'
     },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to New Zealand Alone',
+      tips: [
+        {
+          title: 'Choose Wanaka over Queenstown as Your Base',
+          advice: 'Wanaka has all the alpine glory with a quiet, safe community vibe where you can walk along the lake at dusk in total serenity.'
+        },
+        {
+          title: 'Download CamperMate & Plan Short Driving Days',
+          advice: 'Roads in New Zealand are winding and narrow. Keeping daily drives under 3 hours allows you to hike, swim, and picnic without fatigue.'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Cedar Hot Tubs, Pinot Noir & Alpine Trails",
+      ideas: [
+        {
+          title: 'Wanaka Hot Tubs & Central Otago Vineyard Tour',
+          desc: 'Private outdoor cedar soaking tubs overlooking Lake Wanaka, followed by winery lunches in Gibbston Valley.',
+          tag: 'Wine & Wellness'
+        },
+        {
+          title: 'Waiheke Island Beach & Boutique Wine Escape',
+          desc: 'Ferry from Auckland to Waiheke for coastal cliff walks, olive oil tastings, and beachfront dinners.',
+          tag: 'Island & Gastronomy'
+        }
+      ]
+    },
     relatedHideoutIds: ['hideout-nz-wanaka-cabin', 'hideout-nz-fiordland-retreat'],
     relatedStayIds: ['stay-nz-wanaka-luxury', 'stay-nz-queenstown-boutique'],
-    relatedStoryIds: ['story-nz-south-island-road-trip', 'story-nz-where-to-slow-down'],
+    relatedStoryIds: ['story-nz-south-island-road-trip', 'story-nz-where-to-slow-down', 'story-nz-end-of-world-road'],
     relatedGuideIds: ['guide-nz-south-island-slow-route']
+  },
+
+  // 9. JAPAN
+  {
+    id: 'japan',
+    slug: 'japan',
+    name: 'Japan',
+    country: 'Japan',
+    tag: 'Mountain onsens, quiet thatched villages & meditative temple gardens',
+    emotionalStatement: 'Where quiet craftsmanship, moss-covered shrines, and hot spring ryokans soothe the spirit.',
+    heroImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80',
+    blurb: 'A realm of profound aesthetic nuance: steaming forest onsens, preserved Edo-period post towns, serene bamboo groves, and the quiet precision of everyday craftsmanship.',
+    openingEditorial: "Japan is a masterclass in mindfulness and aesthetic respect. Beyond the neon spectacle of Tokyo lies a deeply tranquil country: wooden ryokans where mineral hot springs steam beneath cedar canopies, moss gardens tended with tiny bamboo brooms, and family-run kissaten cafés serving pour-over coffee with surgical precision. If I were planning this trip, I'd spend three days in Kyoto's quieter temple lanes before heading into the Japanese Alps to stay in a traditional mountain onsen ryokan.",
+    whereIWouldStay: 'A traditional family-run ryokan with private cedar onsen baths in Kurokawa Onsen (Kyushu) or a restored machiya townhouse in Kyoto’s quiet Gion-Minami quarter.',
+    neighborhoods: [
+      {
+        name: 'Kyoto (Higashiyama & Arashiyama)',
+        vibe: 'Wooden machiya townhouses, mossy temple courtyards, and stone lanes',
+        bestFor: 'Culture, morning shrine walks, matcha tea ceremonies, and textile arts',
+        whyChoose: 'Waking up at 6:30 AM to walk the stone paths of Ninenzaka and Sannenzaka before visitors arrive is unforgettable.',
+        avoidIf: 'You want 24-hour mega-city skyscraper energy.'
+      },
+      {
+        name: 'Japanese Alps (Takayama & Shirakawa-go)',
+        vibe: 'Thatch-roofed gassho-zukuri farmhouses, morning river markets, and mountain air',
+        bestFor: 'Traditional crafts, timber architecture, Hida beef, and winter snowscapes',
+        whyChoose: 'Preserved Edo-period merchant streets with dark wood facades and clear mountain streams flowing beside cobblestones.',
+        avoidIf: 'You do not enjoy train travel into the mountains.'
+      },
+      {
+        name: 'Tokyo (Yanaka & Nakameguro)',
+        vibe: 'Shitamachi historic charm, canal-side boutiques, and artisan coffee roasters',
+        bestFor: 'Solo female travelers, neighborhood exploration, vintage shopping, and peaceful evening walks',
+        whyChoose: 'Yanaka escaped wartime damage and retains a nostalgic 1950s neighborhood feel with temple alleys and cat culture.',
+        avoidIf: 'You only want to see electronic mega-stores in Akihabara.'
+      },
+      {
+        name: 'Kurokawa Onsen & Mount Aso (Kyushu)',
+        vibe: 'Steaming river gorge, cedar forest footpaths, and lantern-lit ryokans',
+        bestFor: 'Hot spring lovers, restorative wellness, kaiseki dining, and slow travel',
+        whyChoose: 'Uniform wooden village aesthetic with zero neon signs and dozens of outdoor open-air hot spring baths (rotenburo).',
+        avoidIf: 'You have large visible tattoos that cannot be covered in communal baths (opt for private onsen ryokan rooms).'
+      }
+    ],
+    whatTravelersSaySummary: 'Travelers consistently rank Japan as the safest, most considerate, and most sensory-rich travel destination in the world. Key advice includes getting a digital Suica/Pasmo card on your phone, carrying a small trash bag (public trash cans are rare), and shipping luggage ahead between cities via Takkyubin.',
+    whatToSkip: [
+      'Over-packing a massive rolling suitcase on high-speed Shinkansen trains; use the brilliant, inexpensive luggage forwarding service (Yamato/Takkyubin) instead.',
+      'Only eating at tourist-focused English-menu restaurants when basement department store food halls (Depachika) and neighborhood ramen bars offer incredible quality.',
+      'Rushing through four temples in two hours; sit in one quiet Zen garden for 45 minutes to actually feel the space.'
+    ],
+    thingsWorthDoing: [
+      {
+        title: 'Stay in a Traditional Onsen Ryokan',
+        description: 'Slipping into a yukata robe, soaking in mineral hot springs under forest stars, and savoring an 8-course seasonal Kaiseki dinner.',
+        whyWorthIt: 'The ultimate Japanese ritual of physical relaxation and sensory harmony.'
+      },
+      {
+        title: 'Morning Walk Along Kyoto’s Philosopher’s Path',
+        description: 'Following the stone canal path lined with cherry and maple trees from Ginkaku-ji to Nanzen-ji at dawn.',
+        whyWorthIt: 'Quiet reflection with birdsong and stone bridges before daytime visitors arrive.'
+      },
+      {
+        title: 'Ride the Shinkansen Past Mount Fuji',
+        description: 'Buying an ekiben (bento box) at Tokyo Station and watching the snow-capped cone of Mount Fuji glide past the window.',
+        whyWorthIt: 'A seamless, peaceful Japanese travel ritual at 300 km/h.'
+      }
+    ],
+    placesToEat: [
+      {
+        name: 'Ippudo & Local Machiya Soba',
+        type: 'Hand-cut buckwheat noodles & dashi broth',
+        neighborhood: 'Gion, Kyoto',
+        whySpecial: 'Savoring hot duck soba in a 120-year-old wooden townhouse with a tranquil interior moss garden.'
+      },
+      {
+        name: 'Café de L’Ambre',
+        type: 'Historic 1948 Kissaten specialty coffee',
+        neighborhood: 'Ginza, Tokyo',
+        whySpecial: 'Legendary old-school coffee house brewing aged single-origin beans through hand-held flannel drip filters.'
+      },
+      {
+        name: 'Hida Kotte Ushi',
+        type: 'Seared Hida beef nigiri on rice crackers',
+        neighborhood: 'Sanmachi Suji, Takayama',
+        whySpecial: 'Melt-in-your-mouth A5 grade beef brushed with sweet soy and served on an edible crispy senbei wafer.'
+      }
+    ],
+    gettingAround: {
+      recommendation: 'The Shinkansen (bullet train) and JR regional train network are world benchmarks for punctuality and speed. Use digital Suica or Pasmo on Apple/Google Wallet for subways and local buses.',
+      airportTransit: 'Tokyo Narita (NRT) connects via the Narita Express (N\'EX) or Keisei Skyliner; Tokyo Haneda (HND) is just 20 minutes from central Tokyo via Tokyo Monorail.',
+      eveningWalkingAdvice: 'Japan is among the safest nations on earth with extraordinarily low crime rates. Solo women walk freely at all hours with complete peace of mind.'
+    },
+    goodToKnow: [
+      'Last verified: March 2026. Tipping is not customary in Japan and can cause confusion or polite refusal.',
+      'Convenience stores (7-Eleven, Lawson, FamilyMart) offer exceptionally fresh, high-quality onigiri, egg salad sandwiches, and drip coffee.',
+      'Carry cash (Japanese Yen): while card payments have grown rapidly, small neighborhood ramen shops, temple entrance gates, and coin lockers often require cash.'
+    ],
+    didYouKnow: [
+      {
+        fact: "Japan has over 27,000 natural thermal hot spring sources (onsen), discharging more than 2.6 million liters of mineral-rich water every single minute.",
+        context: "The geothermal mineral composition in regions like Kurokawa and Hakone is renowned for easing fatigue and softening skin.",
+        source: "Japan Onsen Association"
+      },
+      {
+        fact: "The thatched roofs of Shirakawa-go's 'Gassho-zukuri' farmhouses are angled at 60 degrees like hands in prayer to shed heavy winter mountain snow without collapsing.",
+        context: "Entire villages work together in a communal ritual called 'Yui' to re-thatch a single roof in a single day every 30 years.",
+        source: "UNESCO World Heritage Centre"
+      },
+      {
+        fact: "Japanese train delays are measured in seconds: the average annual delay for the Tokaido Shinkansen bullet train is under 50 seconds per trip, including weather disruptions.",
+        context: "If a train is delayed by more than five minutes, station staff issue official 'delay certificates' (chien-shōmeisho) for passengers to show their employers.",
+        source: "Central Japan Railway Company (JR Central)"
+      },
+      {
+        fact: "Japanese Japanese convenience stores (Konbini) restock fresh bento boxes, onigiri, and baked goods three to four times per day using precision logistics.",
+        context: "Celebrity chefs globally praise Japanese konbini egg salad sandwiches (Tamago Sando) for their milk-bread softness and Kewpie mayonnaise richness.",
+        source: "Japan Convenience Foods Association"
+      },
+      {
+        fact: "Japan is home to the world's oldest continuously operating business: Kongō Gumi, a temple construction company in Osaka founded in 578 AD.",
+        context: "It has built and restored historic wooden shrines across Japan for over 1,440 consecutive years.",
+        source: "Tokyo Shoko Research"
+      }
+    ],
+    hiddenStories: [
+      {
+        id: 'hs-japan-grass-roof-village',
+        title: 'The Japanese Village Where Houses Have Grass Roofs',
+        teaser: 'In Shirakawa-go and Gokayama, steep thatched farmhouses survive brutal mountain blizzards through centuries-old communal bonds.',
+        category: 'Architecture & Heritage',
+        destinationId: 'japan',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-japan-konbini-magic',
+        title: 'Why Japanese Convenience Stores Are Surprisingly Good',
+        teaser: 'The culinary perfection of tamago sandos, onigiri craftsmanship, and why konbini are cultural sanctuaries.',
+        category: 'Food & Culture',
+        destinationId: 'japan',
+        readTime: '5 min read'
+      },
+      {
+        id: 'hs-japan-train-over-flight',
+        title: 'The Train Journey I\'d Take Instead of Flying',
+        teaser: 'Riding the Hokuriku Shinkansen through snow-covered peaks to the craft city of Kanazawa.',
+        category: 'Road Trips & Rails',
+        destinationId: 'japan',
+        readTime: '6 min read'
+      },
+      {
+        id: 'hs-japan-art-islands',
+        title: 'The Japanese Island Where Art Changed Everything',
+        teaser: 'How Naoshima transformed a quiet fishing island into a world-renowned open-air contemporary art pilgrimage.',
+        category: 'Culture & Design',
+        destinationId: 'japan',
+        readTime: '7 min read'
+      }
+    ],
+    femaleTravelNotes: {
+      generalVibe: 'Universally recognized as one of the safest and most respectful destinations for solo female travelers.',
+      eveningAtmosphere: 'Safe, well-lit, and comfortable. Solo women dine, take evening trains, and walk through neighborhoods with ease.',
+      arrivalTips: 'Pick up an IC card (Suica/Pasmo) at Tokyo Haneda or Narita, or activate the digital card in Apple Wallet before arrival.',
+      neighborhoodAdvice: 'Yanaka in Tokyo and Higashiyama/Gion in Kyoto provide serene, safe, and atmospheric bases.'
+    },
+    soloTravelAdvice: {
+      headline: 'If I Were Traveling to Japan Alone',
+      tips: [
+        {
+          title: 'Embrace Counter Dining in Neighborhood Eateries',
+          advice: 'Japan is built for solo diners: ramen bars, soba shops, and kissaten cafés have single-counter seats where dining alone is completely natural and peaceful.'
+        },
+        {
+          title: 'Use Luggage Forwarding (Takkyubin)',
+          advice: 'Send your main suitcase between hotels via your front desk for around $15, allowing you to travel light on mountain trains with just a daypack.'
+        },
+        {
+          title: 'Book a Machiya or Ryokan with Private Onsen Hours',
+          advice: 'If you want privacy for soaking, choose ryokans with "kashikiri" (reservable private family onsens).'
+        }
+      ]
+    },
+    girlsTripInspiration: {
+      headline: "Perfect for a Girls' Trip: Onsen Ryokans, Matcha Ceremonies & Pottery Alleys",
+      ideas: [
+        {
+          title: 'Kyoto Machiya Townhouse & Matcha Temple Escape',
+          desc: 'Morning walks through bamboo groves, private tea ceremony in a historic garden, and evening kaiseki dining in Gion.',
+          tag: 'Culture & Zen'
+        },
+        {
+          title: 'Kurokawa Onsen Mountain Hot Spring Retreat',
+          desc: 'Yukata-clad village strolls, lantern-lit river baths, and forest ryokan dinners beside open hearths.',
+          tag: 'Hot Springs & Spa'
+        }
+      ]
+    },
+    relatedHideoutIds: ['hideout-japan-kyoto-machiya', 'hideout-japan-kurokawa-onsen'],
+    relatedStayIds: ['stay-japan-kyoto-ryokan', 'stay-japan-hakone-onsen'],
+    relatedStoryIds: ['story-japan-grass-roof-village', 'story-japan-konbini-magic', 'story-japan-train-over-flight', 'story-japan-art-islands'],
+    relatedGuideIds: ['guide-japan-shinkansen-onsen-etiquette']
   }
 ].map(d => ({
   ...d,

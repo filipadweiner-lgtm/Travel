@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Search, X, MapPin, Sparkles, BookOpen, Compass, ArrowRight } from 'lucide-react';
 import { DESTINATIONS } from '../data/destinations';
 import { HIDEOUTS } from '../data/hideouts';
-import { STAYS } from '../data/stays';
 import { STORIES } from '../data/stories';
 import { GUIDES } from '../data/guides';
 
@@ -48,14 +47,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       )
     : HIDEOUTS.slice(0, 3);
 
-  const filteredStays = cleanQuery
-    ? STAYS.filter(s => 
-        s.name.toLowerCase().includes(cleanQuery) || 
-        s.destinationName.toLowerCase().includes(cleanQuery) ||
-        s.neighborhood.toLowerCase().includes(cleanQuery)
-      )
-    : [];
-
   const filteredStories = cleanQuery
     ? STORIES.filter(st => 
         st.title.toLowerCase().includes(cleanQuery) ||
@@ -74,7 +65,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   const hasResults =
     filteredDestinations.length > 0 ||
     filteredHideouts.length > 0 ||
-    filteredStays.length > 0 ||
     filteredStories.length > 0 ||
     filteredGuides.length > 0;
 
@@ -91,7 +81,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search hideouts, destinations, boutique stays, stories, or guides..."
+            placeholder="Search stories, destinations, hidden stories, travel tips, and guides..."
             autoFocus
             className="w-full bg-transparent text-base md:text-lg text-[#434338] placeholder-[#8D8D7E] focus:outline-none font-sans"
           />
@@ -197,33 +187,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                       </div>
                     </div>
                     <ArrowRight className="w-4 h-4 text-[#8D8D7E] group-hover:translate-x-1 group-hover:text-[#434338] transition-all shrink-0" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Stays */}
-          {filteredStays.length > 0 && (
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#8FA18B] block mb-3">
-                Curated Stays
-              </span>
-              <div className="space-y-2">
-                {filteredStays.map(stay => (
-                  <a
-                    key={stay.id}
-                    href={`#/stays/${stay.id}`}
-                    onClick={onClose}
-                    className="group p-3 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all flex items-center justify-between shadow-xs"
-                  >
-                    <div>
-                      <h4 className="font-serif font-bold text-sm text-[#434338] group-hover:text-[#8FA18B]">
-                        {stay.name}
-                      </h4>
-                      <span className="text-xs text-[#8FA18B]">{stay.neighborhood}, {stay.destinationName}</span>
-                    </div>
-                    <span className="text-xs font-semibold text-[#5A5A40]">{stay.category}</span>
                   </a>
                 ))}
               </div>

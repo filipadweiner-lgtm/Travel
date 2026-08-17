@@ -1,17 +1,37 @@
 import { Story } from '../types';
 import swedishLaplandAuroraImg from '../assets/images/swedish_lapland_aurora_1786886382158.jpg';
+import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
 
 export const STORIES: Story[] = [
-  // ICELAND
+  // ==========================================
+  // 1. ICELAND
+  // ==========================================
   {
     id: 'story-iceland-road-trip',
-    title: 'The Iceland Road Trip I\'d Start With',
+    slug: 'the-iceland-road-trip-id-start-with',
+    title: "The Iceland Road Trip I'd Start With",
     subtitle: 'Why the South Coast and Snæfellsnes make the ultimate first journey',
+    category: 'Road Trips',
     date: 'March 2026',
     readTime: '6 min read',
+    isFeatured: true,
     heroImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
+    authorName: 'Elena Rostova',
+    authorRole: 'Senior Travel Writer',
     excerpt: 'Instead of racing through the entire Ring Road in a frantic blur, focusing on Iceland’s southern coastline and western peninsula allows you to actually absorb the elemental scale.',
+    curiosityHook: 'Why rushing the 1,332 km Ring Road ruins the magic — and how focusing on two quiet regions changes everything.',
+    whyItMatters: 'Iceland’s weather is raw and unpredictable. Slowing down lets you wait out the gales in warm geothermal pools rather than white-knuckling 6 hours of highway driving every day.',
+    howToExperience: 'Rent a 4x4 with full wind and gravel coverage, spend 3 nights along the South Coast, and 3 nights in a timber cottage on the Snæfellsnes Peninsula.',
+    whatIsNearby: 'Diamond Beach at sunrise, the basalt columns of Reynisfjara, and the geothermal bakery in Laugarvatn.',
+    whereToStayEditorial: [
+      {
+        name: 'ION Adventure Hotel',
+        reason: 'Cantilevered concrete design with an outdoor warm geothermal pool looking across volcanic moss plains.',
+        stayId: 'stay-iceland-ion-adventure'
+      }
+    ],
     content: `When people plan their first visit to Iceland, the instinct is often to drive all 1,332 kilometers of Route 1 in seven days. It sounds heroic on paper, but in practice, you spend six hours every day gripping the steering wheel against gusts of arctic crosswinds, arriving at waterfalls just in time to take a photo before having to check into the next roadside room.
 
 If I were planning a first trip tomorrow, I would take seven to eight days and divide them cleanly between two extraordinary regions: the dramatic South Coast down to Jökulsárlón, and the mystical Snæfellsnes Peninsula.
@@ -32,79 +52,210 @@ The real joy of Iceland is not checking off landmarks; it is learning to surrend
     tags: ['Iceland', 'Road Trip', 'South Coast', 'Slow Travel']
   },
   {
-    id: 'story-iceland-more-than-reykjavik',
-    title: 'Why Iceland Is More Than Reykjavík',
-    subtitle: 'Leaving the capital behind to discover northern craters and quiet fjords',
+    id: 'story-iceland-turf-houses',
+    slug: 'the-strange-story-behind-icelands-turf-houses',
+    title: "The Strange Story Behind Iceland's Turf Houses",
+    subtitle: 'Why ancient Icelanders built homes with living grass roofs that survived subarctic gales',
+    category: 'Untold Stories',
+    isHiddenStory: true,
     date: 'February 2026',
     readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1529963183134-61a90db47eaf?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Reykjavík has irresistible coffee shops and cozy design stores, but Iceland’s soul lives in the silent northern fjords and geothermal valleys.',
-    content: `Reykjavík is charming, safe, and impeccably designed. Its colorful corrugated-iron roofs and aromatic bakeries like Brauð & Co make for a wonderful 48-hour stop. But staying anchored in the capital and only taking day tours means you experience Iceland at its most crowded.
-
-The moment you drive north of the Hvalfjörður tunnel or catch a domestic 45-minute flight to Akureyri, the atmosphere shifts completely.
-
-### The Geothermal Wonderland of Lake Mývatn
-Around Lake Mývatn in the north, the earth feels alive in a raw, prehistoric way. Steam vents hiss through cracked sulfur grounds at Hverir, pseudo-craters dot the lake shores, and the Mývatn Nature Baths offer a tranquil, unhurried alternative to the commercialized Blue Lagoon.
-
-### The Westfjords: The Edge of the Island
-If you have ten days or more, venture into the Westfjords. These ancient finger-like peninsulas are carved deep into the North Atlantic. Roads wind around empty fjords where arctic foxes forage along the kelp line and puffins nest by the thousands on the sheer cliffs of Látrabjarg. Here, you can drive for two hours without passing another vehicle.`,
-    relatedDestinationIds: ['iceland'],
-    tags: ['Iceland', 'Nature', 'Mývatn', 'Fjords']
-  },
-  {
-    id: 'story-iceland-hotel-after-wind',
-    title: 'The Kind of Hotel I\'d Want After a Day in the Icelandic Wind',
-    subtitle: 'On the profound pleasure of heated stone floors, geothermal tubs, and sheepskin throws',
-    date: 'January 2026',
-    readTime: '4 min read',
     heroImage: 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'When you spend six hours hiking through horizontal arctic mist, the definition of luxury changes completely.',
-    content: `In cities like Paris or Milan, hotel luxury is often defined by marble lobbies, white-glove concierges, and gilded fixtures. In Iceland, luxury is something much deeper and more primal: it is heat, quiet, and shelter.
+    excerpt: 'When Viking settlers cleared 95% of Iceland\'s native birch forests, they had to invent a dwelling that could withstand ferocious arctic blizzards with zero wood.',
+    curiosityHook: 'How a lack of timber created one of the world’s most ingenious living, breathing architectural traditions.',
+    whyItMatters: 'Turf houses (Torfbæir) are thermodynamic marvels: thick layers of living turf provide superior insulation, keeping interiors warm using only body heat and small oil lamps.',
+    howToExperience: 'Visit the preserved Glaumbær turf farm museum in northern Iceland or Keldur farm in the south.',
+    whatIsNearby: 'Skógar Museum and the secluded canyon waterfall of Kvernufoss.',
+    content: `When 9th-century Norse settlers arrived on the volcanic shores of Iceland, they found an island rich in birdlife and geothermal steam, but sparse in heavy structural timber. After clearing native birch for heating and boat repairs, timber became a rare luxury.
 
-After hours spent exploring Reynisfjara’s blustery basalt cliffs with sea spray whipping your face, walking through the door of a well-designed Icelandic hideout is an emotional release.
+The solution was brilliant: build from the earth itself.
 
-### The Elements That Matter
-1. **Underfloor Geothermal Heating:** Slipping off muddy waterproof boots to step onto warm basalt or polished concrete heated by pure earth steam.
-2. **Acoustic Stillness:** Thick triple-glazed glass that turns an 80 km/h arctic gale into a silent visual spectacle outside.
-3. **The Outdoor Hot Pot:** Soaking in 39°C mineral water under the dark sub-arctic sky, watching for the first faint emerald ribbons of the northern lights.`,
+### Living Earth as Shelter
+Icelandic turf houses (*torfbæir*) were built with double stone foundations and thick turf walls cut directly from bog meadows. The roof was covered with layers of living sod. The grass roots knitted the soil together into a dense, waterproof thermal blanket.
+
+Inside, the *baðstofa* (communal living and sleeping room) was insulated so efficiently that the body heat of residents was often sufficient to keep the room warm through brutal winter blizzards. Families gathered by whale-oil lamps to spin wool, carve wooden bowls, and recite the Icelandic Sagas by memory.
+
+### Where to Experience Them Today
+Today, preserved turf complexes like Glaumbær in Skagafjörður and Keldur in south Iceland offer an extraordinary sensory glimpse into this past. Stepping inside, the air smells of cured birch, peat smoke, and aged timber — a reminder of the quiet resilience that shaped the Icelandic soul.`,
     relatedDestinationIds: ['iceland'],
-    tags: ['Iceland', 'Boutique Stays', 'Hot Springs', 'Design']
+    tags: ['Iceland', 'Architecture', 'History', 'Hidden Stories']
   },
+
+  // ==========================================
+  // 2. LIECHTENSTEIN
+  // ==========================================
   {
-    id: 'story-iceland-what-travelers-say',
-    title: 'What Travelers Keep Saying About Iceland',
-    subtitle: 'Synthesizing hundreds of verified sentiments from Reddit and independent forums',
+    id: 'story-liechtenstein-walk-across',
+    slug: 'the-country-so-small-you-can-walk-across-it',
+    title: 'The Country So Small You Can Walk Across It in a Weekend',
+    subtitle: 'Following the secret ridge paths of the Walser people through Alpine meadows',
+    category: 'Hidden Places',
+    isHiddenStory: true,
     date: 'March 2026',
     readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Community Research',
-    excerpt: 'From windproof gear realities to grocery store hacks, here is what independent travelers consistently highlight.',
-    content: `We analyzed hundreds of recent trip reports from r/visitingiceland and independent travel forums to distill the most practical, candid truths about traveling in Iceland today.
+    heroImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Tucked between Switzerland and Austria, Liechtenstein is small enough to traverse on foot, yet home to some of the most dramatic limestone ridges in the Alps.',
+    curiosityHook: 'How a 75-kilometer trail connects an entire sovereign nation through 11 historic villages and high Alpine pastures.',
+    whyItMatters: 'While tour groups only stop for 30 minutes in Vaduz, walking the Liechtenstein Trail (Liechtenstein-Weg) reveals fairy-tale mountain hamlets with zero tourist commotion.',
+    howToExperience: 'Download the LIstory app, stay in the high mountain village of Malbun, and hike the Fürstensteig cliff path in early morning.',
+    whatIsNearby: 'Vaduz Castle royal vineyards, Gutenberg Fortress in Balzers, and the Swiss Rhine cycle paths.',
+    whereToStayEditorial: [
+      {
+        name: 'Family Chalet Malbun',
+        reason: 'Surrounded by limestone amphitheaters at 1,600m with direct trail access.',
+        stayId: 'stay-liechtenstein-vaduz-boutique'
+      }
+    ],
+    content: `Liechtenstein is just 25 kilometers long and 12 kilometers wide at its broadest point. Most travelers see it only as a green blur from the Swiss autobahn or a quick passport stamp in Vaduz. But when you tie your hiking boots and head into the high valley of Malbun, the principality reveals an enchanting, unhurried world.
 
-### 1. The Wind is the Real Boss
-Travelers emphasize that temperature numbers on weather apps are misleading. A 5°C day with 45 km/h winds feels dramatically colder than -5°C in calm air. A wind-resistant, waterproof outer shell with taped seams is far more important than a bulky fashion coat.
+### The Liechtenstein Trail
+In 2019, to celebrate its 300th anniversary, Liechtenstein created the Liechtenstein Trail (*Liechtenstein-Weg*), a 75-kilometer scenic footpath that winds through all 11 of the country's municipalities. You can walk from the Austrian border in the north, across limestone ridges and royal Pinot Noir vineyards, to the Swiss border in the south in three delightful days.
 
-### 2. Car Door Insurance Warnings Are Real
-"Hold your car doors with two hands when opening them." This advice appears repeatedly. Sudden gusts in open coastal gravel areas can catch car doors and hyper-extend them backwards — an expensive damage not covered by basic collision waivers unless you have full gravel and windstorm protection.
+### The Thrill of the Fürstensteig
+The signature section of the trail is the Fürstensteig. First blasted into the limestone cliffs in 1898, this exposed mountain path offers panoramic vistas across the entire Rhine Valley into the Swiss Appenzell Alps. With steel cables for support, it gives you the thrill of high-alpine mountaineering with comfortable trail accessibility.
 
-### 3. Local Community Pools Over Luxury Spas
-While high-end geothermal lagoons offer beautiful aesthetics, seasoned visitors almost universally recommend visiting local municipal pools (sundlaugar). For around $8, you get clean, state-of-the-art thermal facilities, multiple temperature hot tubs, and authentic conversation with local residents.`,
-    relatedDestinationIds: ['iceland'],
-    tags: ['Iceland', 'Traveler Voices', 'Community Advice', 'Practical']
+### An Evening in Triesenberg
+After a day on the ridge, descend to Triesenberg for dinner. The village was settled in the 13th century by Walser migrants from Valais who brought their distinctive German dialect and hearty mountain gastronomy. Savoring *Käsknöpfle* (freshly scraped egg noodles baked with mountain cheese and topped with caramelized onions and sweet applesauce) beside a crackling hearth is pure Alpine bliss.`,
+    relatedDestinationIds: ['liechtenstein'],
+    tags: ['Liechtenstein', 'Hiking', 'Alps', 'Hidden Places']
+  },
+  {
+    id: 'story-liechtenstein-no-airport',
+    slug: 'why-liechtenstein-has-no-airport',
+    title: 'Why Liechtenstein Has No Airport — And How It Stays Connected',
+    subtitle: 'How a micro-state without runways or domestic trains created Europe’s most serene borderless transport model',
+    category: 'Did You Know?',
+    date: 'February 2026',
+    readTime: '4 min read',
+    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Liechtenstein is one of only five sovereign nations in the world without an airport of its own. Here is why locals love it that way.',
+    curiosityHook: 'Why a nation with billions in sovereign wealth deliberately chose not to pave a single runway.',
+    whyItMatters: 'The absence of runways and loud aircraft preserves the acoustic silence of the Rhine Valley and mountain villages.',
+    howToExperience: 'Take the Swiss SBB train from Zurich to Sargans or Buchs, then step onto the whisper-quiet green LIEmobil bus right outside the platform.',
+    whatIsNearby: 'Lake Walen (Walensee) and the historic Old Town of Werdenberg.',
+    content: `Liechtenstein is one of the wealthiest countries on earth per capita, yet if you look for its international airport, you will find only wildflower pastures and cycling paths along the Rhine.
+
+### Why No Airport?
+The topography of Liechtenstein makes a commercial airport nearly impossible: the entire nation is squeezed between the sheer granite cliffs of the Drei Schwestern massif and the Rhine River. Furthermore, building a runway would consume huge swathes of the principality's precious agricultural land and disturb the serene quiet of its mountain communities.
+
+### The Art of Borderless Transit
+Instead of air travel, Liechtenstein forged seamless transit treaties with Switzerland. A single Swiss Travel Pass is valid across all green LIEmobil buses. Trains from Zurich Airport drop you in Sargans in 55 minutes, where connecting buses depart every 15 minutes straight into Vaduz.
+
+There are no border guards, passport booths, or luggage queues on the bridges crossing the Rhine. You simply stroll or cycle across a 19th-century covered wooden bridge from Switzerland into Liechtenstein with birds chirping overhead.`,
+    relatedDestinationIds: ['liechtenstein'],
+    tags: ['Liechtenstein', 'Transit', 'Did You Know', 'Slow Travel']
   },
 
-  // NORWAY
+  // ==========================================
+  // 3. SWITZERLAND
+  // ==========================================
+  {
+    id: 'story-switzerland-car-free-villages',
+    slug: 'the-swiss-village-where-cars-arent-welcome',
+    title: "The Swiss Village Where Cars Aren't Welcome",
+    subtitle: 'How Mürren and Gimmelwald preserved the tranquil rhythm of 19th-century Alpine life',
+    category: 'Untold Stories',
+    isHiddenStory: true,
+    date: 'March 2026',
+    readTime: '6 min read',
+    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Perched 800 meters above the Lauterbrunnen cliff face, Mürren bans combustion engines by law. The only sounds are melting glacier streams and cowbells.',
+    curiosityHook: 'What happens when an entire community decides cars do not belong in the mountains.',
+    whyItMatters: 'Without vehicle noise or exhaust, your senses reset completely within hours of stepping off the mountain cable car.',
+    howToExperience: 'Ride the Stechelberg cable car up to Gimmelwald and Mürren, and stay in a timber-balcony chalet facing the Jungfrau massif.',
+    whatIsNearby: 'Trümmelbach glacier waterfalls inside the mountain and the Schilthorn revolving summit.',
+    whereToStayEditorial: [
+      {
+        name: 'Hotel Eiger Mürren',
+        reason: 'Family-run mountain retreat with indoor heated pool facing the Eiger north wall.',
+        stayId: 'stay-switzerland-zermatt-mountain'
+      }
+    ],
+    content: `To reach Mürren, you leave your car or train in the Lauterbrunnen valley, step into a glass cable car, and ascend 800 vertical meters up a sheer limestone precipice. As the valley floor falls away, something miraculous happens: the background hum of modern civilization vanishes.
+
+When the cable car doors slide open in Mürren, the air smells of clean pine resin and wild mountain herbs. There are no delivery trucks, no honking horns, no traffic lights.
+
+### The Law of Silence
+By municipal decree, combustion vehicles are strictly prohibited. The only motorized transport permitted are small electric luggage carts used by hoteliers to carry bags from the mountain railway station. Everything else moves on foot, sled, or bicycle.
+
+### Walking the Balcony of the Alps
+Mürren sits on a natural terrace facing the triumvirate of the Bernese Oberland: the Eiger, Mönch, and Jungfrau. In early morning, before day hikers arrive from Interlaken, walking through the village feels like entering a living pastoral dream. 
+
+Timber chalets with dark sun-bleached larch wood facades date back to the 1700s, their window boxes spilling over with red geraniums. Farmers hang hand-carved wooden scythes on barn walls, and cows graze on steep clover pastures with copper bells chiming in musical unison.
+
+### The Evening Transition
+When the last afternoon cable car departs with day trippers, Mürren settles into deep mountain tranquility. Sitting on a wooden balcony wrapped in a wool blanket as the alpine glow (*Alpenglühen*) turns the snow-capped summits rose-pink is an experience that stays with you forever.`,
+    relatedDestinationIds: ['switzerland'],
+    tags: ['Switzerland', 'Alps', 'Car-Free', 'Mürren', 'Slow Travel']
+  },
+  {
+    id: 'story-switzerland-cowbells',
+    slug: 'the-strange-story-behind-swiss-cowbells',
+    title: 'The Strange Story Behind Swiss Cowbells',
+    subtitle: 'Why every bell has an acoustic signature tuned to fog, folklore, and mountain herding',
+    category: 'Local Traditions',
+    date: 'February 2026',
+    readTime: '5 min read',
+    heroImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Swiss cowbells are not random noisemakers: each bell is handcrafted from brass and bronze alloys and tuned to specific musical pitches.',
+    curiosityHook: 'How Alpine farmers use sound frequencies to locate individual cows in dense mountain clouds.',
+    whyItMatters: 'The chime of bells (Schellen) is an ancient acoustic navigation system that has preserved Alpine pastoral ecosystems for centuries.',
+    howToExperience: 'Hike the Northface Trail from Mürren to Gimmelwald in July when dairy herds are grazing high summer pastures.',
+    whatIsNearby: 'Alpine cheese dairies in Lauterbrunnen and traditional bell-foundries in Bernese valleys.',
+    content: `If you have ever hiked an alpine trail in Switzerland, the sound is unmistakable: a rhythmic, gentle chorus of copper and bronze chimes drifting through the mist. 
+
+What many visitors do not realize is that Swiss cowbells are serious acoustic instruments crafted with centuries of metallurgical precision.
+
+### The Science of the Alpine Chime
+In the high Alps, dense fog (*Nebel*) can roll across a pasture in under three minutes, reducing visibility to less than five meters. A cow that wanders onto a steep limestone scree slope is in real danger.
+
+Because each bell is cast from a specific ratio of copper, tin, and zinc, its sound waves resonate at distinct lower frequencies that penetrate fog without echoing erratically off rock walls. A skilled farmer can stand on a chalet porch, close their eyes, and identify the exact location and activity of their lead cow simply by the rhythm and pitch of the bell.
+
+### The Sacred Alpabzug Ritual
+In late September, when the first frosts touch the high summits, the ceremonial *Alpabzug* (or *Désalpe*) takes place. Farmers dress in traditional embroidered linen jackets, cows are crowned with wreaths of wild dahlias and alpine roses, and the heaviest ceremonial bells (some weighing over 5 kilograms) are fitted for the celebratory descent into valley villages. It is one of Europe\'s most moving pastoral celebrations.`,
+    relatedDestinationIds: ['switzerland'],
+    tags: ['Switzerland', 'Traditions', 'Culture', 'Did You Know']
+  },
+
+  // ==========================================
+  // 4. NORWAY
+  // ==========================================
   {
     id: 'story-norway-stay-longer',
+    slug: 'the-norwegian-places-that-make-you-want-to-stay-longer',
     title: 'The Norwegian Places That Make You Want to Stay Longer',
-    subtitle: 'From the quiet waters of Aurland to the jagged peaks of Reine',
+    subtitle: 'From the quiet waters of Aurland to the jagged peaks of Reine in Lofoten',
+    category: 'Nature',
+    isFeatured: true,
     date: 'February 2026',
     readTime: '6 min read',
-    heroImage: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80',
+    heroImage: norwayWaterfallImg,
+    pinterestImage: norwayWaterfallImg,
     author: 'TravelHideouts Editorial',
+    authorName: 'Ingrid Solberg',
+    authorRole: 'Nordic Specialist',
     excerpt: 'Norway is not a destination for ticking boxes; its magic unfolds when you unpack your bag in a wooden fjord village and stay put.',
+    curiosityHook: 'Why rushing from fjord to fjord in 4 days ruins the experience — and where to settle instead.',
+    whyItMatters: 'The true luxury of Norway is the silence of the fjords after the daytime excursion ferries have left.',
+    howToExperience: 'Base yourself 4 nights in a restored seaside rorbu cabin in Henningsvær, taking daily ocean saunas and hiking coastal ridges.',
+    whatIsNearby: 'KaviarFactory contemporary art gallery, Trevarefabrikken ocean saunas, and Reinebringen peak.',
+    whereToStayEditorial: [
+      {
+        name: 'Henningsvær Rorbuer',
+        reason: 'Restored fishermen cabins right on the harbor quay with mountain reflections in the water.',
+        stayId: 'stay-norway-henningsvaer-brygge'
+      }
+    ],
     content: `Most visitors to Norway make the mistake of attempting an exhausting transit marathon: Oslo on Monday, Flåm on Tuesday, Bergen on Wednesday, Tromsø on Friday. By the weekend, all the fjords blend together into a blur of train seats and luggage tags.
 
 Norway is at its most sublime when you slow down and stay three or four nights in a single location.
@@ -118,57 +269,59 @@ In the Lofoten Islands, Henningsvær has evolved from a sleepy cod fishing stati
     tags: ['Norway', 'Fjords', 'Lofoten', 'Slow Travel']
   },
   {
-    id: 'story-norway-fjords-or-lofoten',
-    title: 'Would I Choose the Fjords or Lofoten?',
-    subtitle: 'How to decide between the western fjord valleys and the arctic island spires',
-    date: 'January 2026',
-    readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'If you only have one week in Norway, choosing between Bergen’s western fjords and the Lofoten archipelago is the ultimate dilemma.',
-    content: `It is the question every traveler asks when planning a trip to Norway: *Should I go to the Western Fjords (Geiranger / Nærøyfjord) or head north to Lofoten?*
-
-Both are breathtaking, but their atmospheres and travel logistics are distinct.
-
-### Choose the Western Fjords If:
-- You love classic train journeys: The Bergen Railway and Flåm Line are engineering marvels that make public transit effortless and deeply scenic.
-- You have 5 to 7 days and want minimal domestic flights.
-- You want grand, vertical canyon scale: dramatic 1,000-meter sheer cliffs dropping into narrow waterways.
-
-### Choose Lofoten If:
-- You want razor-sharp alpine peaks rising directly out of turquoise arctic beaches.
-- You are comfortable renting a car and driving along dramatic coastal bridges.
-- You want authentic rorbu cabin living and vibrant artist communities in Henningsvær and Reine.
-- You are visiting in June/July for the 24-hour Midnight Sun or September–March for the Northern Lights.`,
-    relatedDestinationIds: ['norway'],
-    tags: ['Norway', 'Lofoten', 'Fjords', 'Trip Planning']
-  },
-  {
     id: 'story-norway-cabin-appeal',
-    title: 'What Makes a Norwegian Cabin So Appealing',
-    subtitle: 'The timeless Nordic concept of "hyttekos" and finding peace in nature',
+    slug: 'why-norwegians-love-their-cabins-so-much',
+    title: 'Why Norwegians Love Their Cabins So Much',
+    subtitle: 'The cultural philosophy of hyttekos: why stepping away from Wi-Fi is considered true luxury',
+    category: 'Local Traditions',
+    isHiddenStory: true,
     date: 'March 2026',
     readTime: '4 min read',
     heroImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
     excerpt: 'In Norway, the cabin (hytta) is not just a vacation property; it is a sacred cultural ritual of returning to simplicity.',
+    curiosityHook: 'Why a nation with ultra-modern cities chooses to spend weekends in rustic wooden cabins without running water.',
+    whyItMatters: 'The concept of hyttekos offers the ultimate antidote to modern digital fatigue and sensory overload.',
+    howToExperience: 'Rent an authentic fjord cabin or mountain hytte through DNT (Norwegian Trekking Association) or boutique operators.',
+    whatIsNearby: 'Fjord fishing quays, wild berry foraging trails, and wood-fired saunas.',
     content: `Almost every Norwegian family has access to a *hytte* — a mountain or coastal cabin where life strips away excess. The appeal is intuitive: simple timber architecture, wood stoves, woolen sweaters, and hours spent gazing at changing weather over water.
+
+### The Sacred Ritual of Hyttekos
+In Norwegian culture, *hyttekos* refers to the deep, warm contentment found inside a cabin: lighting candles as darkness falls, brewing strong coffee on a woodstove, playing board games without screens, and stepping outside into absolute silence to look at the stars.
 
 Staying in a traditional rorbu or fjord-side cabin reconnects you to the circadian rhythm of the landscape. You cook fresh fish bought from the harbor quay, brew dark drip coffee, and take evening saunas followed by cold fjord plunges. It is the ultimate antidote to modern digital fatigue.`,
     relatedDestinationIds: ['norway'],
-    tags: ['Norway', 'Cabins', 'Hytte', 'Wellness']
+    tags: ['Norway', 'Cabins', 'Hytte', 'Wellness', 'Hidden Stories']
   },
 
-  // SWEDEN
+  // ==========================================
+  // 5. SWEDEN
+  // ==========================================
   {
     id: 'story-sweden-different-stockholm',
-    title: 'A Different Way to Experience Stockholm',
-    subtitle: 'Bypassing the tourist corridors for Södermalm bakeries and archipelago ferries',
+    slug: 'the-swedish-islands-you-can-reach-without-a-tour',
+    title: 'The Swedish Islands You Can Reach Without a Ferry Tour',
+    subtitle: 'Bypassing the tourist corridors for Södermalm bakeries and public archipelago ferries',
+    category: 'Hidden Places',
+    isHiddenStory: true,
     date: 'February 2026',
     readTime: '5 min read',
     heroImage: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
     excerpt: 'Stockholm is built across 14 islands, but its true magic is found in quiet residential alleys, morning fika spots, and commuter boat rides.',
+    curiosityHook: 'How to use local public commuter ferries to reach secluded granite swimming bays and pine forest trails.',
+    whyItMatters: 'You don’t need expensive charter boats: standard public transit tickets let you island-hop all summer long.',
+    howToExperience: 'Board the Waxholmsbolaget ferry from Strömkajen to Sandhamn or Grinda with a picnic of rye bread and smoked fish.',
+    whatIsNearby: 'Artipelag art museum in the archipelago forest and Rosendals Trädgård biodynamic gardens.',
+    whereToStayEditorial: [
+      {
+        name: 'Ett Hem Stockholm',
+        reason: 'An 1910 Arts & Crafts townhouse transformed into the world’s most intimate boutique retreat.',
+        stayId: 'stay-sweden-ett-hem'
+      }
+    ],
     content: `Most visitors stick to the Royal Palace in Gamla Stan and the department stores of Drottninggatan. But Stockholm's real personality reveals itself when you cross south into Södermalm or board a public ferry at Slussen.
 
 ### Morning Fika in Södermalm
@@ -177,38 +330,93 @@ Start your morning around Mariatorget or Nytorget. Head to Bageri Petrus or Fabr
 ### The Art of the Commuter Ferry
 Instead of paying for expensive tourist sightseeing cruises, tap your SL transit card and board the public ferry line 80 or 82. Gliding past the forested shores of Djurgården and the historic timber facades of Skeppsholmen gives you the finest view of the city from the water for the price of a standard metro ticket.`,
     relatedDestinationIds: ['sweden'],
-    tags: ['Sweden', 'Stockholm', 'Fika', 'Architecture']
+    tags: ['Sweden', 'Stockholm', 'Fika', 'Architecture', 'Hidden Places']
   },
   {
-    id: 'story-sweden-lapland-list',
-    title: 'Why Swedish Lapland Belongs on the List',
-    subtitle: 'Silent boreal forests, Sami culture, and the clearest aurora skies at Abisko',
-    date: 'January 2026',
-    readTime: '6 min read',
-    heroImage: swedishLaplandAuroraImg,
+    id: 'story-sweden-fika-culture',
+    slug: 'why-fika-is-more-than-just-coffee',
+    title: 'Why Fika Is More Than Just Coffee',
+    subtitle: 'The quiet sociology of slowing down, cardamom spices, and conversation in Swedish daily life',
+    category: 'Food',
+    date: 'March 2026',
+    readTime: '4 min read',
+    heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'North of the Arctic Circle, Swedish Lapland offers a profound sense of wilderness and architectural ingenuity.',
-    content: `Swedish Lapland in winter is a world transformed. Snow dampens all sound, turning pine forests into quiet cathedrals of white. 
+    excerpt: 'In Sweden, fika is not an on-the-go caffeine hit in a paper cup: it is a sacred pause that structures daily existence.',
+    curiosityHook: 'Why Swedes insist on sitting down with porcelain cups and warm cardamom buns twice a day.',
+    whyItMatters: 'Fika breaks down social barriers, fosters egalitarian conversation, and protects mental clarity.',
+    howToExperience: 'Visit Stora Bageriet in Östermalm or Café Pascal in Vasastan at 10:30 AM or 3:00 PM.',
+    whatIsNearby: 'Svenskt Tenn interior design gallery and Humlegården park.',
+    content: `To mistake *fika* for a quick espresso break is to misunderstand Swedish culture entirely. 
 
-### The Microclimate of Abisko
-Abisko National Park is globally renowned among aurora hunters due to its unique "blue hole" phenomenon — a microclimate where surrounding mountain ranges keep the skies remarkably cloud-free even when neighboring regions are overcast.
+In Sweden, drinking coffee while walking down the street with a paper cup is almost unheard of. Fika requires stopping: sitting in a comfortable wooden chair, pouring coffee into a ceramic cup, and sharing a pastry with a friend or colleague.
 
-Riding the chairlift up to the Aurora Sky Station at night, with the temperature dropping to -15°C and the Milky Way blazing overhead, is one of the most sublime wilderness experiences in Europe. Pair this with stays at iconic design sanctuaries like Treehotel in Harads or the Arctic Bath on the Lule River for a truly transformative arctic journey.`,
+### The Sacred Cardamom Bun
+While the world knows the cinnamon roll, Sweden\'s true national treasure is the *kardemummabulle* — a braided sourdough knot infused with freshly crushed green cardamom pods and topped with pearl sugar. The aroma in Swedish bakeries at 7:00 AM is unforgettable.
+
+### Fika as a Social Leveler
+In Swedish workplaces, fika happens twice a day (around 10:00 AM and 3:00 PM). CEOs and junior interns sit at the same wooden table to discuss life, books, and weekend plans. It is a daily reminder that human connection matters more than productivity metrics.`,
     relatedDestinationIds: ['sweden'],
-    tags: ['Sweden', 'Lapland', 'Northern Lights', 'Winter']
+    tags: ['Sweden', 'Fika', 'Culture', 'Food']
   },
 
-  // CHINA
+  // ==========================================
+  // 6. CHINA
+  // ==========================================
+  {
+    id: 'story-china-karst-mountains',
+    slug: 'the-chinese-mountain-landscape-that-looks-impossible',
+    title: 'The Chinese Mountain Landscape That Looks Impossible',
+    subtitle: 'How ancient oceans and limestone weathering carved the dreamlike karst pinnacles of Yangshuo',
+    category: 'Nature',
+    isHiddenStory: true,
+    date: 'March 2026',
+    readTime: '6 min read',
+    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Rising sheer out of emerald rice paddies and bamboo-lined rivers, the limestone towers of Yangshuo look like poetry painted on silk.',
+    curiosityHook: 'Why standing among the limestone peaks of Guangxi feels like stepping into a 1,000-year-old Song Dynasty landscape scroll.',
+    whyItMatters: 'Staying outside the main town in the Yulong River valley gives you morning silence with zero tour buses.',
+    howToExperience: 'Rent a bicycle to explore the countryside lanes and take an early morning non-motorized bamboo raft drift on the Yulong River.',
+    whatIsNearby: 'Moon Hill natural limestone arch and historic Xingping ancient fishing village.',
+    whereToStayEditorial: [
+      {
+        name: 'Yangshuo Mountain Retreat',
+        reason: 'Traditional eco-retreat directly on the Yulong River with zero TVs and magnificent karst views.',
+        stayId: 'stay-china-yangshuo-mountain'
+      }
+    ],
+    content: `When you first see the limestone karst towers of Yangshuo rising through morning river mist, your mind struggles to process the geology. These are not rolling alpine slopes; they are vertical stone fingers rising hundreds of meters straight out of flat emerald rice paddies.
+
+### 200 Million Years of Water and Stone
+Hundreds of millions of years ago, this entire region was the floor of a prehistoric ocean. Massive coral reefs deposited thick layers of limestone. When tectonic forces lifted the seabed into dry land, tropical rains dissolved the softer rock along vertical fractures, leaving behind thousands of steep, forested towers.
+
+### The Dawn Bamboo Drift
+The finest way to experience Yangshuo is at 6:30 AM on the Yulong River. Unlike the motorized tour boats on the main Li River, rafts on the Yulong are constructed from real bamboo poles and propelled silently with long wooden poles by local boatmen.
+
+As the raft glides across glass-still water, passing weeping willows and grazing water buffalo, the reflection of the limestone pinnacles in the river is so perfect that the boundary between earth and sky dissolves entirely.`,
+    relatedDestinationIds: ['china'],
+    tags: ['China', 'Yangshuo', 'Karst', 'Nature', 'Hidden Stories']
+  },
   {
     id: 'story-china-two-weeks-plan',
-    title: 'The China Trip I\'d Plan If I Had Two Weeks',
+    slug: 'the-china-trip-id-plan-if-i-had-two-weeks',
+    title: "The China Trip I'd Plan If I Had Two Weeks",
     subtitle: 'Connecting imperial courtyards, high-speed rail, and misty karst rivers',
+    category: 'Road Trips',
     date: 'March 2026',
     readTime: '7 min read',
-    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
     excerpt: 'A thoughtfully balanced 14-day itinerary connecting Beijing’s ancient hutongs, Yangshuo’s limestone peaks, and Shanghai’s plane-tree avenues.',
-    content: `Planning a first journey to China can feel overwhelming given the country\'s vast geography. The key is curating a route that balances imperial history, tranquil natural landscapes, and sophisticated modern urban life.
+    curiosityHook: 'How high-speed trains make traveling across three distinct climate zones seamless and stress-free.',
+    whyItMatters: 'Balancing imperial grandeur, countryside tranquility, and urban café culture gives you the full spectrum of China today.',
+    howToExperience: 'Set up Alipay and WeChat Pay before departing, and book first-class train seats on 12306 or Trip.com.',
+    whatIsNearby: 'The Mutianyu Great Wall, Chengdu teahouses, and the scholar gardens of Suzhou.',
+    content: `Planning a first journey to China can feel overwhelming given the country's vast geography. The key is curating a route that balances imperial history, tranquil natural landscapes, and sophisticated modern urban life.
 
 ### Days 1 to 4: Beijing’s Living History
 Base yourself in a restored courtyard hotel in Dongcheng. Walk the quiet hutongs around the Lama Temple in the morning, explore the Forbidden City with a timed morning ticket, and spend an unhurried afternoon hiking the wild, restored ramparts of the Mutianyu Great Wall.
@@ -217,293 +425,247 @@ Base yourself in a restored courtyard hotel in Dongcheng. Walk the quiet hutongs
 Board a punctual high-speed train south to Guilin and transfer directly to the Yulong River valley outside Yangshuo. Trade the city for a bicycle ride through ancient bamboo groves, drift silently on non-motorized bamboo rafts, and sip fresh local tea as mist rises off karst towers.
 
 ### Days 9 to 11: The Teahouse Rhythm of Chengdu or Hangzhou
-Head to Chengdu to experience its slow, laid-back teahouse culture in People\'s Park, or take the bullet train to Hangzhou to walk through Longjing tea plantations and classical lakeside gardens.
+Head to Chengdu to experience its slow, laid-back teahouse culture in People's Park, or take the bullet train to Hangzhou to walk through Longjing tea plantations and classical lakeside gardens.
 
 ### Days 12 to 14: Shanghai’s Tree-Lined Elegance
 Finish in Shanghai’s Former French Concession. Wander underneath shaded plane trees, discover independent specialty coffee bars tucked inside 1930s Shikumen lane houses, and take in the Art Deco skyline from the quiet North Bund at sunset.`,
     relatedDestinationIds: ['china'],
     tags: ['China', 'Itinerary', 'High-Speed Rail', 'Yangshuo']
   },
-  {
-    id: 'story-china-beyond-beijing-shanghai',
-    title: 'Beyond Beijing and Shanghai',
-    subtitle: 'Discovering the ancient towns of Yunnan and classical gardens of Suzhou',
-    date: 'February 2026',
-    readTime: '6 min read',
-    heroImage: 'https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'China’s regional depth is astonishing: from mountain tea villages in Dali to the scholar gardens and stone canals of Jiangnan.',
-    content: `While Beijing and Shanghai showcase China\'s imperial past and futuristic present, the country\'s most poetic landscapes and cultural traditions often lie in its regional provinces.
 
-### The Mountain Sanctuary of Yunnan
-In southwestern China, Yunnan province offers a gentle climate, dramatic mountain horizons, and rich ethnic minority heritage. In Dali and Shaxi, ancient cobblestone market squares that once formed part of the historic Tea Horse Road are lined with mud-brick courtyards, artisan indigo workshops, and organic tea rooms overlooking Erhai Lake.
-
-### The Classical Gardens of Suzhou
-Just 25 minutes from Shanghai by bullet train, Suzhou was celebrated by ancient poets as an earthly paradise. Its UNESCO-listed scholar gardens (such as the Humble Administrator\'s Garden and Master of the Nets Garden) are masterpieces of spatial illusion, framing miniature ponds, bonsai pines, and moon-viewing pavilions in exquisite harmony.`,
-    relatedDestinationIds: ['china'],
-    tags: ['China', 'Yunnan', 'Suzhou', 'Culture']
-  },
+  // ==========================================
+  // 7. AUSTRALIA
+  // ==========================================
   {
-    id: 'story-china-places-talked-about',
-    title: 'The Places in China Travelers Keep Talking About',
-    subtitle: 'What surprised recent international visitors about digital convenience and scenic rail',
+    id: 'story-australia-alone-beach',
+    slug: 'the-australian-beach-where-you-can-feel-alone',
+    title: 'The Australian Beach Where You Can Feel Completely Alone',
+    subtitle: 'Beyond Bondi: finding quiet white-sand crescents and orange-lichen boulders on Tasmania’s Bay of Fires',
+    category: 'Hidden Places',
+    isHiddenStory: true,
     date: 'March 2026',
-    readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Community Research',
-    excerpt: 'Recent travelers on r/travelchina report unexpected ease: high-speed trains, mobile payment integration, and remarkable urban safety.',
-    content: `Over the past year, international travel to China has become significantly more accessible with streamlined visa-free transit policies and the ability to link international Visa/Mastercard credit cards directly to Alipay and WeChat Pay.
-
-Here is what travelers consistently report:
-
-### 1. High-Speed Rail is a Dream
-"The bullet trains (CRH) put European and American rail to shame." Trains glide at 350 km/h with absolute smoothness, spotlessly clean carriages, hot water dispensers, and reliable phone charging at every seat. Booking tickets via Trip.com or 12306 using your passport number eliminates ticket printing entirely.
-
-### 2. A Completely Cashless Society
-From fruit vendors on bicycles to high-end restaurants, everything runs on QR codes. Travelers recommend setting up Alipay and WeChat Pay with foreign cards before boarding your flight. Once set up, buying subway rides, taxis (via Didi inside Alipay), and street dumplings is instantaneous.
-
-### 3. Profound Street Safety Day and Night
-Female solo travelers consistently highlight feeling completely safe walking through Chinese cities and night markets well past midnight. Violent crime is exceptionally rare, streets are brightly lit, and public transit is efficient and clean.`,
-    relatedDestinationIds: ['china'],
-    tags: ['China', 'Traveler Voices', 'High-Speed Rail', 'Practical']
-  },
-
-  // PATAGONIA
-  {
-    id: 'story-patagonia-first-time-approach',
-    title: 'How I\'d Approach Patagonia for the First Time',
-    subtitle: 'Navigating the vast scale, wind conditions, and day-hiking secrets of the southern frontier',
-    date: 'February 2026',
-    readTime: '7 min read',
-    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Patagonia is immense and wild. Here is how to plan a deeply rewarding journey without burning out on transit.',
-    content: `Patagonia covers over one million square kilometers across the southern halves of Chile and Argentina. Trying to "see it all" in ten days is a recipe for exhaustion.
-
-The smartest way to experience Patagonia is to select two central bases — one in Argentina and one in Chile — and immerse yourself fully in their surrounding wilderness.
-
-### Base 1: El Chaltén, Argentina (The Day Hiker\'s Paradise)
-El Chaltén is unique because you don't need expensive tour buses or park shuttles to access world-class trails. You simply lace up your boots at your hotel door and walk directly onto the paths leading to Laguna de los Tres (beneath Mount Fitz Roy) and Laguna Torre.
-
-Spend four days here. The village has a warm, relaxed energy with artisan craft breweries, homemade pasta houses, and friendly mountaineers sharing trail updates.
-
-### Base 2: Torres del Paine & Puerto Natales, Chile
-Cross the border by scenic bus to Puerto Natales and enter Torres del Paine National Park. The scale here is staggering: turquoise glacial lakes, herds of wild guanacos grazing on yellow pampa grass, and the sheer granite massifs of the Cuernos del Paine rising 2,000 meters above Lake Pehoé.`,
-    relatedDestinationIds: ['patagonia'],
-    tags: ['Patagonia', 'Trekking', 'Chile', 'Argentina']
-  },
-  {
-    id: 'story-patagonia-chile-or-argentina',
-    title: 'Chile or Argentina: Where Should You Start?',
-    subtitle: 'Understanding the practical differences between Chilean and Argentine Patagonia',
-    date: 'January 2026',
-    readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Both sides of the Andes offer breathtaking beauty, but their logistics, costs, and trail access differ significantly.',
-    content: `Choosing whether to focus on Chilean or Argentine Patagonia depends on your trekking style, budget, and travel preferences.
-
-### Chilean Patagonia (Torres del Paine)
-- **The Landscape:** Dramatic granite horns, turquoise glacial fjords, and icefields.
-- **Logistics:** Highly regulated. Multi-day treks like the W-Trek or O-Circuit require booking campsites and refugios months in advance through national park concessionaires.
-- **Atmosphere:** Wild, remote luxury lodges and iconic multi-day backcountry trails.
-
-### Argentine Patagonia (El Chaltén & El Calafate)
-- **The Landscape:** The sharp, jagged towers of Fitz Roy and Cerro Torre, plus the massive advancing Perito Moreno Glacier.
-- **Logistics:** Highly flexible. Day hikes in El Chaltén are free to enter and require no permits. You return every evening to a comfortable bed and hot shower in the village.
-- **Atmosphere:** Relaxed mountain village culture, incredible steaks, and exceptional value.`,
-    relatedDestinationIds: ['patagonia'],
-    tags: ['Patagonia', 'Chile', 'Argentina', 'Comparison']
-  },
-  {
-    id: 'story-patagonia-what-travelers-say',
-    title: 'What Travelers Say About Patagonia',
-    subtitle: 'Hard-earned advice on katabatic winds, gear choices, and booking timelines',
-    date: 'March 2026',
-    readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Community Research',
-    excerpt: 'From packing wind-blocking beanies to respecting border agricultural controls, verified advice from r/Patagonia.',
-    content: `Here are the essential insights distilled from experienced hikers and travelers across Patagonia:
-
-### 1. The Wind Is a Physical Force
-Patagonian winds regularly exceed 80 km/h during summer (December–February). Hikers report literally having to lean into the wind to stay balanced. A tightly fitted windbreaker, neck gaiter, and trekking poles are mandatory.
-
-### 2. Book Torres del Paine 6 Months Ahead
-If you plan to hike the W-Trek or stay inside the national park in Chile, refugios and campsites sell out months in advance. In contrast, El Chaltén on the Argentine side offers much more flexibility for last-minute day hiking.
-
-### 3. Strict Agricultural Border Rules
-When crossing by bus between Chile and Argentina (e.g. from El Calafate to Puerto Natales), border guards x-ray all luggage and impose heavy fines for undeclared fresh fruit, honey, or meat products. Always discard fresh food before border checkpoints.`,
-    relatedDestinationIds: ['patagonia'],
-    tags: ['Patagonia', 'Traveler Voices', 'Hiking Tips', 'Gear']
-  },
-
-  // SOUTH KOREA
-  {
-    id: 'story-korea-seoul-beyond-tourist',
-    title: 'The Seoul I Want to Explore Beyond the Tourist List',
-    subtitle: 'Finding quiet hanok tea courtyards, Seongsu brick ateliers, and mountain wall sunsets',
-    date: 'March 2026',
-    readTime: '6 min read',
-    heroImage: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Skip the cosmetic department stores of Myeongdong to discover Seoul’s intimate neighborhood rhythm and historic artisan quarters.',
-    content: `Seoul is often depicted as a futuristic cyberpunk metropolis of towering screens and K-pop megastores. But what makes Seoul truly unforgettable is its quiet layers: centuries-old stone walls winding along mountain ridges, peaceful wooden courtyards where tea masters pour wild Jirisan infusions, and neighborhood lanes where young ceramists and bakers create extraordinary work.
-
-### The Serenity of Seochon
-West of the grand Gyeongbokgung Palace lies Seochon, an old residential district where court artists and scholars once lived. Unlike the crowded photo spots of Bukchon, Seochon retains a quiet, lived-in charm. Elderly residents tend small vegetable gardens in front of low-slung houses, while minimalist galleries and traditional hanok tea houses welcome you inside.
-
-### Seongsu-dong: The Creative Transformation
-Once an industrial hub of shoe factories and metal workshops, Seongsu-dong has evolved into Seoul’s most exciting architectural playground. Red-brick warehouses have been converted into stunning multi-story cafés like Onion Seongsu and experimental fragrance laboratories. It is a masterclass in urban regeneration.`,
-    relatedDestinationIds: ['south-korea'],
-    tags: ['South Korea', 'Seoul', 'Cafés', 'Neighborhoods']
-  },
-  {
-    id: 'story-korea-jeju-island-add',
-    title: 'Why I\'d Add Jeju to a South Korea Trip',
-    subtitle: 'Volcanic beaches, cliffside tea terraces, and the enduring spirit of the Haenyeo',
-    date: 'February 2026',
     readTime: '5 min read',
     heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'A 50-minute domestic hop from Seoul lands you on a volcanic island of emerald waters, tangerine orchards, and deep restorative quiet.',
-    content: `After four or five days in the bustling energy of Seoul, hopping on a quick domestic flight to Jeju Island offers the perfect natural counterpoint.
+    excerpt: 'While Sydney beaches bustle with surf culture, Tasmania’s northeast coastline offers miles of empty quartz sand and crystal-clear turquoise waters.',
+    curiosityHook: 'Why the brightest orange rocks in the southern hemisphere remain virtually deserted even in mid-summer.',
+    whyItMatters: 'Australia has over 10,000 beaches, and some of the most spectacular are in cool-climate island sanctuaries.',
+    howToExperience: 'Fly into Launceston, rent a car, and drive 2.5 hours east to Binalong Bay and the Bay of Fires conservation area.',
+    whatIsNearby: 'Pyengana dairy cheese farm, St Columba waterfall, and fresh oyster farms in St Helens.',
+    whereToStayEditorial: [
+      {
+        name: 'Freycinet Coastal Pavilion',
+        reason: 'Architectural timber eco-lodge set among eucalyptus trees overlooking the hazards.',
+        stayId: 'stay-australia-freycinet-lodge'
+      }
+    ],
+    content: `When people envision Australian beaches, they usually think of Bondi: bronze lifeguards, surfboards, crowded promenade cafés, and rows of beach towels.
 
-### The Volcanic Coastline
-Jeju’s landscape is shaped by ancient basalt lava flows meeting the Pacific. Along the Aewol and Gujwa coasts, black volcanic rocks create protected tide pools where turquoise waters lap against the shore.
+But on the northeast coast of Tasmania lies the Bay of Fires — a 50-kilometer coastline of blindingly white quartz sand, mirror-clear turquoise sea, and gigantic granite boulders coated in fiery orange lichen (*Hulyo*).
 
-### The Legendary Haenyeo
-Jeju is home to the Haenyeo — traditional female free-divers, many in their 70s and 80s, who dive up to 10 meters without oxygen tanks to harvest abalone, sea urchins, and octopus. Stopping at a small seaside shack to taste fresh seafood prepared right by the divers is one of the most culturally moving experiences in Korea.`,
-    relatedDestinationIds: ['south-korea'],
-    tags: ['South Korea', 'Jeju Island', 'Nature', 'Coastal']
-  },
-  {
-    id: 'story-korea-seoul-neighborhoods',
-    title: 'The Neighborhoods I\'d Explore in Seoul',
-    subtitle: 'A walking guide to Seochon, Yeonnam-dong, Ikseon-dong, and Hannam-dong',
-    date: 'January 2026',
-    readTime: '6 min read',
-    heroImage: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Seoul is a collection of distinct urban villages. Here is how to navigate the city’s most character-filled quarters on foot.',
-    content: `To truly understand Seoul, you have to explore its distinct neighborhood personalities on foot.
+### The Illusion of Fire
+The name "Bay of Fires" was not given for the orange rocks: in 1773, Captain Tobias Furneaux sailed past and saw the smoke of campfires lit by the indigenous Palawa people along the coast. Today, the fiery orange lichen that carpets the granite formations creates a surreal contrast against the azure ocean.
 
-### 1. Seochon: Heritage & Mindful Pacing
-Alleyways lined with traditional hanoks, artisan stationery shops, and tranquil courtyards. Perfect for peaceful morning walks and slow tea tastings.
-
-### 2. Yeonnam-dong: The Linear Park & Indie Culture
-Built along the converted Gyeongui Line Forest Park, Yeonnam-dong features charming two-story brick houses converted into independent dessert shops, vintage bookshops, and cozy wine bistros.
-
-### 3. Hannam-dong: Design & Sophistication
-Nestled between Namsan Mountain and the Han River, Hannam-dong is home to high-end design ateliers, contemporary art galleries like Leeum Museum, and serene café terraces.`,
-    relatedDestinationIds: ['south-korea'],
-    tags: ['South Korea', 'Seoul', 'Neighborhoods', 'Walking Guide']
-  },
-
-  // AUSTRALIA
-  {
-    id: 'story-australia-road-trip',
-    title: 'The Australian Road Trip I\'d Love to Take',
-    subtitle: 'From Sydney’s ocean cliffs through the eucalyptus rainforests down to Melbourne',
-    date: 'February 2026',
-    readTime: '6 min read',
-    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Editorial',
-    excerpt: 'Instead of flying between state capitals, driving the scenic coastal route reveals pristine white-sand beaches, wild kangaroos, and quiet coastal towns.',
-    content: `Most international visitors fly between Sydney and Melbourne in 90 minutes. But taking four or five days to drive the Grand Pacific Drive and the coastal route reveals the true soul of coastal Australia.
-
-### Highlights Along the Way:
-- **Sea Cliff Bridge:** A sweeping highway cantilevered over the Pacific waves.
-- **Jervis Bay:** Home to Hyams Beach, renowned for having some of the whitest sand in the world, where dolphins frequently swim just meters from the shore.
-- **Kangaroo Valley:** A lush green amphitheater surrounded by sandstone escarpments, historic timber bridges, and native wildlife.
-- **The Otways & Great Ocean Road:** Winding past ancient rainforest ferns, wild koalas resting in eucalyptus branches, and the dramatic limestone apostles standing in the Southern Ocean.`,
+### The Sound of Solitude
+You can walk along the sand at Binalong Bay for two hours in January (the height of Australian summer) and see only a pair of black swans gliding in the lagoon and a white-bellied sea eagle circling overhead. The air is officially recorded as the cleanest on earth. After a swim in the crisp Southern Ocean, drive inland for freshly churned cloth-bound cheddar at Pyengana Dairy.`,
     relatedDestinationIds: ['australia'],
-    tags: ['Australia', 'Road Trip', 'Coastal', 'Nature']
+    tags: ['Australia', 'Tasmania', 'Beaches', 'Hidden Places']
   },
   {
     id: 'story-australia-why-tasmania',
-    title: 'Why Tasmania Keeps Appearing on My Radar',
-    subtitle: 'Pristine cool-climate wilderness, world-class produce, and architectural sanctuaries',
-    date: 'March 2026',
-    readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    slug: 'why-tasmania-feels-like-another-country',
+    title: 'Why Tasmania Feels Like Another Country',
+    subtitle: 'Cool-climate rainforests, eccentric art at MONA, and roadside farm stands on the edge of the world',
+    category: 'Untold Stories',
+    date: 'February 2026',
+    readTime: '6 min read',
+    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'Tasmania has quietly become Australia’s most exciting culinary and wilderness destination.',
-    content: `Floating 240 kilometers south of mainland Australia, the island state of Tasmania feels like a world apart. With over 40% of its landmass protected as national parks and UNESCO World Heritage wilderness, Tasmania offers the purest air and water in the world.
+    excerpt: 'Floating south of mainland Australia, Tasmania combines prehistoric Gondwana rainforests, avant-garde art, and the world’s purest air.',
+    curiosityHook: 'How an isolated penal island transformed into the world’s most exciting culinary and creative sanctuary.',
+    whyItMatters: 'Tasmania moves at an entirely different tempo than Sydney or Melbourne: unhurried, community-rooted, and deeply wild.',
+    howToExperience: 'Spend 2 nights in historic Battery Point (Hobart), visit MONA by ferry, and take a 3-day road trip along the East Coast.',
+    whatIsNearby: 'Bruny Island artisan cheese and oysters, Mount Wellington summit lookout, and Wineglass Bay.',
+    content: `Floating 240 kilometers south of mainland Australia across the Bass Strait, Tasmania feels like a separate, enchanted realm. With over 40% of its landmass protected as national parks and UNESCO World Heritage wilderness, the island offers prehistoric Huon pine trees that have stood for 3,000 years.
 
-### The Cultural Provocation of MONA
-In Hobart, the subterranean Museum of Old and New Art (MONA) carved into sandstone cliffs redefined cultural tourism globally. Pair this with the historic Saturday Salamanca Market and dinner at intimate farm-to-table bistros in Battery Point.
+### The Cultural Wonder of MONA
+In Hobart, the Museum of Old and New Art (MONA) is carved 17 meters deep into triassic sandstone cliffs. Founded by eccentric mathematician and collector David Walsh, it is a subversive, subterranean labyrinth of contemporary art that challenges every museum convention.
 
-### The Pure Beauty of Freycinet
-On the east coast, the pink granite peaks of the Hazards overlook the perfect white crescent of Wineglass Bay. After a morning hike, feast on freshly shucked oysters and cool-climate Riesling right at the water’s edge.`,
+### Roadside Honesty Boxes
+What makes Tasmania unforgettable is its rural warmth. Driving through the Huon Valley or Coal River, you will find roadside tables piled with freshly picked cherries, homemade apple cider, and farm eggs with simple wooden money boxes and a note saying: "Leave $5 in the slot. Enjoy!"`,
     relatedDestinationIds: ['australia'],
-    tags: ['Australia', 'Tasmania', 'Freycinet', 'Culinary']
+    tags: ['Australia', 'Tasmania', 'Culture', 'Wilderness']
   },
 
-  // NEW ZEALAND
+  // ==========================================
+  // 8. NEW ZEALAND
+  // ==========================================
   {
-    id: 'story-nz-south-island-road-trip',
-    title: 'The South Island Road Trip That Keeps Calling',
-    subtitle: 'Through alpine passes, turquoise glacier lakes, and misty fiords',
+    id: 'story-nz-end-of-world-road',
+    slug: 'the-new-zealand-road-that-feels-like-the-end-of-the-world',
+    title: 'The New Zealand Road That Feels Like the End of the World',
+    subtitle: 'Driving the Milford Road through ancient beech forests and mist-covered glacier canyons',
+    category: 'Road Trips',
+    isHiddenStory: true,
     date: 'March 2026',
-    readTime: '7 min read',
+    readTime: '6 min read',
     heroImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'New Zealand’s South Island is one of the world’s ultimate driving journeys: uncrowded alpine highways, turquoise glacial waters, and profound wilderness.',
-    content: `There is a rare kind of freedom when driving New Zealand’s South Island. The roads are cinematic, passing from golden tussock plains beneath the snow-capped Southern Alps to prehistoric beech rainforests meeting sea fiords.
+    excerpt: 'State Highway 94 from Te Anau to Milford Sound is not just a drive; it is an epic alpine journey through primordial glacier-carved valleys.',
+    curiosityHook: 'Why the journey through the Homer Tunnel into Fiordland National Park will leave you breathless.',
+    whyItMatters: 'Most tourists take tour buses that rush through; driving yourself early in the morning lets you experience the Mirror Lakes in absolute silence.',
+    howToExperience: 'Depart Te Anau at 7:00 AM in a campervan or SUV, stop at the Eglinton Valley flats, and walk the Chasm trail.',
+    whatIsNearby: 'Mitre Peak, Sutherland Falls, and the Routeburn Track trailhead.',
+    whereToStayEditorial: [
+      {
+        name: 'Wanaka Eco Sanctuary',
+        reason: 'Secluded timber cabin with private cedar hot tubs looking out to Mount Aspiring.',
+        stayId: 'stay-nz-wanaka-luxury'
+      }
+    ],
+    content: `State Highway 94 — the 119-kilometer road connecting Te Anau to Milford Sound — is consistently ranked among the most scenic alpine drives on the planet.
 
-### The Route:
-1. **Christchurch to Lake Tekapo & Mount Cook:** Marvel at the milky turquoise waters fed by glacier flour and stay in the Dark Sky reserve.
-2. **Lindis Pass to Lake Wanaka:** Descend through dramatic golden tussock valleys into the alpine serenity of Wanaka.
-3. **The Milford Road to Fiordland:** Drive through the Homer Tunnel into the primordial grandeur of Milford Sound, where sheer granite cliffs rise 1,200 meters out of black deep water.`,
+### The Eglinton Valley
+Leaving Te Anau, the road opens onto the vast golden tussock plains of the Eglinton Valley. Steep beech-covered mountains rise straight up on both sides, carved flat by glaciers thousands of years ago. In morning mist, the silence here is so profound that the only sound is the call of native Tūī birds echoing across the valley floor.
+
+### The Homer Tunnel: Gateway to Fiordland
+At the head of the valley, the road climbs toward the 1,270-meter Darran Mountains before entering the rough-hewn, single-lane Homer Tunnel, hand-drilled through solid granite over twenty years.
+
+When you emerge on the western side of the tunnel, the transformation is staggering: sheer vertical rock faces drop 1,000 meters straight down into lush subtropical rainforest, with hundreds of temporary silver waterfalls cascading through the clouds after rain. It feels less like driving and more like entering the earth at its moment of creation.`,
     relatedDestinationIds: ['new-zealand'],
-    tags: ['New Zealand', 'South Island', 'Road Trip', 'Milford Sound']
+    tags: ['New Zealand', 'Road Trip', 'Fiordland', 'Milford Sound', 'Hidden Stories']
   },
   {
-    id: 'story-nz-where-to-slow-down',
-    title: 'Where I\'d Slow Down in New Zealand',
-    subtitle: 'Why Lake Wanaka and the Marlborough Sounds reward an unhurried stay',
+    id: 'story-nz-color-changing-lake',
+    slug: 'the-lake-that-changes-color',
+    title: 'The Lake That Changes Color',
+    subtitle: 'Why Lake Pukaki and Lake Tekapo radiate an otherworldly turquoise glow under alpine sunlight',
+    category: 'Did You Know?',
     date: 'February 2026',
     readTime: '5 min read',
     heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&h=1350&q=80',
     author: 'TravelHideouts Editorial',
-    excerpt: 'Rather than changing hotels every night, choosing two deeply tranquil bases unlocks New Zealand’s restorative power.',
-    content: `New Zealand’s natural grandeur is best experienced when you stop rushing. 
+    excerpt: 'When you first see Lake Pukaki, the intense milky turquoise hue looks artificial. The explanation is pure geological alchemy.',
+    curiosityHook: 'How giant ancient glaciers grind bedrock into microscopic dust that scatters sunlight across the Southern Alps.',
+    whyItMatters: 'Standing on the shore of Lake Pukaki looking towards Mount Cook (Aoraki) offers one of the purest vistas in the southern hemisphere.',
+    howToExperience: 'Stop at Peter’s Lookout on the western shore of Lake Pukaki at midday when the high sun makes the turquoise color peak in intensity.',
+    whatIsNearby: 'Mount Cook Village, Hooker Valley swing bridges, and Mount John astronomical observatory.',
+    content: `When travelers share photos of Lake Pukaki and Lake Tekapo in New Zealand’s South Island, friends often accuse them of boosting color saturation sliders. The water is an electric, milky turquoise that seems physically impossible.
 
-### Lake Wanaka: The Soulful Alternative
-While neighboring Queenstown bustles with tour buses and jet boats, Wanaka offers a much more relaxed, community-centered pace. Spend your days hiking the Rob Roy Glacier trail, browsing independent bookstores, and soaking in a cedar hot tub with views of Mount Aspiring.
+### The Physics of Glacial Flour
+The secret lies at the head of the lakes, where the Tasman and Hooker glaciers slowly grind down greywacke and schist bedrock into an ultra-fine mineral powder known as "glacial flour" or rock flour.
 
-### The Marlborough Sounds: Accessible Only by Water
-At the top of the South Island, the drowned river valleys of the Marlborough Sounds are accessible only by boat. Staying in a secluded timber lodge in Kenepuru Sound means listening to native bellbirds and kayaking through bioluminescent waters at night.`,
+These microscopic rock particles are so light that they remain suspended in the cold glacier meltwater without settling to the bottom. When sunlight enters the water, the suspended particles absorb longer red and orange wavelengths while scattering short blue and turquoise wavelengths directly back into the sky.
+
+### Stargazing in the Dark Sky Reserve
+At night, the spectacle shifts to the sky. Lake Tekapo sits inside the Aoraki Mackenzie International Dark Sky Reserve. With zero city light pollution and dry mountain air, you can lie beside the turquoise waters and see the galactic core of the Milky Way, the Magellanic Clouds, and shooting stars with crystal-clear clarity.`,
     relatedDestinationIds: ['new-zealand'],
-    tags: ['New Zealand', 'Wanaka', 'Marlborough Sounds', 'Slow Travel']
+    tags: ['New Zealand', 'Lakes', 'Geology', 'Did You Know']
+  },
+
+  // ==========================================
+  // 9. JAPAN
+  // ==========================================
+  {
+    id: 'story-japan-grass-roof-village',
+    slug: 'the-japanese-village-where-houses-have-grass-roofs',
+    title: 'The Japanese Village Where Houses Have Grass Roofs',
+    subtitle: 'In Shirakawa-go and Gokayama, steep thatched farmhouses survive brutal mountain blizzards through communal bonds',
+    category: 'Architecture',
+    isHiddenStory: true,
+    date: 'March 2026',
+    readTime: '6 min read',
+    heroImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    authorName: 'Yuki Tanaka',
+    authorRole: 'Cultural Heritage Writer',
+    excerpt: 'Deep in the Japanese Alps, ancient wooden farmhouses with 60-degree thatched roofs resemble hands folded in prayer.',
+    curiosityHook: 'How an isolated mountain community engineered homes to survive four meters of heavy winter snowfall without nails.',
+    whyItMatters: 'The architectural style (Gassho-zukuri) and the communal re-thatching ritual (Yui) represent a rare harmony of engineering and human solidarity.',
+    howToExperience: 'Stay overnight in an authentic family-run Gassho-zukuri minshuku in Gokayama or Shirakawa-go, enjoying mountain vegetable kaiseki beside an open hearth.',
+    whatIsNearby: 'Takayama Edo merchant town, Hida folk village, and Kurobe Gorge.',
+    whereToStayEditorial: [
+      {
+        name: 'Gora Kadan / Kurokawa Ryokan',
+        reason: 'Centuries-old hot spring sanctuary with private forest rotenburo open-air baths.',
+        stayId: 'stay-japan-kyoto-ryokan'
+      }
+    ],
+    content: `In the Shogawa River valley of Gifu Prefecture, the winters are legendary: up to four meters of heavy, wet snow blanket the mountains between December and March. 
+
+To survive in this remote alpine valley, 18th-century villagers developed an architectural style seen nowhere else on earth: *Gassho-zukuri* (constructed like hands folded in prayer).
+
+### 60-Degree Thatched Roofs
+The roofs of these four-story timber houses are angled at an extreme 60 degrees. This steep pitch allows heavy mountain snow to slide off before its crushing weight can damage the structural beams. The entire timber frame was constructed without a single metal nail, lashed together using wild wisteria vines (*kouso*) that flex under wind and seismic vibration.
+
+### The Sacred Spirit of Yui
+The most moving aspect of Shirakawa-go is not just the architecture, but *Yui* — the unwritten social contract of mutual aid. A thatched roof lasts about 30 to 40 years. When a roof needs replacing, the entire village (over 100 neighbors) gathers at dawn. Working in synchronized harmony, they strip and re-thatch the massive roof in a single day.
+
+Staying overnight in a traditional minshuku, sleeping on tatami mats beneath century-old cedar beams with the scent of wild mountain tea and woodsmoke in the air, is an unforgettable immersion into old Japan.`,
+    relatedDestinationIds: ['japan'],
+    tags: ['Japan', 'Architecture', 'Shirakawa-go', 'Traditions', 'Hidden Stories']
   },
   {
-    id: 'story-nz-what-travelers-say',
-    title: 'What Travelers Say About New Zealand',
-    subtitle: 'Verified advice on driving times, campervan realities, and biosecurity protocols',
-    date: 'March 2026',
+    id: 'story-japan-konbini-magic',
+    slug: 'why-japanese-convenience-stores-are-surprisingly-good',
+    title: 'Why Japanese Convenience Stores Are Surprisingly Good',
+    subtitle: 'The culinary perfection of tamago sandos, onigiri craftsmanship, and why konbini are cultural sanctuaries',
+    category: 'Food',
+    date: 'February 2026',
     readTime: '5 min read',
-    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
-    author: 'TravelHideouts Community Research',
-    excerpt: 'Key insights from r/newzealand travelers on pacing, gravel roads, and high-SPF sun protection.',
-    content: `Here is what experienced travelers on r/newzealand and independent forums consistently emphasize:
+    heroImage: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'In Japan, convenience stores (konbini) are not grim roadside gas stops; they are culinary sanctuaries of fresh gastronomy.',
+    curiosityHook: 'Why Michelin-starred chefs land at Tokyo airports and immediately head to the nearest 7-Eleven or Lawson.',
+    whyItMatters: 'Konbini provide safe, fresh, high-quality, and deeply comforting meals at any hour of the day or night.',
+    howToExperience: 'Pick up an egg salad sandwich (Tamago Sando), a warm tuna-mayo onigiri with crispy nori, and hot canned Boss coffee for an early morning train ride.',
+    whatIsNearby: 'Tokyo Station Shinkansen platforms and Kyoto Machiya alleys.',
+    content: `To anyone who grew up in the West, the idea of eating a meal from a convenience store usually brings up images of stale hot dogs and wilted sandwiches under fluorescent lights.
 
-### 1. Double Your Estimated Driving Time
-New Zealand highways are mostly single-lane, winding roads through mountain passes. A distance of 150 km can easily take 3 to 4 hours, especially when you factor in scenic viewpoints and photography stops.
+In Japan, the *konbini* (7-Eleven, Lawson, FamilyMart) is a marvel of culinary logistics and cultural care.
 
-### 2. High-Strength Sun Protection
-Due to clear skies and ozone layers, the UV index in New Zealand is exceptionally intense even on cool, breezy days. Applying high-SPF sunscreen is essential within 15 minutes of being outside.
+### The Legend of the Tamago Sando
+The Japanese egg salad sandwich (*Tamago Sando*) is a work of minimalist perfection: creamy, rich egg yolks whipped with Japanese Kewpie mayonnaise and a touch of dashi, encased in pillowy white milk bread (*shokupan*) with crusts meticulously trimmed off. World-famous chefs including Anthony Bourdain have described it as one of the finest bites of food on earth.
 
-### 3. Strict Biosecurity on Arrival
-Declare every pair of hiking boots, tents, and food items at airport customs. New Zealand strictly protects its native ecosystem and biosecurity officers inspect shoe treads for soil. Clean your boots thoroughly before packing!`,
-    relatedDestinationIds: ['new-zealand'],
-    tags: ['New Zealand', 'Traveler Voices', 'Road Trip Tips', 'Biosecurity']
+### The Three-Times-a-Day Restock
+The secret to konbini quality is precision logistics: stores receive fresh deliveries of onigiri, bento boxes, and seasonal parfaits three to four times every day. 
+
+The triangular seaweed wrap on onigiri is protected by a patented dual-layer plastic film that keeps the roasted nori crisp until the exact second you pull the red tear-strip. It is everyday design respect at its finest.`,
+    relatedDestinationIds: ['japan'],
+    tags: ['Japan', 'Food', 'Culture', 'Did You Know']
+  },
+  {
+    id: 'story-japan-train-over-flight',
+    slug: 'the-train-journey-id-take-instead-of-flying',
+    title: "The Train Journey I'd Take Instead of Flying",
+    subtitle: 'Riding the Hokuriku Shinkansen through snow-covered mountain passes to the craft city of Kanazawa',
+    category: 'Road Trips',
+    date: 'March 2026',
+    readTime: '6 min read',
+    heroImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80',
+    pinterestImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&h=1350&q=80',
+    author: 'TravelHideouts Editorial',
+    excerpt: 'Gliding across the Japanese Alps at 260 km/h with an ekiben bento box on your lap is the gold standard of world travel.',
+    curiosityHook: 'Why Japanese bullet trains make airport security lines and domestic flights feel completely obsolete.',
+    whyItMatters: 'The Shinkansen is punctual to the second, whisks you from city center to city center, and offers panoramic mountain views.',
+    howToExperience: 'Book seat E (for Mount Fuji views on Tokaido lines) and buy an artisan regional Ekiben bento box from the Gransta food hall in Tokyo Station.',
+    whatIsNearby: 'Kenroku-en garden in Kanazawa, Higashi Chaya geisha district, and 21st Century Museum of Contemporary Art.',
+    content: `There is no travel ritual on earth more civilized than boarding a Japanese Shinkansen bullet train at Tokyo Station.
+
+### The Ekiben Ritual
+Before heading to the platform, spend twenty minutes in Tokyo Station’s *Matsuri* or *Gransta* food halls. Here, hundreds of beautifully packaged *Ekiben* (railway bento boxes) showcase regional specialties: grilled salmon from Niigata, Kagoshima black pork, and Matsusaka beef over seasoned rice.
+
+### Gliding Through the Alps
+As the Kagayaki bullet train glides out of Tokyo, the city skyscrapers quickly give way to terraced green hills, cedar forests, and snow-dusted peaks. The train moves at 260 km/h with such smooth magnetic stability that a coin placed on its edge on the windowsill will remain standing.
+
+In just two and a half hours, you step off in Kanazawa — the historic craft capital of gold leaf, samurai quarters, and Kenroku-en, one of Japan's three great classical landscape gardens.`,
+    relatedDestinationIds: ['japan'],
+    tags: ['Japan', 'Shinkansen', 'Trains', 'Slow Travel']
   }
-].map((st: any): Story => ({
-  ...st,
-  authorName: st.authorName || (st.author?.includes('Editorial') ? 'Miley Rocha' : st.author || 'Miley Rocha'),
-  authorRole: st.authorRole || (st.author?.includes('Editorial') ? 'Founder & Travel Editor' : 'Research Contributor'),
-  image: (st as any).image || st.heroImage,
-  heroImage: st.heroImage || (st as any).image
-}));
+];

@@ -6,6 +6,20 @@ export type EditorialLabel =
   | 'On my list'
   | 'Research pick';
 
+export type StoryCategory =
+  | 'Hidden Places'
+  | 'Untold Stories'
+  | 'Did You Know?'
+  | 'Local Traditions'
+  | 'Nature'
+  | 'Food'
+  | 'Culture'
+  | 'Road Trips'
+  | 'Solo Travel'
+  | "Girls' Trips"
+  | 'Travel Tips'
+  | 'Seasonal Travel';
+
 export type HideoutCategory = 
   | 'Beach'
   | 'City'
@@ -37,6 +51,26 @@ export type ExperienceCategory =
   | 'Wellness'
   | 'Nightlife'
   | 'Local experiences';
+
+export interface DidYouKnowFact {
+  id?: string;
+  fact: string;
+  context: string;
+  source?: string;
+  category?: string;
+}
+
+export interface HiddenStory {
+  id: string;
+  title: string;
+  teaser: string;
+  category: string;
+  destinationId: string;
+  destinationName?: string;
+  image?: string;
+  readTime?: string;
+  storyId?: string;
+}
 
 export interface TravelerVoice {
   id: string;
@@ -124,6 +158,7 @@ export interface Destination {
   name: string;
   country: string;
   tag: string;
+  emotionalStatement?: string;
   heroImage: string;
   image?: string;
   blurb: string;
@@ -155,11 +190,21 @@ export interface Destination {
     eveningWalkingAdvice: string;
   };
   goodToKnow: string[];
+  didYouKnow?: DidYouKnowFact[];
+  hiddenStories?: HiddenStory[];
   femaleTravelNotes: {
     generalVibe: string;
     eveningAtmosphere: string;
     arrivalTips: string;
     neighborhoodAdvice: string;
+  };
+  soloTravelAdvice?: {
+    headline: string;
+    tips: { title: string; advice: string }[];
+  };
+  girlsTripInspiration?: {
+    headline: string;
+    ideas: { title: string; desc: string; tag: string }[];
   };
   relatedHideoutIds: string[];
   relatedStayIds: string[];
@@ -172,8 +217,10 @@ export interface Story {
   slug?: string;
   title: string;
   subtitle: string;
+  category?: StoryCategory | string;
   heroImage: string;
   image?: string;
+  pinterestImage?: string;
   author?: string;
   authorName?: string;
   authorRole?: string;
@@ -182,6 +229,16 @@ export interface Story {
   excerpt: string;
   intro?: string;
   content?: string;
+  curiosityHook?: string;
+  whyItMatters?: string;
+  howToExperience?: string;
+  whatIsNearby?: string;
+  whereToStayEditorial?: {
+    name: string;
+    reason: string;
+    stayId?: string;
+    stay22Url?: string;
+  }[];
   sections?: {
     heading?: string;
     title?: string;
@@ -193,6 +250,8 @@ export interface Story {
     imageCaption?: string;
   }[];
   tags?: string[];
+  isFeatured?: boolean;
+  isHiddenStory?: boolean;
   travelerVoiceIds?: string[];
   relatedHideoutIds?: string[];
   relatedDestinationIds?: string[];

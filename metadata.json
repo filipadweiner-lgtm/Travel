@@ -1,6 +1,6 @@
 {
   "name": "TravelHideouts",
-  "description": "A curated, female-led travel discovery platform sharing atmospheric hideouts, boutique stays, practical guides, and authentic traveler community voices.",
+  "description": "An independent female-curated travel publication discovering curiosity-driven stories, hidden places, honest travel guides, and traveler community insights across 9 destinations.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
