@@ -1,5 +1,13 @@
 import { Destination } from '../types';
+import icelandImg from '../assets/images/iceland_black_sand_raw_1786970961856.jpg';
+import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_1786971038343.jpg';
+import switzerlandImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
 import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
+import swedenImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
+import chinaImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import australiaImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
+import newZealandImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
+import japanImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';
 
 export const DESTINATIONS: Destination[] = [
   // 1. ICELAND
@@ -10,7 +18,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Iceland',
     tag: 'Black volcanic sands, quiet geothermal pools & vast arctic light',
     emotionalStatement: "The country that makes you feel like you've landed on another planet.",
-    heroImage: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80',
+    heroImage: icelandImg,
+    image: icelandImg,
     blurb: 'A landscape of elemental contrast where steaming hot springs cut through glacial plains, dramatic sea cliffs host nesting puffins, and silence stretches for unbroken miles.',
     openingEditorial: "Iceland is less about visiting individual attractions and more about letting your internal clock adjust to weather, daylight, and sheer geographic scale. Outside Reykjavík, civilization drops away quickly into moss-covered lava fields, cascading waterfalls, and obsidian shorelines. If I were planning this trip, I'd rent a reliable 4x4, focus deeply on the South Coast and Snæfellsnes, and build afternoons around hot spring soaks as weather rolls across the plains.",
     whereIWouldStay: 'A secluded timber cabin along the South Coast near Vík or an unhurried fjord guesthouse in the Snæfellsnes Peninsula.',
@@ -202,7 +211,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Liechtenstein',
     tag: 'Alpine valleys, storybook castles & border-crossing mountain trails',
     emotionalStatement: 'The tiny Alpine principality with its own quiet majesty and fairy-tale peaks.',
-    heroImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1600&q=80',
+    heroImage: liechtensteinImg,
+    image: liechtensteinImg,
     blurb: 'Nestled between Switzerland and Austria, Liechtenstein is a micro-state of extraordinary charm: timber-chalet mountain villages, terraced Rhine vineyards, and dramatic hiking ridges.',
     openingEditorial: "Liechtenstein is often dismissed as a mere transit stamp on a passport, but staying here reveals an intimate Alpine wonderland. High above the Rhine Valley in the mountain village of Malbun, cows graze in wildflower meadows framed by limestone peaks. What I love about Liechtenstein is its unhurried scale: you can cross from quiet vineyards to high mountain trails in under twenty minutes.",
     whereIWouldStay: 'A traditional family-run Alpine chalet in Malbun or a boutique vineyard guesthouse near Vaduz.',
@@ -374,7 +384,7 @@ export const DESTINATIONS: Destination[] = [
     relatedHideoutIds: ['hideout-liechtenstein-malbun-chalet', 'hideout-switzerland-lauterbrunnen-chalet'],
     relatedStayIds: ['stay-liechtenstein-vaduz-boutique', 'stay-switzerland-zermatt-mountain'],
     relatedStoryIds: ['story-liechtenstein-walk-across', 'story-liechtenstein-mountain-village', 'story-switzerland-car-free-villages'],
-    relatedGuideIds: ['guide-switzerland-train-journeys']
+    relatedGuideIds: ['guide-liechtenstein-alpine-trails-transit']
   },
 
   // 3. SWITZERLAND
@@ -385,7 +395,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Switzerland',
     tag: 'Car-free alpine villages, crystal lakes & panoramic mountain railways',
     emotionalStatement: 'Where engineering meets alpine poetry and quiet mountain chalets.',
-    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80',
+    heroImage: switzerlandImg,
+    image: switzerlandImg,
     blurb: 'Towering granite peaks, pristine turquoise lakes, car-free timber villages like Mürren and Zermatt, and the world’s most scenic public railway system.',
     openingEditorial: "Switzerland is so much more than luxury watches and postcard clichés. Its true magic is found in the quiet moments: the sound of cowbells drifting through misty pine forests in Gimmelwald, the silence of stepping off a mountain train onto crunchy snow at 2,000 meters, and sharing a pot of bubbly Gruyère fondue in a centuries-old timber stube. If I were planning this trip, I'd skip the tour buses, buy a Swiss Travel Pass, and base in car-free mountain villages where the only sound is melting glacier water.",
     whereIWouldStay: 'A historic wooden chalet in car-free Mürren or a boutique lakefront retreat on Lake Lucerne.',
@@ -762,7 +773,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Sweden',
     tag: 'Minimalist design, serene archipelago islands & arctic forest retreats',
     emotionalStatement: 'Understated Nordic elegance, island calm, and the sacred ritual of fika.',
-    heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1600&q=80',
+    heroImage: swedenImg,
+    image: swedenImg,
     blurb: 'A masterclass in understated elegance: pine forests meeting peaceful archipelagos, candlelit fika rituals in old wooden bakeries, and clean Nordic craftsmanship.',
     openingEditorial: "Sweden embodies the philosophy of *lagom* — just the right amount. There is an effortless balance between refined city culture and immediate access to pristine nature. In Stockholm, you can enjoy world-class contemporary galleries in the morning and be kayaking through quiet granite islands by the afternoon. If I were planning this trip, I'd balance three days exploring Stockholm's bakeries and ceramics studios with an escape to an archipelago cabin or a subarctic forest lodge in Abisko.",
     whereIWouldStay: 'A quiet design hotel in Stockholm’s Södermalm or Skeppsholmen, or a secluded timber cabin in Swedish Lapland near Abisko or Kiruna.',
@@ -950,7 +962,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'China',
     tag: 'Ancient river towns, dramatic karst peaks & high-speed rail journeys',
     emotionalStatement: 'Where ancient tea traditions meet breathtaking karst mountains and swift high-speed rails.',
-    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80',
+    heroImage: chinaImg,
+    image: chinaImg,
     blurb: 'A destination of staggering historical depth and natural wonder: from mist-shrouded limestone towers in Yangshuo to tranquil classical gardens in Suzhou and futuristic high-speed rail networks.',
     openingEditorial: "Traveling through China today is a mesmerizing contrast of ancient traditions and hyper-modern infrastructure. The high-speed rail network makes gliding past mountain landscapes effortless, while morning walks through traditional courtyard hutongs and riverside tea houses offer glimpses of everyday life that have endured for centuries. If I were planning this trip, I'd balance the classical hutong lanes of Beijing with a slow bamboo raft drift through the limestone karst peaks of Yangshuo and a visit to the ancient water towns.",
     whereIWouldStay: 'A restored Qing-dynasty courtyard hotel in Beijing’s Dongcheng district, or a quiet boutique retreat nestled among bamboo groves and karst mountains along the Yulong River in Yangshuo.',
@@ -1138,7 +1151,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Australia',
     tag: 'Coastal ocean pools, pristine wilderness & laid-back design sanctuaries',
     emotionalStatement: 'Where endless sunlit coastlines meet eucalyptus forests and ocean pools.',
-    heroImage: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1600&q=80',
+    heroImage: australiaImg,
+    image: australiaImg,
     blurb: 'Epic coastlines, golden surf beaches, ancient eucalyptus forests, world-class café culture, and remote island sanctuaries like Tasmania.',
     openingEditorial: "Australia’s travel magic lies in its connection to the outdoors. Life is lived facing the ocean and the sun: early morning swims in ocean tidal pools carved into sandstone cliffs, perfectly poured flat whites in breezy neighborhood cafés, and coastal road trips where wild beaches stretch on for unbroken miles. If I were planning this trip, I'd combine the coastal walks and bakery culture of Sydney and Melbourne with an unhurried road trip across Tasmania's wild East Coast.",
     whereIWouldStay: 'A sandstone boutique guesthouse in Sydney’s Paddington or Bronte, or a timber architectural pavilion surrounded by coastal forest on Freycinet Peninsula in Tasmania.',
@@ -1326,7 +1340,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'New Zealand',
     tag: 'Alpine fiords, turquoise glacier lakes & quiet campervan routes',
     emotionalStatement: 'A pristine sanctuary of glacial lakes, ancient forests, and boundless freedom.',
-    heroImage: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80',
+    heroImage: newZealandImg,
+    image: newZealandImg,
     blurb: 'Majestic Southern Alps, emerald rainforests cascading down to coastal fiords, ancient Maori heritage, and wide-open roads made for unhurried journeys.',
     openingEditorial: "New Zealand (Aotearoa) is a sanctuary for the soul. The landscape here has a cinematic grandeur that feels untouched by modern haste. Whether you are driving past turquoise glacial lakes under the shadow of Aoraki / Mount Cook, or listening to native bellbirds in the beech forests of Wanaka, the feeling of freedom is palpable. If I were planning this trip, I'd rent a campervan or small SUV, focus on the South Island's alpine valleys, and give myself time to sit by silent lakes at sunrise.",
     whereIWouldStay: 'A secluded eco-cabin overlooking Lake Wanaka with wood-fired cedar hot tubs, or a boutique historic lodge in the Marlborough Sounds accessible only by water taxi.',
@@ -1514,7 +1529,8 @@ export const DESTINATIONS: Destination[] = [
     country: 'Japan',
     tag: 'Mountain onsens, quiet thatched villages & meditative temple gardens',
     emotionalStatement: 'Where quiet craftsmanship, moss-covered shrines, and hot spring ryokans soothe the spirit.',
-    heroImage: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80',
+    heroImage: japanImg,
+    image: japanImg,
     blurb: 'A realm of profound aesthetic nuance: steaming forest onsens, preserved Edo-period post towns, serene bamboo groves, and the quiet precision of everyday craftsmanship.',
     openingEditorial: "Japan is a masterclass in mindfulness and aesthetic respect. Beyond the neon spectacle of Tokyo lies a deeply tranquil country: wooden ryokans where mineral hot springs steam beneath cedar canopies, moss gardens tended with tiny bamboo brooms, and family-run kissaten cafés serving pour-over coffee with surgical precision. If I were planning this trip, I'd spend three days in Kyoto's quieter temple lanes before heading into the Japanese Alps to stay in a traditional mountain onsen ryokan.",
     whereIWouldStay: 'A traditional family-run ryokan with private cedar onsen baths in Kurokawa Onsen (Kyushu) or a restored machiya townhouse in Kyoto’s quiet Gion-Minami quarter.',

@@ -119,6 +119,29 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
         ))}
       </div>
 
+      {/* Field Checklist & Practical Notes */}
+      {guide.femaleTravelChecklist && guide.femaleTravelChecklist.length > 0 && (
+        <div className="p-7 md:p-8 rounded-[28px] bg-[#FAF8F3] border border-[#E9E5D9] shadow-xs space-y-4">
+          <div className="flex items-center gap-2 text-xs font-bold text-[#8FA18B] uppercase tracking-widest">
+            <CheckCircle2 className="w-4 h-4 text-[#8FA18B]" />
+            <span>Essential Field Checklist & Safety Notes</span>
+          </div>
+          <h3 className="text-xl font-serif font-bold text-[#434338]">
+            Practical Essentials for {destinationName}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-2">
+            {guide.femaleTravelChecklist.map((item, idx) => (
+              <div key={idx} className="p-4 rounded-2xl bg-white border border-[#E9E5D9] text-xs text-[#5A5A40] flex items-start gap-3 shadow-2xs">
+                <span className="w-5 h-5 rounded-full bg-[#8FA18B]/15 text-[#8FA18B] flex items-center justify-center font-bold text-[11px] shrink-0 mt-0.5">
+                  {idx + 1}
+                </span>
+                <span className="leading-relaxed">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Traveler Voices */}
       {relevantVoices.length > 0 && (
         <section className="space-y-4 pt-6 border-t border-[#E9E5D9]">

@@ -1,13 +1,31 @@
 import { Hideout } from '../types';
+import icelandBlackSandImg from '../assets/images/iceland_black_sand_raw_1786970961856.jpg';
+import icelandTurfImg from '../assets/images/iceland_turf_house_field_1786971149571.jpg';
+import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_1786971038343.jpg';
+import swissMurrenImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
+import swissTrainImg from '../assets/images/swiss_train_scenic_window_1786971618391.jpg';
+import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
+import norwayFjordFerryImg from '../assets/images/norway_fjord_ferry_deck_1786971648308.jpg';
+import swedenArchipelagoImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
+import swedenFikaImg from '../assets/images/sweden_fika_cardamom_coffee_1786971159560.jpg';
+import chinaYangshuoImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import chinaGreatWallImg from '../assets/images/china_great_wall_mist_1786971918716.jpg';
+import australiaFreycinetImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
+import australiaOceanPoolImg from '../assets/images/australia_ocean_pool_1786971907577.jpg';
+import newZealandWanakaImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
+import japanMachiyaImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';
+import japanShirakawagoImg from '../assets/images/japan_shirakawago_village_1786971171228.jpg';
 
 export const HIDEOUTS: Hideout[] = [
+  // 1. ICELAND
   {
     id: 'hideout-iceland-south-cabin',
     title: 'The Black Sand Sanctuary',
     category: 'Mountain',
     location: 'Vík í Mýrdal, Iceland',
     destinationId: 'iceland',
-    heroImage: 'https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80',
+    heroImage: icelandBlackSandImg,
+    image: icelandBlackSandImg,
     excerpt: 'A minimalist cedar-and-glass cabin positioned against volcanic basalt hills with unobstructed views of arctic waves.',
     summary: 'A private cedar architectural cabin nestled into the green basalt hillside overlooking the famous black sand coastline of Vík.',
     description: 'Tucked into the green slopes above Vík, this private architectural cabin combines dark timber interiors, floor-to-ceiling glass framing the Reynisdrangar sea stacks, and a geothermal outdoor soaking tub.',
@@ -37,7 +55,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Hidden Gems',
     location: 'Grundarfjörður, Snæfellsnes, Iceland',
     destinationId: 'iceland',
-    heroImage: 'https://images.unsplash.com/photo-1529963183134-61a90db47eaf?auto=format&fit=crop&w=1200&q=80',
+    heroImage: icelandTurfImg,
+    image: icelandTurfImg,
     excerpt: 'A secluded timber loft overlooking quiet fjord waters beneath the silhouette of Kirkjufell mountain.',
     summary: 'An intimate timber loft sanctuary offering calm fjord reflections and front-row views of Mount Kirkjufell.',
     description: 'An intimate hideaway designed for travelers who want to escape the crowded tour routes. Wake up to calm fjord reflections, passing seabirds, and total acoustic tranquility.',
@@ -60,13 +79,110 @@ export const HIDEOUTS: Hideout[] = [
     pricePerNight: 'From €210 / night',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
+
+  // 2. LIECHTENSTEIN
+  {
+    id: 'hideout-liechtenstein-malbun-chalet',
+    title: 'Malbun Alpine Valley Refuge',
+    category: 'Mountain',
+    location: 'Malbun, Triesenberg, Liechtenstein',
+    destinationId: 'liechtenstein',
+    heroImage: liechtensteinImg,
+    image: liechtensteinImg,
+    excerpt: 'A handcrafted stone-and-larch chalet in the high mountain bowl of Malbun at 1,600 meters elevation.',
+    summary: 'A quiet alpine chalet nestled above the cloud line with direct access to the Fürstensteig trail and mountain meadows.',
+    description: 'Perched in the tranquil car-limited alpine amphitheater of Malbun, this traditional timber chalet offers wood-fired heating, panoramic balcony views of the Three Sisters peaks, and total starry silence at night.',
+    authorTake: 'Stepping onto the balcony at sunrise to hear the distant chime of cowbells through the morning mist with the entire Rhine Valley sleeping far below is pure peace.',
+    whySpecial: 'True high-alpine solitude in one of Europe’s smallest principalities, surrounded by pristine nature.',
+    goodToKnow: 'LIEmobil buses connect Vaduz directly to Malbun center every hour; no car required.',
+    vibe: 'Unspoiled alpine peace and crisp mountain air',
+    bestFor: ['Alpine hikers', 'Quiet writers', 'Solo mountain walks'],
+    wouldGoBack: 'Yes',
+    editorialLabel: 'Firsthand visit',
+    priceTier: '€€',
+    travelerVoiceId: 'tv-liechtenstein-alpine-bus',
+    highlights: [
+      'Direct trailhead access to the Fürstensteig mountain path',
+      'Traditional larch-wood interior with cast-iron stove',
+      'Panoramic terrace overlooking Austrian and Swiss peaks',
+      'Steps to local mountain dairy with fresh Bergkäse'
+    ],
+    amenities: ['Mountain View', 'Wood Stove', 'Balcony', 'Wi-Fi', 'Kitchenette', 'Bus Stop Nearby'],
+    pricePerNight: 'From €185 / night',
+    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
+  },
+
+  // 3. SWITZERLAND
+  {
+    id: 'hideout-switzerland-lauterbrunnen-chalet',
+    title: 'Mürren Cliffside Timber Chalet',
+    category: 'Mountain',
+    location: 'Mürren (Car-Free), Bernese Oberland, Switzerland',
+    destinationId: 'switzerland',
+    heroImage: swissMurrenImg,
+    image: swissMurrenImg,
+    excerpt: 'A car-free wooden chalet perched on the 800-meter vertical cliff edge facing the Eiger, Mönch, and Jungfrau.',
+    summary: 'A car-free alpine chalet refuge perched above the Lauterbrunnen valley with front-row views of the iconic trio.',
+    description: 'Accessible only by cable car and mountain rail, this traditional Bernese Oberland chalet features sun-bleached spruce wood, down duvets, and an unobstructed private balcony facing the glaciers of the Jungfrau massif.',
+    authorTake: 'Sitting on the wooden porch in absolute silence with zero engine noise, watching the afternoon sun illuminate the ice walls of the Jungfrau, is something you will remember for the rest of your life.',
+    whySpecial: '100% car-free alpine air with front-row mountain views and direct walking trails to alpine cheese farms.',
+    goodToKnow: 'Your Swiss Travel Pass covers all transit up to Mürren; luggage carts are available at the mountain station.',
+    vibe: 'Car-free serenity and staggering glacier panoramas',
+    bestFor: ['Solo travelers', 'Train enthusiasts', 'Alpine walkers'],
+    wouldGoBack: 'Yes',
+    editorialLabel: 'Firsthand visit',
+    priceTier: '€€€',
+    travelerVoiceId: 'tv-switzerland-train-rhythm',
+    highlights: [
+      'Car-free village position with zero road traffic',
+      'Unobstructed panoramic balcony facing the Jungfrau',
+      'Steps from the cliff walk to Gimmelwald',
+      'Traditional fondue and raclette setup in kitchen'
+    ],
+    amenities: ['Glacier Views', 'Balcony', 'Fondue Set', 'High-Speed Wi-Fi', 'Floor Heating'],
+    pricePerNight: 'From €290 / night',
+    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
+  },
+  {
+    id: 'hideout-switzerland-zermatt-loft',
+    title: 'Zermatt Pine & Matterhorn Loft',
+    category: 'Boutique',
+    location: 'Zermatt (Winkelmatten), Switzerland',
+    destinationId: 'switzerland',
+    heroImage: swissTrainImg,
+    image: swissTrainImg,
+    excerpt: 'An architect-designed larch-wood loft in the peaceful historic Winkelmatten hamlet with Matterhorn views.',
+    summary: 'A peaceful timber penthouse in Zermatt’s quietest historic quarter with dramatic Matterhorn views from your bed.',
+    description: 'Located in the historic wooden quarter of Winkelmatten, this sleek alpine loft blends Swiss stone pine interiors, a modern fireplace, and large glass windows facing the Matterhorn.',
+    authorTake: 'Waking up to the Matterhorn turning rose-gold in the sunrise light while drinking Swiss mountain herbal tea is unforgettable.',
+    whySpecial: 'Located in the peaceful, historic quarter away from central tourist shopping streets.',
+    goodToKnow: 'Take the electric village bus or enjoy the quiet 15-minute downhill walk to the Gornergrat cog railway.',
+    vibe: 'Refined Swiss design and legendary peak views',
+    bestFor: ['Couples', 'Solo contemplative trips', 'Skiers & hikers'],
+    wouldGoBack: 'Top of My Wishlist',
+    editorialLabel: 'Curated stay',
+    priceTier: '€€€',
+    travelerVoiceId: 'tv-switzerland-train-rhythm',
+    highlights: [
+      'Direct view of the Matterhorn from bed and private terrace',
+      'Stone pine (Arve) wood construction known for lowering heart rate',
+      'Modern open fireplace and designer kitchen',
+      'Access to private wellness sauna in building'
+    ],
+    amenities: ['Matterhorn View', 'Fireplace', 'Sauna', 'Wi-Fi', 'Designer Kitchen'],
+    pricePerNight: 'From €320 / night',
+    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
+  },
+
+  // 4. NORWAY
   {
     id: 'hideout-norway-lofoten-rorbu',
     title: 'Reine Red Rorbu Hideout',
     category: 'Coastal',
     location: 'Reine, Lofoten Islands, Norway',
     destinationId: 'norway',
-    heroImage: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80',
+    heroImage: norwayWaterfallImg,
+    image: norwayWaterfallImg,
     excerpt: 'An authentic restored 19th-century fisherman’s cabin built on wooden stilts directly over the Arctic fjord.',
     summary: 'A lovingly restored traditional Norwegian rorbu built on wooden stilts directly over the turquoise waters of Reinefjord.',
     description: 'Step into a piece of Norwegian maritime heritage. Hand-hewn timber walls, crackling wood-burning stove, and a private wooden balcony where you can watch fishing boats glide past dramatic granite spires.',
@@ -95,7 +211,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Mountain',
     location: 'Aurland (near Flåm), Norway',
     destinationId: 'norway',
-    heroImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80',
+    heroImage: norwayFjordFerryImg,
+    image: norwayFjordFerryImg,
     excerpt: 'Perched high on the mountain terraces above Aurlandsfjord with eagle-eye panoramic vistas.',
     summary: 'A glass-walled mountain terrace pavilion floating high above the deep blue waters of Aurlandsfjord.',
     description: 'Suspended in the quiet heights of the fjord valley, this architectural pavilion offers an immersive connection to nature with floor-to-ceiling glass walls overlooking the deep blue waterway below.',
@@ -118,13 +235,16 @@ export const HIDEOUTS: Hideout[] = [
     pricePerNight: 'From €310 / night',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
+
+  // 5. SWEDEN
   {
     id: 'hideout-sweden-archipelago-cabin',
     title: 'Sandhamn Pine Island Cabin',
     category: 'Romantic',
     location: 'Stockholm Archipelago, Sweden',
     destinationId: 'sweden',
-    heroImage: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80',
+    heroImage: swedenArchipelagoImg,
+    image: swedenArchipelagoImg,
     excerpt: 'A timeless red-painted timber cottage nestled among fragrant pine needles and granite rocks on a car-free island.',
     summary: 'A classic Falu-red island cottage surrounded by wild bilberry bushes, smooth granite sun rocks, and Baltic breezes.',
     description: 'Accessible only by passenger boat from Stockholm, this serene island hideout features minimalist Scandinavian decor, a wood-fired sauna steps from the Baltic Sea, and sunlit wooden verandahs.',
@@ -153,7 +273,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'City',
     location: 'Södermalm, Stockholm, Sweden',
     destinationId: 'sweden',
-    heroImage: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+    heroImage: swedenFikaImg,
+    image: swedenFikaImg,
     excerpt: 'A light-filled top-floor attic apartment in an 1880s building overlooking Mariatorget’s rooftops.',
     summary: 'A sun-drenched Scandinavian designer loft with whitewashed rafters and peaceful courtyard views in central Södermalm.',
     description: 'Exposed whitewashed beams, classic Swedish mid-century furniture, custom ceramic dishware, and quiet courtyards. Steps from Stockholm’s best specialty bakeries and independent design stores.',
@@ -176,13 +297,16 @@ export const HIDEOUTS: Hideout[] = [
     pricePerNight: 'From €195 / night',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
+
+  // 6. CHINA
   {
     id: 'hideout-china-yangshuo-retreat',
     title: 'Yulong Karst Bamboo Haven',
     category: 'Hidden Gems',
     location: 'Yangshuo, Guangxi, China',
     destinationId: 'china',
-    heroImage: 'https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1200&q=80',
+    heroImage: chinaYangshuoImg,
+    image: chinaYangshuoImg,
     excerpt: 'A restored mud-brick countryside homestead nestled between emerald limestone towers and bamboo groves.',
     summary: 'A tranquil countryside homestead framed by soaring limestone karst towers and peaceful river paths.',
     description: 'Set along the peaceful Yulong River away from commercial bustle, this serene boutique sanctuary celebrates traditional Guangxi architecture with polished slate floors, handmade wooden furnishings, and a quiet courtyard tea room.',
@@ -206,157 +330,45 @@ export const HIDEOUTS: Hideout[] = [
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
   {
-    id: 'hideout-china-beijing-courtyard',
-    title: 'The Scholar\'s Siheyuan Court',
+    id: 'hideout-china-great-wall-brick',
+    title: 'The Mutianyu Brick Sanctuary',
     category: 'Boutique',
-    location: 'Dongcheng Hutongs, Beijing, China',
+    location: 'Mutianyu Village, Huairou, Beijing, China',
     destinationId: 'china',
-    heroImage: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'An intimate 4-room Qing-dynasty courtyard hidden behind ancient grey-brick hutong walls near the Lama Temple.',
-    summary: 'An exclusive 4-room heritage Siheyuan courtyard hidden in Beijing\'s most poetic historic hutong alleyway.',
-    description: 'Pass through the carved wooden moon gate into a tranquil courtyard shaded by pomegranate trees. Rooms blend antique elm furnishings with luxurious modern bathrooms and underfloor heating.',
-    authorTake: 'Stepping from the bustling city streets into this silent, grey-brick courtyard shaded by old trees is like traveling back in time 200 years. The acoustic tranquility in the heart of Beijing is astounding.',
-    whySpecial: 'Only 4 private guest rooms ensuring unmatched personal attention, Gongfu tea ceremonies, and authentic hutong living.',
-    goodToKnow: 'The host will gladly organize private morning access tickets to the Forbidden City and Lama Temple.',
-    vibe: 'Imperial tranquility in the heart of the old city',
-    bestFor: ['Solo female travelers', 'Culture seekers', 'History enthusiasts'],
+    heroImage: chinaGreatWallImg,
+    image: chinaGreatWallImg,
+    excerpt: 'A restored glazed-tile factory eco-retreat positioned in a quiet mountain village beneath the Great Wall.',
+    summary: 'A sustainable heritage mountain retreat built from a historic brick kiln factory at the base of the Mutianyu Wall.',
+    description: 'Surrounded by chestnut orchards and mountain ridges, this eco-resort features red-brick architecture, radiant floor heating, a wood-fired pizza oven, and walking access to wild sections of the Great Wall.',
+    authorTake: 'Watching the morning mist clear to reveal the ancient stone watchtowers on the ridge above while eating breakfast on the sunny terrace is spectacular.',
+    whySpecial: 'Direct footpath access to the Great Wall watchtowers before any tour buses arrive from Beijing.',
+    goodToKnow: 'Staff speak fluent English and arrange direct private vehicle transfers to and from Beijing Capital Airport or downtown.',
+    vibe: 'Eco-conscious design and timeless mountain heritage',
+    bestFor: ['Solo travelers', 'Great Wall hikers', 'Architecture lovers'],
     wouldGoBack: 'Yes',
     editorialLabel: 'Firsthand visit',
     priceTier: '€€',
     travelerVoiceId: 'tv-china-rail-payments',
     highlights: [
-      'Historic courtyard garden with songbirds and koi pond',
-      'Traditional gongfu tea service with tea sommelier',
-      'Located in quiet pedestrian-only residential hutong',
-      'Walk to Guozijian teahouses and subway line 2/5'
+      'Historic tile factory architecture with mountain terraces',
+      'Direct walking trail to Mutianyu Great Wall watchtowers',
+      'Organic farm-to-table restaurant and craft beer cellar',
+      'Surrounded by peaceful fruit orchards and quiet village life'
     ],
-    amenities: ['Courtyard Garden', 'Tea Bar', 'Underfloor Heating', 'High-Speed Wi-Fi', 'English-Speaking Host'],
+    amenities: ['Mountain Views', 'Radiant Heating', 'Restaurant', 'Wi-Fi', 'Hiking Transfers'],
     pricePerNight: 'From €165 / night',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
+
+  // 7. AUSTRALIA
   {
-    id: 'hideout-patagonia-torres-eco-lodge',
-    title: 'Paine Massif Eco Dome',
-    category: 'Mountain',
-    location: 'Torres del Paine National Park, Chile',
-    destinationId: 'patagonia',
-    heroImage: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'A geodesic dome suite with wood-burning fireplace framing direct views of the granite Cuernos del Paine.',
-    summary: 'A cozy geodesic mountain dome with a private wood-burning stove and front-row vistas of the granite Torres massifs.',
-    description: 'Designed to harmonize seamlessly with the Patagonian wilderness, this eco-dome uses 100% renewable solar and hydro power. Fall asleep listening to the mountain wind with a warm fire crackling beside your bed.',
-    authorTake: 'Watching the first rays of dawn turn the Cuernos del Paine from purple to blazing gold through the dome’s clear bay window, all while staying warm by the crackling cast-iron woodstove, is pure magic.',
-    whySpecial: 'Direct trail access inside the national park with zero carbon footprint and private en-suite thermal comfort.',
-    goodToKnow: 'All gourmet meals, trail box lunches, and daily small-group guided excursions are included in your stay.',
-    vibe: 'Immersive alpine adventure with luxurious comfort',
-    bestFor: ['Hikers', 'Wildlife watchers', 'Wilderness romantics'],
-    wouldGoBack: 'Top of My Wishlist',
-    editorialLabel: 'Curated stay',
-    priceTier: '€€€€',
-    travelerVoiceId: 'tv-patagonia-hiking-wind',
-    highlights: [
-      'Direct unobstructed views of the iconic mountain massifs',
-      'Cast-iron wood stove in every private dome',
-      'Guided daily small-group trekking excursions included',
-      'Gourmet Patagonian meals and Chilean wines paired daily'
-    ],
-    amenities: ['All Meals Included', 'Wood Fireplace', 'Guided Excursions', 'Heated Private Bathroom', 'Lounge & Bar'],
-    pricePerNight: 'From €480 / night (all-inclusive)',
-    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
-  },
-  {
-    id: 'hideout-patagonia-chalten-cabin',
-    title: 'Fitz Roy Forest Cabin',
-    category: 'Solo-Friendly',
-    location: 'El Chaltén, Santa Cruz, Argentina',
-    destinationId: 'patagonia',
-    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'A cozy lenga-wood cabin situated at the exact trailhead for the Laguna de los Tres trek.',
-    summary: 'A handcrafted native lenga-wood cabin situated right at the trailhead to Mount Fitz Roy.',
-    description: 'Built with locally salvaged timber, this warm mountain refuge offers heated stone floors, oversized bathtubs for tired trail legs, and a sunny wooden porch looking up at Mount Fitz Roy.',
-    authorTake: 'Being able to step out the front door and start hiking toward Laguna de los Tres at 5:30 AM before anyone else is on the trail is the ultimate luxury in Patagonia. The deep soaking tub afterward is heaven.',
-    whySpecial: 'Absolute trailhead convenience: zero car or bus transfers required to access Patagonia\'s greatest alpine treks.',
-    goodToKnow: 'The kitchen is stocked with homemade granolas, fresh eggs, and local artisan bread for fueling your morning climbs.',
-    vibe: 'Warm trail camaraderie and crisp alpine air',
-    bestFor: ['Solo hikers', 'Photographers', 'Independent day trekkers'],
-    wouldGoBack: 'Yes',
-    editorialLabel: 'Firsthand visit',
-    priceTier: '€€',
-    travelerVoiceId: 'tv-patagonia-hiking-wind',
-    highlights: [
-      'Zero commute: step out your front door onto the Fitz Roy trail',
-      'Deep soaking tub and high-pressure hot shower',
-      'Generous hiker breakfast with homemade bread and dulce de leche',
-      'Walking distance to artisan breweries and bakeries'
-    ],
-    amenities: ['Mountain View', 'Soaking Tub', 'Breakfast Included', 'Wi-Fi', 'Luggage Storage'],
-    pricePerNight: 'From €175 / night',
-    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
-  },
-  {
-    id: 'hideout-korea-seochon-hanok',
-    title: 'The Seochon Pine Courtyard',
-    category: 'Boutique',
-    location: 'Seochon, Seoul, South Korea',
-    destinationId: 'south-korea',
-    heroImage: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'An exquisitely restored 1930s traditional Korean Hanok with private stone garden and sunken Cypress wood tub.',
-    summary: 'A peaceful 1930s Joseon hanok with private stone garden, hinoki cypress soaking bath, and heated ondol floors.',
-    description: 'Nestled in the quiet residential alleys west of Gyeongbokgung Palace, this private hanok sanctuary blends curved tile roofs and sliding paper hanji screens with modern architectural comfort and underfloor ondol heating.',
-    authorTake: 'Soaking in the fragrant cypress wood tub while looking out through floor-to-ceiling glass into your own private moss and pine garden makes the high-energy rush of Seoul completely vanish.',
-    whySpecial: 'Entire private traditional hanok residence reserved exclusively for one party with modern designer fittings.',
-    goodToKnow: 'Seochon\'s independent coffee roasters and Tongin traditional market are just a 4-minute walk away.',
-    vibe: 'Mindful aesthetic sanctuary in the heart of old Seoul',
-    bestFor: ['Solo travelers', 'Design lovers', 'Romantic city escapes'],
-    wouldGoBack: 'Yes',
-    editorialLabel: 'Firsthand visit',
-    priceTier: '€€€',
-    travelerVoiceId: 'tv-korea-seoul-solo',
-    highlights: [
-      'Private cypress wood (hinoki) soaking bath overlooking stone garden',
-      'Traditional heated ondol wooden floors and premium bedding',
-      'Curated Korean ceramic tea set and wild organic mountain tea',
-      'Minutes walk from charming Seochon indie bakeries and cafés'
-    ],
-    amenities: ['Hinoki Bath', 'Ondol Heating', 'Private Garden', 'High-Speed Wi-Fi', 'Aesop Toiletries'],
-    pricePerNight: 'From €230 / night',
-    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
-  },
-  {
-    id: 'hideout-korea-jeju-stone-villa',
-    title: 'Jeju Volcanic Cliff Atelier',
-    category: 'Coastal',
-    location: 'Aewol Coast, Jeju Island, South Korea',
-    destinationId: 'south-korea',
-    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'A minimalist basalt-stone villa perched over emerald volcanic tide pools on Jeju’s sunset coast.',
-    summary: 'A minimalist basalt-stone retreat overlooking the dramatic sunset tide pools of the Aewol coastline.',
-    description: 'Raw black volcanic rock walls outside, warm white oak and linen inside. Features an open-air stone terrace, private heated mineral plunge pool, and floor-to-ceiling glass capturing panoramic sunset views over the ocean.',
-    authorTake: 'Watching the fiery orange sunset dip below the Yellow Sea while relaxing in the heated stone pool with coastal breezes is an unforgettable coastal experience. The architectural minimalism is flawless.',
-    whySpecial: 'Direct access to the Jeju Olle coastal walking trail with private heated seawater plunge pool.',
-    goodToKnow: 'Rent a car at Jeju Airport; driving along the coastal Aewol Coastal Road is scenic and very easy.',
-    vibe: 'Tranquil island minimalism and rhythmic ocean sounds',
-    bestFor: ['Couples', 'Wellness escapes', 'Road trippers'],
-    wouldGoBack: 'Top of My Wishlist',
-    editorialLabel: 'Curated stay',
-    priceTier: '€€€',
-    travelerVoiceId: 'tv-korea-seoul-solo',
-    highlights: [
-      'Heated private outdoor stone soaking pool',
-      'Direct private path to the coastal Olle walking trail',
-      'Surrounded by indigenous Jeju pine and basalt walls',
-      'Pour-over coffee bar with locally roasted Jeju beans'
-    ],
-    amenities: ['Private Heated Pool', 'Ocean Sunset View', 'Full Kitchen', 'Wi-Fi', 'Free Parking'],
-    pricePerNight: 'From €270 / night',
-    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
-  },
-  {
-    id: 'hideout-australia-tasmania-pavilion',
-    title: 'Freycinet Coastal Pavilion',
+    id: 'hideout-australia-tasmania-bay',
+    title: 'Freycinet Coastal Granite Pavilion',
     category: 'Boutique',
     location: 'Coles Bay, Tasmania, Australia',
     destinationId: 'australia',
-    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    heroImage: australiaFreycinetImg,
+    image: australiaFreycinetImg,
     excerpt: 'An architect-designed timber pavilion surrounded by coastal eucalyptus and overlooking Great Oyster Bay.',
     summary: 'An architect-designed eco-pavilion tucked into native Tasmanian bushland overlooking Great Oyster Bay.',
     description: 'Immersed in native Tasmanian bushland, this secluded pavilion features curved timber ceilings, a double-sided granite fireplace, and a sunken outdoor bath where you can watch wallabies graze at dusk.',
@@ -380,20 +392,21 @@ export const HIDEOUTS: Hideout[] = [
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
   {
-    id: 'hideout-australia-paddington-sanctuary',
-    title: 'Paddington Courtyard Atelier',
+    id: 'hideout-australia-byron-hinterland',
+    title: 'Bronte & Coastal Ocean Atelier',
     category: 'City',
-    location: 'Paddington, Sydney, Australia',
+    location: 'Sydney Coastal Suburbs, Australia',
     destinationId: 'australia',
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-    excerpt: 'A sun-drenched Victorian terrace apartment with a private lush courtyard garden.',
-    summary: 'A sun-lit Victorian garden apartment with private courtyard garden in Sydney\'s most charming residential quarter.',
-    description: 'Located in a quiet leafy lane in Sydney’s most elegant neighborhood. High ceilings, original French doors opening onto a jasmine-scented garden, and just a short walk to artisan bakeries and coastal buses.',
-    authorTake: 'Enjoying a morning flat white in the private jasmine-covered courtyard before walking through Centennial Park down to the ocean is the ideal Sydney day. Paddington’s leafy lanes are wonderfully peaceful.',
-    whySpecial: 'Private walled garden oasis in one of Sydney’s most walkable, historic, and stylish neighborhoods.',
-    goodToKnow: 'Buses to Bondi Junction and the CBD depart every few minutes from nearby Oxford Street.',
-    vibe: 'Leafy Sydney elegance and relaxed café lifestyle',
-    bestFor: ['Solo female travelers', 'Food lovers', 'City wanderers'],
+    heroImage: australiaOceanPoolImg,
+    image: australiaOceanPoolImg,
+    excerpt: 'A sun-drenched sandstone terrace apartment just steps from iconic tidal ocean baths and coastal walking trails.',
+    summary: 'A breezy light-filled garden apartment overlooking coastal headlands and morning surf breaks.',
+    description: 'Located in a quiet residential avenue moments from Bronte and Bondi beaches. High ceilings, original French doors opening onto a jasmine-scented garden, and just a short walk to sunrise ocean pools.',
+    authorTake: 'Doing 20 morning laps in the saltwater pool as waves splash over the concrete barrier, followed by a flat white and fresh papaya bowl, is the ultimate Sydney morning.',
+    whySpecial: 'Steps from world-class ocean swimming pools and the world-famous coastal cliff path.',
+    goodToKnow: 'Buses to Bondi Junction and the CBD depart regularly from the end of the street.',
+    vibe: 'Sun-drenched ocean lifestyle and coastal serenity',
+    bestFor: ['Solo female travelers', 'Ocean swimmers', 'Café lovers'],
     wouldGoBack: 'Yes',
     editorialLabel: 'Firsthand visit',
     priceTier: '€€',
@@ -401,20 +414,23 @@ export const HIDEOUTS: Hideout[] = [
     highlights: [
       'Private walled garden with outdoor dining setting',
       'Bright open-plan living with marble kitchen finishes',
-      'Walk to Oxford Street fashion boutiques and Centennial Park',
-      'Easy bus or walk to Bondi and Bronte coastal walks'
+      'Short walk to Bronte Baths and Bondi coastal track',
+      'Surrounded by independent cafés and organic grocers'
     ],
     amenities: ['Garden Patio', 'Full Kitchen', 'High-Speed Wi-Fi', 'Washer/Dryer', 'Nespresso Coffee'],
     pricePerNight: 'From €210 / night',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
+
+  // 8. NEW ZEALAND
   {
-    id: 'hideout-nz-wanaka-cabin',
+    id: 'hideout-nz-wanaka-lake-cabin',
     title: 'Lake Wanaka Alpine Sanctuary',
     category: 'Mountain',
     location: 'Wanaka, South Island, New Zealand',
     destinationId: 'new-zealand',
-    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    heroImage: newZealandWanakaImg,
+    image: newZealandWanakaImg,
     excerpt: 'A secluded cedar alpine cabin overlooking Lake Wanaka and the snow-capped Southern Alps.',
     summary: 'A secluded high-altitude cedar cabin with wood-fired hot tub overlooking Lake Wanaka and Mount Aspiring.',
     description: 'Set on a private hillside high above the lake, this sustainable luxury cabin features an outdoor cedar hot tub, wood-burning fire, and floor-to-ceiling glass capturing sweeping views of Mount Aspiring.',
@@ -438,12 +454,13 @@ export const HIDEOUTS: Hideout[] = [
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   },
   {
-    id: 'hideout-nz-fiordland-retreat',
+    id: 'hideout-nz-queenstown-alpine-loft',
     title: 'Fiordland Wilderness Lodge',
     category: 'Hidden Gems',
     location: 'Te Anau / Fiordland, New Zealand',
     destinationId: 'new-zealand',
-    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+    heroImage: newZealandWanakaImg,
+    image: newZealandWanakaImg,
     excerpt: 'A tranquil riverfront lodge surrounded by native beech forests on the doorstep of Milford Sound.',
     summary: 'A tranquil eco-lodge nestled along a crystal trout river on the scenic threshold of Fiordland National Park.',
     description: 'The ultimate base for exploring Fiordland National Park. Wake to the song of native tui and bellbirds, enjoy farm-to-table dining, and embark on early morning adventures into the dramatic fiords.',
@@ -464,6 +481,68 @@ export const HIDEOUTS: Hideout[] = [
     ],
     amenities: ['Fireside Lounge', 'River Views', 'Breakfast Included', 'Free Wi-Fi', 'Tour Desk'],
     pricePerNight: 'From €250 / night',
+    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
+  },
+
+  // 9. JAPAN
+  {
+    id: 'hideout-japan-kyoto-machiya-courtyard',
+    title: 'Gion Preserved Machiya Courtyard',
+    category: 'Boutique',
+    location: 'Gion & Miyagawacho, Kyoto, Japan',
+    destinationId: 'japan',
+    heroImage: japanMachiyaImg,
+    image: japanMachiyaImg,
+    excerpt: 'An exquisitely preserved 1910s traditional wooden townhouse with private tsuboniwa moss courtyard and hinoki tub.',
+    summary: 'A private historic machiya residence with stone rock courtyard, hinoki cypress soaking bath, and heated tatami floors.',
+    description: 'Nestled in a quiet pedestrian alley in Kyoto’s historic preservation district, this private machiya sanctuary blends paper shoji screens and cedar exposed rafters with a sunken Japanese cypress wood bath and modern floor heating.',
+    authorTake: 'Soaking in the fragrant cypress wood tub while looking out through floor-to-ceiling glass into your own private moss garden makes the bustling city completely vanish.',
+    whySpecial: 'Exclusive entire historic residence reserved for one party in Kyoto’s most atmospheric historic quarter.',
+    goodToKnow: 'Shoes are removed at the genkan entrance; traditional tea master provisions provided on check-in.',
+    vibe: 'Mindful Japanese aesthetic sanctuary and total acoustic calm',
+    bestFor: ['Solo travelers', 'Design lovers', 'Mindful cultural trips'],
+    wouldGoBack: 'Yes',
+    editorialLabel: 'Firsthand visit',
+    priceTier: '€€€',
+    travelerVoiceId: 'tv-japan-bullet-train',
+    highlights: [
+      'Private aromatic hinoki cypress soaking bath facing moss garden',
+      'Heated tatami floor sitting area and handcrafted futon bedding',
+      'Curated Kyoto ceramic matcha set with Uji green tea',
+      'Walking distance to morning canal walks and artisan soba shops'
+    ],
+    amenities: ['Hinoki Bath', 'Moss Garden', 'Tatami Lounge', 'High-Speed Wi-Fi', 'Floor Heating'],
+    pricePerNight: 'From €280 / night',
+    stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
+  },
+  {
+    id: 'hideout-japan-hakone-onsen-ryokan',
+    title: 'Shirakawa-go Valley Cedar Sanctuary',
+    category: 'Mountain',
+    location: 'Shirakawa-go & Takayama, Gifu, Japan',
+    destinationId: 'japan',
+    heroImage: japanShirakawagoImg,
+    image: japanShirakawagoImg,
+    excerpt: 'A traditional thatched-roof gassho-zukuri mountain lodge with natural cedar onsen baths.',
+    summary: 'A timeless mountain retreat in the Japanese Alps with private hot spring mineral baths and seasonal kaiseki cuisine.',
+    description: 'Surrounded by steep mountain pine forests and crystal mountain streams, this historic thatched lodge offers natural hot spring soaking baths, multi-course local Hida beef kaiseki dinners, and absolute nighttime silence.',
+    authorTake: 'Sitting in the outdoor stone onsen with natural geothermal water steaming into the crisp mountain air under a sky full of stars is the ultimate restorative Japanese experience.',
+    whySpecial: 'UNESCO mountain valley setting with centuries-old timber craft and private natural onsen pools.',
+    goodToKnow: 'Book dinner-inclusive rates to experience the remarkable seasonal local mountain gastronomy.',
+    vibe: 'Ancient alpine refuge and soothing geothermal waters',
+    bestFor: ['Onsen lovers', 'Culture seekers', 'Mountain slow travelers'],
+    wouldGoBack: 'Top of My Wishlist',
+    editorialLabel: 'Curated stay',
+    priceTier: '€€€',
+    travelerVoiceId: 'tv-japan-bullet-train',
+    highlights: [
+      'Natural geothermal indoor and outdoor hot spring baths',
+      'Traditional multi-course seasonal kaiseki dinner included',
+      'Historic timber beam architecture and tatami rooms',
+      'Spectacular seasonal autumn foliage and winter snow views'
+    ],
+    amenities: ['Natural Onsen', 'Kaiseki Dining Included', 'Mountain Views', 'Wi-Fi', 'Tatami Rooms'],
+    pricePerNight: 'From €330 / night (half-board)',
     stay22Url: 'AFFILIATE_LINK_PLACEHOLDER'
   }
 ].map((h: any): Hideout => ({
