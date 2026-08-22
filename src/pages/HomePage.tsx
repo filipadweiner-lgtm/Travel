@@ -7,7 +7,7 @@ import { TravelerVoiceCard } from '../components/TravelerVoiceCard';
 import { SEOHead } from '../components/SEOHead';
 import { AuthorNotice } from '../components/AuthorNotice';
 import mileyRochaFounderImg from '../assets/images/miley_eating_berries_1786888166297.jpg';
-import mileyCaveFireLitImg from '../assets/images/miley_cave_fire_lit_1786888821438.jpg';
+import campfireHiddenLagoonImg from '../assets/images/cave_lagoon_campfire_1787385919547.jpg';
 import { 
   ArrowRight, 
   Sparkles, 
@@ -47,11 +47,11 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
       {/* 1. Atmospheric Hero Section: Miley in firelit cave during thunderstorm */}
       {/* ========================================================================= */}
       <section className="relative min-h-[85vh] sm:min-h-[88vh] md:min-h-[90vh] lg:min-h-[94vh] flex items-center justify-center bg-[#151914] text-white overflow-hidden">
-        {/* Background: Camera view from outside showing the unlighted exterior cave with bright campfire glow inside */}
+        {/* Background: Traveler sitting by campfire inside cave overlooking turquoise hidden lagoon */}
         <div className="absolute inset-0 z-0">
           <img
-            src={mileyCaveFireLitImg}
-            alt="Miley sitting inside a warm fire-lit cave during a rain and thunderstorm at dusk"
+            src={campfireHiddenLagoonImg}
+            alt="Traveler sitting beside a cozy campfire inside a mossy cave overlooking an emerald lagoon, misty peaks, and ancient ruins"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center scale-100 md:scale-105 animate-in fade-in duration-1000 brightness-105 contrast-[1.03]"
           />

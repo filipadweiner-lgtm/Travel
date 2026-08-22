@@ -85,8 +85,29 @@ export const ContactPage: React.FC = () => {
           Contact TravelHideouts
         </h1>
         <p className="text-sm md:text-base text-[#574F47] leading-relaxed">
-          Have a quiet sanctuary you think we should investigate? Found an update or correction for one of our guides? We'd love to hear from you.
+          Have a quiet sanctuary you think we should investigate? Found an update or correction for one of our guides? We'd love to hear from you. Send us a note below or reach out directly at{' '}
+          <a
+            href="mailto:etuzex@gmail.com"
+            className="font-semibold text-[#242220] underline underline-offset-4 decoration-[#8C6D58] hover:text-[#8C6D58] transition-colors"
+          >
+            etuzex@gmail.com
+          </a>.
         </p>
+
+        {/* Direct Email Card */}
+        <div className="p-4 rounded-2xl bg-[#F5EFE6] border border-[#E4D9C8] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <div className="flex items-center gap-2.5 text-[#54483C]">
+            <Mail className="w-4 h-4 text-[#8C6D58] shrink-0" />
+            <span>Direct Email Address: <strong className="text-[#242220] font-mono text-sm">etuzex@gmail.com</strong></span>
+          </div>
+          <a
+            href="mailto:etuzex@gmail.com"
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full bg-[#2E2A26] text-white text-xs font-medium hover:bg-[#453F39] transition-colors shrink-0"
+          >
+            <Send className="w-3.5 h-3.5" />
+            <span>Open in Mail App</span>
+          </a>
+        </div>
       </div>
 
       <div className="p-6 md:p-10 rounded-3xl bg-white border border-[#E9E1D2] shadow-sm">

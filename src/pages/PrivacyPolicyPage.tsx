@@ -59,7 +59,11 @@ export const PrivacyPolicyPage: React.FC = () => {
           4. Contact Us
         </h2>
         <p>
-          If you have questions or require further details about our privacy practices, please contact us at editor@travelhideouts.com.
+          If you have questions or require further details about our privacy practices, please contact us directly at{' '}
+          <a href="mailto:etuzex@gmail.com" className="text-[#8C6D58] font-semibold underline">
+            etuzex@gmail.com
+          </a>{' '}
+          or submit a note through our <a href="#/contact" className="text-[#8C6D58] underline">contact form</a>.
         </p>
       </div>
     </div>
