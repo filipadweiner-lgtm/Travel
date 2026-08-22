@@ -5,8 +5,10 @@ interface SEOHeadProps {
   description?: string;
   image?: string;
   canonicalUrl?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'hotel' | 'destination';
   schemaData?: Record<string, any>;
+  articlePublishedTime?: string;
+  articleAuthor?: string;
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
@@ -15,7 +17,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   image = 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80',
   canonicalUrl = 'https://travelhideouts.com',
   type = 'website',
-  schemaData
+  schemaData,
+  articlePublishedTime,
+  articleAuthor = 'Miley Rocha'
 }) => {
   useEffect(() => {
     // Update Title
@@ -30,22 +34,29 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
     metaDesc.setAttribute('content', description);
 
-    // Update OG tags
-    const updateOrCreateMeta = (property: string, content: string) => {
-      let el = document.querySelector(`meta[property="${property}"]`);
+    // Helper for meta tags
+    const updateOrCreateMeta = (attrName: string, attrVal: string, content: string) => {
+      let el = document.querySelector(`meta[${attrName}="${attrVal}"]`);
       if (!el) {
         el = document.createElement('meta');
-        el.setAttribute('property', property);
+        el.setAttribute(attrName, attrVal);
         document.head.appendChild(el);
       }
       el.setAttribute('content', content);
     };
 
-    updateOrCreateMeta('og:title', title);
-    updateOrCreateMeta('og:description', description);
-    updateOrCreateMeta('og:image', image);
-    updateOrCreateMeta('og:url', canonicalUrl);
-    updateOrCreateMeta('og:type', type);
+    // Open Graph
+    updateOrCreateMeta('property', 'og:title', title);
+    updateOrCreateMeta('property', 'og:description', description);
+    updateOrCreateMeta('property', 'og:image', image);
+    updateOrCreateMeta('property', 'og:url', canonicalUrl);
+    updateOrCreateMeta('property', 'og:type', type === 'article' ? 'article' : 'website');
+
+    // Twitter Card
+    updateOrCreateMeta('name', 'twitter:card', 'summary_large_image');
+    updateOrCreateMeta('name', 'twitter:title', title);
+    updateOrCreateMeta('name', 'twitter:description', description);
+    updateOrCreateMeta('name', 'twitter:image', image);
 
     // Inject JSON-LD Schema
     const scriptId = 'travelhideouts-json-ld';
@@ -57,25 +68,77 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       document.head.appendChild(scriptTag);
     }
 
-    const defaultSchema = {
-      '@context': 'https://schema.org',
-      '@type': type === 'article' ? 'Article' : 'WebSite',
-      name: 'TravelHideouts',
-      url: 'https://travelhideouts.com',
-      description: description,
-      publisher: {
-        '@type': 'Organization',
+    let defaultSchema: Record<string, any>;
+
+    if (type === 'article') {
+      defaultSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description: description,
+        image: [image],
+        datePublished: articlePublishedTime || '2026-03-01',
+        dateModified: new Date().toISOString().split('T')[0],
+        author: {
+          '@type': 'Person',
+          name: articleAuthor,
+          jobTitle: 'Senior Travel Writer & Solo Traveler'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'TravelHideouts',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://travelhideouts.com/og-image.jpg'
+          }
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonicalUrl
+        },
+        ...schemaData
+      };
+    } else if (type === 'hotel') {
+      defaultSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'LodgingBusiness',
+        name: title.replace(' — TravelHideouts', ''),
+        description: description,
+        image: image,
+        url: canonicalUrl,
+        ...schemaData
+      };
+    } else if (type === 'destination') {
+      defaultSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'TouristDestination',
+        name: title.replace(' — TravelHideouts', ''),
+        description: description,
+        image: image,
+        url: canonicalUrl,
+        ...schemaData
+      };
+    } else {
+      defaultSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
         name: 'TravelHideouts',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://travelhideouts.com/og-image.jpg'
-        }
-      },
-      ...schemaData
-    };
+        url: 'https://travelhideouts.com',
+        description: description,
+        publisher: {
+          '@type': 'Organization',
+          name: 'TravelHideouts',
+          founder: {
+            '@type': 'Person',
+            name: 'Miley Rocha'
+          }
+        },
+        ...schemaData
+      };
+    }
 
     scriptTag.text = JSON.stringify(defaultSchema);
-  }, [title, description, image, canonicalUrl, type, schemaData]);
+  }, [title, description, image, canonicalUrl, type, schemaData, articlePublishedTime, articleAuthor]);
 
   return null;
 };

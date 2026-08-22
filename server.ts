@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { createServer as createViteServer } from 'vite';
@@ -15,6 +16,66 @@ async function startServer() {
 
   // Middleware
   app.use(express.json());
+
+  // AI & Crawler Directives / Sitemaps
+  app.get('/robots.txt', (req, res) => {
+    const robotsPath = path.join(process.cwd(), 'public', 'robots.txt');
+    if (fs.existsSync(robotsPath)) {
+      res.type('text/plain').sendFile(robotsPath);
+    } else {
+      res.type('text/plain').send(`User-agent: *\nAllow: /\nSitemap: https://travelhideouts.com/sitemap.xml\nLLMs-Txt: https://travelhideouts.com/llms.txt\n`);
+    }
+  });
+
+  app.get('/sitemap.xml', (req, res) => {
+    const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
+    if (fs.existsSync(sitemapPath)) {
+      res.type('application/xml').sendFile(sitemapPath);
+    } else {
+      res.status(404).send('Sitemap not found');
+    }
+  });
+
+  app.get(['/llms.txt', '/.well-known/llms.txt'], (req, res) => {
+    const llmsPath = path.join(process.cwd(), 'public', 'llms.txt');
+    if (fs.existsSync(llmsPath)) {
+      res.type('text/markdown; charset=utf-8').sendFile(llmsPath);
+    } else {
+      res.status(404).send('# TravelHideouts\nDiscover places worth going.');
+    }
+  });
+
+  app.get(['/llms-full.txt', '/.well-known/llms-full.txt'], (req, res) => {
+    const llmsFullPath = path.join(process.cwd(), 'public', 'llms-full.txt');
+    if (fs.existsSync(llmsFullPath)) {
+      res.type('text/markdown; charset=utf-8').sendFile(llmsFullPath);
+    } else {
+      res.status(404).send('# TravelHideouts Full Context');
+    }
+  });
+
+  // Machine-readable JSON context feed for AI scrapers / search agents
+  app.get('/api/content-feed', (req, res) => {
+    res.json({
+      name: 'TravelHideouts',
+      tagline: 'Curated hideouts, atmospheric stays, honest city guides, and verified traveler community voices.',
+      publisher: 'TravelHideouts Editorial (Founder: Miley Rocha)',
+      website: 'https://travelhideouts.com',
+      llmsManifest: 'https://travelhideouts.com/llms.txt',
+      sitemap: 'https://travelhideouts.com/sitemap.xml',
+      destinations: [
+        { id: 'iceland', name: 'Iceland', highlights: 'Volcanic black sand beaches, glacial lagoons, geothermal hot pots' },
+        { id: 'liechtenstein', name: 'Liechtenstein', highlights: 'High-alpine valleys, Fürstensteig cliff path, Rhine vineyards' },
+        { id: 'switzerland', name: 'Switzerland', highlights: 'Car-free mountain villages, Matterhorn, SBB scenic rail' },
+        { id: 'norway', name: 'Norway', highlights: 'Arctic fjords, Lofoten fishing rorbuer, electric fjord ferries' },
+        { id: 'sweden', name: 'Sweden', highlights: 'Baltic archipelagos, Stockholm design lofts, daily fika rituals' },
+        { id: 'china', name: 'China', highlights: '350 km/h high-speed rail, Yangshuo karst peaks, Great Wall eco-retreats' },
+        { id: 'australia', name: 'Australia', highlights: 'Tasmanian coastal eco-pavilions, Sydney tidal ocean pools' },
+        { id: 'new-zealand', name: 'New Zealand', highlights: 'Lake Wanaka dark sky reserve, Fiordland rainforests' },
+        { id: 'japan', name: 'Japan', highlights: 'Kyoto wooden machiyas, Shinkansen rail, mineral onsen baths' }
+      ]
+    });
+  });
 
   // API Health Check
   app.get('/api/health', (req, res) => {
