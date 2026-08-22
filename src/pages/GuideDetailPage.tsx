@@ -5,6 +5,7 @@ import { TRAVELER_VOICES } from '../data/travelerVoices';
 import { TravelerVoiceCard } from '../components/TravelerVoiceCard';
 import { AuthorNotice } from '../components/AuthorNotice';
 import { SEOHead } from '../components/SEOHead';
+import { Stay22MapWidget, findStay22Map } from '../components/Stay22MapWidget';
 import { Clock, ArrowLeft, ArrowRight, CheckCircle2, Sparkles, Lightbulb } from 'lucide-react';
 
 interface GuideDetailPageProps {
@@ -140,6 +141,16 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
             ))}
           </div>
         </div>
+      )}
+
+      {/* Stay22 Interactive Map Widget for Destination Guides */}
+      {findStay22Map(guide.destinationId, destinationName, undefined, `${guide.title} ${guide.slug}`) && (
+        <Stay22MapWidget
+          destinationId={guide.destinationId}
+          destinationName={destinationName}
+          title={`Interactive ${destinationName} Field Map`}
+          subtitle={`Explore curated hideouts, boutique stays, and route waypoints across ${destinationName}.`}
+        />
       )}
 
       {/* Traveler Voices */}

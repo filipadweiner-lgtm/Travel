@@ -7,6 +7,7 @@ import { TravelerVoiceCard } from '../components/TravelerVoiceCard';
 import { AuthorNotice } from '../components/AuthorNotice';
 import { SEOHead } from '../components/SEOHead';
 import { PinterestCard } from '../components/PinterestCard';
+import { Stay22MapWidget, findStay22Map } from '../components/Stay22MapWidget';
 import { 
   Clock, 
   ArrowLeft, 
@@ -39,6 +40,14 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
     : [];
 
   const primaryDestination = relatedDestinations[0];
+
+  const primaryDestId = story.relatedDestinationIds?.[0] || primaryDestination?.id;
+  const stay22MapConfig = findStay22Map(
+    primaryDestId,
+    primaryDestination?.name,
+    story.tags,
+    `${story.title} ${story.slug}`
+  );
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14 space-y-12">
@@ -144,6 +153,17 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
           </p>
         )}
       </div>
+
+      {/* Interactive Map Widget for Destination Stories */}
+      {stay22MapConfig && (
+        <Stay22MapWidget
+          destinationId={stay22MapConfig.destinationId}
+          destinationName={stay22MapConfig.destinationName}
+          embedUrl={stay22MapConfig.embedUrl}
+          title={stay22MapConfig.defaultTitle}
+          subtitle={stay22MapConfig.defaultSubtitle}
+        />
+      )}
 
       {/* 5. Editorial Breakdown: Why it Matters, How to Experience, What is Nearby */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-[#E9E5D9]">

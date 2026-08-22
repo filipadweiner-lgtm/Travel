@@ -8,6 +8,7 @@ import { TravelerVoiceCard } from '../components/TravelerVoiceCard';
 import { HideoutCard } from '../components/HideoutCard';
 import { AuthorNotice } from '../components/AuthorNotice';
 import { SEOHead } from '../components/SEOHead';
+import { Stay22MapWidget, findStay22Map } from '../components/Stay22MapWidget';
 import { 
   MapPin, 
   ArrowLeft, 
@@ -180,6 +181,14 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
               ))}
             </div>
           </section>
+        )}
+
+        {/* Stay22 Interactive Map Widget for Destination */}
+        {findStay22Map(destination.id, destination.name) && (
+          <Stay22MapWidget
+            destinationId={destination.id}
+            destinationName={destination.name}
+          />
         )}
 
         {/* 4. Things You Probably Didn't Know ("Did You Know?") */}
