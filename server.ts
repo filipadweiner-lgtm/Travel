@@ -18,6 +18,15 @@ async function startServer() {
   app.use(express.json());
 
   // AI & Crawler Directives / Sitemaps
+  app.get('/google09d4176881715e4a.html', (req, res) => {
+    const filePath = path.join(process.cwd(), 'public', 'google09d4176881715e4a.html');
+    if (fs.existsSync(filePath)) {
+      res.type('text/html').sendFile(filePath);
+    } else {
+      res.type('text/html').send('google-site-verification: google09d4176881715e4a.html\n');
+    }
+  });
+
   app.get('/robots.txt', (req, res) => {
     const robotsPath = path.join(process.cwd(), 'public', 'robots.txt');
     if (fs.existsSync(robotsPath)) {
