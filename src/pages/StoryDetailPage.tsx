@@ -60,7 +60,7 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
 
       <div>
         <a
-          href="#/stories"
+          href="/stories"
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#5A5A40] hover:text-[#434338] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -227,7 +227,7 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
               image={story.pinterestImage || story.heroImage}
               destination={primaryDestination?.name || 'World'}
               category={story.category || 'Untold Stories'}
-              storyUrl={`#/stories/${story.id}`}
+              storyUrl={`/stories/${story.id}`}
             />
           </div>
         </div>
@@ -240,7 +240,7 @@ export const StoryDetailPage: React.FC<StoryDetailPageProps> = ({
           {relatedDestinations.map(d => (
             <a
               key={d.id}
-              href={`#/destinations/${d.id}`}
+              href={`/destinations/${d.id}`}
               className="px-4 py-2 rounded-full bg-white border border-[#E9E5D9] text-[#434338] hover:border-[#8FA18B] font-semibold transition-colors inline-flex items-center gap-1.5 shadow-2xs"
             >
               <span>{d.name}, {d.country}</span>

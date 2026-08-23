@@ -36,7 +36,7 @@ export const GuidesPage: React.FC = () => {
           return (
             <a
               key={guide.id}
-              href={`#/guides/${guide.id}`}
+              href={`/guides/${guide.id}`}
               className="rounded-[28px] overflow-hidden bg-white border border-[#E9E5D9] shadow-xs hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer"
             >
               <div>

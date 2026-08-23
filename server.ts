@@ -17,7 +17,7 @@ async function startServer() {
   // Middleware
   app.use(express.json());
 
-  // AI & Crawler Directives / Sitemaps
+  // Google Search Console Ownership Verification
   app.get('/google09d4176881715e4a.html', (req, res) => {
     const filePath = path.join(process.cwd(), 'public', 'google09d4176881715e4a.html');
     if (fs.existsSync(filePath)) {
@@ -27,6 +27,7 @@ async function startServer() {
     }
   });
 
+  // Crawlers & Directives
   app.get('/robots.txt', (req, res) => {
     const robotsPath = path.join(process.cwd(), 'public', 'robots.txt');
     if (fs.existsSync(robotsPath)) {
@@ -92,7 +93,6 @@ async function startServer() {
   });
 
   // Contact Form Submission API
-  // Secret recipient email configured securely on server side
   app.post('/api/contact', async (req, res) => {
     try {
       const { name, email, subject, message, website } = req.body;
@@ -108,7 +108,6 @@ async function startServer() {
 
       const recipientEmail = process.env.CONTACT_EMAIL || 'etuzex@gmail.com';
 
-      // Forward to secure email delivery service without exposing recipient email to client
       const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(recipientEmail)}`, {
         method: 'POST',
         headers: {
@@ -143,14 +142,52 @@ async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: 'spa',
+      appType: 'custom',
     });
+
     app.use(vite.middlewares);
+
+    app.use('*', async (req, res, next) => {
+      const url = req.originalUrl;
+      // Skip API routes or static asset requests with extensions
+      if (url.startsWith('/api') || url.includes('.')) {
+        return next();
+      }
+
+      try {
+        const indexPath = path.resolve(process.cwd(), 'index.html');
+        let template = fs.readFileSync(indexPath, 'utf-8');
+        template = await vite.transformIndexHtml(url, template);
+        const { injectSEOIntoHtml } = await vite.ssrLoadModule('/src/seoRenderer.ts');
+        const html = injectSEOIntoHtml(template, url);
+        res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+      } catch (e: any) {
+        vite.ssrFixStacktrace(e);
+        next(e);
+      }
+    });
   } else {
     const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
+    app.use(express.static(distPath, { index: false }));
+
+    app.get('*', async (req, res, next) => {
+      const url = req.originalUrl;
+      if (url.startsWith('/api')) {
+        return next();
+      }
+      try {
+        const indexPath = path.join(distPath, 'index.html');
+        if (fs.existsSync(indexPath)) {
+          const template = fs.readFileSync(indexPath, 'utf-8');
+          const seoModule = await import('./src/seoRenderer.ts');
+          const html = seoModule.injectSEOIntoHtml(template, url);
+          res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+        } else {
+          res.status(404).send('Not Found');
+        }
+      } catch (err) {
+        next(err);
+      }
     });
   }
 

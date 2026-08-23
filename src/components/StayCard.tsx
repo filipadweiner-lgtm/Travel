@@ -52,7 +52,7 @@ export const StayCard: React.FC<StayCardProps> = ({ stay, className = '' }) => {
             </div>
 
             <h3 className="text-2xl font-serif font-bold text-[#434338] mb-2 leading-tight">
-              <a href={`#/stays/${stay.id}`} className="hover:text-[#8FA18B] transition-colors">
+              <a href={`/stays/${stay.id}`} className="hover:text-[#8FA18B] transition-colors">
                 {stay.name}
               </a>
             </h3>
@@ -122,7 +122,7 @@ export const StayCard: React.FC<StayCardProps> = ({ stay, className = '' }) => {
 
             <div className="flex items-center gap-2">
               <a
-                href={`#/stays/${stay.id}`}
+                href={`/stays/${stay.id}`}
                 className="text-xs font-semibold px-4 py-2 rounded-full border border-[#E9E5D9] bg-[#F1EDE4] text-[#434338] hover:bg-[#E3DDCF] transition-colors"
               >
                 Editorial Details

@@ -29,10 +29,10 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
   const [copied, setCopied] = useState(false);
 
   const displayImage = image || imageUrl || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80';
-  const rawUrl = storyUrl || url || '#/';
+  const rawUrl = storyUrl || url || '/';
 
   const fullUrl = typeof window !== 'undefined' 
-    ? (rawUrl.startsWith('http') ? rawUrl : `${window.location.origin}${rawUrl.startsWith('#') ? rawUrl : `/#${rawUrl}`}`)
+    ? (rawUrl.startsWith('http') ? rawUrl : `${window.location.origin}${rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`}`)
     : rawUrl;
 
   const handlePin = (e: React.MouseEvent) => {

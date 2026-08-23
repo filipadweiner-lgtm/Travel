@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, ShieldCheck, Heart, ArrowUpRight } from 'lucide-react';
+import { ShieldCheck, ArrowUpRight } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#5A5A40]/70">
           {/* Brand Manifesto Column */}
           <div className="lg:col-span-5 space-y-4">
-            <a href="#/" className="inline-block focus:outline-none">
+            <a href="/" className="inline-block focus:outline-none">
               <span className="font-serif text-3xl font-bold tracking-tight text-[#F9F7F2] italic">
                 TravelHideouts
               </span>
@@ -33,12 +33,12 @@ export const Footer: React.FC = () => {
               Discover
             </h4>
             <ul className="space-y-2 text-sm text-[#CDCBC2]">
-              <li><a href="#/stories" className="hover:text-white transition-colors">Travel Stories</a></li>
-              <li><a href="#/destinations" className="hover:text-white transition-colors">Countries</a></li>
-              <li><a href="#/hidden-stories" className="hover:text-white transition-colors">Hidden Stories</a></li>
-              <li><a href="#/things-to-do" className="hover:text-white transition-colors">Things to Do</a></li>
-              <li><a href="#/guides" className="hover:text-white transition-colors">Travel Guides</a></li>
-              <li><a href="#/getting-there" className="hover:text-white transition-colors">Getting There</a></li>
+              <li><a href="/stories" className="hover:text-white transition-colors">Travel Stories</a></li>
+              <li><a href="/destinations" className="hover:text-white transition-colors">Countries</a></li>
+              <li><a href="/hidden-stories" className="hover:text-white transition-colors">Hidden Stories</a></li>
+              <li><a href="/things-to-do" className="hover:text-white transition-colors">Things to Do</a></li>
+              <li><a href="/guides" className="hover:text-white transition-colors">Travel Guides</a></li>
+              <li><a href="/getting-there" className="hover:text-white transition-colors">Getting There</a></li>
             </ul>
           </div>
 
@@ -48,11 +48,10 @@ export const Footer: React.FC = () => {
               Editorial
             </h4>
             <ul className="space-y-2 text-sm text-[#CDCBC2]">
-              <li><a href="#/stories" className="hover:text-white transition-colors">Stories</a></li>
-              <li><a href="#/guides" className="hover:text-white transition-colors">Practical Guides</a></li>
-              <li><a href="#/about" className="hover:text-white transition-colors">About the Author</a></li>
-              <li><a href="#/about#trust-principles" className="hover:text-white transition-colors">Trust Principles</a></li>
-              <li><a href="#/contact" className="hover:text-white transition-colors">Contact / Inquiries</a></li>
+              <li><a href="/stories" className="hover:text-white transition-colors">Stories</a></li>
+              <li><a href="/guides" className="hover:text-white transition-colors">Practical Guides</a></li>
+              <li><a href="/about" className="hover:text-white transition-colors">About the Author</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact / Inquiries</a></li>
             </ul>
           </div>
 
@@ -66,13 +65,13 @@ export const Footer: React.FC = () => {
             </p>
             <ul className="space-y-2 text-xs text-[#CDCBC2]">
               <li>
-                <a href="#/affiliate-disclosure" className="hover:text-[#8FA18B] transition-colors inline-flex items-center gap-1">
+                <a href="/affiliate-disclosure" className="hover:text-[#8FA18B] transition-colors inline-flex items-center gap-1">
                   <span>Affiliate Disclosure</span>
                   <ArrowUpRight className="w-3 h-3 text-[#8D8D7E]" />
                 </a>
               </li>
-              <li><a href="#/privacy-policy" className="hover:text-[#8FA18B] transition-colors">Privacy Policy</a></li>
-              <li><a href="#/terms" className="hover:text-[#8FA18B] transition-colors">Terms of Service</a></li>
+              <li><a href="/privacy-policy" className="hover:text-[#8FA18B] transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:text-[#8FA18B] transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>

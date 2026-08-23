@@ -42,7 +42,7 @@ export const HideoutDetailPage: React.FC<HideoutDetailPageProps> = ({
       {/* Back Link */}
       <div>
         <a
-          href="#/hideouts"
+          href="/hideouts"
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#66503E] hover:text-[#242220] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -203,7 +203,7 @@ export const HideoutDetailPage: React.FC<HideoutDetailPageProps> = ({
             <h3 className="text-2xl font-serif font-bold text-[#242220]">
               More Hideouts to Discover
             </h3>
-            <a href="#/hideouts" className="text-xs font-semibold text-[#66503E] hover:underline">
+            <a href="/hideouts" className="text-xs font-semibold text-[#66503E] hover:underline">
               View all →
             </a>
           </div>
@@ -211,7 +211,7 @@ export const HideoutDetailPage: React.FC<HideoutDetailPageProps> = ({
             {relatedHideouts.map(rh => (
               <a
                 key={rh.id}
-                href={`#/hideouts/${rh.id}`}
+                href={`/hideouts/${rh.id}`}
                 className="p-4 rounded-2xl bg-white border border-[#E9E1D2] flex gap-4 hover:border-[#C4B29C] transition-all group"
               >
                 <img

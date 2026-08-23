@@ -214,15 +214,15 @@ TravelHideouts is an independent digital travel publication dedicated to slow tr
       "@type": "ItemList",
       "name": "Destinations",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Iceland", "url": "https://travelhideouts.com/#/destinations/iceland" },
-        { "@type": "ListItem", "position": 2, "name": "Liechtenstein", "url": "https://travelhideouts.com/#/destinations/liechtenstein" },
-        { "@type": "ListItem", "position": 3, "name": "Switzerland", "url": "https://travelhideouts.com/#/destinations/switzerland" },
-        { "@type": "ListItem", "position": 4, "name": "Norway", "url": "https://travelhideouts.com/#/destinations/norway" },
-        { "@type": "ListItem", "position": 5, "name": "Sweden", "url": "https://travelhideouts.com/#/destinations/sweden" },
-        { "@type": "ListItem", "position": 6, "name": "China", "url": "https://travelhideouts.com/#/destinations/china" },
-        { "@type": "ListItem", "position": 7, "name": "Australia", "url": "https://travelhideouts.com/#/destinations/australia" },
-        { "@type": "ListItem", "position": 8, "name": "New Zealand", "url": "https://travelhideouts.com/#/destinations/new-zealand" },
-        { "@type": "ListItem", "position": 9, "name": "Japan", "url": "https://travelhideouts.com/#/destinations/japan" }
+        { "@type": "ListItem", "position": 1, "name": "Iceland", "url": "https://travelhideouts.com/destinations/iceland" },
+        { "@type": "ListItem", "position": 2, "name": "Liechtenstein", "url": "https://travelhideouts.com/destinations/liechtenstein" },
+        { "@type": "ListItem", "position": 3, "name": "Switzerland", "url": "https://travelhideouts.com/destinations/switzerland" },
+        { "@type": "ListItem", "position": 4, "name": "Norway", "url": "https://travelhideouts.com/destinations/norway" },
+        { "@type": "ListItem", "position": 5, "name": "Sweden", "url": "https://travelhideouts.com/destinations/sweden" },
+        { "@type": "ListItem", "position": 6, "name": "China", "url": "https://travelhideouts.com/destinations/china" },
+        { "@type": "ListItem", "position": 7, "name": "Australia", "url": "https://travelhideouts.com/destinations/australia" },
+        { "@type": "ListItem", "position": 8, "name": "New Zealand", "url": "https://travelhideouts.com/destinations/new-zealand" },
+        { "@type": "ListItem", "position": 9, "name": "Japan", "url": "https://travelhideouts.com/destinations/japan" }
       ]
     }
   ]

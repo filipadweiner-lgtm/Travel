@@ -68,7 +68,7 @@ export const ContactPage: React.FC = () => {
 
       <div>
         <a
-          href="#/"
+          href="/"
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#66503E] hover:text-[#242220] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />

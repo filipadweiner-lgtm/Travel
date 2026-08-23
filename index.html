@@ -10,6 +10,16 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://travelhideouts.com" />
     <meta name="google-site-verification" content="google09d4176881715e4a" />
+
+    <!-- Instant client-side redirect for legacy hash URLs -->
+    <script>
+      (function() {
+        if (window.location.hash && window.location.hash.startsWith('#/')) {
+          var targetPath = window.location.hash.substring(1);
+          window.history.replaceState(null, '', targetPath);
+        }
+      })();
+    </script>
     
     <!-- AI Crawlability & Standard Manifests -->
     <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt Manifest" />
@@ -71,14 +81,14 @@
             "About"
           ],
           "url": [
-            "https://travelhideouts.com/#/destinations",
-            "https://travelhideouts.com/#/stories",
-            "https://travelhideouts.com/#/hideouts",
-            "https://travelhideouts.com/#/stays",
-            "https://travelhideouts.com/#/guides",
-            "https://travelhideouts.com/#/things-to-do",
-            "https://travelhideouts.com/#/deals",
-            "https://travelhideouts.com/#/about"
+            "https://travelhideouts.com/destinations",
+            "https://travelhideouts.com/stories",
+            "https://travelhideouts.com/hideouts",
+            "https://travelhideouts.com/stays",
+            "https://travelhideouts.com/guides",
+            "https://travelhideouts.com/things-to-do",
+            "https://travelhideouts.com/deals",
+            "https://travelhideouts.com/about"
           ]
         }
       ]
@@ -92,13 +102,13 @@
         <h1 style="font-family: Georgia, serif; font-size: 28px; margin: 0 0 8px 0; color: #2C2C24;">TravelHideouts</h1>
         <p style="font-size: 16px; color: #626254; margin: 0;">Discover places worth going. Curated hideouts, atmospheric stays, honest city guides, and verified traveler community voices by Miley Rocha.</p>
         <nav style="margin-top: 12px;">
-          <a href="#/destinations" style="margin-right: 15px; color: #2C2C24;">Destinations</a>
-          <a href="#/stories" style="margin-right: 15px; color: #2C2C24;">Stories</a>
-          <a href="#/hideouts" style="margin-right: 15px; color: #2C2C24;">Hideouts</a>
-          <a href="#/stays" style="margin-right: 15px; color: #2C2C24;">Stays</a>
-          <a href="#/guides" style="margin-right: 15px; color: #2C2C24;">Field Guides</a>
-          <a href="#/things-to-do" style="margin-right: 15px; color: #2C2C24;">Things to Do</a>
-          <a href="#/about" style="color: #2C2C24;">About</a>
+          <a href="/destinations" style="margin-right: 15px; color: #2C2C24;">Destinations</a>
+          <a href="/stories" style="margin-right: 15px; color: #2C2C24;">Stories</a>
+          <a href="/hideouts" style="margin-right: 15px; color: #2C2C24;">Hideouts</a>
+          <a href="/stays" style="margin-right: 15px; color: #2C2C24;">Stays</a>
+          <a href="/guides" style="margin-right: 15px; color: #2C2C24;">Field Guides</a>
+          <a href="/things-to-do" style="margin-right: 15px; color: #2C2C24;">Things to Do</a>
+          <a href="/about" style="color: #2C2C24;">About</a>
         </nav>
       </header>
       
@@ -107,30 +117,30 @@
           <h2 style="font-family: Georgia, serif; font-size: 22px; color: #2C2C24;">Featured World Destinations</h2>
           <p>Explore honest, curated travel guides for 9 serene destinations:</p>
           <ul style="padding-left: 20px;">
-            <li><strong><a href="#/destinations/iceland">Iceland</a></strong>: Glacial lagoons, black volcanic sands, geothermal hot pots, and Ring Road solitude.</li>
-            <li><strong><a href="#/destinations/liechtenstein">Liechtenstein</a></strong>: High-alpine amphitheaters, Prince's vineyards, and Fürstensteig cliff walks.</li>
-            <li><strong><a href="#/destinations/switzerland">Switzerland</a></strong>: Car-free mountain villages, Matterhorn peaks, and punctual scenic trains.</li>
-            <li><strong><a href="#/destinations/norway">Norway</a></strong>: Arctic fjords, Lofoten fishing villages, overwater rorbuer, and electric ferries.</li>
-            <li><strong><a href="#/destinations/sweden">Sweden</a></strong>: Baltic archipelagos, Stockholm design quarters, and sacred fika coffee rituals.</li>
-            <li><strong><a href="#/destinations/china">China</a></strong>: 350 km/h high-speed rail networks, Yangshuo karst peaks, and Great Wall eco-retreats.</li>
-            <li><strong><a href="#/destinations/australia">Australia</a></strong>: Tasmanian bushland hideouts, Sydney sunrise ocean pools, and coastal drives.</li>
-            <li><strong><a href="#/destinations/new-zealand">New Zealand</a></strong>: Southern Alps dark sky reserves, Lake Wanaka chalets, and Fiordland tracks.</li>
-            <li><strong><a href="#/destinations/japan">Japan</a></strong>: Kyoto wooden machiyas, Shinkansen bullet trains, and mineral onsen baths.</li>
+            <li><strong><a href="/destinations/iceland">Iceland</a></strong>: Glacial lagoons, black volcanic sands, geothermal hot pots, and Ring Road solitude.</li>
+            <li><strong><a href="/destinations/liechtenstein">Liechtenstein</a></strong>: High-alpine amphitheaters, Prince's vineyards, and Fürstensteig cliff walks.</li>
+            <li><strong><a href="/destinations/switzerland">Switzerland</a></strong>: Car-free mountain villages, Matterhorn peaks, and punctual scenic trains.</li>
+            <li><strong><a href="/destinations/norway">Norway</a></strong>: Arctic fjords, Lofoten fishing villages, overwater rorbuer, and electric ferries.</li>
+            <li><strong><a href="/destinations/sweden">Sweden</a></strong>: Baltic archipelagos, Stockholm design quarters, and sacred fika coffee rituals.</li>
+            <li><strong><a href="/destinations/china">China</a></strong>: 350 km/h high-speed rail networks, Yangshuo karst peaks, and Great Wall eco-retreats.</li>
+            <li><strong><a href="/destinations/australia">Australia</a></strong>: Tasmanian bushland hideouts, Sydney sunrise ocean pools, and coastal drives.</li>
+            <li><strong><a href="/destinations/new-zealand">New Zealand</a></strong>: Southern Alps dark sky reserves, Lake Wanaka chalets, and Fiordland tracks.</li>
+            <li><strong><a href="/destinations/japan">Japan</a></strong>: Kyoto wooden machiyas, Shinkansen bullet trains, and mineral onsen baths.</li>
           </ul>
         </section>
 
         <section style="margin-bottom: 40px;">
           <h2 style="font-family: Georgia, serif; font-size: 22px; color: #2C2C24;">Editorial Guides & Field Manuals</h2>
           <ul style="padding-left: 20px;">
-            <li><a href="#/guides/guide-iceland-road-trip-essentials">The Essential Iceland Road Trip & Weather Field Guide</a></li>
-            <li><a href="#/guides/guide-switzerland-scenic-trains">Mastering the Swiss Rail System & Car-Free Alpine Villages</a></li>
-            <li><a href="#/guides/guide-japan-trains-and-etiquette">Mindful Shinkansen Rail Travel & Traditional Ryokan Etiquette</a></li>
-            <li><a href="#/guides/guide-norway-fjords-and-ferries">Navigating Norway's Western Fjords & Public Ferry Networks</a></li>
-            <li><a href="#/guides/guide-sweden-archipelago-and-fika">Stockholm Archipelago Hopping & The Art of Swedish Fika</a></li>
-            <li><a href="#/guides/guide-china-high-speed-rail">High-Speed Rail Travel & Digital Payments in China</a></li>
-            <li><a href="#/guides/guide-australia-east-coast-and-tasmania">Australian Coastal Drives, Tidal Ocean Pools & Tasmanian Wilderness</a></li>
-            <li><a href="#/guides/guide-new-zealand-slow-road-trips">South Island Campervan Solitude & Great Walks of New Zealand</a></li>
-            <li><a href="#/guides/guide-liechtenstein-mountain-walks">Liechtenstein High Alpine Walks & Fürstensteig Logistics</a></li>
+            <li><a href="/guides/guide-iceland-road-trip-essentials">The Essential Iceland Road Trip & Weather Field Guide</a></li>
+            <li><a href="/guides/guide-switzerland-scenic-trains">Mastering the Swiss Rail System & Car-Free Alpine Villages</a></li>
+            <li><a href="/guides/guide-japan-trains-and-etiquette">Mindful Shinkansen Rail Travel & Traditional Ryokan Etiquette</a></li>
+            <li><a href="/guides/guide-norway-fjords-and-ferries">Navigating Norway's Western Fjords & Public Ferry Networks</a></li>
+            <li><a href="/guides/guide-sweden-archipelago-and-fika">Stockholm Archipelago Hopping & The Art of Swedish Fika</a></li>
+            <li><a href="/guides/guide-china-high-speed-rail">High-Speed Rail Travel & Digital Payments in China</a></li>
+            <li><a href="/guides/guide-australia-east-coast-and-tasmania">Australian Coastal Drives, Tidal Ocean Pools & Tasmanian Wilderness</a></li>
+            <li><a href="/guides/guide-new-zealand-slow-road-trips">South Island Campervan Solitude & Great Walks of New Zealand</a></li>
+            <li><a href="/guides/guide-liechtenstein-mountain-walks">Liechtenstein High Alpine Walks & Fürstensteig Logistics</a></li>
           </ul>
         </section>
 

@@ -3,431 +3,473 @@
   <!-- Core Static Pages -->
   <url>
     <loc>https://travelhideouts.com/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hidden-stories</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/guides</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/things-to-do</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/things-to-do</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/deals</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/deals</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/getting-there</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/getting-there</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/about</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/about</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/contact</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/affiliate-disclosure</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/privacy-policy</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/terms</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/contact</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- 9 Country Destinations -->
   <url>
-    <loc>https://travelhideouts.com/#/destinations/iceland</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/iceland</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/liechtenstein</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/liechtenstein</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/switzerland</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/switzerland</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/norway</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/norway</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/sweden</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/sweden</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/china</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/china</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/australia</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/australia</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/new-zealand</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/new-zealand</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/destinations/japan</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/destinations/japan</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <!-- Editorial Stories -->
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-iceland-road-trip</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-iceland-road-trip</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-liechtenstein-high-meadows</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-liechtenstein-high-meadows</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-switzerland-car-free-villages</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-switzerland-car-free-villages</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-norway-ferry-hop</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-norway-ferry-hop</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-sweden-fika-rituals</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-sweden-fika-rituals</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stories/story-china-high-speed-rail</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stories/story-china-high-speed-rail</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/stories/story-norway-stay-longer</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/stories/story-japan-grass-roof-village</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://travelhideouts.com/stories/story-sweden-summer-solitude</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- Practical Field Guides -->
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-iceland-road-trip-essentials</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-iceland-road-trip-essentials</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-switzerland-scenic-trains</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-switzerland-scenic-trains</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-japan-trains-and-etiquette</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-japan-trains-and-etiquette</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-norway-fjords-and-ferries</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-norway-fjords-and-ferries</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-sweden-archipelago-and-fika</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-sweden-archipelago-and-fika</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-china-high-speed-rail</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-china-high-speed-rail</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-australia-east-coast-and-tasmania</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-australia-east-coast-and-tasmania</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-new-zealand-slow-road-trips</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-new-zealand-slow-road-trips</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/guides/guide-liechtenstein-mountain-walks</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/guides/guide-liechtenstein-mountain-walks</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Curated Hideouts -->
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-iceland-south-cabin</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-iceland-south-cabin</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-iceland-snaefellsnes-retreat</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-iceland-snaefellsnes-retreat</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-liechtenstein-malbun-chalet</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-liechtenstein-malbun-chalet</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-switzerland-lauterbrunnen-chalet</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-switzerland-lauterbrunnen-chalet</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-switzerland-zermatt-loft</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-switzerland-zermatt-loft</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-norway-lofoten-rorbu</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-norway-lofoten-rorbu</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-norway-fjord-cabin</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-norway-fjord-cabin</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-sweden-archipelago-cabin</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-sweden-archipelago-cabin</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-sweden-stockholm-loft</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-sweden-stockholm-loft</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-china-yangshuo-retreat</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-china-yangshuo-retreat</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-china-great-wall-brick</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-china-great-wall-brick</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-australia-tasmania-bay</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-australia-tasmania-bay</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-australia-byron-hinterland</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-australia-byron-hinterland</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-nz-wanaka-lake-cabin</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-nz-wanaka-lake-cabin</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-nz-queenstown-alpine-loft</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-nz-queenstown-alpine-loft</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-japan-kyoto-machiya-courtyard</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-japan-kyoto-machiya-courtyard</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/hideouts/hideout-japan-hakone-onsen-ryokan</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/hideouts/hideout-japan-hakone-onsen-ryokan</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <!-- Curated Boutique Stays -->
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-iceland-ion-adventure</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-iceland-ion-adventure</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-iceland-hotel-rang</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-iceland-hotel-rang</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-liechtenstein-vaduz-boutique</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-liechtenstein-vaduz-boutique</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-liechtenstein-malbun-lodge</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-liechtenstein-malbun-lodge</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-switzerland-zermatt-mountain</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-switzerland-zermatt-mountain</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-switzerland-grindelwald-lodge</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-switzerland-grindelwald-lodge</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-norway-henningsvaer-brygge</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-norway-henningsvaer-brygge</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-norway-flam-boutique</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-norway-flam-boutique</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-sweden-ett-hem-stockholm</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-sweden-ett-hem-stockholm</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-sweden-treehotel-harads</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-sweden-treehotel-harads</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-china-yangshuo-sugar-house</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-china-yangshuo-sugar-house</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-china-the-brickyard-mutianyu</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-china-the-brickyard-mutianyu</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-australia-freycinet-lodge</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-australia-freycinet-lodge</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-australia-sydney-boutique</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-australia-sydney-boutique</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-nz-wanaka-lake-resort</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-nz-wanaka-lake-resort</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-nz-fiordland-lodge</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-nz-fiordland-lodge</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-japan-kyoto-hoshinoya</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-japan-kyoto-hoshinoya</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://travelhideouts.com/#/stays/stay-japan-shirakawago-ryokan</loc>
-    <lastmod>2026-08-17</lastmod>
+    <loc>https://travelhideouts.com/stays/stay-japan-shirakawago-ryokan</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

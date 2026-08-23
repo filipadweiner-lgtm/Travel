@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
@@ -30,8 +30,18 @@ import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
 import { ContactPage } from './pages/ContactPage';
 
+function getInitialPath(): string {
+  if (typeof window === 'undefined') return '/';
+  if (window.location.hash && window.location.hash.startsWith('#/')) {
+    const clean = window.location.hash.replace(/^#/, '');
+    window.history.replaceState(null, '', clean);
+    return clean;
+  }
+  return window.location.pathname || '/';
+}
+
 export default function App() {
-  const [currentHash, setCurrentHash] = useState<string>(() => window.location.hash || '#/');
+  const [currentPath, setCurrentPath] = useState<string>(getInitialPath);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [isSavedOpen, setIsSavedOpen] = useState<boolean>(false);
 
@@ -67,22 +77,102 @@ export default function App() {
     setSavedIds([]);
   };
 
-  // Listen to hash changes and scroll to top
+  const navigate = useCallback((to: string) => {
+    if (window.location.pathname !== to) {
+      window.history.pushState({}, '', to);
+      setCurrentPath(to);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, []);
+
+  // Handle browser back/forward and hash redirects
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash || '#/';
-      setCurrentHash(hash);
+    const handlePopState = () => {
+      if (window.location.hash && window.location.hash.startsWith('#/')) {
+        const path = window.location.hash.replace(/^#/, '');
+        window.history.replaceState(null, '', path);
+        setCurrentPath(path);
+      } else {
+        setCurrentPath(window.location.pathname || '/');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    const handleHashChange = () => {
+      if (window.location.hash && window.location.hash.startsWith('#/')) {
+        const path = window.location.hash.replace(/^#/, '');
+        window.history.replaceState(null, '', path);
+        setCurrentPath(path);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
     window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   }, []);
+
+  // Global click handler to intercept internal links for seamless client-side SPA navigation
+  useEffect(() => {
+    const handleDocumentClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+      const anchor = target.closest('a') as HTMLAnchorElement | null;
+      if (!anchor) return;
+
+      const rawHref = anchor.getAttribute('href');
+      if (!rawHref) return;
+
+      // Handle legacy #/ click if any remains
+      if (rawHref.startsWith('#/')) {
+        e.preventDefault();
+        const targetPath = rawHref.replace(/^#/, '');
+        navigate(targetPath);
+        return;
+      }
+
+      // Check for internal path-based link
+      if (
+        rawHref.startsWith('/') &&
+        !rawHref.startsWith('//') &&
+        !anchor.getAttribute('target') &&
+        !anchor.getAttribute('download') &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.shiftKey &&
+        !e.altKey &&
+        e.button === 0
+      ) {
+        // Allow file downloads and API routes to proceed normally
+        if (
+          rawHref.startsWith('/api') ||
+          rawHref.endsWith('.xml') ||
+          rawHref.endsWith('.txt') ||
+          rawHref.endsWith('.html') ||
+          rawHref.endsWith('.jpg') ||
+          rawHref.endsWith('.png') ||
+          rawHref.endsWith('.svg')
+        ) {
+          return;
+        }
+
+        e.preventDefault();
+        navigate(rawHref);
+      }
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+    return () => document.removeEventListener('click', handleDocumentClick);
+  }, [navigate]);
 
   // Parse current route
   const renderRoute = () => {
-    const hash = currentHash.replace(/^#/, '') || '/';
-    const parts = hash.split('/').filter(Boolean);
+    const clean = currentPath.split('?')[0].split('#')[0].replace(/\/+$/, '') || '/';
+    const parts = clean.split('/').filter(Boolean);
 
     // Root
     if (parts.length === 0 || parts[0] === '') {
@@ -160,7 +250,7 @@ export default function App() {
     <div className="min-h-screen bg-[#F9F7F2] text-[#434338] flex flex-col font-sans selection:bg-[#8FA18B]/25 selection:text-[#434338]">
       {/* Navigation Header */}
       <Navbar
-        currentPath={currentHash.replace('#', '')}
+        currentPath={currentPath}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenSaved={() => setIsSavedOpen(true)}
         savedCount={savedIds.length}
@@ -190,4 +280,3 @@ export default function App() {
     </div>
   );
 }
-
