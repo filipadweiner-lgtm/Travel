@@ -1,14 +1,11 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
-import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { createServer as createViteServer } from 'vite';
+import { injectSEOIntoHtml } from './src/seoRenderer';
 
 dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
@@ -179,8 +176,7 @@ async function startServer() {
         const indexPath = path.join(distPath, 'index.html');
         if (fs.existsSync(indexPath)) {
           const template = fs.readFileSync(indexPath, 'utf-8');
-          const seoModule = await import('./src/seoRenderer.ts');
-          const html = seoModule.injectSEOIntoHtml(template, url);
+          const html = injectSEOIntoHtml(template, url);
           res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
         } else {
           res.status(404).send('Not Found');
