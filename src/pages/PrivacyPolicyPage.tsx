@@ -63,7 +63,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           <a href="mailto:etuzex@gmail.com" className="text-[#8C6D58] font-semibold underline">
             etuzex@gmail.com
           </a>{' '}
-          or submit a note through our <a href="/contact" className="text-[#8C6D58] underline">contact form</a>.
+          or submit a note through our <a href="/contact/" className="text-[#8C6D58] underline">contact form</a>.
         </p>
       </div>
     </div>

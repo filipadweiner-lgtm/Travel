@@ -15,12 +15,14 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   title = 'TravelHideouts — Discover places worth going.',
   description = 'Curated hideouts, atmospheric stays, honest city guides, and verified traveler community voices. Selected by one experienced female traveler.',
   image = 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80',
-  canonicalUrl = 'https://travelhideouts.com',
+  canonicalUrl,
   type = 'website',
   schemaData,
   articlePublishedTime,
   articleAuthor = 'Miley Rocha'
 }) => {
+  const currentCanonical = canonicalUrl || (typeof window !== 'undefined' ? `${window.location.origin}${window.location.pathname.replace(/\/+$/, '') || ''}/` : 'https://travelhideouts.com/');
+
   useEffect(() => {
     // Update Title
     document.title = title;
@@ -33,6 +35,15 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       document.head.appendChild(metaDesc);
     }
     metaDesc.setAttribute('content', description);
+
+    // Update Canonical URL
+    let canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (!canonicalEl) {
+      canonicalEl = document.createElement('link');
+      canonicalEl.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalEl);
+    }
+    canonicalEl.setAttribute('href', currentCanonical);
 
     // Helper for meta tags
     const updateOrCreateMeta = (attrName: string, attrVal: string, content: string) => {
@@ -49,7 +60,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     updateOrCreateMeta('property', 'og:title', title);
     updateOrCreateMeta('property', 'og:description', description);
     updateOrCreateMeta('property', 'og:image', image);
-    updateOrCreateMeta('property', 'og:url', canonicalUrl);
+    updateOrCreateMeta('property', 'og:url', currentCanonical);
     updateOrCreateMeta('property', 'og:type', type === 'article' ? 'article' : 'website');
 
     // Twitter Card
@@ -94,7 +105,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         },
         mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': canonicalUrl
+          '@id': currentCanonical
         },
         ...schemaData
       };
@@ -105,7 +116,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         name: title.replace(' — TravelHideouts', ''),
         description: description,
         image: image,
-        url: canonicalUrl,
+        url: currentCanonical,
         ...schemaData
       };
     } else if (type === 'destination') {
@@ -115,7 +126,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         name: title.replace(' — TravelHideouts', ''),
         description: description,
         image: image,
-        url: canonicalUrl,
+        url: currentCanonical,
         ...schemaData
       };
     } else {
@@ -123,7 +134,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'TravelHideouts',
-        url: 'https://travelhideouts.com',
+        url: 'https://travelhideouts.com/',
         description: description,
         publisher: {
           '@type': 'Organization',
@@ -138,7 +149,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
 
     scriptTag.text = JSON.stringify(defaultSchema);
-  }, [title, description, image, canonicalUrl, type, schemaData, articlePublishedTime, articleAuthor]);
+  }, [title, description, image, currentCanonical, type, schemaData, articlePublishedTime, articleAuthor]);
 
   return null;
 };

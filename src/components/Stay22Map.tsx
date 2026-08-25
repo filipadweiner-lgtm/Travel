@@ -81,7 +81,7 @@ export const Stay22Map: React.FC<Stay22MapProps> = ({
 
           <div className="flex flex-wrap items-center justify-center gap-2">
             <a
-              href="/stays"
+              href="/stays/"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#8FA18B] hover:bg-[#7C8E78] text-white text-xs font-semibold shadow-xs transition-all"
             >
               <span>Explore Curated Stays</span>

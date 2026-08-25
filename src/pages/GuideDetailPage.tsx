@@ -29,7 +29,7 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
 
       <div>
         <a
-          href="/guides"
+          href="/guides/"
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8FA18B] hover:text-[#434338] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -180,7 +180,7 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ id }) => {
             </h4>
           </div>
           <a
-            href={`/destinations/${destination.id}`}
+            href={`/destinations/${destination.id}/`}
             className="inline-flex items-center gap-1.5 text-xs font-semibold px-5 py-2.5 rounded-full bg-[#8FA18B] text-white hover:bg-[#7C8E78] transition-colors shrink-0"
           >
             <span>City Guide</span>

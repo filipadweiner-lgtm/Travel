@@ -120,7 +120,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                 {filteredDestinations.map(dest => (
                   <a
                     key={dest.id}
-                    href={`/destinations/${dest.id}`}
+                    href={`/destinations/${dest.id}/`}
                     onClick={onClose}
                     className="group p-3 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all flex items-center gap-3.5 shadow-xs"
                   >
@@ -158,7 +158,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                 {filteredHideouts.map(hideout => (
                   <a
                     key={hideout.id}
-                    href={`/hideouts/${hideout.id}`}
+                    href={`/hideouts/${hideout.id}/`}
                     onClick={onClose}
                     className="group p-3.5 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all flex items-center justify-between gap-4 shadow-xs"
                   >
@@ -205,7 +205,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                     {filteredStories.map(story => (
                       <a
                         key={story.id}
-                        href={`/stories/${story.id}`}
+                        href={`/stories/${story.id}/`}
                         onClick={onClose}
                         className="block p-3 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all shadow-xs"
                       >
@@ -228,7 +228,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                     {filteredGuides.map(guide => (
                       <a
                         key={guide.id}
-                        href={`/guides/${guide.id}`}
+                        href={`/guides/${guide.id}/`}
                         onClick={onClose}
                         className="block p-3 rounded-2xl bg-white border border-[#E9E5D9] hover:border-[#8FA18B] transition-all shadow-xs"
                       >

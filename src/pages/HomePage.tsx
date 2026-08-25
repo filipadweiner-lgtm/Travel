@@ -77,7 +77,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto">
             <a
-              href="/stories"
+              href="/stories/"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-3.5 rounded-full bg-[#8FA18B] hover:bg-[#7C8E78] active:scale-98 text-white text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               <BookOpen className="w-4 h-4" />
@@ -85,7 +85,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             </a>
 
             <a
-              href="/destinations"
+              href="/destinations/"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-3.5 rounded-full bg-black/35 hover:bg-black/50 active:scale-98 text-[#F9F7F2] backdrop-blur-md border border-white/30 hover:border-white/50 text-sm md:text-base font-medium transition-all shadow-md"
             >
               <span>Explore Countries</span>
@@ -142,7 +142,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
                   </div>
 
                   <a
-                    href={`/stories/${featuredStory.id}`}
+                    href={`/stories/${featuredStory.id}/`}
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8FA18B] hover:bg-[#7C8E78] text-white text-xs font-semibold transition-all shadow-xs"
                   >
                     <span>Read story</span>
@@ -178,7 +178,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
           {DESTINATIONS.map((dest) => (
             <a
               key={dest.id}
-              href={`/destinations/${dest.id}`}
+              href={`/destinations/${dest.id}/`}
               className="group rounded-3xl bg-white border border-[#E9E5D9] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-[#F1EDE4]">
@@ -231,7 +231,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             </h2>
           </div>
           <a
-            href="/hidden-stories"
+            href="/hidden-stories/"
             className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8FA18B] hover:text-[#7C8E78]"
           >
             <span>View all stories</span>
@@ -265,7 +265,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
               <div className="pt-3 border-t border-[#E9E5D9] flex items-center justify-between text-xs">
                 <span className="text-[11px] text-[#8D8D7E]">{story.readTime || '5 min read'}</span>
                 <a
-                  href={`/destinations/${story.destinationId}`}
+                  href={`/destinations/${story.destinationId}/`}
                   className="font-bold text-[#8FA18B] hover:text-[#7C8E78] inline-flex items-center gap-1"
                 >
                   <span>Read lore</span>
@@ -388,7 +388,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             </h2>
           </div>
           <a
-            href="/stories"
+            href="/stories/"
             className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8FA18B] hover:text-[#7C8E78]"
           >
             <span>All stories</span>
@@ -400,7 +400,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
           {latestStories.map((story) => (
             <a
               key={story.id}
-              href={`/stories/${story.id}`}
+              href={`/stories/${story.id}/`}
               className="group rounded-3xl bg-white border border-[#E9E5D9] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-[#F1EDE4]">

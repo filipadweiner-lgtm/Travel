@@ -3,7 +3,6 @@ import path from 'path';
 import fs from 'fs';
 import dotenv from 'dotenv';
 import { createServer as createViteServer } from 'vite';
-import { injectSEOIntoHtml } from './src/seoRenderer';
 
 dotenv.config();
 
@@ -139,51 +138,16 @@ async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: 'custom',
+      appType: 'spa',
     });
 
     app.use(vite.middlewares);
-
-    app.use('*', async (req, res, next) => {
-      const url = req.originalUrl;
-      // Skip API routes or static asset requests with extensions
-      if (url.startsWith('/api') || url.includes('.')) {
-        return next();
-      }
-
-      try {
-        const indexPath = path.resolve(process.cwd(), 'index.html');
-        let template = fs.readFileSync(indexPath, 'utf-8');
-        template = await vite.transformIndexHtml(url, template);
-        const { injectSEOIntoHtml } = await vite.ssrLoadModule('/src/seoRenderer.ts');
-        const html = injectSEOIntoHtml(template, url);
-        res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
-      } catch (e: any) {
-        vite.ssrFixStacktrace(e);
-        next(e);
-      }
-    });
   } else {
     const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath, { index: false }));
+    app.use(express.static(distPath));
 
-    app.get('*', async (req, res, next) => {
-      const url = req.originalUrl;
-      if (url.startsWith('/api')) {
-        return next();
-      }
-      try {
-        const indexPath = path.join(distPath, 'index.html');
-        if (fs.existsSync(indexPath)) {
-          const template = fs.readFileSync(indexPath, 'utf-8');
-          const html = injectSEOIntoHtml(template, url);
-          res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
-        } else {
-          res.status(404).send('Not Found');
-        }
-      } catch (err) {
-        next(err);
-      }
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(distPath, 'index.html'));
     });
   }
 

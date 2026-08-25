@@ -86,7 +86,7 @@ export const HideoutCard: React.FC<HideoutCardProps> = ({
           </div>
 
           <h3 className="text-xl font-serif font-bold text-[#434338] group-hover:text-[#8FA18B] transition-colors leading-snug mb-2">
-            <a href={`/hideouts/${hideout.id}`} className="focus:outline-none">
+            <a href={`/hideouts/${hideout.id}/`} className="focus:outline-none">
               {hideout.title}
             </a>
           </h3>
@@ -125,7 +125,7 @@ export const HideoutCard: React.FC<HideoutCardProps> = ({
         </span>
 
         <a
-          href={`/hideouts/${hideout.id}`}
+          href={`/hideouts/${hideout.id}/`}
           className="inline-flex items-center gap-1 font-semibold text-[#8FA18B] group-hover:text-[#434338] transition-colors"
         >
           <span>Discover Hideout</span>

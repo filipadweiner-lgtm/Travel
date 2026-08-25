@@ -17,19 +17,19 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Stories', href: '/stories' },
-    { name: 'Countries', href: '/destinations' },
-    { name: 'Things to Do', href: '/things-to-do' },
-    { name: 'Hidden Stories', href: '/hidden-stories' },
-    { name: 'Travel Tips', href: '/guides' },
-    { name: 'About', href: '/about' },
+    { name: 'Stories', href: '/stories/' },
+    { name: 'Countries', href: '/destinations/' },
+    { name: 'Things to Do', href: '/things-to-do/' },
+    { name: 'Hidden Stories', href: '/hidden-stories/' },
+    { name: 'Travel Tips', href: '/guides/' },
+    { name: 'About', href: '/about/' },
   ];
 
   const isActive = (href: string) => {
     if (!href) return false;
     const safePath = currentPath || '/';
     if (href === '/' && (safePath === '/' || safePath === '')) return true;
-    if (href !== '/' && safePath.startsWith(href)) return true;
+    if (href !== '/' && (safePath === href || safePath.startsWith(href) || safePath.startsWith(href.replace(/\/$/, '')))) return true;
     return false;
   };
 
@@ -102,7 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Primary CTA */}
             <a
-              href="/stories"
+              href="/stories/"
               className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-5 py-2.5 rounded-full bg-[#8FA18B] text-white hover:bg-[#7C8E78] shadow-sm transition-all"
             >
               <Compass className="w-3.5 h-3.5" />
@@ -149,8 +149,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
 
           <div className="pt-4 border-t border-[#E9E5D9] mt-3 flex items-center justify-between px-3 text-xs text-[#8D8D7E]">
-            <a href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">About TravelHideouts</a>
-            <a href="/affiliate-disclosure" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">Affiliate Disclosure</a>
+            <a href="/about/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">About TravelHideouts</a>
+            <a href="/affiliate-disclosure/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">Affiliate Disclosure</a>
           </div>
         </div>
       )}

@@ -18,8 +18,8 @@
 - **Top Stays**: ION Adventure Hotel (Nesjavellir), Hotel Rangá (Hella).
 - **Essential Tips**: 4x4 vehicle rental with wind/gravel insurance is mandatory; follow road.is and vedur.is daily; always shower naked with soap before entering geothermal pools; 100% cashless.
 - **Guides & Stories**: 
-  - Guide: [Iceland Road Trip & Weather Field Guide](https://travelhideouts.com/guides/guide-iceland-road-trip-essentials)
-  - Story: [The Iceland Road Trip I'd Start With](https://travelhideouts.com/stories/story-iceland-road-trip)
+  - Guide: [Iceland Road Trip & Weather Field Guide](https://travelhideouts.com/guides/guide-iceland-road-trip-essentials/)
+  - Story: [The Iceland Road Trip I'd Start With](https://travelhideouts.com/stories/story-iceland-road-trip/)
 
 ### 2. Liechtenstein
 - **Overview**: Pristine alpine principality between Switzerland and Austria with high-altitude walking paths and quiet Rhine vineyards.
@@ -28,8 +28,8 @@
 - **Top Stays**: Park Hotel Sonnenhof Vaduz (Michelin dining, Relais & Châteaux), JUFA Alpine Resort Malbun.
 - **Essential Tips**: LIEmobil buses connect Vaduz Post to Malbun hourly (covered by Swiss Travel Pass); hike the Fürstensteig early morning for ridge views.
 - **Guides & Stories**:
-  - Guide: [Liechtenstein High Alpine Walks & Logistics](https://travelhideouts.com/guides/guide-liechtenstein-mountain-walks)
-  - Story: [High Meadows of the Principality](https://travelhideouts.com/stories/story-liechtenstein-high-meadows)
+  - Guide: [Liechtenstein High Alpine Walks & Logistics](https://travelhideouts.com/guides/guide-liechtenstein-mountain-walks/)
+  - Story: [High Meadows of the Principality](https://travelhideouts.com/stories/story-liechtenstein-high-meadows/)
 
 ### 3. Switzerland
 - **Overview**: Car-free alpine villages, crystal lakes, and the world's most punctual panoramic rail network.
@@ -38,8 +38,8 @@
 - **Top Stays**: The Omnia Mountain Lodge Zermatt, Romantik Hotel Schweizerhof Grindelwald.
 - **Essential Tips**: Invest in the Swiss Travel Pass; download the SBB Mobile app for minute-by-minute train connections and platform numbers; visit car-free villages (Mürren, Wengen, Zermatt).
 - **Guides & Stories**:
-  - Guide: [Mastering the Swiss Rail System](https://travelhideouts.com/guides/guide-switzerland-scenic-trains)
-  - Story: [Car-Free Silence in the Swiss Alps](https://travelhideouts.com/stories/story-switzerland-car-free-villages)
+  - Guide: [Mastering the Swiss Rail System](https://travelhideouts.com/guides/guide-switzerland-scenic-trains/)
+  - Story: [Car-Free Silence in the Swiss Alps](https://travelhideouts.com/stories/story-switzerland-car-free-villages/)
 
 ### 4. Norway
 - **Overview**: Towering Arctic fjords, restored fisherman's rorbuer, glass-fronted mountain pavilions, and scenic ferry hops.
@@ -48,8 +48,8 @@
 - **Top Stays**: Henningsvær Bryggehotell, Fretheim Hotel Flåm.
 - **Essential Tips**: Download the Vy app for train routes (Bergen line & Flåm Railway); use Entur for regional ferries; book the electric fjord catamaran for silent cruising.
 - **Guides & Stories**:
-  - Guide: [Navigating Norway's Western Fjords & Ferries](https://travelhideouts.com/guides/guide-norway-fjords-and-ferries)
-  - Story: [The Rhythm of the Fjord Ferry](https://travelhideouts.com/stories/story-norway-ferry-hop)
+  - Guide: [Navigating Norway's Western Fjords & Ferries](https://travelhideouts.com/guides/guide-norway-fjords-and-ferries/)
+  - Story: [The Rhythm of the Fjord Ferry](https://travelhideouts.com/stories/story-norway-ferry-hop/)
 
 ### 5. Sweden
 - **Overview**: Wild Baltic archipelago islands, Stockholm design culture, fragrant cardamom bun fika rituals, and boreal Lapland pine forests.
@@ -58,8 +58,8 @@
 - **Top Stays**: Ett Hem Stockholm (Arts & Crafts residential masterpiece), Treehotel Harads (Lapland architectural treehouses).
 - **Essential Tips**: Board Waxholmsbolaget ferries directly from Strömkajen using contactless bank cards; Allemansrätten (right to roam) allows respectful wild camping and foraging.
 - **Guides & Stories**:
-  - Guide: [Stockholm Archipelago Hopping & Fika Culture](https://travelhideouts.com/guides/guide-sweden-archipelago-and-fika)
-  - Story: [The Sacred Art of Swedish Fika](https://travelhideouts.com/stories/story-sweden-fika-rituals)
+  - Guide: [Stockholm Archipelago Hopping & Fika Culture](https://travelhideouts.com/guides/guide-sweden-archipelago-and-fika/)
+  - Story: [The Sacred Art of Swedish Fika](https://travelhideouts.com/stories/story-sweden-fika-rituals/)
 
 ### 6. China
 - **Overview**: 350 km/h high-speed rail networks, emerald karst mountain rivers in Yangshuo, and preserved heritage retreats beneath the Great Wall.
@@ -68,8 +68,8 @@
 - **Top Stays**: Alila Yangshuo Sugar House (restored 1960s heritage sugar mill), The Brickyard Retreat at Mutianyu.
 - **Essential Tips**: Set up Alipay and WeChat Pay linked to international Visa/Mastercard before departure for seamless cashless payments; get an overseas roaming eSIM to bypass local firewall constraints; use 12306.cn or Trip.com for high-speed train tickets.
 - **Guides & Stories**:
-  - Guide: [High-Speed Rail Travel & Digital Payments in China](https://travelhideouts.com/guides/guide-china-high-speed-rail)
-  - Story: [300 Kilometers Per Hour Through the Mist](https://travelhideouts.com/stories/story-china-high-speed-rail)
+  - Guide: [High-Speed Rail Travel & Digital Payments in China](https://travelhideouts.com/guides/guide-china-high-speed-rail/)
+  - Story: [300 Kilometers Per Hour Through the Mist](https://travelhideouts.com/stories/story-china-high-speed-rail/)
 
 ### 7. Australia
 - **Overview**: Rugged Tasmanian coastlines, sunrise ocean tidal swimming baths, native bushland sanctuaries, and world-class specialty coffee.
@@ -78,7 +78,7 @@
 - **Top Stays**: Freycinet Coastal Lodge & Pavilions, The Old Clare Hotel Sydney.
 - **Essential Tips**: Distances in Australia are vast; avoid driving on rural Tasmanian highways between dusk and dawn due to nocturnal native wildlife; swim strictly between the red and yellow flags at ocean beaches.
 - **Guides & Stories**:
-  - Guide: [Australian Coastal Drives & Tasmanian Wilderness](https://travelhideouts.com/guides/guide-australia-east-coast-and-tasmania)
+  - Guide: [Australian Coastal Drives & Tasmanian Wilderness](https://travelhideouts.com/guides/guide-australia-east-coast-and-tasmania/)
 
 ### 8. New Zealand
 - **Overview**: Southern Alps dark sky reserves, glass-still glacial lakes, prehistoric Fiordland rainforests, and freedom camping culture.
@@ -87,7 +87,7 @@
 - **Top Stays**: Whare Kea Lodge & Chalet Wanaka, Fiordland Lodge Te Anau.
 - **Essential Tips**: Certified self-contained campervans are ideal for South Island road trips; download the CamperMate app for verified freedom camping sites and dump stations; carry insect repellent for Fiordland sandflies.
 - **Guides & Stories**:
-  - Guide: [South Island Campervan Solitude & Great Walks](https://travelhideouts.com/guides/guide-new-zealand-slow-road-trips)
+  - Guide: [South Island Campervan Solitude & Great Walks](https://travelhideouts.com/guides/guide-new-zealand-slow-road-trips/)
 
 ### 9. Japan
 - **Overview**: Mindful Shinkansen rail travel, centuries-old wooden machiya townhouses, restorative onsen mineral baths, and Zen rock gardens.
@@ -96,7 +96,7 @@
 - **Top Stays**: Hoshinoya Kyoto (private boat arrival ryokan), Wanosato Traditional Onsen Ryokan (Takayama).
 - **Essential Tips**: Add a digital Suica or Pasmo IC card to your Apple/Google Wallet for effortless transit taps; book Shinkansen seats with oversized baggage reservation if traveling with large suitcases; wash thoroughly with soap and water on seated stools before stepping into onsen baths.
 - **Guides & Stories**:
-  - Guide: [Shinkansen Travel & Ryokan Etiquette](https://travelhideouts.com/guides/guide-japan-trains-and-etiquette)
+  - Guide: [Shinkansen Travel & Ryokan Etiquette](https://travelhideouts.com/guides/guide-japan-trains-and-etiquette/)
 
 ---
 
@@ -104,4 +104,4 @@
 - Complete JSON Site Data: `GET /api/content-feed`
 - XML Sitemap: `GET /sitemap.xml`
 - LLM Full Deep Context: `GET /llms-full.txt`
-- Canonical URL: `https://travelhideouts.com`
+- Canonical URL: `https://travelhideouts.com/`

@@ -97,7 +97,7 @@ export const SavedHideoutsDrawer: React.FC<SavedHideoutsDrawerProps> = ({
                         {hideout.category} · {hideout.location}
                       </span>
                       <h5 className="font-serif font-bold text-base text-[#434338] truncate group-hover:text-[#8FA18B]">
-                        <a href={`/hideouts/${hideout.id}`} onClick={onClose}>
+                        <a href={`/hideouts/${hideout.id}/`} onClick={onClose}>
                           {hideout.title}
                         </a>
                       </h5>
@@ -117,7 +117,7 @@ export const SavedHideoutsDrawer: React.FC<SavedHideoutsDrawerProps> = ({
 
                   <div className="pt-2 border-t border-[#E9E5D9] flex items-center justify-between">
                     <a
-                      href={`/hideouts/${hideout.id}`}
+                      href={`/hideouts/${hideout.id}/`}
                       onClick={onClose}
                       className="text-xs font-semibold text-[#8FA18B] hover:underline"
                     >

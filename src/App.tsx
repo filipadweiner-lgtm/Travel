@@ -30,14 +30,122 @@ import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
 import { ContactPage } from './pages/ContactPage';
 
+const KNOWN_DESTINATIONS = [
+  'iceland',
+  'liechtenstein',
+  'switzerland',
+  'norway',
+  'sweden',
+  'china',
+  'australia',
+  'new-zealand',
+  'japan'
+];
+
+export function normalizeAppPath(raw: string): string {
+  if (!raw) return '/';
+  
+  // Remove hash prefix if present (e.g. #/japan, #/destinations/japan)
+  let path = raw.replace(/^#\/?/, '/');
+  
+  // If full URL was passed
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    try {
+      const u = new URL(path);
+      path = u.pathname + (u.hash ? u.hash.replace(/^#\/?/, '/') : '');
+    } catch {
+      // ignore
+    }
+  }
+
+  // Separate query string
+  const [pathname] = path.split('?');
+  const clean = pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+
+  if (!clean) return '/';
+
+  // Specific legacy or shorthand aliases
+  if (KNOWN_DESTINATIONS.includes(clean.toLowerCase())) {
+    return `/destinations/${clean.toLowerCase()}/`;
+  }
+  if (clean.startsWith('story-')) {
+    return `/stories/${clean}/`;
+  }
+  if (clean.startsWith('guide-')) {
+    return `/guides/${clean}/`;
+  }
+  if (clean.startsWith('hideout-')) {
+    return `/hideouts/${clean}/`;
+  }
+  if (clean.startsWith('stay-')) {
+    return `/stays/${clean}/`;
+  }
+  if (clean === 'destinations' || clean === 'countries') {
+    return '/destinations/';
+  }
+  if (clean === 'stories') {
+    return '/stories/';
+  }
+  if (clean === 'hidden-stories') {
+    return '/hidden-stories/';
+  }
+  if (clean === 'guides' || clean === 'field-guides' || clean === 'travel-tips') {
+    return '/guides/';
+  }
+  if (clean === 'hideouts') {
+    return '/hideouts/';
+  }
+  if (clean === 'stays') {
+    return '/stays/';
+  }
+  if (clean === 'things-to-do') {
+    return '/things-to-do/';
+  }
+  if (clean === 'getting-there') {
+    return '/getting-there/';
+  }
+  if (clean === 'deals') {
+    return '/deals/';
+  }
+  if (clean === 'about') {
+    return '/about/';
+  }
+  if (clean === 'contact') {
+    return '/contact/';
+  }
+  if (clean === 'privacy' || clean === 'privacy-policy') {
+    return '/privacy-policy/';
+  }
+  if (clean === 'terms') {
+    return '/terms/';
+  }
+  if (clean === 'affiliate-disclosure') {
+    return '/affiliate-disclosure/';
+  }
+
+  // Preserve non-HTML file paths
+  if (clean.includes('.')) {
+    return `/${clean}`;
+  }
+
+  return `/${clean}/`;
+}
+
 function getInitialPath(): string {
   if (typeof window === 'undefined') return '/';
+  
+  // Check if loaded with legacy hash
   if (window.location.hash && window.location.hash.startsWith('#/')) {
-    const clean = window.location.hash.replace(/^#/, '');
-    window.history.replaceState(null, '', clean);
-    return clean;
+    const canonical = normalizeAppPath(window.location.hash);
+    window.history.replaceState(null, '', canonical);
+    return canonical;
   }
-  return window.location.pathname || '/';
+
+  const normalized = normalizeAppPath(window.location.pathname || '/');
+  if (window.location.pathname !== normalized && !window.location.pathname.includes('.')) {
+    window.history.replaceState(null, '', normalized);
+  }
+  return normalized;
 }
 
 export default function App() {
@@ -78,9 +186,10 @@ export default function App() {
   };
 
   const navigate = useCallback((to: string) => {
-    if (window.location.pathname !== to) {
-      window.history.pushState({}, '', to);
-      setCurrentPath(to);
+    const canonical = normalizeAppPath(to);
+    if (window.location.pathname !== canonical) {
+      window.history.pushState({}, '', canonical);
+      setCurrentPath(canonical);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, []);
@@ -89,20 +198,24 @@ export default function App() {
   useEffect(() => {
     const handlePopState = () => {
       if (window.location.hash && window.location.hash.startsWith('#/')) {
-        const path = window.location.hash.replace(/^#/, '');
-        window.history.replaceState(null, '', path);
-        setCurrentPath(path);
+        const canonical = normalizeAppPath(window.location.hash);
+        window.history.replaceState(null, '', canonical);
+        setCurrentPath(canonical);
       } else {
-        setCurrentPath(window.location.pathname || '/');
+        const canonical = normalizeAppPath(window.location.pathname || '/');
+        if (window.location.pathname !== canonical && !window.location.pathname.includes('.')) {
+          window.history.replaceState(null, '', canonical);
+        }
+        setCurrentPath(canonical);
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const handleHashChange = () => {
       if (window.location.hash && window.location.hash.startsWith('#/')) {
-        const path = window.location.hash.replace(/^#/, '');
-        window.history.replaceState(null, '', path);
-        setCurrentPath(path);
+        const canonical = normalizeAppPath(window.location.hash);
+        window.history.replaceState(null, '', canonical);
+        setCurrentPath(canonical);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     };
@@ -130,8 +243,8 @@ export default function App() {
       // Handle legacy #/ click if any remains
       if (rawHref.startsWith('#/')) {
         e.preventDefault();
-        const targetPath = rawHref.replace(/^#/, '');
-        navigate(targetPath);
+        const canonical = normalizeAppPath(rawHref);
+        navigate(canonical);
         return;
       }
 
@@ -171,7 +284,7 @@ export default function App() {
 
   // Parse current route
   const renderRoute = () => {
-    const clean = currentPath.split('?')[0].split('#')[0].replace(/\/+$/, '') || '/';
+    const clean = currentPath.split('?')[0].split('#')[0].replace(/^\/+/, '').replace(/\/+$/, '');
     const parts = clean.split('/').filter(Boolean);
 
     // Root
@@ -180,6 +293,23 @@ export default function App() {
     }
 
     const [section, id] = parts;
+
+    // Direct country shortcut (e.g. /japan/ -> DestinationDetailPage)
+    if (KNOWN_DESTINATIONS.includes(section.toLowerCase())) {
+      return <DestinationDetailPage id={section.toLowerCase()} savedIds={savedIds} onToggleSave={toggleSave} />;
+    }
+    if (section.startsWith('story-')) {
+      return <StoryDetailPage id={section} savedIds={savedIds} onToggleSave={toggleSave} />;
+    }
+    if (section.startsWith('guide-')) {
+      return <GuideDetailPage id={section} />;
+    }
+    if (section.startsWith('hideout-')) {
+      return <HideoutDetailPage id={section} savedIds={savedIds} onToggleSave={toggleSave} />;
+    }
+    if (section.startsWith('stay-')) {
+      return <StayDetailPage id={section} />;
+    }
 
     switch (section) {
       case 'hideouts':
@@ -211,6 +341,7 @@ export default function App() {
         return <StoriesPage defaultCategory="Hidden Places" />;
 
       case 'guides':
+      case 'field-guides':
       case 'travel-tips':
         if (id) {
           return <GuideDetailPage id={id} />;
@@ -233,6 +364,7 @@ export default function App() {
         return <AffiliateDisclosurePage />;
 
       case 'privacy-policy':
+      case 'privacy':
         return <PrivacyPolicyPage />;
 
       case 'terms':

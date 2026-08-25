@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Bookmark, Sparkles, Share2, Check, ArrowUpRight } from 'lucide-react';
+import { normalizeAppPath } from '../App';
 
 interface PinterestCardProps {
   title: string;
@@ -29,11 +30,11 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
   const [copied, setCopied] = useState(false);
 
   const displayImage = image || imageUrl || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80';
-  const rawUrl = storyUrl || url || '/';
+  const cleanPath = normalizeAppPath(storyUrl || url || '/');
 
   const fullUrl = typeof window !== 'undefined' 
-    ? (rawUrl.startsWith('http') ? rawUrl : `${window.location.origin}${rawUrl.startsWith('/') ? rawUrl : `/${rawUrl}`}`)
-    : rawUrl;
+    ? `${window.location.origin}${cleanPath}`
+    : `https://travelhideouts.com${cleanPath}`;
 
   const handlePin = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -91,7 +92,7 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
             <span className="text-white/70 font-normal">{readTime}</span>
           </div>
 
-          <a href={storyUrl} className="focus:outline-none">
+          <a href={cleanPath} className="focus:outline-none">
             <h4 className="font-serif text-xl sm:text-2xl text-white font-bold leading-tight mb-2 group-hover:text-[#E2EBDD] transition-colors italic">
               {title}
             </h4>
@@ -120,7 +121,7 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
                 {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Share2 className="w-3.5 h-3.5" />}
               </button>
               <a
-                href={storyUrl}
+                href={cleanPath}
                 className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
               >
                 <ArrowUpRight className="w-3.5 h-3.5" />

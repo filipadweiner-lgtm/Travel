@@ -104,7 +104,7 @@ export const StoriesPage: React.FC<StoriesPageProps> = ({ defaultCategory = 'All
                 </div>
 
                 <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#434338] leading-snug italic">
-                  <a href={`/stories/${featuredStory.id}`} className="hover:text-[#8FA18B] transition-colors">
+                  <a href={`/stories/${featuredStory.id}/`} className="hover:text-[#8FA18B] transition-colors">
                     {featuredStory.title}
                   </a>
                 </h2>
@@ -117,7 +117,7 @@ export const StoriesPage: React.FC<StoriesPageProps> = ({ defaultCategory = 'All
               <div className="pt-4 border-t border-[#E9E5D9] flex items-center justify-between">
                 <span className="text-xs text-[#8D8D7E]">By {featuredStory.authorName || 'Miley Rocha'}</span>
                 <a
-                  href={`/stories/${featuredStory.id}`}
+                  href={`/stories/${featuredStory.id}/`}
                   className="inline-flex items-center gap-1.5 text-xs font-bold px-5 py-2.5 rounded-full bg-[#8FA18B] text-white hover:bg-[#7C8E78] transition-colors"
                 >
                   <span>Read Story</span>
@@ -158,7 +158,7 @@ export const StoriesPage: React.FC<StoriesPageProps> = ({ defaultCategory = 'All
                 </div>
 
                 <h3 className="text-xl font-serif font-bold text-[#434338] leading-snug italic">
-                  <a href={`/stories/${story.id}`} className="hover:text-[#8FA18B] transition-colors">
+                  <a href={`/stories/${story.id}/`} className="hover:text-[#8FA18B] transition-colors">
                     {story.title}
                   </a>
                 </h3>
@@ -172,7 +172,7 @@ export const StoriesPage: React.FC<StoriesPageProps> = ({ defaultCategory = 'All
             <div className="px-6 pb-6 pt-0 flex items-center justify-between border-t border-[#E9E5D9] pt-3 text-xs">
               <span className="text-[#8D8D7E] text-[11px]">{story.authorName || 'Elena Rostova'}</span>
               <a
-                href={`/stories/${story.id}`}
+                href={`/stories/${story.id}/`}
                 className="font-bold text-[#8FA18B] hover:text-[#7C8E78] inline-flex items-center gap-1"
               >
                 <span>Read story</span>

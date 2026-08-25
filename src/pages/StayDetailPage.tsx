@@ -25,7 +25,7 @@ export const StayDetailPage: React.FC<StayDetailPageProps> = ({ id }) => {
 
       <div>
         <a
-          href="/stays"
+          href="/stays/"
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#66503E] hover:text-[#242220] transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />

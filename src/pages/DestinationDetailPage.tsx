@@ -78,7 +78,7 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-20 w-full space-y-4">
           <a
-            href="/destinations"
+            href="/destinations/"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 hover:text-white mb-2 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -169,7 +169,7 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
 
                     <div className="pt-3 border-t border-[#E9E5D9] flex items-center justify-between">
                       <a
-                        href={`/stories/${story.id}`}
+                        href={`/stories/${story.id}/`}
                         className="inline-flex items-center gap-1 text-xs font-bold text-[#8FA18B] hover:text-[#7C8E78] transition-colors"
                       >
                         <span>Read story</span>
@@ -262,7 +262,7 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
                   <div className="pt-3 border-t border-[#E9E5D9] flex items-center justify-between text-xs">
                     <span className="text-[11px] text-[#8D8D7E]">{hs.readTime || '5 min read'}</span>
                     <a
-                      href="/stories"
+                      href="/stories/"
                       className="font-bold text-[#8FA18B] hover:text-[#7C8E78] inline-flex items-center gap-1"
                     >
                       <span>Explore</span>

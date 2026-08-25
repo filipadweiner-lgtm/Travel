@@ -31,7 +31,7 @@ export const DestinationsPage: React.FC = () => {
         {DESTINATIONS.map((dest) => (
           <a
             key={dest.id}
-            href={`/destinations/${dest.id}`}
+            href={`/destinations/${dest.id}/`}
             className="group rounded-3xl overflow-hidden bg-white border border-[#E9E5D9] shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
           >
             <div>

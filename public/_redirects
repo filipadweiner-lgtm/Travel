@@ -1,0 +1,4 @@
+# TravelHideouts Netlify SPA and Route Directives
+# Direct requests to clean URLs load the SPA without 404
+/api/contact /.netlify/functions/contact 200
+/* /index.html 200
