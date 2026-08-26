@@ -11,8 +11,8 @@
 export const AFFILIATE_CONFIG = {
   // Stay22 Integration Configuration
   stay22: {
-    enabled: false, // Set to true once Stay22 account is active
-    partnerId: 'AFFILIATE_LINK_PLACEHOLDER', // Replace with your real Stay22 Partner ID
+    enabled: true, // Stay22 LetMeAllez account active
+    partnerId: '6a89651402a013eb97913f1a', // Stay22 Partner / LMA ID
     defaultLocation: 'lisbon',
     baseUrl: 'https://www.stay22.com/embed/gm',
   },
