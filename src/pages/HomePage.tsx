@@ -7,7 +7,7 @@ import { TravelerVoiceCard } from '../components/TravelerVoiceCard';
 import { SEOHead } from '../components/SEOHead';
 import { AuthorNotice } from '../components/AuthorNotice';
 import mileyRochaFounderImg from '../assets/images/miley_eating_berries_1786888166297.jpg';
-import campfireHiddenLagoonImg from '../assets/images/cave_lagoon_campfire_1787385919547.jpg';
+import travelHideoutHeroImg from '../assets/images/travel_hideout_hero_1787667989504.jpg';
 import { 
   ArrowRight, 
   Sparkles, 
@@ -39,23 +39,23 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
   return (
     <div className="space-y-16 md:space-y-24 pb-20">
       <SEOHead
-        title="TravelHideouts — Travel Stories Worth Saving"
+        title="Travel Hideouts — Travel Stories Worth Saving"
         description="Curated travel stories, hidden places, and mindful travel guides selected for curious travelers."
       />
 
       {/* ========================================================================= */}
-      {/* 1. Atmospheric Hero Section: Miley in firelit cave during thunderstorm */}
+      {/* 1. Atmospheric Hero Section: Secluded Wilderness Hideout at Twilight */}
       {/* ========================================================================= */}
       <section className="relative min-h-[85vh] sm:min-h-[88vh] md:min-h-[90vh] lg:min-h-[94vh] flex items-center justify-center bg-[#151914] text-white overflow-hidden">
-        {/* Background: Traveler sitting by campfire inside cave overlooking turquoise hidden lagoon */}
+        {/* Background: Secluded architectural glass and timber hideout cabin overlooking misty fjord */}
         <div className="absolute inset-0 z-0">
           <img
-            src={campfireHiddenLagoonImg}
-            alt="Traveler sitting beside a cozy campfire inside a mossy cave overlooking an emerald lagoon, misty peaks, and ancient ruins"
+            src={travelHideoutHeroImg}
+            alt="Secluded architectural glass and timber hideout cabin perched on a misty pine-covered cliff overlooking an emerald fjord at twilight"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center scale-100 md:scale-105 animate-in fade-in duration-1000 brightness-105 contrast-[1.03]"
           />
-          {/* Multi-stop gradient ensuring text legibility while letting the fire glow and storm mood shine through */}
+          {/* Multi-stop gradient ensuring text legibility while letting the fire glow and twilight mood shine through */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#151914]/90 via-black/25 to-black/35" />
           <div className="absolute inset-0 bg-radial from-transparent via-black/10 to-black/45 pointer-events-none" />
         </div>
@@ -324,7 +324,7 @@ export const HomePage: React.FC<HomePageProps> = ({ savedIds, onToggleSave }) =>
             <div className="md:col-span-4 relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#F1EDE4] border border-[#E9E5D9]">
               <img
                 src={mileyRochaFounderImg}
-                alt="Miley Rocha, Founder of TravelHideouts"
+                alt="Miley Rocha, Founder of Travel Hideouts"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />

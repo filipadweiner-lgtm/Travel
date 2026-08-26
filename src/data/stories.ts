@@ -1,18 +1,29 @@
 import { Story } from '../types';
 import swedishLaplandAuroraImg from '../assets/images/swedish_lapland_aurora_1786886382158.jpg';
 import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
+import norwayFjordFerryImg from '../assets/images/norway_fjord_ferry_deck_1786971648308.jpg';
 import icelandImg from '../assets/images/iceland_black_sand_raw_1786970961856.jpg';
 import icelandTurfImg from '../assets/images/iceland_turf_house_field_1786971149571.jpg';
+import alpineRefugeImg from '../assets/images/alpine_refuge_cabin_1787668017576.jpg';
+import nordicCabinHideoutImg from '../assets/images/nordic_cabin_hideout_1787668169487.jpg';
 import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_1786971038343.jpg';
 import switzerlandImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
+import swissCarfreeVillageImg from '../assets/images/swiss_carfree_village_1787742527585.jpg';
 import swedenImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
 import swedenFikaImg from '../assets/images/sweden_fika_cardamom_coffee_1786971159560.jpg';
+import swedenKayakImg from '../assets/images/sweden_kayak_isle_1787742502301.jpg';
 import chinaImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import chinaYangshuoMistImg from '../assets/images/china_yangshuo_mist_1787742541701.jpg';
+import chinaGreatWallImg from '../assets/images/china_great_wall_mist_1786971918716.jpg';
 import australiaImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
 import australiaBayOfFiresImg from '../assets/images/australia_tasmania_bay_fires_1786971180115.jpg';
+import australiaOceanPoolImg from '../assets/images/australia_ocean_pool_1786971907577.jpg';
 import newZealandImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
+import nzPurepodCabinImg from '../assets/images/nz_purepod_cabin_1787742487984.jpg';
 import japanImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';
 import japanShirakawagoImg from '../assets/images/japan_shirakawago_village_1786971171228.jpg';
+import japanKonbiniImg from '../assets/images/japan_konbini_tamago_1787742471335.jpg';
+import japanTrainImg from '../assets/images/japan_train_shinkansen_window_1786971632892.jpg';
 
 export const STORIES: Story[] = [
   // ==========================================
@@ -29,7 +40,7 @@ export const STORIES: Story[] = [
     isFeatured: true,
     heroImage: icelandImg,
     pinterestImage: icelandImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     authorName: 'Elena Rostova',
     authorRole: 'Senior Travel Writer',
     excerpt: 'Instead of racing through the entire Ring Road in a frantic blur, focusing on Iceland’s southern coastline and western peninsula allows you to actually absorb the elemental scale.',
@@ -74,7 +85,7 @@ The real joy of Iceland is not checking off landmarks; it is learning to surrend
     readTime: '5 min read',
     heroImage: icelandTurfImg,
     pinterestImage: icelandTurfImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'When Viking settlers cleared 95% of Iceland\'s native birch forests, they had to invent a dwelling that could withstand ferocious arctic blizzards with zero wood.',
     curiosityHook: 'How a lack of timber created one of the world’s most ingenious living, breathing architectural traditions.',
     whyItMatters: 'Turf houses (Torfbæir) are thermodynamic marvels: thick layers of living turf provide superior insulation, keeping interiors warm using only body heat and small oil lamps.',
@@ -107,9 +118,9 @@ Today, preserved turf complexes like Glaumbær in Skagafjörður and Keldur in s
     isHiddenStory: true,
     date: 'March 2026',
     readTime: '5 min read',
-    heroImage: liechtensteinImg,
-    pinterestImage: liechtensteinImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: alpineRefugeImg,
+    pinterestImage: alpineRefugeImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Tucked between Switzerland and Austria, Liechtenstein is small enough to traverse on foot, yet home to some of the most dramatic limestone ridges in the Alps.',
     curiosityHook: 'How a 75-kilometer trail connects an entire sovereign nation through 11 historic villages and high Alpine pastures.',
     whyItMatters: 'While tour groups only stop for 30 minutes in Vaduz, walking the Liechtenstein Trail (Liechtenstein-Weg) reveals fairy-tale mountain hamlets with zero tourist commotion.',
@@ -145,7 +156,7 @@ After a day on the ridge, descend to Triesenberg for dinner. The village was set
     readTime: '4 min read',
     heroImage: liechtensteinImg,
     pinterestImage: liechtensteinImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Liechtenstein is one of only five sovereign nations in the world without an airport of its own. Here is why locals love it that way.',
     curiosityHook: 'Why a nation with billions in sovereign wealth deliberately chose not to pave a single runway.',
     whyItMatters: 'The absence of runways and loud aircraft preserves the acoustic silence of the Rhine Valley and mountain villages.',
@@ -176,9 +187,9 @@ There are no border guards, passport booths, or luggage queues on the bridges cr
     isHiddenStory: true,
     date: 'March 2026',
     readTime: '6 min read',
-    heroImage: switzerlandImg,
-    pinterestImage: switzerlandImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: swissCarfreeVillageImg,
+    pinterestImage: swissCarfreeVillageImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Perched 800 meters above the Lauterbrunnen cliff face, Mürren bans combustion engines by law. The only sounds are melting glacier streams and cowbells.',
     curiosityHook: 'What happens when an entire community decides cars do not belong in the mountains.',
     whyItMatters: 'Without vehicle noise or exhaust, your senses reset completely within hours of stepping off the mountain cable car.',
@@ -218,7 +229,7 @@ When the last afternoon cable car departs with day trippers, Mürren settles int
     readTime: '5 min read',
     heroImage: switzerlandImg,
     pinterestImage: switzerlandImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Swiss cowbells are not random noisemakers: each bell is handcrafted from brass and bronze alloys and tuned to specific musical pitches.',
     curiosityHook: 'How Alpine farmers use sound frequencies to locate individual cows in dense mountain clouds.',
     whyItMatters: 'The chime of bells (Schellen) is an ancient acoustic navigation system that has preserved Alpine pastoral ecosystems for centuries.',
@@ -253,7 +264,7 @@ In late September, when the first frosts touch the high summits, the ceremonial 
     readTime: '6 min read',
     heroImage: norwayWaterfallImg,
     pinterestImage: norwayWaterfallImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     authorName: 'Ingrid Solberg',
     authorRole: 'Nordic Specialist',
     excerpt: 'Norway is not a destination for ticking boxes; its magic unfolds when you unpack your bag in a wooden fjord village and stay put.',
@@ -289,9 +300,9 @@ In the Lofoten Islands, Henningsvær has evolved from a sleepy cod fishing stati
     isHiddenStory: true,
     date: 'March 2026',
     readTime: '4 min read',
-    heroImage: norwayWaterfallImg,
-    pinterestImage: norwayWaterfallImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: nordicCabinHideoutImg,
+    pinterestImage: nordicCabinHideoutImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'In Norway, the cabin (hytta) is not just a vacation property; it is a sacred cultural ritual of returning to simplicity.',
     curiosityHook: 'Why a nation with ultra-modern cities chooses to spend weekends in rustic wooden cabins without running water.',
     whyItMatters: 'The concept of hyttekos offers the ultimate antidote to modern digital fatigue and sensory overload.',
@@ -319,9 +330,9 @@ Staying in a traditional rorbu or fjord-side cabin reconnects you to the circadi
     isHiddenStory: true,
     date: 'February 2026',
     readTime: '5 min read',
-    heroImage: swedenImg,
-    pinterestImage: swedenImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: swedenKayakImg,
+    pinterestImage: swedenKayakImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Stockholm is built across 14 islands, but its true magic is found in quiet residential alleys, morning fika spots, and commuter boat rides.',
     curiosityHook: 'How to use local public commuter ferries to reach secluded granite swimming bays and pine forest trails.',
     whyItMatters: 'You don’t need expensive charter boats: standard public transit tickets let you island-hop all summer long.',
@@ -354,7 +365,7 @@ Instead of paying for expensive tourist sightseeing cruises, tap your SL transit
     readTime: '4 min read',
     heroImage: swedenFikaImg,
     pinterestImage: swedenFikaImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'In Sweden, fika is not an on-the-go caffeine hit in a paper cup: it is a sacred pause that structures daily existence.',
     curiosityHook: 'Why Swedes insist on sitting down with porcelain cups and warm cardamom buns twice a day.',
     whyItMatters: 'Fika breaks down social barriers, fosters egalitarian conversation, and protects mental clarity.',
@@ -385,9 +396,9 @@ In Swedish workplaces, fika happens twice a day (around 10:00 AM and 3:00 PM). C
     isHiddenStory: true,
     date: 'March 2026',
     readTime: '6 min read',
-    heroImage: chinaImg,
-    pinterestImage: chinaImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: chinaYangshuoMistImg,
+    pinterestImage: chinaYangshuoMistImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Rising sheer out of emerald rice paddies and bamboo-lined rivers, the limestone towers of Yangshuo look like poetry painted on silk.',
     curiosityHook: 'Why standing among the limestone peaks of Guangxi feels like stepping into a 1,000-year-old Song Dynasty landscape scroll.',
     whyItMatters: 'Staying outside the main town in the Yulong River valley gives you morning silence with zero tour buses.',
@@ -420,9 +431,9 @@ As the raft glides across glass-still water, passing weeping willows and grazing
     category: 'Road Trips',
     date: 'March 2026',
     readTime: '7 min read',
-    heroImage: chinaImg,
-    pinterestImage: chinaImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: chinaGreatWallImg,
+    pinterestImage: chinaGreatWallImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'A thoughtfully balanced 14-day itinerary connecting Beijing’s ancient hutongs, Yangshuo’s limestone peaks, and Shanghai’s plane-tree avenues.',
     curiosityHook: 'How high-speed trains make traveling across three distinct climate zones seamless and stress-free.',
     whyItMatters: 'Balancing imperial grandeur, countryside tranquility, and urban café culture gives you the full spectrum of China today.',
@@ -459,7 +470,7 @@ Finish in Shanghai’s Former French Concession. Wander underneath shaded plane 
     readTime: '5 min read',
     heroImage: australiaBayOfFiresImg,
     pinterestImage: australiaBayOfFiresImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'While Sydney beaches bustle with surf culture, Tasmania’s northeast coastline offers miles of empty quartz sand and crystal-clear turquoise waters.',
     curiosityHook: 'Why the brightest orange rocks in the southern hemisphere remain virtually deserted even in mid-summer.',
     whyItMatters: 'Australia has over 10,000 beaches, and some of the most spectacular are in cool-climate island sanctuaries.',
@@ -492,9 +503,9 @@ You can walk along the sand at Binalong Bay for two hours in January (the height
     category: 'Untold Stories',
     date: 'February 2026',
     readTime: '6 min read',
-    heroImage: australiaImg,
-    pinterestImage: australiaImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: australiaOceanPoolImg,
+    pinterestImage: australiaOceanPoolImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Floating south of mainland Australia, Tasmania combines prehistoric Gondwana rainforests, avant-garde art, and the world’s purest air.',
     curiosityHook: 'How an isolated penal island transformed into the world’s most exciting culinary and creative sanctuary.',
     whyItMatters: 'Tasmania moves at an entirely different tempo than Sydney or Melbourne: unhurried, community-rooted, and deeply wild.',
@@ -523,9 +534,9 @@ What makes Tasmania unforgettable is its rural warmth. Driving through the Huon 
     isHiddenStory: true,
     date: 'March 2026',
     readTime: '6 min read',
-    heroImage: newZealandImg,
-    pinterestImage: newZealandImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: nzPurepodCabinImg,
+    pinterestImage: nzPurepodCabinImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'State Highway 94 from Te Anau to Milford Sound is not just a drive; it is an epic alpine journey through primordial glacier-carved valleys.',
     curiosityHook: 'Why the journey through the Homer Tunnel into Fiordland National Park will leave you breathless.',
     whyItMatters: 'Most tourists take tour buses that rush through; driving yourself early in the morning lets you experience the Mirror Lakes in absolute silence.',
@@ -560,7 +571,7 @@ When you emerge on the western side of the tunnel, the transformation is stagger
     readTime: '5 min read',
     heroImage: newZealandImg,
     pinterestImage: newZealandImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     excerpt: 'When you first see Lake Pukaki, the intense milky turquoise hue looks artificial. The explanation is pure geological alchemy.',
     curiosityHook: 'How giant ancient glaciers grind bedrock into microscopic dust that scatters sunlight across the Southern Alps.',
     whyItMatters: 'Standing on the shore of Lake Pukaki looking towards Mount Cook (Aoraki) offers one of the purest vistas in the southern hemisphere.',
@@ -593,7 +604,7 @@ At night, the spectacle shifts to the sky. Lake Tekapo sits inside the Aoraki Ma
     readTime: '6 min read',
     heroImage: japanShirakawagoImg,
     pinterestImage: japanShirakawagoImg,
-    author: 'TravelHideouts Editorial',
+    author: 'Travel Hideouts Editorial',
     authorName: 'Yuki Tanaka',
     authorRole: 'Cultural Heritage Writer',
     excerpt: 'Deep in the Japanese Alps, ancient wooden farmhouses with 60-degree thatched roofs resemble hands folded in prayer.',
@@ -630,9 +641,9 @@ Staying overnight in a traditional minshuku, sleeping on tatami mats beneath cen
     category: 'Food',
     date: 'February 2026',
     readTime: '5 min read',
-    heroImage: japanImg,
-    pinterestImage: japanImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: japanKonbiniImg,
+    pinterestImage: japanKonbiniImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'In Japan, convenience stores (konbini) are not grim roadside gas stops; they are culinary sanctuaries of fresh gastronomy.',
     curiosityHook: 'Why Michelin-starred chefs land at Tokyo airports and immediately head to the nearest 7-Eleven or Lawson.',
     whyItMatters: 'Konbini provide safe, fresh, high-quality, and deeply comforting meals at any hour of the day or night.',
@@ -660,9 +671,9 @@ The triangular seaweed wrap on onigiri is protected by a patented dual-layer pla
     category: 'Road Trips',
     date: 'March 2026',
     readTime: '6 min read',
-    heroImage: japanImg,
-    pinterestImage: japanImg,
-    author: 'TravelHideouts Editorial',
+    heroImage: japanTrainImg,
+    pinterestImage: japanTrainImg,
+    author: 'Travel Hideouts Editorial',
     excerpt: 'Gliding across the Japanese Alps at 260 km/h with an ekiben bento box on your lap is the gold standard of world travel.',
     curiosityHook: 'Why Japanese bullet trains make airport security lines and domestic flights feel completely obsolete.',
     whyItMatters: 'The Shinkansen is punctual to the second, whisks you from city center to city center, and offers panoramic mountain views.',

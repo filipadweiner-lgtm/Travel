@@ -13,7 +13,7 @@ export const AuthorNotice: React.FC<{ className?: string }> = ({ className = '' 
           <Sparkles className="w-3 h-3 text-[#D48166]" />
         </p>
         <p className="leading-relaxed text-[#5A5A40]">
-          TravelHideouts distinguishes strictly between genuine firsthand journeys by Miley Rocha and curated community research picks. Demonstrations and research picks are clearly identified to maintain full editorial transparency.
+          Travel Hideouts distinguishes strictly between genuine firsthand journeys by Miley Rocha and curated community research picks. Demonstrations and research picks are clearly identified to maintain full editorial transparency.
         </p>
       </div>
     </div>

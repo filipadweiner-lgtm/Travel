@@ -27,7 +27,7 @@ export const GettingTherePage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-12">
       <SEOHead
-        title="Getting There: Routes, Flights & Arrival Intelligence — TravelHideouts"
+        title="Getting There: Routes, Flights & Arrival Intelligence — Travel Hideouts"
         description="Thoughtful route planning, flight search integration, airport transfer times, and evening arrival advice."
       />
 

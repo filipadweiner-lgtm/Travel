@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             <a href="/" className="inline-block focus:outline-none">
               <span className="font-serif text-3xl font-bold tracking-tight text-[#F9F7F2] italic">
-                TravelHideouts
+                Travel Hideouts
               </span>
               <span className="block text-xs uppercase tracking-[0.2em] text-[#8D8D7E] font-sans mt-1.5 font-semibold">
                 Discover places worth going.
@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             </a>
 
             <p className="text-sm text-[#CDCBC2] leading-relaxed max-w-md font-sans">
-              TravelHideouts is an independent female-curated travel publication. We share curiosity-driven travel stories, hidden places, and mindful travel guides across 9 extraordinary destinations. We do not offer or sell accommodations directly.
+              Travel Hideouts is an independent female-curated travel publication. We share curiosity-driven travel stories, hidden places, and mindful travel guides across 9 extraordinary destinations. We do not offer or sell accommodations directly.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-xs text-[#8D8D7E]">
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8D8D7E] gap-4">
-          <p>© {new Date().getFullYear()} TravelHideouts (travelhideouts.com). All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Travel Hideouts (travelhideouts.com). All rights reserved.</p>
           <div className="flex items-center gap-1.5 text-[#ABA99E]">
             <div className="w-2 h-2 rounded-full bg-[#8FA18B]"></div>
             <span>Crafted with calm natural aesthetics for travelers worldwide</span>

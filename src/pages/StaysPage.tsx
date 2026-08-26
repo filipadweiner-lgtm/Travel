@@ -26,7 +26,7 @@ export const StaysPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-10">
       <SEOHead
-        title="Curated Stays — TravelHideouts"
+        title="Curated Stays — Travel Hideouts"
         description="Boutique finds, romantic retreats, solo-friendly sanctuaries, and beautiful budget stays with honest context."
       />
 

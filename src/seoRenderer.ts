@@ -37,7 +37,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     const destination = DESTINATIONS.find(d => d.id === slug || d.slug === slug);
     if (destination) {
       const canonical = `${siteUrl}/destinations/${destination.id}`;
-      const title = `${destination.name} Travel Hideouts & Curated Guide — TravelHideouts`;
+      const title = `${destination.name} Travel Hideouts & Curated Guide — Travel Hideouts`;
       const description = `${destination.blurb || destination.emotionalStatement || destination.openingEditorial} Discover quiet sanctuaries, authentic local spots, and curated stays in ${destination.name}.`;
       const image = destination.heroImage || destination.image || defaultImage;
 
@@ -127,7 +127,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     const guide = GUIDES.find(g => g.id === slug || g.slug === slug);
     if (guide) {
       const canonical = `${siteUrl}/guides/${guide.id}`;
-      const title = `${guide.title} — TravelHideouts Field Guide`;
+      const title = `${guide.title} — Travel Hideouts Field Guide`;
       const description = `${guide.subtitle || guide.excerpt || guide.intro || ''} Honest travel advice and practical tips curated by Miley Rocha.`;
       const image = guide.heroImage || guide.image || defaultImage;
 
@@ -146,7 +146,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
         },
         publisher: {
           '@type': 'Organization',
-          name: 'TravelHideouts',
+          name: 'Travel Hideouts',
           url: 'https://travelhideouts.com'
         }
       };
@@ -174,7 +174,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
             </section>
           `).join('') : ''}
           <footer class="ssr-footer">
-            <p>Author: Miley Rocha · Published on TravelHideouts</p>
+            <p>Author: Miley Rocha · Published on Travel Hideouts</p>
           </footer>
         </article>
       `;
@@ -198,7 +198,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     const story = STORIES.find(s => s.id === slug || s.slug === slug);
     if (story) {
       const canonical = `${siteUrl}/stories/${story.id}`;
-      const title = `${story.title} — TravelHideouts`;
+      const title = `${story.title} — Travel Hideouts`;
       const description = `${story.excerpt || story.curiosityHook || story.subtitle} Travel essay by Miley Rocha.`;
       const image = story.heroImage || story.image || defaultImage;
 
@@ -216,7 +216,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
         },
         publisher: {
           '@type': 'Organization',
-          name: 'TravelHideouts',
+          name: 'Travel Hideouts',
           url: 'https://travelhideouts.com'
         }
       };
@@ -240,7 +240,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
           `).join('') : ''}
           ${story.whyItMatters ? `<section class="ssr-why"><h3>Why It Matters</h3><p>${escapeHtml(story.whyItMatters)}</p></section>` : ''}
           <footer class="ssr-footer">
-            <p>Author: Miley Rocha · Published on TravelHideouts</p>
+            <p>Author: Miley Rocha · Published on Travel Hideouts</p>
           </footer>
         </article>
       `;
@@ -264,7 +264,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     const hideout = HIDEOUTS.find(h => h.id === slug || h.slug === slug);
     if (hideout) {
       const canonical = `${siteUrl}/hideouts/${hideout.id}`;
-      const title = `${hideout.title} (${hideout.location}) — TravelHideouts`;
+      const title = `${hideout.title} (${hideout.location}) — Travel Hideouts`;
       const description = `${hideout.summary || hideout.description} Curated quiet place in ${hideout.location}. Category: ${hideout.category}.`;
       const image = hideout.image || defaultImage;
 
@@ -319,7 +319,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     const stay = STAYS.find(s => s.id === slug || s.slug === slug);
     if (stay) {
       const canonical = `${siteUrl}/stays/${stay.id}`;
-      const title = `${stay.name} (${stay.neighborhood}, ${stay.destinationName}) — TravelHideouts`;
+      const title = `${stay.name} (${stay.neighborhood}, ${stay.destinationName}) — Travel Hideouts`;
       const description = `${stay.whyCaughtAttention || stay.description || stay.whyWeChoseIt} Honest review and traveler assessment for ${stay.name}.`;
       const image = stay.image || defaultImage;
 
@@ -369,7 +369,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
   // 6. Hub Pages
   if (cleanPath === '/destinations') {
     return {
-      title: 'Curated Destinations — Quiet Travel Across 9 Countries | TravelHideouts',
+      title: 'Curated Destinations — Quiet Travel Across 9 Countries | Travel Hideouts',
       description: 'Explore quiet, thoughtful travel guides across Iceland, Liechtenstein, Switzerland, Norway, Sweden, China, Australia, New Zealand, and Japan.',
       canonicalUrl: `${siteUrl}/destinations`,
       ogImage: defaultImage,
@@ -404,7 +404,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/guides') {
     return {
-      title: 'Field Guides & Practical Advice for Mindful Travelers — TravelHideouts',
+      title: 'Field Guides & Practical Advice for Mindful Travelers — Travel Hideouts',
       description: 'Honest, in-depth travel guides covering Japanese train etiquette, Swiss Alpine passes, Nordic fika culture, and Tasmanian coastal routes.',
       canonicalUrl: `${siteUrl}/guides`,
       ogImage: defaultImage,
@@ -434,7 +434,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/stories') {
     return {
-      title: 'Curiosity Stories & Travel Essays — TravelHideouts',
+      title: 'Curiosity Stories & Travel Essays — Travel Hideouts',
       description: 'Slow travel narratives and cultural deep dives into forgotten temples, mountain rituals, and secluded coastal outposts.',
       canonicalUrl: `${siteUrl}/stories`,
       ogImage: defaultImage,
@@ -464,7 +464,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/hideouts') {
     return {
-      title: 'Quiet Hideouts & Atmospheric Retreats — TravelHideouts',
+      title: 'Quiet Hideouts & Atmospheric Retreats — Travel Hideouts',
       description: 'Hand-picked architectural cabins, historic ryokans, fjord lodges, and secluded sanctuaries for deep rest.',
       canonicalUrl: `${siteUrl}/hideouts`,
       ogImage: defaultImage,
@@ -495,7 +495,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/stays') {
     return {
-      title: 'Stays Worth Knowing — Honest Accommodation Reviews | TravelHideouts',
+      title: 'Stays Worth Knowing — Honest Accommodation Reviews | Travel Hideouts',
       description: 'Carefully vetted boutique hotels, design cabins, and serene guesthouses evaluated with real traveler sentiment and honest caveats.',
       canonicalUrl: `${siteUrl}/stays`,
       ogImage: defaultImage,
@@ -526,7 +526,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/deals') {
     return {
-      title: 'Curated Flight & Hotel Deals — TravelHideouts',
+      title: 'Curated Flight & Hotel Deals — Travel Hideouts',
       description: 'Handpicked flight routes and partner accommodation rates for mindful travel across our 9 featured countries.',
       canonicalUrl: `${siteUrl}/deals`,
       ogImage: defaultImage,
@@ -548,20 +548,20 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/about') {
     return {
-      title: 'About Miley Rocha & TravelHideouts — Editorial Philosophy',
-      description: 'Learn about Miley Rocha, solo female traveler and curator behind TravelHideouts, and our independent editorial guarantee.',
+      title: 'About Miley Rocha & Travel Hideouts — Editorial Philosophy',
+      description: 'Learn about Miley Rocha, solo female traveler and curator behind Travel Hideouts, and our independent editorial guarantee.',
       canonicalUrl: `${siteUrl}/about`,
       ogImage: defaultImage,
       ogType: 'article',
       schemaJson: {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
-        name: 'About TravelHideouts & Miley Rocha',
+        name: 'About Travel Hideouts & Miley Rocha',
         url: `${siteUrl}/about`
       },
       ssrBodyHtml: `
         <main class="ssr-page">
-          <h1>About TravelHideouts & Miley Rocha</h1>
+          <h1>About Travel Hideouts & Miley Rocha</h1>
           <p>An independent travel publication dedicated to discovering places worth going.</p>
         </main>
       `
@@ -570,20 +570,20 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/contact') {
     return {
-      title: 'Contact Editorial Team — TravelHideouts',
-      description: 'Send feedback, hideout recommendations, or guide corrections directly to the editor of TravelHideouts.',
+      title: 'Contact Editorial Team — Travel Hideouts',
+      description: 'Send feedback, hideout recommendations, or guide corrections directly to the editor of Travel Hideouts.',
       canonicalUrl: `${siteUrl}/contact`,
       ogImage: defaultImage,
       ogType: 'website',
       schemaJson: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
-        name: 'Contact TravelHideouts',
+        name: 'Contact Travel Hideouts',
         url: `${siteUrl}/contact`
       },
       ssrBodyHtml: `
         <main class="ssr-page">
-          <h1>Contact TravelHideouts</h1>
+          <h1>Contact Travel Hideouts</h1>
           <p>Direct email: etuzex@gmail.com</p>
         </main>
       `
@@ -592,8 +592,8 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/privacy') {
     return {
-      title: 'Privacy Policy — TravelHideouts',
-      description: 'Privacy policy for TravelHideouts. How we protect your data and respect reader privacy.',
+      title: 'Privacy Policy — Travel Hideouts',
+      description: 'Privacy policy for Travel Hideouts. How we protect your data and respect reader privacy.',
       canonicalUrl: `${siteUrl}/privacy`,
       ogImage: defaultImage,
       ogType: 'website',
@@ -614,8 +614,8 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/terms') {
     return {
-      title: 'Terms of Service — TravelHideouts',
-      description: 'Terms and conditions for using the TravelHideouts discovery platform.',
+      title: 'Terms of Service — Travel Hideouts',
+      description: 'Terms and conditions for using the Travel Hideouts discovery platform.',
       canonicalUrl: `${siteUrl}/terms`,
       ogImage: defaultImage,
       ogType: 'website',
@@ -628,7 +628,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
       ssrBodyHtml: `
         <main class="ssr-page">
           <h1>Terms of Service</h1>
-          <p>Terms of service for TravelHideouts.</p>
+          <p>Terms of service for Travel Hideouts.</p>
         </main>
       `
     };
@@ -636,7 +636,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   if (cleanPath === '/affiliate-disclosure') {
     return {
-      title: 'Affiliate Disclosure & Transparency — TravelHideouts',
+      title: 'Affiliate Disclosure & Transparency — Travel Hideouts',
       description: 'Our complete disclosure regarding affiliate partnerships, commissions, and editorial independence.',
       canonicalUrl: `${siteUrl}/affiliate-disclosure`,
       ogImage: defaultImage,
@@ -658,7 +658,7 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
 
   // 7. Default Homepage
   return {
-    title: 'TravelHideouts — Discover places worth going.',
+    title: 'Travel Hideouts — Discover places worth going.',
     description: 'Curated hideouts, atmospheric stays, honest city guides, and verified traveler community voices across Iceland, Liechtenstein, Switzerland, Norway, Sweden, China, Australia, New Zealand, and Japan. Selected by solo female traveler Miley Rocha.',
     canonicalUrl: siteUrl,
     ogImage: defaultImage,
@@ -666,13 +666,13 @@ export function getSEOMetadataForPath(pathname: string): SEORouteMeta {
     schemaJson: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'TravelHideouts',
+      name: 'Travel Hideouts',
       url: siteUrl,
       description: 'Discover places worth going across 9 curated countries.'
     },
     ssrBodyHtml: `
       <main class="ssr-page">
-        <h1>TravelHideouts — Discover places worth going.</h1>
+        <h1>Travel Hideouts — Discover places worth going.</h1>
         <p>An independent female-curated travel publication discovering curiosity-driven stories, hidden places, and honest travel guides across 9 destinations.</p>
         <h2>Featured Destinations</h2>
         <ul>
@@ -716,7 +716,7 @@ export function injectSEOIntoHtml(htmlTemplate: string, pathname: string): strin
   <meta property="og:url" content="${escapeHtml(seo.canonicalUrl)}" />
   <meta property="og:type" content="${seo.ogType}" />
   <meta property="og:image" content="${escapeHtml(seo.ogImage)}" />
-  <meta property="og:site_name" content="TravelHideouts" />
+  <meta property="og:site_name" content="Travel Hideouts" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escapeHtml(seo.title)}" />
   <meta name="twitter:description" content="${escapeHtml(seo.description)}" />

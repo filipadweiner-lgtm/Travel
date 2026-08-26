@@ -6,8 +6,8 @@ export const TermsPage: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-8">
       <SEOHead
-        title="Terms of Service — TravelHideouts"
-        description="Terms and conditions for using TravelHideouts discovery platform."
+        title="Terms of Service — Travel Hideouts"
+        description="Terms and conditions for using Travel Hideouts discovery platform."
       />
 
       <div>
@@ -31,7 +31,7 @@ export const TermsPage: React.FC = () => {
 
       <div className="p-6 md:p-8 rounded-3xl bg-white border border-[#E9E1D2] space-y-6 text-sm md:text-base text-[#474038] leading-relaxed">
         <p>
-          Welcome to TravelHideouts (travelhideouts.com). By accessing or using our website, you agree to comply with and be bound by these terms.
+          Welcome to Travel Hideouts (travelhideouts.com). By accessing or using our website, you agree to comply with and be bound by these terms.
         </p>
 
         <h2 className="font-serif font-bold text-xl text-[#242220] pt-2">
@@ -45,14 +45,14 @@ export const TermsPage: React.FC = () => {
           2. External Booking Partnerships
         </h2>
         <p>
-          TravelHideouts is an independent editorial publisher, not a travel agency or booking platform. Any transactions, cancellations, or bookings made through third-party partners (such as Stay22 or airline aggregators) are strictly between you and the respective partner.
+          Travel Hideouts is an independent editorial publisher, not a travel agency or booking platform. Any transactions, cancellations, or bookings made through third-party partners (such as Stay22 or airline aggregators) are strictly between you and the respective partner.
         </p>
 
         <h2 className="font-serif font-bold text-xl text-[#242220] pt-2">
           3. Intellectual Property
         </h2>
         <p>
-          The essays, layout, brand name, and proprietary editorial classifications on TravelHideouts are protected by intellectual property laws.
+          The essays, layout, brand name, and proprietary editorial classifications on Travel Hideouts are protected by intellectual property laws.
         </p>
       </div>
     </div>

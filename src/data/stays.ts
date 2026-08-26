@@ -2,18 +2,24 @@ import { Stay } from '../types';
 import icelandBlackSandImg from '../assets/images/iceland_black_sand_raw_1786970961856.jpg';
 import icelandTurfImg from '../assets/images/iceland_turf_house_field_1786971149571.jpg';
 import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_1786971038343.jpg';
+import alpineRefugeImg from '../assets/images/alpine_refuge_cabin_1787668017576.jpg';
 import swissTrainImg from '../assets/images/swiss_train_scenic_window_1786971618391.jpg';
 import swissMurrenImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
+import swissCarfreeVillageImg from '../assets/images/swiss_carfree_village_1787742527585.jpg';
 import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
 import norwayFjordFerryImg from '../assets/images/norway_fjord_ferry_deck_1786971648308.jpg';
 import swedenArchipelagoImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
 import swedenFikaImg from '../assets/images/sweden_fika_cardamom_coffee_1786971159560.jpg';
+import swedenKayakImg from '../assets/images/sweden_kayak_isle_1787742502301.jpg';
 import chinaYangshuoImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import chinaYangshuoMistImg from '../assets/images/china_yangshuo_mist_1787742541701.jpg';
 import chinaGreatWallImg from '../assets/images/china_great_wall_mist_1786971918716.jpg';
 import australiaOceanPoolImg from '../assets/images/australia_ocean_pool_1786971907577.jpg';
 import australiaFreycinetImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
 import newZealandWanakaImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
+import nzPurepodCabinImg from '../assets/images/nz_purepod_cabin_1787742487984.jpg';
 import japanMachiyaImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';
+import japanKyotoTeaMossImg from '../assets/images/japan_kyoto_tea_moss_1786971932294.jpg';
 import japanShirakawagoImg from '../assets/images/japan_shirakawago_village_1786971171228.jpg';
 
 export const STAYS: Stay[] = [
@@ -304,8 +310,8 @@ export const STAYS: Stay[] = [
     destinationName: 'Sweden',
     neighborhood: 'Harads, Swedish Lapland',
     tagline: 'Architectural treehouses suspended in the boreal pine canopy of northern Sweden',
-    heroImage: swedenArchipelagoImg,
-    image: swedenArchipelagoImg,
+    heroImage: swedenKayakImg,
+    image: swedenKayakImg,
     description: 'Suspended 4–6 meters above the ground in a quiet pine forest, each treehouse is designed by leading Scandinavian architects. Includes the Mirrorcube, Bird’s Nest, and 7th Room with northern lights viewing nets.',
     whyCaughtAttention: 'Architectural treehouses suspended in pristine subarctic pine forest with wood-fired saunas on the forest floor.',
     whyWeChoseIt: 'Total immersion in Swedish Lapland’s pine silence with front-row seats to dancing aurora borealis.',
@@ -336,8 +342,8 @@ export const STAYS: Stay[] = [
     destinationName: 'China',
     neighborhood: 'Yangshuo, Guangxi',
     tagline: 'A 1960s heritage sugar mill turned luxury sanctuary surrounded by karst peaks',
-    heroImage: chinaYangshuoImg,
-    image: chinaYangshuoImg,
+    heroImage: chinaYangshuoMistImg,
+    image: chinaYangshuoMistImg,
     description: 'A world-acclaimed architectural triumph designed by Vector Architects. Features an iconic outdoor swimming pool framed by the original concrete truss loading dock, private subterranean spa, and karst mountain views.',
     whyCaughtAttention: 'Industrial heritage concrete architecture juxtaposed against the ancient limestone karst towers and Li River.',
     whyWeChoseIt: 'One of the most striking architectural hotel conversions in the world with serene countryside atmosphere.',
@@ -490,8 +496,8 @@ export const STAYS: Stay[] = [
     destinationName: 'New Zealand',
     neighborhood: 'Lake Te Anau / Fiordland',
     tagline: 'Log-and-stone architectural sanctuary overlooking Lake Te Anau and Fiordland peaks',
-    heroImage: newZealandWanakaImg,
-    image: newZealandWanakaImg,
+    heroImage: nzPurepodCabinImg,
+    image: nzPurepodCabinImg,
     description: 'Set on a high ridge overlooking Lake Te Anau. Features massive native timber logs, open riverstone fireplaces, deep soaking tubs, and exceptional farm-to-table dining.',
     whyCaughtAttention: 'The grand log timber lodge design and its prime position on the threshold of Milford Sound.',
     whyWeChoseIt: 'The ultimate luxury basecamp for exploring Milford Sound and the Routeburn Track before day tours arrive.',
@@ -522,8 +528,8 @@ export const STAYS: Stay[] = [
     destinationName: 'Japan',
     neighborhood: 'Arashiyama, Kyoto',
     tagline: 'A riverside ryokan retreat accessed exclusively by private wooden boat along the Oi River',
-    heroImage: japanMachiyaImg,
-    image: japanMachiyaImg,
+    heroImage: japanKyotoTeaMossImg,
+    image: japanKyotoTeaMossImg,
     description: 'Glide up the tranquil Oi River by private wooden boat to arrive at this restored 17th-century riverside pavilion. Features hand-printed kyo-karakami paper walls, cedar soaking tubs, and seasonal kaiseki dinners.',
     whyCaughtAttention: 'The poetic arrival by wooden boat up the gorge to a hidden riverside retreat untouched by city crowds.',
     whyWeChoseIt: 'A masterpiece of Japanese aesthetics, omotenashi hospitality, and seasonal contemplation.',

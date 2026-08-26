@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-2xl md:text-[25px] font-bold tracking-tight text-[#434338] group-hover:text-[#8FA18B] transition-colors leading-none italic">
-                  TravelHideouts
+                  Travel Hideouts
                 </span>
                 <span className="text-[10px] tracking-widest uppercase font-sans text-[#8D8D7E] mt-1 font-semibold group-hover:text-[#5A5A40] transition-colors">
                   Discover places worth going.
@@ -149,7 +149,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
 
           <div className="pt-4 border-t border-[#E9E5D9] mt-3 flex items-center justify-between px-3 text-xs text-[#8D8D7E]">
-            <a href="/about/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">About TravelHideouts</a>
+            <a href="/about/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">About Travel Hideouts</a>
             <a href="/affiliate-disclosure/" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#434338] hover:underline">Affiliate Disclosure</a>
           </div>
         </div>

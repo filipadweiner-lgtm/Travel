@@ -9,7 +9,7 @@ export const DealsPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-12">
       <SEOHead
-        title="Worth Booking: Seasonal Value Windows — TravelHideouts"
+        title="Worth Booking: Seasonal Value Windows — Travel Hideouts"
         description="Authentic travel value sweet spots, shoulder-season pricing, and boutique stays worth booking ahead."
       />
 

@@ -255,7 +255,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Footer */}
         <div className="p-4 bg-[#F1EDE4] border-t border-[#E9E5D9] flex items-center justify-between text-xs text-[#5A5A40]">
           <span>Tip: Filter by vibe, destination or stay category</span>
-          <span className="font-bold text-[#8FA18B]">TravelHideouts Discovery</span>
+          <span className="font-bold text-[#8FA18B]">Travel Hideouts Discovery</span>
         </div>
       </div>
     </div>

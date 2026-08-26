@@ -39,7 +39,7 @@ export const HideoutsPage: React.FC<HideoutsPageProps> = ({ savedIds, onToggleSa
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-10">
       <SEOHead
-        title="Curated Hideouts — TravelHideouts"
+        title="Curated Hideouts — Travel Hideouts"
         description="Explore boutique hotels, restored fincas, and secret city ateliers chosen for their character, acoustic quiet, and sense of place."
       />
 

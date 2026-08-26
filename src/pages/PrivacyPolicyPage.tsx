@@ -6,8 +6,8 @@ export const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-8">
       <SEOHead
-        title="Privacy Policy — TravelHideouts"
-        description="Privacy policy for TravelHideouts. How we protect your data, respect privacy, and use local browser storage."
+        title="Privacy Policy — Travel Hideouts"
+        description="Privacy policy for Travel Hideouts. How we protect your data, respect privacy, and use local browser storage."
       />
 
       <div>
@@ -31,7 +31,7 @@ export const PrivacyPolicyPage: React.FC = () => {
 
       <div className="p-6 md:p-8 rounded-3xl bg-white border border-[#E9E1D2] space-y-6 text-sm md:text-base text-[#474038] leading-relaxed">
         <p>
-          At <strong>TravelHideouts</strong> (travelhideouts.com), accessible at travelhideouts.com, our visitors' privacy is of paramount importance to us.
+          At <strong>Travel Hideouts</strong> (travelhideouts.com), accessible at travelhideouts.com, our visitors' privacy is of paramount importance to us.
         </p>
 
         <h2 className="font-serif font-bold text-xl text-[#242220] pt-2">

@@ -40,7 +40,7 @@ export const ThingsToDoPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-10">
       <SEOHead
-        title="Curated Things to Do & Experiences — TravelHideouts"
+        title="Curated Things to Do & Experiences — Travel Hideouts"
         description="Authentic food walks, historic ceramic workshops, and coastal boat journeys curated for character and genuine enjoyment."
       />
 

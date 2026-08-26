@@ -62,8 +62,8 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-8">
       <SEOHead
-        title="Contact & Editorial Inquiries — TravelHideouts"
-        description="Get in touch with the editor of TravelHideouts for reader feedback, hideout suggestions, or corrections."
+        title="Contact & Editorial Inquiries — Travel Hideouts"
+        description="Get in touch with the editor of Travel Hideouts for reader feedback, hideout suggestions, or corrections."
       />
 
       <div>
@@ -82,7 +82,7 @@ export const ContactPage: React.FC = () => {
           <span>Editorial Inquiries</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#242220]">
-          Contact TravelHideouts
+          Contact Travel Hideouts
         </h1>
         <p className="text-sm md:text-base text-[#574F47] leading-relaxed">
           Have a quiet sanctuary you think we should investigate? Found an update or correction for one of our guides? We'd love to hear from you. Send us a note below or reach out directly at{' '}

@@ -4,7 +4,7 @@ import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_178697
 import switzerlandImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
 import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
 import swedenImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
-import chinaImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import chinaImg from '../assets/images/china_yangshuo_mist_1787742541701.jpg';
 import australiaImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
 import newZealandImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
 import japanImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';

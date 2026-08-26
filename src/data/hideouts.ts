@@ -2,18 +2,25 @@ import { Hideout } from '../types';
 import icelandBlackSandImg from '../assets/images/iceland_black_sand_raw_1786970961856.jpg';
 import icelandTurfImg from '../assets/images/iceland_turf_house_field_1786971149571.jpg';
 import liechtensteinImg from '../assets/images/liechtenstein_malbun_trail_1786971038343.jpg';
+import alpineRefugeImg from '../assets/images/alpine_refuge_cabin_1787668017576.jpg';
+import nordicCabinHideoutImg from '../assets/images/nordic_cabin_hideout_1787668169487.jpg';
 import swissMurrenImg from '../assets/images/switzerland_murren_chalet_1786970975469.jpg';
+import swissCarfreeVillageImg from '../assets/images/swiss_carfree_village_1787742527585.jpg';
 import swissTrainImg from '../assets/images/swiss_train_scenic_window_1786971618391.jpg';
 import norwayWaterfallImg from '../assets/images/norway_countryside_waterfall_1786889422602.jpg';
 import norwayFjordFerryImg from '../assets/images/norway_fjord_ferry_deck_1786971648308.jpg';
 import swedenArchipelagoImg from '../assets/images/sweden_archipelago_cottage_1786971064310.jpg';
 import swedenFikaImg from '../assets/images/sweden_fika_cardamom_coffee_1786971159560.jpg';
+import swedenKayakImg from '../assets/images/sweden_kayak_isle_1787742502301.jpg';
 import chinaYangshuoImg from '../assets/images/china_yangshuo_karst_1786971008164.jpg';
+import chinaYangshuoMistImg from '../assets/images/china_yangshuo_mist_1787742541701.jpg';
 import chinaGreatWallImg from '../assets/images/china_great_wall_mist_1786971918716.jpg';
 import australiaFreycinetImg from '../assets/images/australia_freycinet_coast_1786971049642.jpg';
 import australiaOceanPoolImg from '../assets/images/australia_ocean_pool_1786971907577.jpg';
 import newZealandWanakaImg from '../assets/images/new_zealand_wanaka_lake_1786971023438.jpg';
+import nzPurepodCabinImg from '../assets/images/nz_purepod_cabin_1787742487984.jpg';
 import japanMachiyaImg from '../assets/images/japan_kyoto_machiya_lane_1786970989907.jpg';
+import japanKyotoTeaMossImg from '../assets/images/japan_kyoto_tea_moss_1786971932294.jpg';
 import japanShirakawagoImg from '../assets/images/japan_shirakawago_village_1786971171228.jpg';
 
 export const HIDEOUTS: Hideout[] = [
@@ -87,8 +94,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Mountain',
     location: 'Malbun, Triesenberg, Liechtenstein',
     destinationId: 'liechtenstein',
-    heroImage: liechtensteinImg,
-    image: liechtensteinImg,
+    heroImage: alpineRefugeImg,
+    image: alpineRefugeImg,
     excerpt: 'A handcrafted stone-and-larch chalet in the high mountain bowl of Malbun at 1,600 meters elevation.',
     summary: 'A quiet alpine chalet nestled above the cloud line with direct access to the Fürstensteig trail and mountain meadows.',
     description: 'Perched in the tranquil car-limited alpine amphitheater of Malbun, this traditional timber chalet offers wood-fired heating, panoramic balcony views of the Three Sisters peaks, and total starry silence at night.',
@@ -181,8 +188,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Coastal',
     location: 'Reine, Lofoten Islands, Norway',
     destinationId: 'norway',
-    heroImage: norwayWaterfallImg,
-    image: norwayWaterfallImg,
+    heroImage: nordicCabinHideoutImg,
+    image: nordicCabinHideoutImg,
     excerpt: 'An authentic restored 19th-century fisherman’s cabin built on wooden stilts directly over the Arctic fjord.',
     summary: 'A lovingly restored traditional Norwegian rorbu built on wooden stilts directly over the turquoise waters of Reinefjord.',
     description: 'Step into a piece of Norwegian maritime heritage. Hand-hewn timber walls, crackling wood-burning stove, and a private wooden balcony where you can watch fishing boats glide past dramatic granite spires.',
@@ -243,8 +250,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Romantic',
     location: 'Stockholm Archipelago, Sweden',
     destinationId: 'sweden',
-    heroImage: swedenArchipelagoImg,
-    image: swedenArchipelagoImg,
+    heroImage: swedenKayakImg,
+    image: swedenKayakImg,
     excerpt: 'A timeless red-painted timber cottage nestled among fragrant pine needles and granite rocks on a car-free island.',
     summary: 'A classic Falu-red island cottage surrounded by wild bilberry bushes, smooth granite sun rocks, and Baltic breezes.',
     description: 'Accessible only by passenger boat from Stockholm, this serene island hideout features minimalist Scandinavian decor, a wood-fired sauna steps from the Baltic Sea, and sunlit wooden verandahs.',
@@ -305,8 +312,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Hidden Gems',
     location: 'Yangshuo, Guangxi, China',
     destinationId: 'china',
-    heroImage: chinaYangshuoImg,
-    image: chinaYangshuoImg,
+    heroImage: chinaYangshuoMistImg,
+    image: chinaYangshuoMistImg,
     excerpt: 'A restored mud-brick countryside homestead nestled between emerald limestone towers and bamboo groves.',
     summary: 'A tranquil countryside homestead framed by soaring limestone karst towers and peaceful river paths.',
     description: 'Set along the peaceful Yulong River away from commercial bustle, this serene boutique sanctuary celebrates traditional Guangxi architecture with polished slate floors, handmade wooden furnishings, and a quiet courtyard tea room.',
@@ -459,8 +466,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Hidden Gems',
     location: 'Te Anau / Fiordland, New Zealand',
     destinationId: 'new-zealand',
-    heroImage: newZealandWanakaImg,
-    image: newZealandWanakaImg,
+    heroImage: nzPurepodCabinImg,
+    image: nzPurepodCabinImg,
     excerpt: 'A tranquil riverfront lodge surrounded by native beech forests on the doorstep of Milford Sound.',
     summary: 'A tranquil eco-lodge nestled along a crystal trout river on the scenic threshold of Fiordland National Park.',
     description: 'The ultimate base for exploring Fiordland National Park. Wake to the song of native tui and bellbirds, enjoy farm-to-table dining, and embark on early morning adventures into the dramatic fiords.',
@@ -491,8 +498,8 @@ export const HIDEOUTS: Hideout[] = [
     category: 'Boutique',
     location: 'Gion & Miyagawacho, Kyoto, Japan',
     destinationId: 'japan',
-    heroImage: japanMachiyaImg,
-    image: japanMachiyaImg,
+    heroImage: japanKyotoTeaMossImg,
+    image: japanKyotoTeaMossImg,
     excerpt: 'An exquisitely preserved 1910s traditional wooden townhouse with private tsuboniwa moss courtyard and hinoki tub.',
     summary: 'A private historic machiya residence with stone rock courtyard, hinoki cypress soaking bath, and heated tatami floors.',
     description: 'Nestled in a quiet pedestrian alley in Kyoto’s historic preservation district, this private machiya sanctuary blends paper shoji screens and cedar exposed rafters with a sunken Japanese cypress wood bath and modern floor heating.',

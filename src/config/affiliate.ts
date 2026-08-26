@@ -1,5 +1,5 @@
 /**
- * TravelHideouts Centralized Affiliate Configuration
+ * Travel Hideouts Centralized Affiliate Configuration
  * 
  * IMPORTANT:
  * - Real affiliate tracking IDs, partner IDs, and campaign parameters should be configured here.

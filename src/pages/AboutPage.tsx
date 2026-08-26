@@ -18,8 +18,8 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-16">
       <SEOHead
-        title="About TravelHideouts — Editorial Manifesto & Author Story"
-        description="Learn the story behind TravelHideouts, how we curate hideouts, our community research methodology, and our affiliate ethics."
+        title="About Travel Hideouts — Editorial Manifesto & Author Story"
+        description="Learn the story behind Travel Hideouts, how we curate hideouts, our community research methodology, and our affiliate ethics."
       />
 
       {/* Header */}
@@ -29,7 +29,7 @@ export const AboutPage: React.FC = () => {
           <span>Editorial Manifesto</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-[#242220] leading-tight">
-          About TravelHideouts
+          About Travel Hideouts
         </h1>
         <p className="text-lg text-[#5C544B] font-light leading-relaxed">
           A female-curated travel discovery publication built on real observation, acoustic calm, and verified community intelligence.
@@ -44,7 +44,7 @@ export const AboutPage: React.FC = () => {
           <div className="md:col-span-4 relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#EAE2D5]">
             <img
               src={mileyRochaFounderImg}
-              alt="Miley Rocha, Founder and Travel Editor of TravelHideouts"
+              alt="Miley Rocha, Founder and Travel Editor of Travel Hideouts"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
@@ -61,13 +61,13 @@ export const AboutPage: React.FC = () => {
               The Story Behind the Project
             </h2>
             <p className="text-sm md:text-base text-[#4C453E] leading-relaxed">
-              I'm Miley Rocha, founder and travel editor of TravelHideouts. I spent over a decade traveling through European cities, coastal fishing ports, and mountain valleys. Over time, I noticed a frustrating pattern in modern travel media:
+              I'm Miley Rocha, founder and travel editor of Travel Hideouts. I spent over a decade traveling through European cities, coastal fishing ports, and mountain valleys. Over time, I noticed a frustrating pattern in modern travel media:
             </p>
             <p className="text-sm md:text-base text-[#4C453E] leading-relaxed">
               Standard hotel booking engines give you 5,000 options with no human context, while social media feeds show 5-second aesthetic video clips that hide thin walls, tourist congestion, and disappointing locations.
             </p>
             <p className="text-sm md:text-base text-[#4C453E] leading-relaxed font-serif italic">
-              "TravelHideouts was born to be the antidote: a calm, trustworthy directory of places that feel restorative to stay in."
+              "Travel Hideouts was born to be the antidote: a calm, trustworthy directory of places that feel restorative to stay in."
             </p>
           </div>
         </div>
@@ -177,7 +177,7 @@ export const AboutPage: React.FC = () => {
         </h2>
         <div className="prose prose-stone max-w-none text-sm md:text-base text-[#4C453E] space-y-3 leading-relaxed">
           <p>
-            TravelHideouts is independently operated. We do not accept paid hotel inclusions or sponsored reviews.
+            Travel Hideouts is independently operated. We do not accept paid hotel inclusions or sponsored reviews.
           </p>
           <p>
             When you click a booking or flight check link on this site (such as through Stay22 or Travelpayouts), we may earn an affiliate commission at no extra cost to you. This enables us to maintain our research, write extensive guides, and keep the platform completely ad-free.

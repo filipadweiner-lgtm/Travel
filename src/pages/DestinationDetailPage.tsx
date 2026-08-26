@@ -52,7 +52,7 @@ export const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
   return (
     <div className="space-y-12 md:space-y-16 pb-20">
       <SEOHead
-        title={`${destination.name}, ${destination.country} Travel Guide — TravelHideouts`}
+        title={`${destination.name}, ${destination.country} Travel Guide — Travel Hideouts`}
         description={destination.blurb}
         image={destination.heroImage}
         type="article"

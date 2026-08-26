@@ -8,7 +8,7 @@ export const DestinationsPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-12">
       <SEOHead
-        title="Countries Worth Exploring — TravelHideouts"
+        title="Countries Worth Exploring — Travel Hideouts"
         description="Curated country guides with candid neighborhood advice, hidden stories, where to stay, and what to skip."
       />
 

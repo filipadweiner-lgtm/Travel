@@ -38,7 +38,7 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
 
   const handlePin = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const pinUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(fullUrl)}&media=${encodeURIComponent(displayImage)}&description=${encodeURIComponent(`${title} — ${subtitle || destination} · TravelHideouts`)}`;
+    const pinUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(fullUrl)}&media=${encodeURIComponent(displayImage)}&description=${encodeURIComponent(`${title} — ${subtitle || destination} · Travel Hideouts`)}`;
     window.open(pinUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -107,7 +107,7 @@ export const PinterestCard: React.FC<PinterestCardProps> = ({
           {/* Editorial Footer Branding */}
           <div className="pt-3 border-t border-white/15 flex items-center justify-between text-[11px] text-[#A6A49B]">
             <div className="flex items-center gap-1.5">
-              <span className="font-serif italic font-bold text-white">TravelHideouts</span>
+              <span className="font-serif italic font-bold text-white">Travel Hideouts</span>
               <span className="text-white/40">·</span>
               <span>Stories worth saving</span>
             </div>

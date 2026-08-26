@@ -9,7 +9,7 @@ export const GuidesPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-12">
       <SEOHead
-        title="Practical Travel Tips & Field Guides — TravelHideouts"
+        title="Practical Travel Tips & Field Guides — Travel Hideouts"
         description="Focused, street-level field guides and practical travel tips covering transit hacks, packing essentials, and cultural etiquette across 9 countries."
       />
 

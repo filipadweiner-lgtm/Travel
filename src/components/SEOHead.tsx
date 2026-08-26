@@ -12,7 +12,7 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'TravelHideouts — Discover places worth going.',
+  title = 'Travel Hideouts — Discover places worth going.',
   description = 'Curated hideouts, atmospheric stays, honest city guides, and verified traveler community voices. Selected by one experienced female traveler.',
   image = 'https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80',
   canonicalUrl,
@@ -97,7 +97,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         },
         publisher: {
           '@type': 'Organization',
-          name: 'TravelHideouts',
+          name: 'Travel Hideouts',
           logo: {
             '@type': 'ImageObject',
             url: 'https://travelhideouts.com/og-image.jpg'
@@ -113,7 +113,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       defaultSchema = {
         '@context': 'https://schema.org',
         '@type': 'LodgingBusiness',
-        name: title.replace(' — TravelHideouts', ''),
+        name: title.replace(' — Travel Hideouts', '').replace(' — TravelHideouts', ''),
         description: description,
         image: image,
         url: currentCanonical,
@@ -123,7 +123,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       defaultSchema = {
         '@context': 'https://schema.org',
         '@type': 'TouristDestination',
-        name: title.replace(' — TravelHideouts', ''),
+        name: title.replace(' — Travel Hideouts', '').replace(' — TravelHideouts', ''),
         description: description,
         image: image,
         url: currentCanonical,
@@ -133,12 +133,12 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       defaultSchema = {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'TravelHideouts',
+        name: 'Travel Hideouts',
         url: 'https://travelhideouts.com/',
         description: description,
         publisher: {
           '@type': 'Organization',
-          name: 'TravelHideouts',
+          name: 'Travel Hideouts',
           founder: {
             '@type': 'Person',
             name: 'Miley Rocha'

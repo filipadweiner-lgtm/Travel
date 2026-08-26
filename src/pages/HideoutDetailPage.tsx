@@ -33,7 +33,7 @@ export const HideoutDetailPage: React.FC<HideoutDetailPageProps> = ({
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14 space-y-12">
       <SEOHead
-        title={`${hideout.title} — TravelHideouts`}
+        title={`${hideout.title} — Travel Hideouts`}
         description={hideout.summary}
         image={hideout.image}
         type="article"
