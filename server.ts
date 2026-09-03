@@ -24,6 +24,15 @@ async function startServer() {
   });
 
   // Crawlers & Directives
+  app.get('/ads.txt', (req, res) => {
+    const adsPath = path.join(process.cwd(), 'public', 'ads.txt');
+    if (fs.existsSync(adsPath)) {
+      res.type('text/plain').sendFile(adsPath);
+    } else {
+      res.type('text/plain').send('google.com, pub-6916219011891091, DIRECT, f08c47fec0942fa0\n');
+    }
+  });
+
   app.get('/robots.txt', (req, res) => {
     const robotsPath = path.join(process.cwd(), 'public', 'robots.txt');
     if (fs.existsSync(robotsPath)) {

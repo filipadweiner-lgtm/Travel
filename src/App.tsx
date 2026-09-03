@@ -8,6 +8,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
 import { SavedHideoutsDrawer } from './components/SavedHideoutsDrawer';
+import { CookieConsentBanner } from './components/CookieConsentBanner';
 
 // Pages
 import { HomePage } from './pages/HomePage';
@@ -409,6 +410,9 @@ export default function App() {
         onRemove={removeSave}
         onClearAll={clearAllSaved}
       />
+
+      {/* EU & Global Privacy / Google AdSense Cookie Consent Banner */}
+      <CookieConsentBanner />
     </div>
   );
 }

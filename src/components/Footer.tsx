@@ -61,17 +61,26 @@ export const Footer: React.FC = () => {
               Transparency & Ethics
             </h4>
             <p className="text-xs text-[#ABA99E] leading-relaxed mb-3">
-              We operate independently. We partner with transparent travel networks (Stay22 & Travelpayouts) and may earn commissions on qualifying bookings at no extra cost to you.
+              We operate independently. We partner with ethical travel networks and show third-party ads through Google AdSense in full compliance with privacy and consent policies.
             </p>
             <ul className="space-y-2 text-xs text-[#CDCBC2]">
               <li>
                 <a href="/affiliate-disclosure/" className="hover:text-[#8FA18B] transition-colors inline-flex items-center gap-1">
-                  <span>Affiliate Disclosure</span>
+                  <span>Affiliate & Ad Disclosure</span>
                   <ArrowUpRight className="w-3 h-3 text-[#8D8D7E]" />
                 </a>
               </li>
-              <li><a href="/privacy-policy/" className="hover:text-[#8FA18B] transition-colors">Privacy Policy</a></li>
+              <li><a href="/privacy-policy/" className="hover:text-[#8FA18B] transition-colors">Privacy Policy & Cookies</a></li>
               <li><a href="/terms/" className="hover:text-[#8FA18B] transition-colors">Terms of Service</a></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}
+                  className="hover:text-[#8FA18B] transition-colors text-left inline-flex items-center gap-1 text-[#CDCBC2]"
+                >
+                  <span>Cookie Preferences</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
